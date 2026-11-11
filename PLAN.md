@@ -27,19 +27,19 @@ Légende : `[ ]` à faire · `[x]` fait et validé.
 ## Phases
 
 ### P0 — Setup
-- [ ] `project.godot` (480×270, canvas_items + expand, entier, Nearest, snap pixels, Compatibility)
-- [ ] dépôt git, arborescence, `.gitignore`
-- [ ] autoloads : EventBus, Settings, Database, GameState, TimeManager, SaveManager, AudioManager, InputManager
-- [ ] `tools/palette.py` (43 couleurs), `tools/gen_font.py` (police bitmap ASCII + accents FR)
-- [ ] runner de tests headless
+- [x] `project.godot` (480×270, canvas_items + expand, entier, Nearest, snap pixels, Compatibility)
+- [x] dépôt git, arborescence, `.gitignore`
+- [x] autoloads : EventBus, Settings, Database, GameState, TimeManager, SaveManager, AudioManager, InputManager
+- [x] `tools/palette.py` (43 couleurs), `tools/gen_font.py` (police bitmap ASCII + accents FR)
+- [x] runner de tests headless
 
 **Validation** : le projet s'importe et démarre en headless sans erreur ni avertissement ; la police s'affiche ; tests de base verts.
 
 ### P1 — Pipeline d'assets
-- [ ] `tools/build_assets.py` déterministe (graine fixe)
-- [ ] tilesets, joueur, PNJ + portraits, animaux, monstres, cultures, icônes, décor, UI, icônes d'app, effets
-- [ ] `tools/gen_audio.py` (≥ 30 SFX, 9 musiques)
-- [ ] `tools/contact_sheet.py` + inspection visuelle et corrections
+- [x] `tools/build_assets.py` déterministe (graine fixe)
+- [x] tilesets, joueur, PNJ + portraits, animaux, monstres, cultures, icônes, décor, UI, icônes d'app, effets
+- [x] `tools/gen_audio.py` (≥ 30 SFX, 9 musiques)
+- [x] `tools/contact_sheet.py` + inspection visuelle et corrections
 
 **Validation** : deux exécutions donnent des fichiers identiques (hash) ; planches relues ; contrôle de palette automatique vert.
 
@@ -95,4 +95,4 @@ Légende : `[ ]` à faire · `[x]` fait et validé.
 
 _(mis à jour à chaque fin de phase : où on en est, quoi faire ensuite)_
 
-- 2026-11-11 — P0 démarrée.
+- 2026-11-11 — P0 et P1 terminées. Pipeline : `python tools/build_assets.py` (assets) puis `python tools/build_data.py` (données + i18n). 1 829 sprites, 61 SFX, 9 musiques, déterminisme vérifié (`--verify`). Suite : P2 (cartes via `tools/gen_maps.py`, joueur, agriculture).

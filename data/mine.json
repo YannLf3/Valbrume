@@ -1,0 +1,135 @@
+{
+ "biomes": {
+  "1": {
+   "monster_count": [
+    1,
+    4
+   ],
+   "monsters": {
+    "mosshop": 40,
+    "pebbler": 60
+   },
+   "music": "mine",
+   "node_density": 0.022,
+   "nodes": {
+    "node_coal": 35,
+    "node_copper": 55,
+    "node_gem": 10
+   },
+   "rocks": 0.16
+  },
+  "2": {
+   "monster_count": [
+    2,
+    5
+   ],
+   "monsters": {
+    "emberbat": 45,
+    "frostspit": 30,
+    "mosshop": 25
+   },
+   "music": "mine",
+   "node_density": 0.026,
+   "nodes": {
+    "node_coal": 12,
+    "node_copper": 15,
+    "node_gem": 10,
+    "node_iron": 45,
+    "node_silver": 18
+   },
+   "rocks": 0.18
+  },
+  "3": {
+   "monster_count": [
+    3,
+    6
+   ],
+   "monsters": {
+    "emberbat": 15,
+    "frostspit": 20,
+    "glowmite": 45,
+    "shellcharger": 20
+   },
+   "music": "mine",
+   "node_density": 0.03,
+   "nodes": {
+    "node_brumite": 30,
+    "node_gem": 20,
+    "node_iron": 15,
+    "node_silver": 35
+   },
+   "rocks": 0.2
+  }
+ },
+ "pool_chance": 0.25,
+ "treasure_money": {
+  "10": 300,
+  "20": 600,
+  "30": 1000,
+  "40": 1500,
+  "50": 2500,
+  "60": 5000
+ },
+ "treasures": {
+  "10": [
+   [
+    "quarry_charge",
+    5
+   ],
+   [
+    "ingot_copper",
+    3
+   ]
+  ],
+  "20": [
+   [
+    "amethyst",
+    2
+   ],
+   [
+    "rope_ladder",
+    3
+   ]
+  ],
+  "30": [
+   [
+    "ingot_iron",
+    5
+   ],
+   [
+    "healing_salve",
+    3
+   ]
+  ],
+  "40": [
+   [
+    "emerald",
+    1
+   ],
+   [
+    "ledger_page",
+    1
+   ]
+  ],
+  "50": [
+   [
+    "ingot_silver",
+    5
+   ],
+   [
+    "bell_charm",
+    2
+   ]
+  ],
+  "60": [
+   [
+    "moonstone",
+    2
+   ],
+   [
+    "ingot_brumite",
+    3
+   ]
+  ]
+ }
+}

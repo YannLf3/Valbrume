@@ -1,0 +1,183 @@
+{
+ "carpentry": {
+  "close": 17,
+  "closed_day": 2,
+  "npc": "isaure",
+  "open": 9,
+  "services": [
+   "build"
+  ],
+  "stock": [
+   [
+    "wood",
+    12
+   ],
+   [
+    "stone",
+    18
+   ],
+   "table",
+   "chair",
+   "armchair",
+   "bookshelf",
+   "cabinet",
+   "rug",
+   "lamp",
+   "painting",
+   "plant",
+   "stove",
+   "clock",
+   "wallpaper_1",
+   "wallpaper_2",
+   "wallpaper_3",
+   "wallpaper_4",
+   "floor_1",
+   "floor_2",
+   "floor_3",
+   "floor_4"
+  ]
+ },
+ "clinic": {
+  "close": 15,
+  "closed_day": 5,
+  "npc": "hyacinthe",
+  "open": 9,
+  "services": [],
+  "stock": [
+   [
+    "healing_salve",
+    220
+   ],
+   [
+    "field_snack",
+    90
+   ]
+  ]
+ },
+ "fishshop": {
+  "close": 14,
+  "closed_day": 1,
+  "npc": "maiwenn",
+  "open": 6,
+  "services": [],
+  "stock": [
+   "bait",
+   "crab_pot"
+  ]
+ },
+ "forge": {
+  "close": 17,
+  "closed_day": 0,
+  "npc": "bastien",
+  "open": 9,
+  "services": [
+   "tool_upgrade",
+   "bell_cast"
+  ],
+  "stock": [
+   "coal",
+   [
+    "ore_copper",
+    60
+   ],
+   [
+    "ore_iron",
+    120
+   ],
+   [
+    "ore_silver",
+    220
+   ]
+  ]
+ },
+ "inn": {
+  "close": 23,
+  "closed_day": -1,
+  "npc": "gaspard",
+  "open": 12,
+  "recipes": {
+   "crepes": 600,
+   "garden_stew": 800,
+   "pike_butter": 1200,
+   "ratatouille": 900,
+   "turnip_soup": 500,
+   "winter_salad": 500
+  },
+  "services": [
+   "recipes"
+  ],
+  "stock": [
+   [
+    "bread",
+    180
+   ],
+   [
+    "garden_stew",
+    480
+   ],
+   [
+    "crepes",
+    300
+   ]
+  ]
+ },
+ "market": {
+  "close": 14,
+  "npc": "",
+  "only_day": 6,
+  "open": 8,
+  "requires": "bell:hearth",
+  "services": [],
+  "stock": [
+   "@seeds_all",
+   [
+    "honey",
+    260
+   ],
+   [
+    "cloth",
+    800
+   ],
+   [
+    "nut_oil",
+    420
+   ],
+   [
+    "moonstone",
+    1500
+   ]
+  ]
+ },
+ "ranch": {
+  "close": 16,
+  "closed_day": 3,
+  "npc": "theodule",
+  "open": 8,
+  "services": [
+   "animals"
+  ],
+  "stock": [
+   "hay",
+   "pet_bed"
+  ]
+ },
+ "store": {
+  "close": 18,
+  "closed_day": 6,
+  "npc": "capucine",
+  "open": 9,
+  "services": [
+   "backpack"
+  ],
+  "stock": [
+   "@seeds",
+   "@saplings",
+   "flour",
+   "compost",
+   "rich_fertilizer",
+   "quick_soil",
+   "bouquet",
+   "braided_ring"
+  ]
+ }
+}

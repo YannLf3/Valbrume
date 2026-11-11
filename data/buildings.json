@@ -1,0 +1,83 @@
+{
+ "barn": {
+  "levels": [
+   {
+    "capacity": 4,
+    "days": 3,
+    "items": {
+     "stone": 100,
+     "wood": 200
+    },
+    "price": 6000
+   },
+   {
+    "capacity": 8,
+    "days": 3,
+    "items": {
+     "stone": 200,
+     "wood": 350
+    },
+    "price": 12000
+   }
+  ]
+ },
+ "coop": {
+  "levels": [
+   {
+    "capacity": 4,
+    "days": 2,
+    "items": {
+     "stone": 50,
+     "wood": 150
+    },
+    "price": 4000
+   },
+   {
+    "capacity": 8,
+    "days": 2,
+    "items": {
+     "stone": 100,
+     "wood": 250
+    },
+    "price": 8000
+   }
+  ]
+ },
+ "house": {
+  "levels": [
+   {
+    "days": 0,
+    "items": {},
+    "price": 0
+   },
+   {
+    "days": 3,
+    "items": {
+     "wood": 300
+    },
+    "price": 10000
+   },
+   {
+    "days": 3,
+    "items": {
+     "stone": 200,
+     "wood": 400
+    },
+    "price": 30000
+   }
+  ]
+ },
+ "silo": {
+  "levels": [
+   {
+    "days": 1,
+    "items": {
+     "clay": 10,
+     "ingot_copper": 3,
+     "stone": 80
+    },
+    "price": 1500
+   }
+  ]
+ }
+}

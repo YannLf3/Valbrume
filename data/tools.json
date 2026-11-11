@@ -1,0 +1,256 @@
+{
+ "areas": {
+  "1": [
+   [
+    0,
+    0
+   ]
+  ],
+  "15": [
+   [
+    -2,
+    0
+   ],
+   [
+    -1,
+    0
+   ],
+   [
+    0,
+    0
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    2,
+    0
+   ],
+   [
+    -2,
+    1
+   ],
+   [
+    -1,
+    1
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    1,
+    1
+   ],
+   [
+    2,
+    1
+   ],
+   [
+    -2,
+    2
+   ],
+   [
+    -1,
+    2
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    2,
+    2
+   ]
+  ],
+  "3": [
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    2
+   ]
+  ],
+  "5": [
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    3
+   ],
+   [
+    0,
+    4
+   ]
+  ],
+  "9": [
+   [
+    -1,
+    0
+   ],
+   [
+    0,
+    0
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    -1,
+    1
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    1,
+    1
+   ],
+   [
+    -1,
+    2
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    1,
+    2
+   ]
+  ]
+ },
+ "kinds": {
+  "axe": {
+   "energy": "energy_axe",
+   "power": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "skill": "foraging"
+  },
+  "can": {
+   "areas": [
+    1,
+    3,
+    5,
+    9
+   ],
+   "energy": "energy_can",
+   "skill": "farming"
+  },
+  "hoe": {
+   "areas": [
+    1,
+    3,
+    5,
+    9
+   ],
+   "energy": "energy_hoe",
+   "skill": "farming"
+  },
+  "pick": {
+   "energy": "energy_pick",
+   "power": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "skill": "mining"
+  },
+  "rod": {
+   "energy": "energy_rod",
+   "skill": "fishing"
+  },
+  "scythe": {
+   "areas": [
+    3,
+    3,
+    9,
+    15
+   ],
+   "energy": "energy_scythe",
+   "skill": "farming"
+  },
+  "sword": {
+   "energy": "energy_sword",
+   "skill": "combat"
+  }
+ },
+ "start_items": [
+  [
+   "hoe_1",
+   1
+  ],
+  [
+   "can_1",
+   1
+  ],
+  [
+   "axe_1",
+   1
+  ],
+  [
+   "pick_1",
+   1
+  ],
+  [
+   "scythe_1",
+   1
+  ],
+  [
+   "seed_turnip",
+   12
+  ],
+  [
+   "field_snack",
+   2
+  ]
+ ],
+ "upgrades": {
+  "2": {
+   "items": {
+    "ingot_copper": 5
+   },
+   "price": 2000
+  },
+  "3": {
+   "items": {
+    "ingot_iron": 5
+   },
+   "price": 5000
+  },
+  "4": {
+   "items": {
+    "ingot_silver": 5
+   },
+   "price": 10000
+  }
+ }
+}

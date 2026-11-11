@@ -24,16 +24,19 @@ class Canvas:
             self.a[:, :] = INDEX[fill]
 
     # -- primitives -------------------------------------------------------
-    def px(self, x: int, y: int, c: Optional[str]) -> None:
+    def px(self, x: float, y: float, c: Optional[str]) -> None:
+        x, y = int(x), int(y)
         if c is not None and 0 <= x < self.w and 0 <= y < self.h:
             self.a[y, x] = INDEX[c]
 
-    def get(self, x: int, y: int) -> str:
+    def get(self, x: float, y: float) -> str:
+        x, y = int(x), int(y)
         if 0 <= x < self.w and 0 <= y < self.h:
             return NAMES[self.a[y, x]]
         return "void"
 
-    def rect(self, x: int, y: int, w: int, h: int, c: str) -> None:
+    def rect(self, x: float, y: float, w: float, h: float, c: str) -> None:
+        x, y, w, h = int(x), int(y), int(w), int(h)
         x0, y0 = max(0, x), max(0, y)
         x1, y1 = min(self.w, x + w), min(self.h, y + h)
         if x1 > x0 and y1 > y0:
@@ -51,7 +54,8 @@ class Canvas:
     def vline(self, x: int, y: int, n: int, c: str) -> None:
         self.rect(x, y, 1, n, c)
 
-    def line(self, x0: int, y0: int, x1: int, y1: int, c: str) -> None:
+    def line(self, x0: float, y0: float, x1: float, y1: float, c: str) -> None:
+        x0, y0, x1, y1 = int(round(x0)), int(round(y0)), int(round(x1)), int(round(y1))
         dx, dy = abs(x1 - x0), -abs(y1 - y0)
         sx, sy = (1 if x0 < x1 else -1), (1 if y0 < y1 else -1)
         err = dx + dy
@@ -73,7 +77,8 @@ class Canvas:
                 if ((x - cx) / max(rx, 0.01)) ** 2 + ((y - cy) / max(ry, 0.01)) ** 2 <= 1.0:
                     self.px(x, y, c)
 
-    def poly(self, pts: Sequence[Tuple[int, int]], c: str) -> None:
+    def poly(self, pts: Sequence[Tuple[float, float]], c: str) -> None:
+        pts = [(int(round(p[0])), int(round(p[1]))) for p in pts]
         ys = [p[1] for p in pts]
         n = len(pts)
         for y in range(min(ys), max(ys) + 1):

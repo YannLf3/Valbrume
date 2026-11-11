@@ -1,0 +1,584 @@
+{
+ "gems": {
+  "1": {
+   "amethyst": 10,
+   "quartz": 60,
+   "topaz": 30
+  },
+  "2": {
+   "amethyst": 35,
+   "emerald": 15,
+   "quartz": 35,
+   "topaz": 15
+  },
+  "3": {
+   "amethyst": 25,
+   "emerald": 30,
+   "moonstone": 15,
+   "ruby": 30
+  }
+ },
+ "place": {
+  "armchair": {
+   "kind": "furniture",
+   "solid": true
+  },
+  "beehive": {
+   "kind": "machine",
+   "outdoor": true,
+   "solid": true
+  },
+  "birdhouse": {
+   "kind": "decor",
+   "solid": true
+  },
+  "bookshelf": {
+   "kind": "furniture",
+   "solid": true
+  },
+  "cabinet": {
+   "kind": "furniture",
+   "solid": true
+  },
+  "chair": {
+   "kind": "furniture",
+   "solid": true
+  },
+  "cheese_press": {
+   "kind": "machine",
+   "solid": true
+  },
+  "chest": {
+   "kind": "chest",
+   "slots": 36,
+   "solid": true
+  },
+  "churn": {
+   "kind": "machine",
+   "solid": true
+  },
+  "clock": {
+   "kind": "furniture",
+   "solid": true
+  },
+  "crab_pot": {
+   "kind": "crab_pot",
+   "on_water": true,
+   "solid": true
+  },
+  "fence": {
+   "kind": "fence",
+   "solid": true
+  },
+  "flower_pot": {
+   "kind": "furniture",
+   "solid": true
+  },
+  "furnace": {
+   "active_sprite": "furnace_lit",
+   "kind": "machine",
+   "light": true,
+   "solid": true
+  },
+  "lamp": {
+   "kind": "furniture",
+   "light": true,
+   "solid": true
+  },
+  "lantern": {
+   "kind": "decor",
+   "light": true,
+   "solid": true
+  },
+  "loom": {
+   "kind": "machine",
+   "solid": true
+  },
+  "painting": {
+   "kind": "furniture",
+   "solid": false,
+   "wall": true
+  },
+  "pet_bed": {
+   "flat": true,
+   "kind": "furniture",
+   "solid": false
+  },
+  "plant": {
+   "kind": "furniture",
+   "solid": true
+  },
+  "preserve_jar": {
+   "kind": "machine",
+   "solid": true
+  },
+  "press": {
+   "kind": "machine",
+   "solid": true
+  },
+  "rug": {
+   "flat": true,
+   "kind": "furniture",
+   "solid": false
+  },
+  "scarecrow": {
+   "kind": "scarecrow",
+   "solid": true,
+   "sprite": "scarecrow_big"
+  },
+  "seed_sorter": {
+   "kind": "machine",
+   "solid": true
+  },
+  "sign": {
+   "kind": "decor",
+   "solid": true
+  },
+  "smoker": {
+   "kind": "machine",
+   "solid": true
+  },
+  "sprinkler_1": {
+   "kind": "sprinkler",
+   "solid": true
+  },
+  "sprinkler_2": {
+   "kind": "sprinkler",
+   "solid": true
+  },
+  "sprinkler_3": {
+   "kind": "sprinkler",
+   "solid": true
+  },
+  "stone_bench": {
+   "kind": "decor",
+   "solid": true
+  },
+  "stone_path": {
+   "flat": true,
+   "kind": "path",
+   "solid": false
+  },
+  "stove": {
+   "kind": "furniture",
+   "light": true,
+   "solid": true
+  },
+  "table": {
+   "kind": "furniture",
+   "solid": true
+  },
+  "wind_chime": {
+   "kind": "furniture",
+   "solid": false,
+   "wall": true
+  },
+  "wood_path": {
+   "flat": true,
+   "kind": "path",
+   "solid": false
+  }
+ },
+ "world": {
+  "big_log": {
+   "drops": [
+    [
+     "wood",
+     12,
+     16,
+     1.0
+    ],
+    [
+     "sap",
+     1,
+     3,
+     0.6
+    ]
+   ],
+   "fx": "wood",
+   "h": 1,
+   "hp": 8,
+   "min_level": 2,
+   "sfx": "axe",
+   "solid": true,
+   "sprite": "big_log",
+   "tools": [
+    "axe"
+   ],
+   "w": 2,
+   "xp": [
+    "foraging",
+    15
+   ]
+  },
+  "bush": {
+   "solid": true,
+   "sprite": "bush"
+  },
+  "crystal": {
+   "solid": true,
+   "sprite": "crystal_%c"
+  },
+  "dig": {
+   "solid": false,
+   "sprite": "dig_spot",
+   "tools": [
+    "hoe"
+   ]
+  },
+  "forage": {
+   "pick": true,
+   "solid": false
+  },
+  "ftree": {
+   "solid": true,
+   "sprite": "ftree_%k_%s_%g",
+   "tall": true
+  },
+  "ladder_down": {
+   "solid": false,
+   "sprite": "ladder_down"
+  },
+  "ladder_up": {
+   "solid": false,
+   "sprite": "ladder_up"
+  },
+  "mine_rock": {
+   "break_sfx": "rock_break",
+   "drops": [
+    [
+     "stone",
+     1,
+     2,
+     0.8
+    ],
+    [
+     "coal",
+     1,
+     1,
+     0.06
+    ],
+    [
+     "clay",
+     1,
+     1,
+     0.05
+    ]
+   ],
+   "fx": "chip",
+   "hp": 2,
+   "sfx": "pick",
+   "solid": true,
+   "sprite": "mine_rock_%b",
+   "tools": [
+    "pick"
+   ],
+   "xp": [
+    "mining",
+    3
+   ]
+  },
+  "node_brumite": {
+   "break_sfx": "rock_break",
+   "drops": [
+    [
+     "ore_brumite",
+     1,
+     2,
+     1.0
+    ]
+   ],
+   "fx": "chip",
+   "hp": 10,
+   "min_level": 3,
+   "sfx": "pick",
+   "solid": true,
+   "sprite": "node_brumite",
+   "tools": [
+    "pick"
+   ],
+   "xp": [
+    "mining",
+    26
+   ]
+  },
+  "node_coal": {
+   "break_sfx": "rock_break",
+   "drops": [
+    [
+     "coal",
+     1,
+     3,
+     1.0
+    ]
+   ],
+   "fx": "chip",
+   "hp": 3,
+   "sfx": "pick",
+   "solid": true,
+   "sprite": "node_coal",
+   "tools": [
+    "pick"
+   ],
+   "xp": [
+    "mining",
+    7
+   ]
+  },
+  "node_copper": {
+   "break_sfx": "rock_break",
+   "drops": [
+    [
+     "ore_copper",
+     1,
+     3,
+     1.0
+    ]
+   ],
+   "fx": "chip",
+   "hp": 3,
+   "sfx": "pick",
+   "solid": true,
+   "sprite": "node_copper",
+   "tools": [
+    "pick"
+   ],
+   "xp": [
+    "mining",
+    9
+   ]
+  },
+  "node_gem": {
+   "break_sfx": "rock_break",
+   "drops": [
+    [
+     "@gem",
+     1,
+     1,
+     1.0
+    ]
+   ],
+   "fx": "sparkle",
+   "hp": 6,
+   "sfx": "pick",
+   "solid": true,
+   "sprite": "node_gem",
+   "tools": [
+    "pick"
+   ],
+   "xp": [
+    "mining",
+    20
+   ]
+  },
+  "node_iron": {
+   "break_sfx": "rock_break",
+   "drops": [
+    [
+     "ore_iron",
+     1,
+     3,
+     1.0
+    ]
+   ],
+   "fx": "chip",
+   "hp": 5,
+   "min_level": 2,
+   "sfx": "pick",
+   "solid": true,
+   "sprite": "node_iron",
+   "tools": [
+    "pick"
+   ],
+   "xp": [
+    "mining",
+    13
+   ]
+  },
+  "node_silver": {
+   "break_sfx": "rock_break",
+   "drops": [
+    [
+     "ore_silver",
+     1,
+     3,
+     1.0
+    ]
+   ],
+   "fx": "chip",
+   "hp": 7,
+   "min_level": 2,
+   "sfx": "pick",
+   "solid": true,
+   "sprite": "node_silver",
+   "tools": [
+    "pick"
+   ],
+   "xp": [
+    "mining",
+    18
+   ]
+  },
+  "rock": {
+   "break_sfx": "rock_break",
+   "drops": [
+    [
+     "stone",
+     2,
+     3,
+     1.0
+    ],
+    [
+     "clay",
+     1,
+     1,
+     0.12
+    ]
+   ],
+   "fx": "chip",
+   "hp": 2,
+   "sfx": "pick",
+   "solid": true,
+   "sprite": "rock_small",
+   "tools": [
+    "pick"
+   ],
+   "xp": [
+    "mining",
+    3
+   ]
+  },
+  "rock_big": {
+   "break_sfx": "rock_break",
+   "drops": [
+    [
+     "stone",
+     10,
+     14,
+     1.0
+    ],
+    [
+     "coal",
+     1,
+     2,
+     0.5
+    ]
+   ],
+   "fx": "chip",
+   "h": 2,
+   "hp": 8,
+   "min_level": 2,
+   "sfx": "pick",
+   "solid": true,
+   "sprite": "rock_big",
+   "tools": [
+    "pick"
+   ],
+   "w": 2,
+   "xp": [
+    "mining",
+    15
+   ]
+  },
+  "stump": {
+   "drops": [
+    [
+     "wood",
+     3,
+     5,
+     1.0
+    ]
+   ],
+   "fx": "wood",
+   "hp": 4,
+   "sfx": "axe",
+   "solid": true,
+   "sprite": "stump_%k",
+   "tools": [
+    "axe"
+   ],
+   "xp": [
+    "foraging",
+    4
+   ]
+  },
+  "tall_grass": {
+   "drops": [
+    [
+     "fiber",
+     1,
+     1,
+     0.4
+    ]
+   ],
+   "hay": 1,
+   "hp": 1,
+   "sfx": "scythe",
+   "solid": false,
+   "sprite": "tall_grass",
+   "tools": [
+    "scythe"
+   ]
+  },
+  "treasure": {
+   "solid": true,
+   "sprite": "treasure_closed"
+  },
+  "tree": {
+   "break_sfx": "tree_fall",
+   "drops": [
+    [
+     "wood",
+     8,
+     12,
+     1.0
+    ],
+    [
+     "sap",
+     1,
+     2,
+     0.5
+    ]
+   ],
+   "fx": "wood",
+   "hp": 8,
+   "sfx": "axe",
+   "solid": true,
+   "sprite": "tree_%k_%s_%g",
+   "tall": true,
+   "tools": [
+    "axe"
+   ],
+   "xp": [
+    "foraging",
+    12
+   ]
+  },
+  "weed": {
+   "drops": [
+    [
+     "fiber",
+     1,
+     2,
+     1.0
+    ]
+   ],
+   "hp": 1,
+   "sfx": "scythe",
+   "solid": true,
+   "sprite": "weed_%v",
+   "tools": [
+    "scythe",
+    "hoe",
+    "axe",
+    "pick",
+    "sword"
+   ],
+   "variants": 3,
+   "xp": [
+    "foraging",
+    1
+   ]
+  }
+ }
+}

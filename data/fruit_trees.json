@@ -1,0 +1,18 @@
+{
+ "apple": {
+  "sapling": "sapling_apple",
+  "season": "autumn"
+ },
+ "cherry": {
+  "sapling": "sapling_cherry",
+  "season": "spring"
+ },
+ "medlar": {
+  "sapling": "sapling_medlar",
+  "season": "winter"
+ },
+ "plum": {
+  "sapling": "sapling_plum",
+  "season": "summer"
+ }
+}

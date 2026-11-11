@@ -1,0 +1,363 @@
+{
+ "fish": {
+  "barbel": {
+   "difficulty": 3,
+   "hours": [
+    6,
+    26
+   ],
+   "place": "river",
+   "seasons": [
+    "summer",
+    "autumn"
+   ],
+   "weather": "any"
+  },
+  "bream": {
+   "difficulty": 1,
+   "hours": [
+    6,
+    20
+   ],
+   "place": "lake",
+   "seasons": [
+    "spring",
+    "summer",
+    "autumn"
+   ],
+   "weather": "any"
+  },
+  "carp": {
+   "difficulty": 2,
+   "hours": [
+    6,
+    26
+   ],
+   "place": "lake",
+   "seasons": [
+    "spring",
+    "summer",
+    "autumn",
+    "winter"
+   ],
+   "weather": "any"
+  },
+  "catfish": {
+   "difficulty": 5,
+   "hours": [
+    19,
+    26
+   ],
+   "place": "lake",
+   "seasons": [
+    "spring",
+    "summer",
+    "autumn"
+   ],
+   "weather": "rain"
+  },
+  "cavefish": {
+   "difficulty": 3,
+   "hours": [
+    6,
+    26
+   ],
+   "place": "mine1",
+   "seasons": [
+    "spring",
+    "summer",
+    "autumn",
+    "winter"
+   ],
+   "weather": "any"
+  },
+  "char": {
+   "difficulty": 4,
+   "hours": [
+    6,
+    18
+   ],
+   "place": "lake",
+   "seasons": [
+    "winter"
+   ],
+   "weather": "any"
+  },
+  "conger": {
+   "difficulty": 4,
+   "hours": [
+    19,
+    26
+   ],
+   "place": "sea",
+   "seasons": [
+    "spring",
+    "summer",
+    "autumn",
+    "winter"
+   ],
+   "weather": "any"
+  },
+  "eel": {
+   "difficulty": 4,
+   "hours": [
+    19,
+    26
+   ],
+   "place": "river",
+   "seasons": [
+    "summer",
+    "autumn"
+   ],
+   "weather": "rain"
+  },
+  "frost_minnow": {
+   "difficulty": 4,
+   "hours": [
+    6,
+    26
+   ],
+   "place": "mine2",
+   "seasons": [
+    "spring",
+    "summer",
+    "autumn",
+    "winter"
+   ],
+   "weather": "any"
+  },
+  "glowfin": {
+   "difficulty": 5,
+   "hours": [
+    6,
+    26
+   ],
+   "place": "mine3",
+   "seasons": [
+    "spring",
+    "summer",
+    "autumn",
+    "winter"
+   ],
+   "weather": "any"
+  },
+  "gudgeon": {
+   "difficulty": 1,
+   "hours": [
+    6,
+    26
+   ],
+   "place": "river",
+   "seasons": [
+    "spring",
+    "summer",
+    "autumn",
+    "winter"
+   ],
+   "weather": "any"
+  },
+  "herring": {
+   "difficulty": 1,
+   "hours": [
+    6,
+    26
+   ],
+   "place": "sea",
+   "seasons": [
+    "autumn",
+    "winter"
+   ],
+   "weather": "any"
+  },
+  "mackerel": {
+   "difficulty": 2,
+   "hours": [
+    6,
+    20
+   ],
+   "place": "sea",
+   "seasons": [
+    "spring",
+    "summer"
+   ],
+   "weather": "any"
+  },
+  "mistmoon": {
+   "difficulty": 5,
+   "hours": [
+    20,
+    26
+   ],
+   "place": "lake",
+   "seasons": [
+    "spring",
+    "summer",
+    "autumn",
+    "winter"
+   ],
+   "weather": "rain"
+  },
+  "perch": {
+   "difficulty": 2,
+   "hours": [
+    8,
+    20
+   ],
+   "place": "river",
+   "seasons": [
+    "spring",
+    "summer",
+    "autumn",
+    "winter"
+   ],
+   "weather": "sun"
+  },
+  "pike": {
+   "difficulty": 4,
+   "hours": [
+    6,
+    12
+   ],
+   "place": "river",
+   "seasons": [
+    "spring",
+    "autumn",
+    "winter"
+   ],
+   "weather": "any"
+  },
+  "roach": {
+   "difficulty": 1,
+   "hours": [
+    6,
+    26
+   ],
+   "place": "lake",
+   "seasons": [
+    "spring",
+    "summer",
+    "autumn",
+    "winter"
+   ],
+   "weather": "any"
+  },
+  "salmon": {
+   "difficulty": 4,
+   "hours": [
+    6,
+    20
+   ],
+   "place": "river",
+   "seasons": [
+    "autumn"
+   ],
+   "weather": "any"
+  },
+  "sardine": {
+   "difficulty": 1,
+   "hours": [
+    6,
+    26
+   ],
+   "place": "sea",
+   "seasons": [
+    "spring",
+    "summer",
+    "autumn",
+    "winter"
+   ],
+   "weather": "any"
+  },
+  "sea_bass": {
+   "difficulty": 4,
+   "hours": [
+    6,
+    14
+   ],
+   "place": "sea",
+   "seasons": [
+    "autumn",
+    "winter",
+    "spring"
+   ],
+   "weather": "any"
+  },
+  "sea_bream": {
+   "difficulty": 3,
+   "hours": [
+    8,
+    20
+   ],
+   "place": "sea",
+   "seasons": [
+    "summer",
+    "autumn"
+   ],
+   "weather": "sun"
+  },
+  "sole": {
+   "difficulty": 3,
+   "hours": [
+    12,
+    26
+   ],
+   "place": "sea",
+   "seasons": [
+    "spring",
+    "summer",
+    "autumn",
+    "winter"
+   ],
+   "weather": "any"
+  },
+  "tench": {
+   "difficulty": 2,
+   "hours": [
+    12,
+    26
+   ],
+   "place": "lake",
+   "seasons": [
+    "spring",
+    "summer"
+   ],
+   "weather": "any"
+  },
+  "trout": {
+   "difficulty": 2,
+   "hours": [
+    6,
+    19
+   ],
+   "place": "river",
+   "seasons": [
+    "spring",
+    "summer",
+    "autumn"
+   ],
+   "weather": "any"
+  },
+  "tuna": {
+   "difficulty": 5,
+   "hours": [
+    6,
+    18
+   ],
+   "place": "sea",
+   "seasons": [
+    "summer"
+   ],
+   "weather": "any"
+  }
+ },
+ "pot": {
+  "river": [
+   "crayfish"
+  ],
+  "sea": [
+   "crab",
+   "shrimp",
+   "whelk"
+  ]
+ }
+}

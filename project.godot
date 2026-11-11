@@ -64,3 +64,9 @@ environment/defaults/default_clear_color=Color(0.169, 0.133, 0.2, 1)
 
 gdscript/warnings/unused_signal=0
 gdscript/warnings/integer_division=0
+
+[importer_defaults]
+
+wav={
+"compress/mode": 2
+}

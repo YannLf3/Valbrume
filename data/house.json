@@ -1,0 +1,18 @@
+{
+ "floors": 4,
+ "levels": {
+  "1": {
+   "kitchen": false,
+   "map": "farmhouse_1"
+  },
+  "2": {
+   "kitchen": true,
+   "map": "farmhouse_2"
+  },
+  "3": {
+   "kitchen": true,
+   "map": "farmhouse_3"
+  }
+ },
+ "wallpapers": 4
+}

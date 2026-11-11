@@ -1,0 +1,32 @@
+{
+ "autumn": {
+  "rain": 28,
+  "storm": 7,
+  "sun": 45,
+  "wind": 20
+ },
+ "kinds": [
+  "sun",
+  "rain",
+  "storm",
+  "wind",
+  "snow"
+ ],
+ "spring": {
+  "rain": 25,
+  "storm": 8,
+  "sun": 55,
+  "wind": 12
+ },
+ "summer": {
+  "rain": 14,
+  "storm": 14,
+  "sun": 62,
+  "wind": 10
+ },
+ "winter": {
+  "snow": 40,
+  "sun": 45,
+  "wind": 15
+ }
+}

@@ -1,2 +1,334 @@
 keys,fr,en
+CAT_ANIMAL,Produit animal,Animal Product
+CAT_ARTIFACT,Artefact,Artifact
+CAT_ARTISAN,Produit fermier,Artisan Good
+CAT_CRAFTABLE,Objet à poser,Placeable
+CAT_CROP,Récolte,Crop
+CAT_DECOR,Décoration,Decoration
+CAT_DISH,Plat,Dish
+CAT_FERTILIZER,Engrais,Fertilizer
+CAT_FISH,Poisson,Fish
+CAT_FORAGE,Cueillette,Forage
+CAT_FRUIT,Fruit,Fruit
+CAT_FURNITURE,Meuble,Furniture
+CAT_INGOT,Lingot,Ingot
+CAT_MINERAL,Minéral,Mineral
+CAT_MISC,Divers,Misc
+CAT_RESOURCE,Ressource,Resource
+CAT_SAPLING,Jeune arbre,Sapling
+CAT_SEED,Graine,Seed
+CAT_TOOL,Outil,Tool
 GAME_TITLE,Valbrume,Valbrume
+ITEMD_AMMONITE,"La mer est donc montée jusqu'ici, autrefois.",So the sea once reached this far.
+ITEMD_BELL_CLAPPER,Le battant d'une cloche disparue. Il tinte encore quand on le secoue.,The clapper of a long-lost bell. It still chimes when shaken.
+ITEMD_CLAY_WHISTLE,"Un petit oiseau d'argile. Deux notes, pas une de plus.","A little clay bird. Two notes, not one more."
+ITEMD_ENGRAVED_STONE,Des portées de musique taillées dans le schiste.,Staves of music carved into slate.
+ITEMD_FOSSIL_FERN,Une fronde figée dans la pierre depuis des âges.,A frond frozen in stone for ages.
+ITEMD_GLASS_BEAD,"Soufflée par une main patiente, il y a très longtemps.","Blown by a patient hand, a very long time ago."
+ITEMD_LEDGER_PAGE,"Une page arrachée au registre de tante Odile : des alliages, des dates, un dessin de cloche.","A page torn from Aunt Odile's ledger: alloys, dates, a sketch of a bell."
+ITEMD_OLD_COIN,"Frappé d'une cloche sur une face, d'un épi sur l'autre.",Stamped with a bell on one side and an ear of grain on the other.
+ITEMD_RUSTY_KEY,Aucune serrure du village ne lui correspond. Pas encore.,No lock in the village fits it. Not yet.
+ITEMD_TIN_SOLDIER,Il monte la garde sans se plaindre.,He stands guard without complaint.
+ITEM_AMETHYST,Améthyste,Amethyst
+ITEM_AMMONITE,Ammonite,Ammonite
+ITEM_APPLE,Pomme,Apple
+ITEM_APPLE_TART,Tarte aux pommes,Apple Tart
+ITEM_ARMCHAIR,Fauteuil,Armchair
+ITEM_AXE_1,Hache rustique,Rustic Axe
+ITEM_AXE_2,Hache de cuivre,Copper Axe
+ITEM_AXE_3,Hache de fer,Iron Axe
+ITEM_AXE_4,Hache d'argent,Silver Axe
+ITEM_BAIT,Appât,Bait
+ITEM_BARBEL,Barbeau,Barbel
+ITEM_BEAN,Haricot,Bean
+ITEM_BEEHIVE,Ruche,Beehive
+ITEM_BEET,Betterave,Beet
+ITEM_BELLTULIP,Tulipe-cloche,Bell Tulip
+ITEM_BELL_CHARM,Grelot porte-bonheur,Lucky Jingle
+ITEM_BELL_CLAPPER,Battant ancien,Ancient Clapper
+ITEM_BIRDHOUSE,Nichoir,Birdhouse
+ITEM_BLACKBERRY,Mûre,Blackberry
+ITEM_BOOKSHELF,Bibliothèque,Bookshelf
+ITEM_BOUQUET,Bouquet de Valbrume,Valbrume Bouquet
+ITEM_BRAIDED_RING,Anneau tressé,Braided Ring
+ITEM_BREAD,Pain de campagne,Country Bread
+ITEM_BREAM,Brème,Bream
+ITEM_BUTTER,Beurre,Butter
+ITEM_CABINET,Armoire,Wardrobe
+ITEM_CAN_1,Arrosoir rustique,Rustic Watering Can
+ITEM_CAN_2,Arrosoir de cuivre,Copper Watering Can
+ITEM_CAN_3,Arrosoir de fer,Iron Watering Can
+ITEM_CAN_4,Arrosoir d'argent,Silver Watering Can
+ITEM_CARP,Carpe,Carp
+ITEM_CARROT,Carotte,Carrot
+ITEM_CATFISH,Silure,Catfish
+ITEM_CAVEFISH,Aveugle des grottes,Cavefish
+ITEM_CEP,Cèpe,Cep
+ITEM_CHAIR,Chaise paillée,Straw Chair
+ITEM_CHANTERELLE,Girolle,Chanterelle
+ITEM_CHAR,Omble,Char
+ITEM_CHEESE,Tomme,Farm Cheese
+ITEM_CHEESE_GALETTE,Galette au fromage,Cheese Galette
+ITEM_CHEESE_PRESS,Fromagerie,Cheese Press
+ITEM_CHERRY,Cerise,Cherry
+ITEM_CHERRY_CLAFOUTIS,Clafoutis aux cerises,Cherry Clafoutis
+ITEM_CHEST,Coffre,Chest
+ITEM_CHESTNUT,Châtaigne,Chestnut
+ITEM_CHURN,Baratte,Churn
+ITEM_CLAY,Argile,Clay
+ITEM_CLAY_WHISTLE,Sifflet d'argile,Clay Whistle
+ITEM_CLOCK,Pendule,Pendulum Clock
+ITEM_CLOTH,Étoffe,Cloth
+ITEM_COAL,Charbon,Coal
+ITEM_COMPOST,Compost,Compost
+ITEM_CONGER,Congre,Conger
+ITEM_CRAB,Crabe,Crab
+ITEM_CRAB_POT,Casier,Crab Pot
+ITEM_CRAYFISH,Écrevisse,Crayfish
+ITEM_CREPES,Crêpes,Crêpes
+ITEM_DANDELION,Pissenlit,Dandelion
+ITEM_DUCK_EGG,Œuf de cane,Duck Egg
+ITEM_EEL,Anguille,Eel
+ITEM_EGG,Œuf,Egg
+ITEM_EGGPLANT,Aubergine,Eggplant
+ITEM_ELDERFLOWER,Fleur de sureau,Elderflower
+ITEM_EMERALD,Émeraude,Emerald
+ITEM_ENGRAVED_STONE,Pierre gravée,Engraved Stone
+ITEM_FEATHER,Plume de canard,Duck Feather
+ITEM_FENCE,Clôture,Fence
+ITEM_FIBER,Fibre,Fiber
+ITEM_FIELD_SNACK,En-cas des champs,Field Snack
+ITEM_FISHER_STEW,Soupe du pêcheur,Fisher's Stew
+ITEM_FLOOR_1,Plancher de hêtre,Beech Flooring
+ITEM_FLOOR_2,Plancher sombre,Dark Flooring
+ITEM_FLOOR_3,Tomettes,Terracotta Tiles
+ITEM_FLOOR_4,Dalles d'ardoise,Slate Flooring
+ITEM_FLOUR,Farine,Flour
+ITEM_FLOWER_POT,Jardinière,Flower Box
+ITEM_FOSSIL_FERN,Fougère fossile,Fossil Fern
+ITEM_FRIED_GUDGEON,Friture de goujons,Fried Gudgeon
+ITEM_FROSTBERRY,Givrelle,Frostberry
+ITEM_FROSTBERRY_TART,Tarte aux givrelles,Frostberry Tart
+ITEM_FROST_MINNOW,Vairon des glaces,Frost Minnow
+ITEM_FURNACE,Fourneau,Furnace
+ITEM_GARDEN_STEW,Potée du jardin,Garden Stew
+ITEM_GLASS_BEAD,Perle de verre,Glass Bead
+ITEM_GLOWFIN,Lucinageoire,Glowfin
+ITEM_GOAT_CHEESE,Chèvre frais,Goat Cheese
+ITEM_GOAT_MILK,Lait de chèvre,Goat Milk
+ITEM_GRAPE,Raisin,Grape
+ITEM_GRILLED_FISH,Poisson grillé,Grilled Fish
+ITEM_GRILLED_SARDINES,Sardines grillées,Grilled Sardines
+ITEM_GUDGEON,Goujon,Gudgeon
+ITEM_HAY,Foin,Hay
+ITEM_HAZELNUT,Noisette,Hazelnut
+ITEM_HAZELNUT_TROUT,Truite aux noisettes,Hazelnut Trout
+ITEM_HEALING_SALVE,Baume de sureau,Elder Salve
+ITEM_HERRING,Hareng,Herring
+ITEM_HOE_1,Houe rustique,Rustic Hoe
+ITEM_HOE_2,Houe de cuivre,Copper Hoe
+ITEM_HOE_3,Houe de fer,Iron Hoe
+ITEM_HOE_4,Houe d'argent,Silver Hoe
+ITEM_HOLLY,Houx,Holly
+ITEM_HONEY,Miel,Honey
+ITEM_HONEYMELON,Melon miel,Honeymelon
+ITEM_INGOT_BRUMITE,Lingot de brumite,Brumite Ingot
+ITEM_INGOT_COPPER,Lingot de cuivre,Copper Ingot
+ITEM_INGOT_IRON,Lingot de fer,Iron Ingot
+ITEM_INGOT_SILVER,Lingot d'argent,Silver Ingot
+ITEM_JAM,Confiture,Jam
+ITEM_JUICE,Jus de fruits,Fruit Juice
+ITEM_KALE,Chou frisé,Kale
+ITEM_LAMBS_LETTUCE,Mâche,Lamb's Lettuce
+ITEM_LAMP,Lampe à huile,Oil Lamp
+ITEM_LANTERN,Lanterne de jardin,Garden Lantern
+ITEM_LAVENDER,Lavande,Lavender
+ITEM_LAVENDER_TEA,Infusion de lavande,Lavender Tea
+ITEM_LEDGER_PAGE,Page du registre,Ledger Page
+ITEM_LEEK,Poireau,Leek
+ITEM_LEEK_GRATIN,Gratin de poireaux,Leek Gratin
+ITEM_LOOM,Métier à tisser,Loom
+ITEM_MACKEREL,Maquereau,Mackerel
+ITEM_MEDLAR,Nèfle,Medlar
+ITEM_MELON_FRAPPE,Melon frappé,Chilled Melon
+ITEM_MILK,Lait,Milk
+ITEM_MINER_STEW,Ragoût du mineur,Miner's Stew
+ITEM_MISTMOON,Lune-de-brume,Mistmoon
+ITEM_MOONSTONE,Pierre de lune,Moonstone
+ITEM_MOREL,Morille,Morel
+ITEM_MUSHROOM_PAN,Poêlée forestière,Forest Skillet
+ITEM_NUT_OIL,Huile de noisette,Hazelnut Oil
+ITEM_OLD_COIN,Sou de la vallée,Valley Penny
+ITEM_OMELETTE,Omelette,Omelette
+ITEM_ORE_BRUMITE,Minerai de brumite,Brumite Ore
+ITEM_ORE_COPPER,Minerai de cuivre,Copper Ore
+ITEM_ORE_IRON,Minerai de fer,Iron Ore
+ITEM_ORE_SILVER,Minerai d'argent,Silver Ore
+ITEM_PAINTING,Tableau de la vallée,Valley Painting
+ITEM_PARSNIP,Panais,Parsnip
+ITEM_PARSNIP_GRATIN,Gratin de panais,Parsnip Gratin
+ITEM_PEA,Petit pois,Pea
+ITEM_PERCH,Perche,Perch
+ITEM_PET_BED,Panier du compagnon,Pet Basket
+ITEM_PICKLES,Bocal de légumes,Pickled Vegetables
+ITEM_PICK_1,Pioche rustique,Rustic Pickaxe
+ITEM_PICK_2,Pioche de cuivre,Copper Pickaxe
+ITEM_PICK_3,Pioche de fer,Iron Pickaxe
+ITEM_PICK_4,Pioche d'argent,Silver Pickaxe
+ITEM_PIKE,Brochet,Pike
+ITEM_PIKE_BUTTER,Brochet au beurre blanc,Pike in Butter Sauce
+ITEM_PINECONE,Pomme de pin,Pinecone
+ITEM_PLANT,Plante en pot,Potted Plant
+ITEM_PLUM,Prune,Plum
+ITEM_PRESERVE_JAR,Bocaux à conserve,Preserving Jars
+ITEM_PRESS,Pressoir,Press
+ITEM_PUMPKIN,Potiron,Pumpkin
+ITEM_PUMPKIN_VELOUTE,Velouté de potiron,Pumpkin Velouté
+ITEM_QUARRY_CHARGE,Pétard de carrier,Quarry Charge
+ITEM_QUARTZ,Quartz,Quartz
+ITEM_QUICK_SOIL,Terreau vif,Quick Soil
+ITEM_RATATOUILLE,Ratatouille,Ratatouille
+ITEM_RED_CABBAGE,Chou rouge,Red Cabbage
+ITEM_RETURN_WHISTLE,Sifflet du retour,Homeward Whistle
+ITEM_RICH_FERTILIZER,Engrais riche,Rich Fertilizer
+ITEM_ROACH,Gardon,Roach
+ITEM_ROAST_CHESTNUTS,Châtaignes grillées,Roast Chestnuts
+ITEM_ROD_1,Canne à pêche rustique,Rustic Fishing Rod
+ITEM_ROD_2,Canne à pêche de cuivre,Copper Fishing Rod
+ITEM_ROD_3,Canne à pêche de fer,Iron Fishing Rod
+ITEM_ROD_4,Canne à pêche d'argent,Silver Fishing Rod
+ITEM_ROPE_LADDER,Échelle de corde,Rope Ladder
+ITEM_RUBY,Rubis,Ruby
+ITEM_RUG,Tapis tressé,Braided Rug
+ITEM_RUSTY_KEY,Clé rouillée,Rusty Key
+ITEM_SAFFRON,Safran,Saffron
+ITEM_SALMON,Saumon,Salmon
+ITEM_SAP,Résine,Sap
+ITEM_SAPLING_APPLE,Jeune pommier,Apple Sapling
+ITEM_SAPLING_CHERRY,Jeune cerisier,Cherry Sapling
+ITEM_SAPLING_MEDLAR,Jeune néflier,Medlar Sapling
+ITEM_SAPLING_PLUM,Jeune prunier,Plum Sapling
+ITEM_SARDINE,Sardine,Sardine
+ITEM_SCARECROW,Épouvantail à grelots,Jingle Scarecrow
+ITEM_SCYTHE_1,Faux rustique,Rustic Scythe
+ITEM_SCYTHE_2,Faux de cuivre,Copper Scythe
+ITEM_SCYTHE_3,Faux de fer,Iron Scythe
+ITEM_SCYTHE_4,Faux d'argent,Silver Scythe
+ITEM_SEAWEED,Algue,Seaweed
+ITEM_SEA_BASS,Bar,Sea Bass
+ITEM_SEA_BREAM,Daurade,Sea Bream
+ITEM_SEED_BEAN,Graines d'haricot,Bean Seeds
+ITEM_SEED_BEET,Graines de betterave,Beet Seeds
+ITEM_SEED_BELLTULIP,Graines de tulipe-cloche,Bell Tulip Seeds
+ITEM_SEED_CARROT,Graines de carotte,Carrot Seeds
+ITEM_SEED_EGGPLANT,Graines d'aubergine,Eggplant Seeds
+ITEM_SEED_FROSTBERRY,Graines de givrelle,Frostberry Seeds
+ITEM_SEED_GRAPE,Graines de raisin,Grape Seeds
+ITEM_SEED_HONEYMELON,Graines de melon miel,Honeymelon Seeds
+ITEM_SEED_KALE,Graines de chou frisé,Kale Seeds
+ITEM_SEED_LAMBS_LETTUCE,Graines de mâche,Lamb's Lettuce Seeds
+ITEM_SEED_LAVENDER,Graines de lavande,Lavender Seeds
+ITEM_SEED_LEEK,Graines de poireau,Leek Seeds
+ITEM_SEED_PARSNIP,Graines de panais,Parsnip Seeds
+ITEM_SEED_PEA,Graines de petit pois,Pea Seeds
+ITEM_SEED_PUMPKIN,Graines de potiron,Pumpkin Seeds
+ITEM_SEED_RED_CABBAGE,Graines de chou rouge,Red Cabbage Seeds
+ITEM_SEED_SAFFRON,Graines de safran,Saffron Seeds
+ITEM_SEED_SNOWDROP,Graines de perce-neige,Snowdrop Seeds
+ITEM_SEED_SORTER,Trieuse à graines,Seed Sorter
+ITEM_SEED_SPINACH,Graines d'épinard,Spinach Seeds
+ITEM_SEED_SPRING_ONION,Graines d'oignon nouveau,Spring Onion Seeds
+ITEM_SEED_SUNCHOKE,Graines de topinambour,Sunchoke Seeds
+ITEM_SEED_TOMATO,Graines de tomate,Tomato Seeds
+ITEM_SEED_TURNIP,Graines de navet,Turnip Seeds
+ITEM_SEED_ZUCCHINI,Graines de courgette,Zucchini Seeds
+ITEM_SHELL,Coquillage,Seashell
+ITEM_SHRIMP,Crevette,Shrimp
+ITEM_SIGN,Panneau,Sign
+ITEM_SMOKED_FISH,Poisson fumé,Smoked Fish
+ITEM_SMOKER,Fumoir,Smoker
+ITEM_SNOWDROP,Perce-neige,Snowdrop
+ITEM_SOLE,Sole,Sole
+ITEM_SPINACH,Épinard,Spinach
+ITEM_SPRING_ONION,Oignon nouveau,Spring Onion
+ITEM_SPRING_SALAD,Salade printanière,Spring Salad
+ITEM_SPRINKLER_1,Arroseur de cuivre,Copper Sprinkler
+ITEM_SPRINKLER_2,Arroseur de fer,Iron Sprinkler
+ITEM_SPRINKLER_3,Arroseur de brumite,Brumite Sprinkler
+ITEM_STONE,Pierre,Stone
+ITEM_STONE_BENCH,Banc de pierre,Stone Bench
+ITEM_STONE_PATH,Dalle de pierre,Stone Path
+ITEM_STOVE,Poêle en fonte,Cast-Iron Stove
+ITEM_SUNCHOKE,Topinambour,Sunchoke
+ITEM_SUNCHOKE_SOUP,Soupe de topinambours,Sunchoke Soup
+ITEM_SWORD_1,Épée rustique,Rustic Sword
+ITEM_SWORD_2,Épée de cuivre,Copper Sword
+ITEM_SWORD_3,Épée de fer,Iron Sword
+ITEM_SWORD_4,Épée d'argent,Silver Sword
+ITEM_TABLE,Table en hêtre,Beech Table
+ITEM_TENCH,Tanche,Tench
+ITEM_TIAN,Tian de légumes,Vegetable Tian
+ITEM_TIN_SOLDIER,Soldat d'étain,Tin Soldier
+ITEM_TOMATO,Tomate,Tomato
+ITEM_TOPAZ,Topaze,Topaz
+ITEM_TROUT,Truite,Trout
+ITEM_TUNA,Thon,Tuna
+ITEM_TURNIP,Navet,Turnip
+ITEM_TURNIP_SOUP,Soupe de navets,Turnip Soup
+ITEM_WALLPAPER_1,Papier peint crème,Cream Wallpaper
+ITEM_WALLPAPER_2,Papier peint bleuet,Cornflower Wallpaper
+ITEM_WALLPAPER_3,Papier peint mousse,Moss Wallpaper
+ITEM_WALLPAPER_4,Papier peint églantine,Briar Rose Wallpaper
+ITEM_WHELK,Bulot,Whelk
+ITEM_WILD_GARLIC,Ail des ours,Wild Garlic
+ITEM_WILD_GARLIC_SOUP,Soupe à l'ail des ours,Wild Garlic Soup
+ITEM_WIND_CHIME,Carillon à vent,Wind Chime
+ITEM_WINTER_SALAD,Salade d'hiver,Winter Salad
+ITEM_WOOD,Bois,Wood
+ITEM_WOOD_PATH,Dalle de bois,Wood Path
+ITEM_WOOL,Laine,Wool
+ITEM_ZUCCHINI,Courgette,Zucchini
+PERK_AFFECTION_GAIN,Les animaux s'attachent plus vite,Animals bond faster
+PERK_ANIMAL_PRICE,Produits animaux vendus plus cher,Animal products sell for more
+PERK_BAIT_SAVER,Chance de garder son appât,Chance to keep your bait
+PERK_CRIT_CHANCE,Chance de coup critique,Critical hit chance
+PERK_CROP_PRICE,Récoltes vendues plus cher,Crops sell for more
+PERK_CROP_QUALITY,Récoltes de meilleure qualité,Better crop quality
+PERK_DAMAGE,Dégâts augmentés,Damage increased
+PERK_DEFENSE,Défense augmentée,Defense increased
+PERK_DOUBLE_FORAGE,Chance de cueillette double,Chance for double forage
+PERK_FISH_PRICE,Poissons vendus plus cher,Fish sell for more
+PERK_FISH_QUALITY,Poissons de meilleure qualité,Better fish quality
+PERK_FISH_WINDOW,Fenêtre de ferrage élargie,Wider hooking window
+PERK_FORAGE_PRICE,Cueillette vendue plus cher,Forage sells for more
+PERK_FORAGE_QUALITY,Cueillette de meilleure qualité,Better forage quality
+PERK_GEM_CHANCE,Gemmes dans les rochers ordinaires,Gems in ordinary rocks
+PERK_LADDER_CHANCE,Échelles plus faciles à trouver,Ladders are easier to find
+PERK_MAX_HEALTH,Santé maximale augmentée,Maximum health increased
+PERK_MINERAL_PRICE,Minéraux vendus plus cher,Minerals sell for more
+PERK_ORE_BONUS,Chance de minerai en double,Chance for double ore
+PERK_PRODUCT_QUALITY,Produits animaux de meilleure qualité,Better animal product quality
+PERK_TREASURE_CHANCE,Plus de trésors repêchés,More fished-up treasure
+PERK_WOOD_BONUS,Plus de bois par arbre,More wood per tree
+SEASON_AUTUMN,Automne,Autumn
+SEASON_SPRING,Printemps,Spring
+SEASON_SUMMER,Été,Summer
+SEASON_WINTER,Hiver,Winter
+SKILL_COMBAT,Combat,Combat
+SKILL_FARMING,Agriculture,Farming
+SKILL_FISHING,Pêche,Fishing
+SKILL_FORAGING,Cueillette,Foraging
+SKILL_HUSBANDRY,Élevage,Husbandry
+SKILL_MINING,Minage,Mining
+WEATHER_RAIN,Pluie,Rain
+WEATHER_SNOW,Neige,Snow
+WEATHER_STORM,Orage,Storm
+WEATHER_SUN,Soleil,Sunny
+WEATHER_WIND,Vent,Windy
+WEEKDAY_0,Lun,Mon
+WEEKDAY_1,Mar,Tue
+WEEKDAY_2,Mer,Wed
+WEEKDAY_3,Jeu,Thu
+WEEKDAY_4,Ven,Fri
+WEEKDAY_5,Sam,Sat
+WEEKDAY_6,Dim,Sun

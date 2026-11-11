@@ -1,0 +1,52 @@
+{
+ "chicken": {
+  "every": 1,
+  "grow_days": 3,
+  "home": "coop",
+  "min_level": 1,
+  "price": 400,
+  "product": "egg",
+  "sfx": "cluck"
+ },
+ "cow": {
+  "every": 1,
+  "grow_days": 5,
+  "home": "barn",
+  "min_level": 1,
+  "price": 1500,
+  "product": "milk",
+  "sfx": "moo"
+ },
+ "duck": {
+  "bonus": [
+   "feather",
+   0.2,
+   600
+  ],
+  "every": 2,
+  "grow_days": 4,
+  "home": "coop",
+  "min_level": 2,
+  "price": 900,
+  "product": "duck_egg",
+  "sfx": "quack"
+ },
+ "goat": {
+  "every": 2,
+  "grow_days": 5,
+  "home": "barn",
+  "min_level": 2,
+  "price": 2200,
+  "product": "goat_milk",
+  "sfx": "bleat"
+ },
+ "sheep": {
+  "every": 3,
+  "grow_days": 5,
+  "home": "barn",
+  "min_level": 2,
+  "price": 3000,
+  "product": "wool",
+  "sfx": "bleat"
+ }
+}

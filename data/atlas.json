@@ -1,0 +1,2144 @@
+{
+"anvil": {
+"h": 18,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 270,
+"y": 399
+},
+"b_carpenter": {
+"h": 76,
+"sheet": "sprites/objects",
+"w": 96,
+"x": 631,
+"y": 1
+},
+"b_clinic": {
+"h": 72,
+"sheet": "sprites/objects",
+"w": 96,
+"x": 825,
+"y": 1
+},
+"b_cottage": {
+"h": 68,
+"sheet": "sprites/objects",
+"w": 80,
+"x": 487,
+"y": 138
+},
+"b_fish": {
+"h": 64,
+"sheet": "sprites/objects",
+"w": 80,
+"x": 649,
+"y": 138
+},
+"b_forge": {
+"h": 72,
+"sheet": "sprites/objects",
+"w": 96,
+"x": 922,
+"y": 1
+},
+"b_inn": {
+"h": 84,
+"sheet": "sprites/objects",
+"w": 128,
+"x": 66,
+"y": 1
+},
+"b_museum": {
+"h": 76,
+"sheet": "sprites/objects",
+"w": 112,
+"x": 405,
+"y": 1
+},
+"b_ranch": {
+"h": 70,
+"sheet": "sprites/objects",
+"w": 96,
+"x": 309,
+"y": 138
+},
+"b_store": {
+"h": 76,
+"sheet": "sprites/objects",
+"w": 112,
+"x": 518,
+"y": 1
+},
+"bar_blue": {
+"h": 6,
+"sheet": "ui/ui",
+"w": 4,
+"x": 93,
+"y": 150
+},
+"bar_energy": {
+"h": 6,
+"sheet": "ui/ui",
+"w": 4,
+"x": 98,
+"y": 150
+},
+"bar_frame": {
+"h": 8,
+"sheet": "ui/ui",
+"w": 16,
+"x": 12,
+"y": 150
+},
+"bar_health": {
+"h": 6,
+"sheet": "ui/ui",
+"w": 4,
+"x": 103,
+"y": 150
+},
+"bar_xp": {
+"h": 6,
+"sheet": "ui/ui",
+"w": 4,
+"x": 108,
+"y": 150
+},
+"barn_1": {
+"h": 72,
+"sheet": "sprites/objects",
+"w": 80,
+"x": 195,
+"y": 138
+},
+"barn_2": {
+"h": 78,
+"sheet": "sprites/objects",
+"w": 96,
+"x": 308,
+"y": 1
+},
+"barrel": {
+"h": 20,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 253,
+"y": 399
+},
+"bed": {
+"h": 38,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 282,
+"y": 358
+},
+"bed_double": {
+"h": 38,
+"sheet": "sprites/objects",
+"w": 48,
+"x": 233,
+"y": 358
+},
+"belfry": {
+"h": 136,
+"sheet": "sprites/objects",
+"w": 64,
+"x": 1,
+"y": 1
+},
+"bell_off": {
+"h": 12,
+"sheet": "sprites/objects",
+"w": 10,
+"x": 205,
+"y": 424
+},
+"bell_on": {
+"h": 12,
+"sheet": "sprites/objects",
+"w": 10,
+"x": 216,
+"y": 424
+},
+"bench": {
+"h": 20,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 220,
+"y": 399
+},
+"big_log": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 387,
+"y": 399
+},
+"big_rug_blue": {
+"h": 32,
+"sheet": "sprites/objects",
+"w": 48,
+"x": 381,
+"y": 358
+},
+"big_rug_red": {
+"h": 32,
+"sheet": "sprites/objects",
+"w": 48,
+"x": 430,
+"y": 358
+},
+"big_table": {
+"h": 26,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 695,
+"y": 358
+},
+"big_table_cloth": {
+"h": 26,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 728,
+"y": 358
+},
+"boat": {
+"h": 22,
+"sheet": "sprites/objects",
+"w": 48,
+"x": 120,
+"y": 399
+},
+"bobber": {
+"h": 7,
+"sheet": "ui/ui",
+"w": 5,
+"x": 65,
+"y": 150
+},
+"bunting": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 48,
+"x": 338,
+"y": 399
+},
+"bush": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 486,
+"y": 399
+},
+"bush_berry": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 503,
+"y": 399
+},
+"bush_snow": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 520,
+"y": 399
+},
+"button_disabled": {
+"h": 18,
+"sheet": "ui/ui",
+"w": 24,
+"x": 93,
+"y": 95
+},
+"button_hover": {
+"h": 18,
+"sheet": "ui/ui",
+"w": 24,
+"x": 118,
+"y": 95
+},
+"button_normal": {
+"h": 18,
+"sheet": "ui/ui",
+"w": 24,
+"x": 143,
+"y": 95
+},
+"button_pressed": {
+"h": 18,
+"sheet": "ui/ui",
+"w": 24,
+"x": 168,
+"y": 95
+},
+"chest_closed": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 537,
+"y": 399
+},
+"chest_open": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 554,
+"y": 399
+},
+"coin": {
+"h": 10,
+"sheet": "ui/ui",
+"w": 10,
+"x": 131,
+"y": 137
+},
+"coop_1": {
+"h": 60,
+"sheet": "sprites/objects",
+"w": 64,
+"x": 730,
+"y": 138
+},
+"coop_2": {
+"h": 66,
+"sheet": "sprites/objects",
+"w": 80,
+"x": 568,
+"y": 138
+},
+"counter_l": {
+"h": 22,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 169,
+"y": 399
+},
+"counter_m": {
+"h": 22,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 186,
+"y": 399
+},
+"counter_r": {
+"h": 22,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 203,
+"y": 399
+},
+"crate": {
+"h": 18,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 287,
+"y": 399
+},
+"crate_apples": {
+"h": 18,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 304,
+"y": 399
+},
+"crate_greens": {
+"h": 18,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 321,
+"y": 399
+},
+"crop_dead": {
+"h": 32,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 479,
+"y": 358
+},
+"crystal_amber": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 571,
+"y": 399
+},
+"crystal_ice": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 588,
+"y": 399
+},
+"crystal_violet": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 605,
+"y": 399
+},
+"cursor_arrow": {
+"h": 14,
+"sheet": "ui/ui",
+"w": 12,
+"x": 155,
+"y": 120
+},
+"cursor_hand": {
+"h": 14,
+"sheet": "ui/ui",
+"w": 12,
+"x": 168,
+"y": 120
+},
+"desk": {
+"h": 24,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 761,
+"y": 358
+},
+"dig_spot": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 622,
+"y": 399
+},
+"display_artifacts": {
+"h": 28,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 513,
+"y": 358
+},
+"display_fish": {
+"h": 28,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 546,
+"y": 358
+},
+"display_minerals": {
+"h": 28,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 579,
+"y": 358
+},
+"door_mat": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 639,
+"y": 399
+},
+"elevator": {
+"h": 40,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 989,
+"y": 309
+},
+"emote_exclaim": {
+"h": 14,
+"sheet": "ui/ui",
+"w": 14,
+"x": 35,
+"y": 120
+},
+"emote_fish": {
+"h": 14,
+"sheet": "ui/ui",
+"w": 14,
+"x": 50,
+"y": 120
+},
+"emote_happy": {
+"h": 14,
+"sheet": "ui/ui",
+"w": 14,
+"x": 65,
+"y": 120
+},
+"emote_heart": {
+"h": 14,
+"sheet": "ui/ui",
+"w": 14,
+"x": 80,
+"y": 120
+},
+"emote_note": {
+"h": 14,
+"sheet": "ui/ui",
+"w": 14,
+"x": 95,
+"y": 120
+},
+"emote_question": {
+"h": 14,
+"sheet": "ui/ui",
+"w": 14,
+"x": 110,
+"y": 120
+},
+"emote_sad": {
+"h": 14,
+"sheet": "ui/ui",
+"w": 14,
+"x": 125,
+"y": 120
+},
+"emote_zzz": {
+"h": 14,
+"sheet": "ui/ui",
+"w": 14,
+"x": 140,
+"y": 120
+},
+"fence_0": {
+"h": 24,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 827,
+"y": 358
+},
+"fence_1": {
+"h": 24,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 844,
+"y": 358
+},
+"fence_10": {
+"h": 24,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 861,
+"y": 358
+},
+"fence_11": {
+"h": 24,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 878,
+"y": 358
+},
+"fence_12": {
+"h": 24,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 895,
+"y": 358
+},
+"fence_13": {
+"h": 24,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 912,
+"y": 358
+},
+"fence_14": {
+"h": 24,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 929,
+"y": 358
+},
+"fence_15": {
+"h": 24,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 946,
+"y": 358
+},
+"fence_2": {
+"h": 24,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 963,
+"y": 358
+},
+"fence_3": {
+"h": 24,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 980,
+"y": 358
+},
+"fence_4": {
+"h": 24,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 997,
+"y": 358
+},
+"fence_5": {
+"h": 24,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 1,
+"y": 399
+},
+"fence_6": {
+"h": 24,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 18,
+"y": 399
+},
+"fence_7": {
+"h": 24,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 35,
+"y": 399
+},
+"fence_8": {
+"h": 24,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 52,
+"y": 399
+},
+"fence_9": {
+"h": 24,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 69,
+"y": 399
+},
+"fireplace": {
+"h": 44,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 841,
+"y": 309
+},
+"flowers_rose": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 656,
+"y": 399
+},
+"flowers_violet": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 673,
+"y": 399
+},
+"flowers_white": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 690,
+"y": 399
+},
+"forge_fire": {
+"h": 44,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 874,
+"y": 309
+},
+"fountain": {
+"h": 44,
+"sheet": "sprites/objects",
+"w": 48,
+"x": 694,
+"y": 309
+},
+"frog_jar": {
+"h": 24,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 86,
+"y": 399
+},
+"ftree_apple_autumn_0": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 844,
+"y": 138
+},
+"ftree_apple_autumn_1": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 877,
+"y": 138
+},
+"ftree_apple_autumn_2": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 910,
+"y": 138
+},
+"ftree_apple_fruit": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 943,
+"y": 138
+},
+"ftree_apple_spring_0": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 976,
+"y": 138
+},
+"ftree_apple_spring_1": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 1,
+"y": 211
+},
+"ftree_apple_spring_2": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 34,
+"y": 211
+},
+"ftree_apple_summer_0": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 67,
+"y": 211
+},
+"ftree_apple_summer_1": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 100,
+"y": 211
+},
+"ftree_apple_summer_2": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 133,
+"y": 211
+},
+"ftree_apple_winter_0": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 166,
+"y": 211
+},
+"ftree_apple_winter_1": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 199,
+"y": 211
+},
+"ftree_apple_winter_2": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 232,
+"y": 211
+},
+"ftree_cherry_autumn_0": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 265,
+"y": 211
+},
+"ftree_cherry_autumn_1": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 298,
+"y": 211
+},
+"ftree_cherry_autumn_2": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 331,
+"y": 211
+},
+"ftree_cherry_fruit": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 364,
+"y": 211
+},
+"ftree_cherry_spring_0": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 397,
+"y": 211
+},
+"ftree_cherry_spring_1": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 430,
+"y": 211
+},
+"ftree_cherry_spring_2": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 463,
+"y": 211
+},
+"ftree_cherry_summer_0": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 496,
+"y": 211
+},
+"ftree_cherry_summer_1": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 529,
+"y": 211
+},
+"ftree_cherry_summer_2": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 562,
+"y": 211
+},
+"ftree_cherry_winter_0": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 595,
+"y": 211
+},
+"ftree_cherry_winter_1": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 628,
+"y": 211
+},
+"ftree_cherry_winter_2": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 661,
+"y": 211
+},
+"ftree_medlar_autumn_0": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 694,
+"y": 211
+},
+"ftree_medlar_autumn_1": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 727,
+"y": 211
+},
+"ftree_medlar_autumn_2": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 760,
+"y": 211
+},
+"ftree_medlar_fruit": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 793,
+"y": 211
+},
+"ftree_medlar_spring_0": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 826,
+"y": 211
+},
+"ftree_medlar_spring_1": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 859,
+"y": 211
+},
+"ftree_medlar_spring_2": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 892,
+"y": 211
+},
+"ftree_medlar_summer_0": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 925,
+"y": 211
+},
+"ftree_medlar_summer_1": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 958,
+"y": 211
+},
+"ftree_medlar_summer_2": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 991,
+"y": 211
+},
+"ftree_medlar_winter_0": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 1,
+"y": 260
+},
+"ftree_medlar_winter_1": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 34,
+"y": 260
+},
+"ftree_medlar_winter_2": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 67,
+"y": 260
+},
+"ftree_plum_autumn_0": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 100,
+"y": 260
+},
+"ftree_plum_autumn_1": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 133,
+"y": 260
+},
+"ftree_plum_autumn_2": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 166,
+"y": 260
+},
+"ftree_plum_fruit": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 199,
+"y": 260
+},
+"ftree_plum_spring_0": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 232,
+"y": 260
+},
+"ftree_plum_spring_1": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 265,
+"y": 260
+},
+"ftree_plum_spring_2": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 298,
+"y": 260
+},
+"ftree_plum_summer_0": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 331,
+"y": 260
+},
+"ftree_plum_summer_1": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 364,
+"y": 260
+},
+"ftree_plum_summer_2": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 397,
+"y": 260
+},
+"ftree_plum_winter_0": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 430,
+"y": 260
+},
+"ftree_plum_winter_1": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 463,
+"y": 260
+},
+"ftree_plum_winter_2": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 496,
+"y": 260
+},
+"furnace_lit": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 707,
+"y": 399
+},
+"g_arrow_down": {
+"h": 10,
+"sheet": "ui/ui",
+"w": 10,
+"x": 142,
+"y": 137
+},
+"g_arrow_left": {
+"h": 10,
+"sheet": "ui/ui",
+"w": 10,
+"x": 153,
+"y": 137
+},
+"g_arrow_right": {
+"h": 10,
+"sheet": "ui/ui",
+"w": 10,
+"x": 164,
+"y": 137
+},
+"g_arrow_up": {
+"h": 10,
+"sheet": "ui/ui",
+"w": 10,
+"x": 175,
+"y": 137
+},
+"g_check_off": {
+"h": 10,
+"sheet": "ui/ui",
+"w": 10,
+"x": 186,
+"y": 137
+},
+"g_check_on": {
+"h": 10,
+"sheet": "ui/ui",
+"w": 10,
+"x": 197,
+"y": 137
+},
+"g_close": {
+"h": 10,
+"sheet": "ui/ui",
+"w": 10,
+"x": 208,
+"y": 137
+},
+"g_gift": {
+"h": 10,
+"sheet": "ui/ui",
+"w": 10,
+"x": 219,
+"y": 137
+},
+"g_knob": {
+"h": 10,
+"sheet": "ui/ui",
+"w": 10,
+"x": 230,
+"y": 137
+},
+"g_lock": {
+"h": 10,
+"sheet": "ui/ui",
+"w": 10,
+"x": 241,
+"y": 137
+},
+"g_talk": {
+"h": 10,
+"sheet": "ui/ui",
+"w": 10,
+"x": 1,
+"y": 150
+},
+"greenhouse": {
+"h": 72,
+"sheet": "sprites/objects",
+"w": 96,
+"x": 1,
+"y": 138
+},
+"greenhouse_ruin": {
+"h": 72,
+"sheet": "sprites/objects",
+"w": 96,
+"x": 98,
+"y": 138
+},
+"heart_empty": {
+"h": 8,
+"sheet": "ui/ui",
+"w": 9,
+"x": 29,
+"y": 150
+},
+"heart_full": {
+"h": 8,
+"sheet": "ui/ui",
+"w": 9,
+"x": 39,
+"y": 150
+},
+"hospital_bed": {
+"h": 34,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 315,
+"y": 358
+},
+"house_1": {
+"h": 70,
+"sheet": "sprites/objects",
+"w": 80,
+"x": 406,
+"y": 138
+},
+"house_2": {
+"h": 74,
+"sheet": "sprites/objects",
+"w": 96,
+"x": 728,
+"y": 1
+},
+"house_3": {
+"h": 82,
+"sheet": "sprites/objects",
+"w": 112,
+"x": 195,
+"y": 1
+},
+"joy_base": {
+"h": 56,
+"sheet": "ui/ui",
+"w": 56,
+"x": 1,
+"y": 1
+},
+"joy_knob": {
+"h": 26,
+"sheet": "ui/ui",
+"w": 26,
+"x": 178,
+"y": 58
+},
+"kitchen": {
+"h": 40,
+"sheet": "sprites/objects",
+"w": 48,
+"x": 940,
+"y": 309
+},
+"ladder_down": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 724,
+"y": 399
+},
+"ladder_up": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 741,
+"y": 399
+},
+"lamppost": {
+"h": 40,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 199,
+"y": 358
+},
+"logo": {
+"h": 49,
+"sheet": "ui/ui",
+"w": 158,
+"x": 58,
+"y": 1
+},
+"mailbox": {
+"h": 24,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 103,
+"y": 399
+},
+"mine_entrance": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 48,
+"x": 795,
+"y": 138
+},
+"mine_rock_1": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 758,
+"y": 399
+},
+"mine_rock_2": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 775,
+"y": 399
+},
+"mine_rock_3": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 792,
+"y": 399
+},
+"node_brumite": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 809,
+"y": 399
+},
+"node_coal": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 826,
+"y": 399
+},
+"node_copper": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 843,
+"y": 399
+},
+"node_gem": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 860,
+"y": 399
+},
+"node_iron": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 877,
+"y": 399
+},
+"node_silver": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 894,
+"y": 399
+},
+"notice_board": {
+"h": 34,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 348,
+"y": 358
+},
+"p_chip": {
+"h": 3,
+"sheet": "ui/ui",
+"w": 3,
+"x": 162,
+"y": 150
+},
+"p_drop": {
+"h": 3,
+"sheet": "ui/ui",
+"w": 2,
+"x": 178,
+"y": 150
+},
+"p_dust": {
+"h": 4,
+"sheet": "ui/ui",
+"w": 4,
+"x": 151,
+"y": 150
+},
+"p_frost": {
+"h": 6,
+"sheet": "ui/ui",
+"w": 6,
+"x": 86,
+"y": 150
+},
+"p_heart": {
+"h": 5,
+"sheet": "ui/ui",
+"w": 5,
+"x": 121,
+"y": 150
+},
+"p_leaf_a": {
+"h": 4,
+"sheet": "ui/ui",
+"w": 5,
+"x": 139,
+"y": 150
+},
+"p_leaf_b": {
+"h": 4,
+"sheet": "ui/ui",
+"w": 5,
+"x": 145,
+"y": 150
+},
+"p_note": {
+"h": 6,
+"sheet": "ui/ui",
+"w": 4,
+"x": 113,
+"y": 150
+},
+"p_petal": {
+"h": 3,
+"sheet": "ui/ui",
+"w": 3,
+"x": 166,
+"y": 150
+},
+"p_rain": {
+"h": 6,
+"sheet": "ui/ui",
+"w": 2,
+"x": 118,
+"y": 150
+},
+"p_smoke": {
+"h": 5,
+"sheet": "ui/ui",
+"w": 5,
+"x": 127,
+"y": 150
+},
+"p_snow": {
+"h": 3,
+"sheet": "ui/ui",
+"w": 3,
+"x": 170,
+"y": 150
+},
+"p_sparkle": {
+"h": 5,
+"sheet": "ui/ui",
+"w": 5,
+"x": 133,
+"y": 150
+},
+"p_splash": {
+"h": 3,
+"sheet": "ui/ui",
+"w": 5,
+"x": 156,
+"y": 150
+},
+"p_wood": {
+"h": 3,
+"sheet": "ui/ui",
+"w": 3,
+"x": 174,
+"y": 150
+},
+"panel": {
+"h": 24,
+"sheet": "ui/ui",
+"w": 24,
+"x": 205,
+"y": 58
+},
+"panel_blue": {
+"h": 24,
+"sheet": "ui/ui",
+"w": 24,
+"x": 230,
+"y": 58
+},
+"panel_dark": {
+"h": 24,
+"sheet": "ui/ui",
+"w": 24,
+"x": 1,
+"y": 95
+},
+"panel_inset": {
+"h": 24,
+"sheet": "ui/ui",
+"w": 24,
+"x": 26,
+"y": 95
+},
+"ribbon_amber": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 911,
+"y": 399
+},
+"ribbon_red": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 928,
+"y": 399
+},
+"ribbon_sky": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 945,
+"y": 399
+},
+"rock_big": {
+"h": 28,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 612,
+"y": 358
+},
+"rock_small": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 962,
+"y": 399
+},
+"rock_small_2": {
+"h": 14,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 188,
+"y": 424
+},
+"scarecrow_big": {
+"h": 32,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 496,
+"y": 358
+},
+"season_autumn": {
+"h": 12,
+"sheet": "ui/ui",
+"w": 12,
+"x": 181,
+"y": 120
+},
+"season_spring": {
+"h": 12,
+"sheet": "ui/ui",
+"w": 12,
+"x": 194,
+"y": 120
+},
+"season_summer": {
+"h": 12,
+"sheet": "ui/ui",
+"w": 12,
+"x": 207,
+"y": 120
+},
+"season_winter": {
+"h": 12,
+"sheet": "ui/ui",
+"w": 12,
+"x": 220,
+"y": 120
+},
+"shadow": {
+"h": 6,
+"sheet": "ui/ui",
+"w": 14,
+"x": 71,
+"y": 150
+},
+"shelf_books": {
+"h": 40,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 1,
+"y": 358
+},
+"shelf_fish": {
+"h": 40,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 34,
+"y": 358
+},
+"shelf_med": {
+"h": 40,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 67,
+"y": 358
+},
+"shelf_ranch": {
+"h": 40,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 100,
+"y": 358
+},
+"shelf_store": {
+"h": 40,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 133,
+"y": 358
+},
+"shelf_tools": {
+"h": 40,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 166,
+"y": 358
+},
+"shipping_bin": {
+"h": 28,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 645,
+"y": 358
+},
+"silo": {
+"h": 72,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 276,
+"y": 138
+},
+"skill_combat": {
+"h": 12,
+"sheet": "ui/ui",
+"w": 12,
+"x": 233,
+"y": 120
+},
+"skill_farming": {
+"h": 12,
+"sheet": "ui/ui",
+"w": 12,
+"x": 1,
+"y": 137
+},
+"skill_fishing": {
+"h": 12,
+"sheet": "ui/ui",
+"w": 12,
+"x": 14,
+"y": 137
+},
+"skill_foraging": {
+"h": 12,
+"sheet": "ui/ui",
+"w": 12,
+"x": 27,
+"y": 137
+},
+"skill_husbandry": {
+"h": 12,
+"sheet": "ui/ui",
+"w": 12,
+"x": 40,
+"y": 137
+},
+"skill_mining": {
+"h": 12,
+"sheet": "ui/ui",
+"w": 12,
+"x": 53,
+"y": 137
+},
+"slash": {
+"h": 28,
+"sheet": "ui/ui",
+"w": 28,
+"x": 149,
+"y": 58
+},
+"slot": {
+"h": 20,
+"sheet": "ui/ui",
+"w": 20,
+"x": 51,
+"y": 95
+},
+"slot_selected": {
+"h": 20,
+"sheet": "ui/ui",
+"w": 20,
+"x": 72,
+"y": 95
+},
+"snowman": {
+"h": 28,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 678,
+"y": 358
+},
+"stall_blue": {
+"h": 44,
+"sheet": "sprites/objects",
+"w": 48,
+"x": 743,
+"y": 309
+},
+"stall_red": {
+"h": 44,
+"sheet": "sprites/objects",
+"w": 48,
+"x": 792,
+"y": 309
+},
+"star_gold": {
+"h": 7,
+"sheet": "ui/ui",
+"w": 7,
+"x": 49,
+"y": 150
+},
+"star_silver": {
+"h": 7,
+"sheet": "ui/ui",
+"w": 7,
+"x": 57,
+"y": 150
+},
+"stool": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 979,
+"y": 399
+},
+"straw_pile": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 996,
+"y": 399
+},
+"stump_birch": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 1,
+"y": 424
+},
+"stump_oak": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 18,
+"y": 424
+},
+"stump_pine": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 35,
+"y": 424
+},
+"tab_off": {
+"h": 16,
+"sheet": "ui/ui",
+"w": 24,
+"x": 193,
+"y": 95
+},
+"tab_on": {
+"h": 16,
+"sheet": "ui/ui",
+"w": 24,
+"x": 218,
+"y": 95
+},
+"tall_grass": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 52,
+"y": 424
+},
+"target": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 69,
+"y": 424
+},
+"tile_bad": {
+"h": 16,
+"sheet": "ui/ui",
+"w": 16,
+"x": 1,
+"y": 120
+},
+"tile_ok": {
+"h": 16,
+"sheet": "ui/ui",
+"w": 16,
+"x": 18,
+"y": 120
+},
+"touch_action": {
+"h": 36,
+"sheet": "ui/ui",
+"w": 36,
+"x": 217,
+"y": 1
+},
+"touch_bag": {
+"h": 36,
+"sheet": "ui/ui",
+"w": 36,
+"x": 1,
+"y": 58
+},
+"touch_cancel": {
+"h": 36,
+"sheet": "ui/ui",
+"w": 36,
+"x": 38,
+"y": 58
+},
+"touch_menu": {
+"h": 36,
+"sheet": "ui/ui",
+"w": 36,
+"x": 75,
+"y": 58
+},
+"touch_tool": {
+"h": 36,
+"sheet": "ui/ui",
+"w": 36,
+"x": 112,
+"y": 58
+},
+"treasure_closed": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 86,
+"y": 424
+},
+"treasure_open": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 103,
+"y": 424
+},
+"tree_birch_autumn_0": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 529,
+"y": 260
+},
+"tree_birch_autumn_1": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 562,
+"y": 260
+},
+"tree_birch_autumn_2": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 595,
+"y": 260
+},
+"tree_birch_spring_0": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 628,
+"y": 260
+},
+"tree_birch_spring_1": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 661,
+"y": 260
+},
+"tree_birch_spring_2": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 694,
+"y": 260
+},
+"tree_birch_summer_0": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 727,
+"y": 260
+},
+"tree_birch_summer_1": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 760,
+"y": 260
+},
+"tree_birch_summer_2": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 793,
+"y": 260
+},
+"tree_birch_winter_0": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 826,
+"y": 260
+},
+"tree_birch_winter_1": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 859,
+"y": 260
+},
+"tree_birch_winter_2": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 892,
+"y": 260
+},
+"tree_oak_autumn_0": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 925,
+"y": 260
+},
+"tree_oak_autumn_1": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 958,
+"y": 260
+},
+"tree_oak_autumn_2": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 991,
+"y": 260
+},
+"tree_oak_spring_0": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 1,
+"y": 309
+},
+"tree_oak_spring_1": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 34,
+"y": 309
+},
+"tree_oak_spring_2": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 67,
+"y": 309
+},
+"tree_oak_summer_0": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 100,
+"y": 309
+},
+"tree_oak_summer_1": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 133,
+"y": 309
+},
+"tree_oak_summer_2": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 166,
+"y": 309
+},
+"tree_oak_winter_0": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 199,
+"y": 309
+},
+"tree_oak_winter_1": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 232,
+"y": 309
+},
+"tree_oak_winter_2": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 265,
+"y": 309
+},
+"tree_pine_autumn_0": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 298,
+"y": 309
+},
+"tree_pine_autumn_1": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 331,
+"y": 309
+},
+"tree_pine_autumn_2": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 364,
+"y": 309
+},
+"tree_pine_spring_0": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 397,
+"y": 309
+},
+"tree_pine_spring_1": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 430,
+"y": 309
+},
+"tree_pine_spring_2": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 463,
+"y": 309
+},
+"tree_pine_summer_0": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 496,
+"y": 309
+},
+"tree_pine_summer_1": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 529,
+"y": 309
+},
+"tree_pine_summer_2": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 562,
+"y": 309
+},
+"tree_pine_winter_0": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 595,
+"y": 309
+},
+"tree_pine_winter_1": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 628,
+"y": 309
+},
+"tree_pine_winter_2": {
+"h": 48,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 661,
+"y": 309
+},
+"trough_empty": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 420,
+"y": 399
+},
+"trough_full": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 453,
+"y": 399
+},
+"weather_harp": {
+"h": 40,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 216,
+"y": 358
+},
+"weather_rain": {
+"h": 12,
+"sheet": "ui/ui",
+"w": 12,
+"x": 66,
+"y": 137
+},
+"weather_snow": {
+"h": 12,
+"sheet": "ui/ui",
+"w": 12,
+"x": 79,
+"y": 137
+},
+"weather_storm": {
+"h": 12,
+"sheet": "ui/ui",
+"w": 12,
+"x": 92,
+"y": 137
+},
+"weather_sun": {
+"h": 12,
+"sheet": "ui/ui",
+"w": 12,
+"x": 105,
+"y": 137
+},
+"weather_wind": {
+"h": 12,
+"sheet": "ui/ui",
+"w": 12,
+"x": 118,
+"y": 137
+},
+"weed_0": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 120,
+"y": 424
+},
+"weed_1": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 137,
+"y": 424
+},
+"weed_2": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 154,
+"y": 424
+},
+"well": {
+"h": 44,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 907,
+"y": 309
+},
+"window_in": {
+"h": 16,
+"sheet": "sprites/objects",
+"w": 16,
+"x": 171,
+"y": 424
+},
+"workbench": {
+"h": 24,
+"sheet": "sprites/objects",
+"w": 32,
+"x": 794,
+"y": 358
+}
+}

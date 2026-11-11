@@ -1,0 +1,1851 @@
+{
+ "amethyst": {
+  "cat": "mineral",
+  "icon": 139,
+  "price": 110
+ },
+ "ammonite": {
+  "cat": "artifact",
+  "desc": true,
+  "icon": 228,
+  "price": 180
+ },
+ "apple": {
+  "cat": "fruit",
+  "energy": 25,
+  "icon": 80,
+  "price": 100,
+  "season": "autumn"
+ },
+ "apple_tart": {
+  "buff": {
+   "amount": 2,
+   "minutes": 600,
+   "stat": "luck"
+  },
+  "cat": "dish",
+  "energy": 100,
+  "health": 30,
+  "icon": 252,
+  "price": 420
+ },
+ "armchair": {
+  "buy": 600,
+  "cat": "furniture",
+  "icon": 200,
+  "place": "armchair",
+  "price": 90
+ },
+ "axe_1": {
+  "cat": "tool",
+  "icon": 8,
+  "level": 1,
+  "price": 0,
+  "stack": 1,
+  "tool": "axe"
+ },
+ "axe_2": {
+  "cat": "tool",
+  "icon": 9,
+  "level": 2,
+  "price": 0,
+  "stack": 1,
+  "tool": "axe"
+ },
+ "axe_3": {
+  "cat": "tool",
+  "icon": 10,
+  "level": 3,
+  "price": 0,
+  "stack": 1,
+  "tool": "axe"
+ },
+ "axe_4": {
+  "cat": "tool",
+  "icon": 11,
+  "level": 4,
+  "price": 0,
+  "stack": 1,
+  "tool": "axe"
+ },
+ "bait": {
+  "buy": 6,
+  "cat": "misc",
+  "icon": 167,
+  "price": 2
+ },
+ "barbel": {
+  "cat": "fish",
+  "energy": 10,
+  "icon": 87,
+  "price": 60
+ },
+ "bean": {
+  "cat": "crop",
+  "energy": 7,
+  "icon": 47,
+  "price": 36,
+  "season": "summer"
+ },
+ "beehive": {
+  "cat": "craftable",
+  "icon": 188,
+  "place": "beehive",
+  "price": 90
+ },
+ "beet": {
+  "cat": "crop",
+  "energy": 14,
+  "icon": 55,
+  "price": 70,
+  "season": "autumn"
+ },
+ "bell_charm": {
+  "buff": {
+   "amount": 2,
+   "minutes": 600,
+   "stat": "luck"
+  },
+  "cat": "dish",
+  "icon": 170,
+  "price": 80
+ },
+ "bell_clapper": {
+  "cat": "artifact",
+  "desc": true,
+  "icon": 220,
+  "price": 120
+ },
+ "belltulip": {
+  "cat": "crop",
+  "energy": 19,
+  "icon": 39,
+  "price": 96,
+  "season": "spring"
+ },
+ "birdhouse": {
+  "cat": "craftable",
+  "icon": 196,
+  "place": "birdhouse",
+  "price": 20
+ },
+ "blackberry": {
+  "cat": "forage",
+  "energy": 10,
+  "icon": 116,
+  "price": 24,
+  "season": "summer"
+ },
+ "bookshelf": {
+  "buy": 800,
+  "cat": "furniture",
+  "icon": 201,
+  "place": "bookshelf",
+  "price": 120
+ },
+ "bouquet": {
+  "buy": 400,
+  "cat": "misc",
+  "icon": 174,
+  "price": 100
+ },
+ "braided_ring": {
+  "buy": 5000,
+  "cat": "misc",
+  "icon": 175,
+  "price": 500
+ },
+ "bread": {
+  "cat": "dish",
+  "energy": 45,
+  "health": 10,
+  "icon": 232,
+  "price": 100
+ },
+ "bream": {
+  "cat": "fish",
+  "energy": 8,
+  "icon": 92,
+  "price": 36
+ },
+ "butter": {
+  "cat": "artisan",
+  "energy": 15,
+  "icon": 157,
+  "price": 170
+ },
+ "cabinet": {
+  "buy": 700,
+  "cat": "furniture",
+  "icon": 202,
+  "place": "cabinet",
+  "price": 120
+ },
+ "can_1": {
+  "cat": "tool",
+  "icon": 4,
+  "level": 1,
+  "price": 0,
+  "stack": 1,
+  "tool": "can"
+ },
+ "can_2": {
+  "cat": "tool",
+  "icon": 5,
+  "level": 2,
+  "price": 0,
+  "stack": 1,
+  "tool": "can"
+ },
+ "can_3": {
+  "cat": "tool",
+  "icon": 6,
+  "level": 3,
+  "price": 0,
+  "stack": 1,
+  "tool": "can"
+ },
+ "can_4": {
+  "cat": "tool",
+  "icon": 7,
+  "level": 4,
+  "price": 0,
+  "stack": 1,
+  "tool": "can"
+ },
+ "carp": {
+  "cat": "fish",
+  "energy": 8,
+  "icon": 93,
+  "price": 42
+ },
+ "carrot": {
+  "cat": "crop",
+  "energy": 12,
+  "icon": 31,
+  "price": 60,
+  "season": "spring"
+ },
+ "catfish": {
+  "cat": "fish",
+  "energy": 25,
+  "icon": 96,
+  "price": 155
+ },
+ "cavefish": {
+  "cat": "fish",
+  "energy": 15,
+  "icon": 106,
+  "price": 90
+ },
+ "cep": {
+  "cat": "forage",
+  "energy": 20,
+  "icon": 120,
+  "price": 84,
+  "season": "autumn"
+ },
+ "chair": {
+  "buy": 150,
+  "cat": "furniture",
+  "icon": 199,
+  "place": "chair",
+  "price": 30
+ },
+ "chanterelle": {
+  "cat": "forage",
+  "energy": 18,
+  "icon": 117,
+  "price": 62,
+  "season": "summer"
+ },
+ "char": {
+  "cat": "fish",
+  "energy": 21,
+  "icon": 95,
+  "price": 130
+ },
+ "cheese": {
+  "cat": "artisan",
+  "energy": 35,
+  "icon": 155,
+  "price": 215
+ },
+ "cheese_galette": {
+  "buff": {
+   "amount": 1,
+   "minutes": 600,
+   "stat": "husbandry"
+  },
+  "cat": "dish",
+  "energy": 90,
+  "health": 35,
+  "icon": 253,
+  "price": 380
+ },
+ "cheese_press": {
+  "cat": "craftable",
+  "icon": 182,
+  "place": "cheese_press",
+  "price": 80
+ },
+ "cherry": {
+  "cat": "fruit",
+  "energy": 17,
+  "icon": 76,
+  "price": 70,
+  "season": "spring"
+ },
+ "cherry_clafoutis": {
+  "buff": {
+   "amount": 1,
+   "minutes": 480,
+   "stat": "luck"
+  },
+  "cat": "dish",
+  "energy": 90,
+  "health": 30,
+  "icon": 237,
+  "price": 380
+ },
+ "chest": {
+  "cat": "craftable",
+  "icon": 176,
+  "place": "chest",
+  "price": 20
+ },
+ "chestnut": {
+  "cat": "forage",
+  "energy": 12,
+  "icon": 119,
+  "price": 36,
+  "season": "autumn"
+ },
+ "churn": {
+  "cat": "craftable",
+  "icon": 183,
+  "place": "churn",
+  "price": 80
+ },
+ "clay": {
+  "cat": "resource",
+  "icon": 130,
+  "price": 12
+ },
+ "clay_whistle": {
+  "cat": "artifact",
+  "desc": true,
+  "icon": 221,
+  "price": 90
+ },
+ "clock": {
+  "buy": 1500,
+  "cat": "furniture",
+  "icon": 210,
+  "place": "clock",
+  "price": 160
+ },
+ "cloth": {
+  "cat": "artisan",
+  "icon": 158,
+  "price": 380
+ },
+ "coal": {
+  "buy": 45,
+  "cat": "resource",
+  "icon": 131,
+  "price": 15
+ },
+ "compost": {
+  "buy": 40,
+  "cat": "fertilizer",
+  "icon": 164,
+  "price": 8
+ },
+ "conger": {
+  "cat": "fish",
+  "energy": 23,
+  "icon": 104,
+  "price": 142
+ },
+ "crab": {
+  "cat": "fish",
+  "energy": 12,
+  "icon": 110,
+  "pot": true,
+  "price": 62
+ },
+ "crab_pot": {
+  "buy": 350,
+  "cat": "craftable",
+  "icon": 190,
+  "place": "crab_pot",
+  "price": 40
+ },
+ "crayfish": {
+  "cat": "fish",
+  "energy": 10,
+  "icon": 109,
+  "pot": true,
+  "price": 50
+ },
+ "crepes": {
+  "buff": {
+   "amount": 1,
+   "minutes": 300,
+   "stat": "speed"
+  },
+  "cat": "dish",
+  "energy": 55,
+  "health": 15,
+  "icon": 233,
+  "price": 170
+ },
+ "dandelion": {
+  "cat": "forage",
+  "energy": 8,
+  "icon": 113,
+  "price": 18,
+  "season": "spring"
+ },
+ "duck_egg": {
+  "cat": "animal",
+  "energy": 14,
+  "icon": 149,
+  "price": 70
+ },
+ "eel": {
+  "cat": "fish",
+  "energy": 15,
+  "icon": 89,
+  "price": 95
+ },
+ "egg": {
+  "cat": "animal",
+  "energy": 10,
+  "icon": 148,
+  "price": 40
+ },
+ "eggplant": {
+  "cat": "crop",
+  "energy": 21,
+  "icon": 45,
+  "price": 106,
+  "season": "summer"
+ },
+ "elderflower": {
+  "cat": "forage",
+  "icon": 118,
+  "price": 34,
+  "season": "summer"
+ },
+ "emerald": {
+  "cat": "mineral",
+  "icon": 141,
+  "price": 220
+ },
+ "engraved_stone": {
+  "cat": "artifact",
+  "desc": true,
+  "icon": 223,
+  "price": 140
+ },
+ "feather": {
+  "cat": "animal",
+  "icon": 150,
+  "price": 55
+ },
+ "fence": {
+  "cat": "craftable",
+  "icon": 191,
+  "place": "fence",
+  "price": 2
+ },
+ "fiber": {
+  "cat": "resource",
+  "icon": 128,
+  "price": 2
+ },
+ "field_snack": {
+  "cat": "dish",
+  "energy": 30,
+  "icon": 168,
+  "price": 30
+ },
+ "fisher_stew": {
+  "buff": {
+   "amount": 3,
+   "minutes": 480,
+   "stat": "fishing"
+  },
+  "cat": "dish",
+  "energy": 100,
+  "health": 45,
+  "icon": 245,
+  "price": 380
+ },
+ "floor_1": {
+  "buy": 200,
+  "cat": "decor",
+  "floor": 0,
+  "icon": 216,
+  "price": 20
+ },
+ "floor_2": {
+  "buy": 300,
+  "cat": "decor",
+  "floor": 1,
+  "icon": 217,
+  "price": 20
+ },
+ "floor_3": {
+  "buy": 300,
+  "cat": "decor",
+  "floor": 2,
+  "icon": 218,
+  "price": 20
+ },
+ "floor_4": {
+  "buy": 300,
+  "cat": "decor",
+  "floor": 3,
+  "icon": 219,
+  "price": 20
+ },
+ "flour": {
+  "buy": 40,
+  "cat": "resource",
+  "icon": 133,
+  "price": 15
+ },
+ "flower_pot": {
+  "cat": "furniture",
+  "icon": 209,
+  "place": "flower_pot",
+  "price": 30
+ },
+ "fossil_fern": {
+  "cat": "artifact",
+  "desc": true,
+  "icon": 224,
+  "price": 160
+ },
+ "fried_gudgeon": {
+  "buff": {
+   "amount": 1,
+   "minutes": 360,
+   "stat": "speed"
+  },
+  "cat": "dish",
+  "energy": 70,
+  "health": 25,
+  "icon": 242,
+  "price": 260
+ },
+ "frost_minnow": {
+  "cat": "fish",
+  "energy": 20,
+  "icon": 107,
+  "price": 125
+ },
+ "frostberry": {
+  "cat": "crop",
+  "energy": 12,
+  "icon": 75,
+  "price": 60,
+  "season": "winter"
+ },
+ "frostberry_tart": {
+  "buff": {
+   "amount": 3,
+   "minutes": 600,
+   "stat": "luck"
+  },
+  "cat": "dish",
+  "energy": 100,
+  "health": 35,
+  "icon": 257,
+  "price": 480
+ },
+ "furnace": {
+  "cat": "craftable",
+  "icon": 181,
+  "place": "furnace",
+  "price": 50
+ },
+ "garden_stew": {
+  "buff": {
+   "amount": 20,
+   "minutes": 600,
+   "stat": "max_energy"
+  },
+  "cat": "dish",
+  "energy": 105,
+  "health": 50,
+  "icon": 251,
+  "price": 300
+ },
+ "glass_bead": {
+  "cat": "artifact",
+  "desc": true,
+  "icon": 226,
+  "price": 100
+ },
+ "glowfin": {
+  "cat": "fish",
+  "energy": 37,
+  "icon": 108,
+  "price": 225
+ },
+ "goat_cheese": {
+  "cat": "artisan",
+  "energy": 40,
+  "icon": 156,
+  "price": 295
+ },
+ "goat_milk": {
+  "cat": "animal",
+  "energy": 24,
+  "icon": 152,
+  "price": 130
+ },
+ "grape": {
+  "cat": "crop",
+  "energy": 11,
+  "icon": 59,
+  "price": 55,
+  "season": "autumn"
+ },
+ "grilled_fish": {
+  "cat": "dish",
+  "energy": 40,
+  "health": 15,
+  "icon": 231,
+  "price": 90
+ },
+ "grilled_sardines": {
+  "cat": "dish",
+  "energy": 50,
+  "health": 20,
+  "icon": 243,
+  "price": 120
+ },
+ "gudgeon": {
+  "cat": "fish",
+  "energy": 8,
+  "icon": 84,
+  "price": 25
+ },
+ "hay": {
+  "buy": 25,
+  "cat": "resource",
+  "icon": 132,
+  "price": 5
+ },
+ "hazelnut": {
+  "cat": "forage",
+  "energy": 10,
+  "icon": 121,
+  "price": 32,
+  "season": "autumn"
+ },
+ "hazelnut_trout": {
+  "buff": {
+   "amount": 2,
+   "minutes": 480,
+   "stat": "fishing"
+  },
+  "cat": "dish",
+  "energy": 85,
+  "health": 35,
+  "icon": 244,
+  "price": 350
+ },
+ "healing_salve": {
+  "cat": "dish",
+  "health": 50,
+  "icon": 169,
+  "price": 60
+ },
+ "herring": {
+  "cat": "fish",
+  "energy": 8,
+  "icon": 99,
+  "price": 40
+ },
+ "hoe_1": {
+  "cat": "tool",
+  "icon": 0,
+  "level": 1,
+  "price": 0,
+  "stack": 1,
+  "tool": "hoe"
+ },
+ "hoe_2": {
+  "cat": "tool",
+  "icon": 1,
+  "level": 2,
+  "price": 0,
+  "stack": 1,
+  "tool": "hoe"
+ },
+ "hoe_3": {
+  "cat": "tool",
+  "icon": 2,
+  "level": 3,
+  "price": 0,
+  "stack": 1,
+  "tool": "hoe"
+ },
+ "hoe_4": {
+  "cat": "tool",
+  "icon": 3,
+  "level": 4,
+  "price": 0,
+  "stack": 1,
+  "tool": "hoe"
+ },
+ "holly": {
+  "cat": "forage",
+  "icon": 122,
+  "price": 44,
+  "season": "winter"
+ },
+ "honey": {
+  "cat": "animal",
+  "energy": 20,
+  "icon": 154,
+  "price": 110
+ },
+ "honeymelon": {
+  "cat": "crop",
+  "energy": 52,
+  "icon": 49,
+  "price": 260,
+  "season": "summer"
+ },
+ "ingot_brumite": {
+  "cat": "ingot",
+  "icon": 147,
+  "price": 420
+ },
+ "ingot_copper": {
+  "cat": "ingot",
+  "icon": 144,
+  "price": 70
+ },
+ "ingot_iron": {
+  "cat": "ingot",
+  "icon": 145,
+  "price": 130
+ },
+ "ingot_silver": {
+  "cat": "ingot",
+  "icon": 146,
+  "price": 240
+ },
+ "jam": {
+  "cat": "artisan",
+  "energy": 25,
+  "icon": 160,
+  "price": 150
+ },
+ "juice": {
+  "cat": "artisan",
+  "energy": 30,
+  "icon": 159,
+  "price": 165
+ },
+ "kale": {
+  "cat": "crop",
+  "energy": 13,
+  "icon": 65,
+  "price": 66,
+  "season": "winter"
+ },
+ "lambs_lettuce": {
+  "cat": "crop",
+  "energy": 6,
+  "icon": 67,
+  "price": 30,
+  "season": "winter"
+ },
+ "lamp": {
+  "buy": 250,
+  "cat": "furniture",
+  "icon": 204,
+  "place": "lamp",
+  "price": 40
+ },
+ "lantern": {
+  "cat": "craftable",
+  "icon": 194,
+  "place": "lantern",
+  "price": 25
+ },
+ "lavender": {
+  "cat": "crop",
+  "energy": 16,
+  "icon": 51,
+  "price": 82,
+  "season": "summer"
+ },
+ "lavender_tea": {
+  "buff": {
+   "amount": 2,
+   "minutes": 480,
+   "stat": "luck"
+  },
+  "cat": "dish",
+  "energy": 50,
+  "health": 20,
+  "icon": 241,
+  "price": 250
+ },
+ "ledger_page": {
+  "cat": "artifact",
+  "desc": true,
+  "icon": 229,
+  "price": 150
+ },
+ "leek": {
+  "cat": "crop",
+  "energy": 18,
+  "icon": 57,
+  "price": 92,
+  "season": "autumn"
+ },
+ "leek_gratin": {
+  "buff": {
+   "amount": 2,
+   "minutes": 480,
+   "stat": "defense"
+  },
+  "cat": "dish",
+  "energy": 100,
+  "health": 45,
+  "icon": 250,
+  "price": 430
+ },
+ "loom": {
+  "cat": "craftable",
+  "icon": 184,
+  "place": "loom",
+  "price": 100
+ },
+ "mackerel": {
+  "cat": "fish",
+  "energy": 8,
+  "icon": 100,
+  "price": 50
+ },
+ "medlar": {
+  "cat": "fruit",
+  "energy": 22,
+  "icon": 82,
+  "price": 90,
+  "season": "winter"
+ },
+ "melon_frappe": {
+  "buff": {
+   "amount": 1,
+   "minutes": 480,
+   "stat": "speed"
+  },
+  "cat": "dish",
+  "energy": 110,
+  "health": 30,
+  "icon": 240,
+  "price": 460
+ },
+ "milk": {
+  "cat": "animal",
+  "energy": 20,
+  "icon": 151,
+  "price": 90
+ },
+ "miner_stew": {
+  "buff": {
+   "amount": 3,
+   "minutes": 480,
+   "stat": "mining"
+  },
+  "cat": "dish",
+  "energy": 90,
+  "health": 60,
+  "icon": 258,
+  "price": 300
+ },
+ "mistmoon": {
+  "cat": "fish",
+  "energy": 108,
+  "icon": 97,
+  "price": 650
+ },
+ "moonstone": {
+  "cat": "mineral",
+  "icon": 143,
+  "price": 480
+ },
+ "morel": {
+  "cat": "forage",
+  "energy": 18,
+  "icon": 115,
+  "price": 70,
+  "season": "spring"
+ },
+ "mushroom_pan": {
+  "buff": {
+   "amount": 2,
+   "minutes": 480,
+   "stat": "foraging"
+  },
+  "cat": "dish",
+  "energy": 80,
+  "health": 30,
+  "icon": 247,
+  "price": 330
+ },
+ "nut_oil": {
+  "cat": "artisan",
+  "icon": 163,
+  "price": 190
+ },
+ "old_coin": {
+  "cat": "artifact",
+  "desc": true,
+  "icon": 225,
+  "price": 110
+ },
+ "omelette": {
+  "cat": "dish",
+  "energy": 45,
+  "health": 15,
+  "icon": 230,
+  "price": 110
+ },
+ "ore_brumite": {
+  "cat": "mineral",
+  "icon": 137,
+  "price": 60
+ },
+ "ore_copper": {
+  "cat": "mineral",
+  "icon": 134,
+  "price": 10
+ },
+ "ore_iron": {
+  "cat": "mineral",
+  "icon": 135,
+  "price": 18
+ },
+ "ore_silver": {
+  "cat": "mineral",
+  "icon": 136,
+  "price": 32
+ },
+ "painting": {
+  "buy": 900,
+  "cat": "furniture",
+  "icon": 205,
+  "place": "painting",
+  "price": 100
+ },
+ "parsnip": {
+  "cat": "crop",
+  "energy": 17,
+  "icon": 69,
+  "price": 86,
+  "season": "winter"
+ },
+ "parsnip_gratin": {
+  "buff": {
+   "amount": 1,
+   "minutes": 600,
+   "stat": "attack"
+  },
+  "cat": "dish",
+  "energy": 95,
+  "health": 40,
+  "icon": 256,
+  "price": 400
+ },
+ "pea": {
+  "cat": "crop",
+  "energy": 6,
+  "icon": 35,
+  "price": 32,
+  "season": "spring"
+ },
+ "perch": {
+  "cat": "fish",
+  "energy": 8,
+  "icon": 86,
+  "price": 45
+ },
+ "pet_bed": {
+  "buy": 300,
+  "cat": "furniture",
+  "icon": 211,
+  "place": "pet_bed",
+  "price": 40
+ },
+ "pick_1": {
+  "cat": "tool",
+  "icon": 12,
+  "level": 1,
+  "price": 0,
+  "stack": 1,
+  "tool": "pick"
+ },
+ "pick_2": {
+  "cat": "tool",
+  "icon": 13,
+  "level": 2,
+  "price": 0,
+  "stack": 1,
+  "tool": "pick"
+ },
+ "pick_3": {
+  "cat": "tool",
+  "icon": 14,
+  "level": 3,
+  "price": 0,
+  "stack": 1,
+  "tool": "pick"
+ },
+ "pick_4": {
+  "cat": "tool",
+  "icon": 15,
+  "level": 4,
+  "price": 0,
+  "stack": 1,
+  "tool": "pick"
+ },
+ "pickles": {
+  "cat": "artisan",
+  "energy": 22,
+  "icon": 161,
+  "price": 140
+ },
+ "pike": {
+  "cat": "fish",
+  "energy": 19,
+  "icon": 88,
+  "price": 115
+ },
+ "pike_butter": {
+  "buff": {
+   "amount": 2,
+   "minutes": 480,
+   "stat": "attack"
+  },
+  "cat": "dish",
+  "energy": 95,
+  "health": 45,
+  "icon": 246,
+  "price": 400
+ },
+ "pinecone": {
+  "cat": "forage",
+  "icon": 123,
+  "price": 26,
+  "season": "winter"
+ },
+ "plant": {
+  "buy": 200,
+  "cat": "furniture",
+  "icon": 206,
+  "place": "plant",
+  "price": 30
+ },
+ "plum": {
+  "cat": "fruit",
+  "energy": 21,
+  "icon": 78,
+  "price": 85,
+  "season": "summer"
+ },
+ "preserve_jar": {
+  "cat": "craftable",
+  "icon": 186,
+  "place": "preserve_jar",
+  "price": 60
+ },
+ "press": {
+  "cat": "craftable",
+  "icon": 185,
+  "place": "press",
+  "price": 100
+ },
+ "pumpkin": {
+  "cat": "crop",
+  "energy": 60,
+  "icon": 53,
+  "price": 300,
+  "season": "autumn"
+ },
+ "pumpkin_veloute": {
+  "buff": {
+   "amount": 2,
+   "minutes": 600,
+   "stat": "farming"
+  },
+  "cat": "dish",
+  "energy": 120,
+  "health": 50,
+  "icon": 249,
+  "price": 520
+ },
+ "quarry_charge": {
+  "cat": "misc",
+  "icon": 172,
+  "price": 30
+ },
+ "quartz": {
+  "cat": "mineral",
+  "icon": 138,
+  "price": 40
+ },
+ "quick_soil": {
+  "buy": 90,
+  "cat": "fertilizer",
+  "icon": 166,
+  "price": 15
+ },
+ "ratatouille": {
+  "buff": {
+   "amount": 30,
+   "minutes": 600,
+   "stat": "max_energy"
+  },
+  "cat": "dish",
+  "energy": 100,
+  "health": 40,
+  "icon": 238,
+  "price": 330
+ },
+ "red_cabbage": {
+  "cat": "crop",
+  "energy": 30,
+  "icon": 61,
+  "price": 150,
+  "season": "autumn"
+ },
+ "return_whistle": {
+  "cat": "misc",
+  "icon": 171,
+  "price": 40
+ },
+ "rich_fertilizer": {
+  "buy": 110,
+  "cat": "fertilizer",
+  "icon": 165,
+  "price": 20
+ },
+ "roach": {
+  "cat": "fish",
+  "energy": 8,
+  "icon": 91,
+  "price": 22
+ },
+ "roast_chestnuts": {
+  "buff": {
+   "amount": 1,
+   "minutes": 300,
+   "stat": "defense"
+  },
+  "cat": "dish",
+  "energy": 50,
+  "health": 15,
+  "icon": 248,
+  "price": 150
+ },
+ "rod_1": {
+  "cat": "tool",
+  "icon": 20,
+  "level": 1,
+  "price": 0,
+  "stack": 1,
+  "tool": "rod"
+ },
+ "rod_2": {
+  "cat": "tool",
+  "icon": 21,
+  "level": 2,
+  "price": 0,
+  "stack": 1,
+  "tool": "rod"
+ },
+ "rod_3": {
+  "cat": "tool",
+  "icon": 22,
+  "level": 3,
+  "price": 0,
+  "stack": 1,
+  "tool": "rod"
+ },
+ "rod_4": {
+  "cat": "tool",
+  "icon": 23,
+  "level": 4,
+  "price": 0,
+  "stack": 1,
+  "tool": "rod"
+ },
+ "rope_ladder": {
+  "cat": "misc",
+  "icon": 173,
+  "price": 50
+ },
+ "ruby": {
+  "cat": "mineral",
+  "icon": 142,
+  "price": 250
+ },
+ "rug": {
+  "buy": 350,
+  "cat": "furniture",
+  "icon": 203,
+  "place": "rug",
+  "price": 50
+ },
+ "rusty_key": {
+  "cat": "artifact",
+  "desc": true,
+  "icon": 222,
+  "price": 80
+ },
+ "saffron": {
+  "cat": "crop",
+  "energy": 38,
+  "icon": 63,
+  "price": 190,
+  "season": "autumn"
+ },
+ "salmon": {
+  "cat": "fish",
+  "energy": 20,
+  "icon": 90,
+  "price": 125
+ },
+ "sap": {
+  "cat": "resource",
+  "icon": 129,
+  "price": 6
+ },
+ "sapling_apple": {
+  "buy": 1800,
+  "cat": "sapling",
+  "icon": 81,
+  "price": 450,
+  "tree": "apple"
+ },
+ "sapling_cherry": {
+  "buy": 1200,
+  "cat": "sapling",
+  "icon": 77,
+  "price": 300,
+  "tree": "cherry"
+ },
+ "sapling_medlar": {
+  "buy": 1500,
+  "cat": "sapling",
+  "icon": 83,
+  "price": 375,
+  "tree": "medlar"
+ },
+ "sapling_plum": {
+  "buy": 1500,
+  "cat": "sapling",
+  "icon": 79,
+  "price": 375,
+  "tree": "plum"
+ },
+ "sardine": {
+  "cat": "fish",
+  "energy": 8,
+  "icon": 98,
+  "price": 28
+ },
+ "scarecrow": {
+  "cat": "craftable",
+  "icon": 177,
+  "place": "scarecrow",
+  "price": 30
+ },
+ "scythe_1": {
+  "cat": "tool",
+  "icon": 16,
+  "level": 1,
+  "price": 0,
+  "stack": 1,
+  "tool": "scythe"
+ },
+ "scythe_2": {
+  "cat": "tool",
+  "icon": 17,
+  "level": 2,
+  "price": 0,
+  "stack": 1,
+  "tool": "scythe"
+ },
+ "scythe_3": {
+  "cat": "tool",
+  "icon": 18,
+  "level": 3,
+  "price": 0,
+  "stack": 1,
+  "tool": "scythe"
+ },
+ "scythe_4": {
+  "cat": "tool",
+  "icon": 19,
+  "level": 4,
+  "price": 0,
+  "stack": 1,
+  "tool": "scythe"
+ },
+ "sea_bass": {
+  "cat": "fish",
+  "energy": 18,
+  "icon": 103,
+  "price": 108
+ },
+ "sea_bream": {
+  "cat": "fish",
+  "energy": 14,
+  "icon": 101,
+  "price": 86
+ },
+ "seaweed": {
+  "cat": "forage",
+  "energy": 8,
+  "icon": 125,
+  "price": 20
+ },
+ "seed_bean": {
+  "buy": 65,
+  "cat": "seed",
+  "crop": "bean",
+  "icon": 46,
+  "price": 32,
+  "season": "summer"
+ },
+ "seed_beet": {
+  "buy": 30,
+  "cat": "seed",
+  "crop": "beet",
+  "icon": 54,
+  "price": 15,
+  "season": "autumn"
+ },
+ "seed_belltulip": {
+  "buy": 40,
+  "cat": "seed",
+  "crop": "belltulip",
+  "icon": 38,
+  "price": 20,
+  "season": "spring"
+ },
+ "seed_carrot": {
+  "buy": 30,
+  "cat": "seed",
+  "crop": "carrot",
+  "icon": 30,
+  "price": 15,
+  "season": "spring"
+ },
+ "seed_eggplant": {
+  "buy": 45,
+  "cat": "seed",
+  "crop": "eggplant",
+  "icon": 44,
+  "price": 22,
+  "season": "summer"
+ },
+ "seed_frostberry": {
+  "buy": 80,
+  "cat": "seed",
+  "crop": "frostberry",
+  "icon": 74,
+  "price": 40,
+  "season": "winter"
+ },
+ "seed_grape": {
+  "buy": 70,
+  "cat": "seed",
+  "crop": "grape",
+  "icon": 58,
+  "price": 35,
+  "season": "autumn"
+ },
+ "seed_honeymelon": {
+  "buy": 90,
+  "cat": "seed",
+  "crop": "honeymelon",
+  "icon": 48,
+  "price": 45,
+  "season": "summer"
+ },
+ "seed_kale": {
+  "buy": 30,
+  "cat": "seed",
+  "crop": "kale",
+  "icon": 64,
+  "price": 15,
+  "season": "winter"
+ },
+ "seed_lambs_lettuce": {
+  "buy": 15,
+  "cat": "seed",
+  "crop": "lambs_lettuce",
+  "icon": 66,
+  "price": 7,
+  "season": "winter"
+ },
+ "seed_lavender": {
+  "buy": 35,
+  "cat": "seed",
+  "crop": "lavender",
+  "icon": 50,
+  "price": 17,
+  "season": "summer"
+ },
+ "seed_leek": {
+  "buy": 40,
+  "cat": "seed",
+  "crop": "leek",
+  "icon": 56,
+  "price": 20,
+  "season": "autumn"
+ },
+ "seed_parsnip": {
+  "buy": 35,
+  "cat": "seed",
+  "crop": "parsnip",
+  "icon": 68,
+  "price": 17,
+  "season": "winter"
+ },
+ "seed_pea": {
+  "buy": 60,
+  "cat": "seed",
+  "crop": "pea",
+  "icon": 34,
+  "price": 30,
+  "season": "spring"
+ },
+ "seed_pumpkin": {
+  "buy": 100,
+  "cat": "seed",
+  "crop": "pumpkin",
+  "icon": 52,
+  "price": 50,
+  "season": "autumn"
+ },
+ "seed_red_cabbage": {
+  "buy": 60,
+  "cat": "seed",
+  "crop": "red_cabbage",
+  "icon": 60,
+  "price": 30,
+  "season": "autumn"
+ },
+ "seed_saffron": {
+  "buy": 80,
+  "cat": "seed",
+  "crop": "saffron",
+  "icon": 62,
+  "price": 40,
+  "season": "autumn"
+ },
+ "seed_snowdrop": {
+  "buy": 30,
+  "cat": "seed",
+  "crop": "snowdrop",
+  "icon": 70,
+  "price": 15,
+  "season": "winter"
+ },
+ "seed_sorter": {
+  "cat": "craftable",
+  "icon": 189,
+  "place": "seed_sorter",
+  "price": 90
+ },
+ "seed_spinach": {
+  "buy": 25,
+  "cat": "seed",
+  "crop": "spinach",
+  "icon": 32,
+  "price": 12,
+  "season": "spring"
+ },
+ "seed_spring_onion": {
+  "buy": 35,
+  "cat": "seed",
+  "crop": "spring_onion",
+  "icon": 36,
+  "price": 17,
+  "season": "spring"
+ },
+ "seed_sunchoke": {
+  "buy": 50,
+  "cat": "seed",
+  "crop": "sunchoke",
+  "icon": 72,
+  "price": 25,
+  "season": "winter"
+ },
+ "seed_tomato": {
+  "buy": 55,
+  "cat": "seed",
+  "crop": "tomato",
+  "icon": 40,
+  "price": 27,
+  "season": "summer"
+ },
+ "seed_turnip": {
+  "buy": 20,
+  "cat": "seed",
+  "crop": "turnip",
+  "icon": 28,
+  "price": 10,
+  "season": "spring"
+ },
+ "seed_zucchini": {
+  "buy": 50,
+  "cat": "seed",
+  "crop": "zucchini",
+  "icon": 42,
+  "price": 25,
+  "season": "summer"
+ },
+ "shell": {
+  "cat": "forage",
+  "icon": 124,
+  "price": 40
+ },
+ "shrimp": {
+  "cat": "fish",
+  "energy": 9,
+  "icon": 111,
+  "pot": true,
+  "price": 45
+ },
+ "sign": {
+  "cat": "craftable",
+  "icon": 195,
+  "place": "sign",
+  "price": 5
+ },
+ "smoked_fish": {
+  "cat": "artisan",
+  "energy": 35,
+  "icon": 162,
+  "price": 185
+ },
+ "smoker": {
+  "cat": "craftable",
+  "icon": 187,
+  "place": "smoker",
+  "price": 90
+ },
+ "snowdrop": {
+  "cat": "crop",
+  "energy": 14,
+  "icon": 71,
+  "price": 72,
+  "season": "winter"
+ },
+ "sole": {
+  "cat": "fish",
+  "energy": 15,
+  "icon": 102,
+  "price": 92
+ },
+ "spinach": {
+  "cat": "crop",
+  "energy": 9,
+  "icon": 33,
+  "price": 46,
+  "season": "spring"
+ },
+ "spring_onion": {
+  "cat": "crop",
+  "energy": 15,
+  "icon": 37,
+  "price": 76,
+  "season": "spring"
+ },
+ "spring_salad": {
+  "buff": {
+   "amount": 1,
+   "minutes": 360,
+   "stat": "foraging"
+  },
+  "cat": "dish",
+  "energy": 60,
+  "health": 20,
+  "icon": 234,
+  "price": 190
+ },
+ "sprinkler_1": {
+  "cat": "craftable",
+  "icon": 178,
+  "place": "sprinkler_1",
+  "price": 60
+ },
+ "sprinkler_2": {
+  "cat": "craftable",
+  "icon": 179,
+  "place": "sprinkler_2",
+  "price": 150
+ },
+ "sprinkler_3": {
+  "cat": "craftable",
+  "icon": 180,
+  "place": "sprinkler_3",
+  "price": 400
+ },
+ "stone": {
+  "cat": "resource",
+  "icon": 127,
+  "price": 4
+ },
+ "stone_bench": {
+  "cat": "craftable",
+  "icon": 197,
+  "place": "stone_bench",
+  "price": 20
+ },
+ "stone_path": {
+  "cat": "craftable",
+  "icon": 193,
+  "place": "stone_path",
+  "price": 1
+ },
+ "stove": {
+  "buy": 1200,
+  "cat": "furniture",
+  "icon": 207,
+  "place": "stove",
+  "price": 150
+ },
+ "sunchoke": {
+  "cat": "crop",
+  "energy": 25,
+  "icon": 73,
+  "price": 126,
+  "season": "winter"
+ },
+ "sunchoke_soup": {
+  "buff": {
+   "amount": 2,
+   "minutes": 600,
+   "stat": "mining"
+  },
+  "cat": "dish",
+  "energy": 100,
+  "health": 45,
+  "icon": 255,
+  "price": 430
+ },
+ "sword_1": {
+  "cat": "tool",
+  "icon": 24,
+  "level": 1,
+  "price": 0,
+  "stack": 1,
+  "tool": "sword"
+ },
+ "sword_2": {
+  "cat": "tool",
+  "icon": 25,
+  "level": 2,
+  "price": 0,
+  "stack": 1,
+  "tool": "sword"
+ },
+ "sword_3": {
+  "cat": "tool",
+  "icon": 26,
+  "level": 3,
+  "price": 0,
+  "stack": 1,
+  "tool": "sword"
+ },
+ "sword_4": {
+  "cat": "tool",
+  "icon": 27,
+  "level": 4,
+  "price": 0,
+  "stack": 1,
+  "tool": "sword"
+ },
+ "table": {
+  "buy": 300,
+  "cat": "furniture",
+  "icon": 198,
+  "place": "table",
+  "price": 60
+ },
+ "tench": {
+  "cat": "fish",
+  "energy": 8,
+  "icon": 94,
+  "price": 52
+ },
+ "tian": {
+  "buff": {
+   "amount": 1,
+   "minutes": 480,
+   "stat": "farming"
+  },
+  "cat": "dish",
+  "energy": 95,
+  "health": 35,
+  "icon": 239,
+  "price": 420
+ },
+ "tin_soldier": {
+  "cat": "artifact",
+  "desc": true,
+  "icon": 227,
+  "price": 130
+ },
+ "tomato": {
+  "cat": "crop",
+  "energy": 10,
+  "icon": 41,
+  "price": 50,
+  "season": "summer"
+ },
+ "topaz": {
+  "cat": "mineral",
+  "icon": 140,
+  "price": 95
+ },
+ "trout": {
+  "cat": "fish",
+  "energy": 9,
+  "icon": 85,
+  "price": 55
+ },
+ "tuna": {
+  "cat": "fish",
+  "energy": 34,
+  "icon": 105,
+  "price": 205
+ },
+ "turnip": {
+  "cat": "crop",
+  "energy": 7,
+  "icon": 29,
+  "price": 38,
+  "season": "spring"
+ },
+ "turnip_soup": {
+  "cat": "dish",
+  "energy": 65,
+  "health": 25,
+  "icon": 235,
+  "price": 200
+ },
+ "wallpaper_1": {
+  "buy": 200,
+  "cat": "decor",
+  "icon": 212,
+  "price": 20,
+  "wallpaper": 0
+ },
+ "wallpaper_2": {
+  "buy": 300,
+  "cat": "decor",
+  "icon": 213,
+  "price": 20,
+  "wallpaper": 1
+ },
+ "wallpaper_3": {
+  "buy": 300,
+  "cat": "decor",
+  "icon": 214,
+  "price": 20,
+  "wallpaper": 2
+ },
+ "wallpaper_4": {
+  "buy": 300,
+  "cat": "decor",
+  "icon": 215,
+  "price": 20,
+  "wallpaper": 3
+ },
+ "whelk": {
+  "cat": "fish",
+  "energy": 6,
+  "icon": 112,
+  "pot": true,
+  "price": 30
+ },
+ "wild_garlic": {
+  "cat": "forage",
+  "energy": 12,
+  "icon": 114,
+  "price": 30,
+  "season": "spring"
+ },
+ "wild_garlic_soup": {
+  "buff": {
+   "amount": 1,
+   "minutes": 360,
+   "stat": "defense"
+  },
+  "cat": "dish",
+  "energy": 55,
+  "health": 25,
+  "icon": 236,
+  "price": 150
+ },
+ "wind_chime": {
+  "cat": "furniture",
+  "icon": 208,
+  "place": "wind_chime",
+  "price": 60
+ },
+ "winter_salad": {
+  "buff": {
+   "amount": 1,
+   "minutes": 480,
+   "stat": "foraging"
+  },
+  "cat": "dish",
+  "energy": 60,
+  "health": 25,
+  "icon": 254,
+  "price": 180
+ },
+ "wood": {
+  "cat": "resource",
+  "icon": 126,
+  "price": 4
+ },
+ "wood_path": {
+  "cat": "craftable",
+  "icon": 192,
+  "place": "wood_path",
+  "price": 1
+ },
+ "wool": {
+  "cat": "animal",
+  "icon": 153,
+  "price": 180
+ },
+ "zucchini": {
+  "cat": "crop",
+  "energy": 7,
+  "icon": 43,
+  "price": 38,
+  "season": "summer"
+ }
+}

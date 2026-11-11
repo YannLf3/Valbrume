@@ -1,0 +1,132 @@
+{
+ "cliff": {
+  "ch": "^",
+  "id": "cliff",
+  "prio": 7,
+  "solid": true,
+  "under": "dirt"
+ },
+ "cobble": {
+  "ch": "#",
+  "id": "cobble",
+  "prio": 4,
+  "solid": false,
+  "under": "dirt"
+ },
+ "dirt": {
+  "ch": ",",
+  "id": "dirt",
+  "prio": 1,
+  "solid": false,
+  "under": "water"
+ },
+ "floor": {
+  "ch": "f",
+  "id": "floor",
+  "prio": 1,
+  "solid": false,
+  "styles": 4,
+  "under": "floor"
+ },
+ "grass": {
+  "ch": ".",
+  "id": "grass",
+  "prio": 6,
+  "seasonal": true,
+  "solid": false,
+  "under": "dirt"
+ },
+ "mine_floor_1": {
+  "ch": "a",
+  "id": "mine_floor_1",
+  "prio": 1,
+  "solid": false,
+  "under": "mine_floor_1"
+ },
+ "mine_floor_2": {
+  "ch": "b",
+  "id": "mine_floor_2",
+  "prio": 1,
+  "solid": false,
+  "under": "mine_floor_2"
+ },
+ "mine_floor_3": {
+  "ch": "c",
+  "id": "mine_floor_3",
+  "prio": 1,
+  "solid": false,
+  "under": "mine_floor_3"
+ },
+ "mine_wall_1": {
+  "ch": "A",
+  "id": "mine_wall_1",
+  "prio": 8,
+  "solid": true,
+  "under": "mine_floor_1"
+ },
+ "mine_wall_2": {
+  "ch": "B",
+  "id": "mine_wall_2",
+  "prio": 8,
+  "solid": true,
+  "under": "mine_floor_2"
+ },
+ "mine_wall_3": {
+  "ch": "C",
+  "id": "mine_wall_3",
+  "prio": 8,
+  "solid": true,
+  "under": "mine_floor_3"
+ },
+ "path": {
+  "ch": "=",
+  "id": "path",
+  "prio": 3,
+  "solid": false,
+  "under": "dirt"
+ },
+ "sand": {
+  "ch": ":",
+  "id": "sand",
+  "prio": 2,
+  "solid": false,
+  "under": "water"
+ },
+ "void": {
+  "ch": " ",
+  "id": "void",
+  "prio": 10,
+  "solid": true,
+  "under": "void"
+ },
+ "wall": {
+  "ch": "W",
+  "id": "wall",
+  "prio": 9,
+  "solid": true,
+  "styles": 4,
+  "under": "void"
+ },
+ "wall_low": {
+  "ch": "w",
+  "id": "wall_low",
+  "prio": 9,
+  "solid": true,
+  "styles": 4,
+  "under": "void"
+ },
+ "water": {
+  "anim": 4,
+  "ch": "~",
+  "id": "water",
+  "prio": 0,
+  "solid": true
+ },
+ "wood": {
+  "ch": "_",
+  "id": "wood",
+  "prio": 5,
+  "solid": false,
+  "under": "water"
+ }
+}

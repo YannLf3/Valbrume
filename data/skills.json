@@ -1,0 +1,408 @@
+{
+ "combat": {
+  "1": {
+   "perk": null,
+   "recipes": [
+    "miner_stew"
+   ]
+  },
+  "10": {
+   "perk": [
+    "max_health",
+    30
+   ],
+   "recipes": []
+  },
+  "2": {
+   "perk": null,
+   "recipes": [
+    "healing_salve"
+   ]
+  },
+  "3": {
+   "perk": [
+    "max_health",
+    15
+   ],
+   "recipes": []
+  },
+  "4": {
+   "perk": [
+    "damage",
+    2
+   ],
+   "recipes": []
+  },
+  "5": {
+   "perk": null,
+   "recipes": [
+    "return_whistle"
+   ]
+  },
+  "6": {
+   "perk": [
+    "max_health",
+    15
+   ],
+   "recipes": []
+  },
+  "7": {
+   "perk": [
+    "crit_chance",
+    0.08
+   ],
+   "recipes": []
+  },
+  "8": {
+   "perk": [
+    "damage",
+    3
+   ],
+   "recipes": []
+  },
+  "9": {
+   "perk": [
+    "defense",
+    2
+   ],
+   "recipes": []
+  }
+ },
+ "farming": {
+  "1": {
+   "perk": null,
+   "recipes": [
+    "scarecrow"
+   ]
+  },
+  "10": {
+   "perk": [
+    "crop_price",
+    0.1
+   ],
+   "recipes": []
+  },
+  "2": {
+   "perk": null,
+   "recipes": [
+    "sprinkler_1"
+   ]
+  },
+  "3": {
+   "perk": null,
+   "recipes": [
+    "rich_fertilizer"
+   ]
+  },
+  "4": {
+   "perk": null,
+   "recipes": [
+    "preserve_jar"
+   ]
+  },
+  "5": {
+   "perk": [
+    "crop_quality",
+    0.08
+   ],
+   "recipes": [
+    "quick_soil"
+   ]
+  },
+  "6": {
+   "perk": null,
+   "recipes": [
+    "sprinkler_2"
+   ]
+  },
+  "7": {
+   "perk": null,
+   "recipes": [
+    "seed_sorter"
+   ]
+  },
+  "8": {
+   "perk": null,
+   "recipes": [
+    "press"
+   ]
+  },
+  "9": {
+   "perk": null,
+   "recipes": [
+    "sprinkler_3"
+   ]
+  }
+ },
+ "fishing": {
+  "1": {
+   "perk": null,
+   "recipes": [
+    "fried_gudgeon"
+   ]
+  },
+  "10": {
+   "perk": [
+    "fish_price",
+    0.15
+   ],
+   "recipes": []
+  },
+  "2": {
+   "perk": null,
+   "recipes": [
+    "bait"
+   ]
+  },
+  "3": {
+   "perk": null,
+   "recipes": [
+    "crab_pot"
+   ]
+  },
+  "4": {
+   "perk": [
+    "fish_window",
+    0.015
+   ],
+   "recipes": []
+  },
+  "5": {
+   "perk": null,
+   "recipes": [
+    "smoker"
+   ]
+  },
+  "6": {
+   "perk": [
+    "bait_saver",
+    0.3
+   ],
+   "recipes": []
+  },
+  "7": {
+   "perk": [
+    "fish_window",
+    0.015
+   ],
+   "recipes": []
+  },
+  "8": {
+   "perk": [
+    "fish_quality",
+    0.15
+   ],
+   "recipes": [
+    "fisher_stew"
+   ]
+  },
+  "9": {
+   "perk": [
+    "treasure_chance",
+    0.08
+   ],
+   "recipes": []
+  }
+ },
+ "foraging": {
+  "1": {
+   "perk": null,
+   "recipes": [
+    "wild_garlic_soup"
+   ]
+  },
+  "10": {
+   "perk": [
+    "forage_price",
+    0.15
+   ],
+   "recipes": []
+  },
+  "2": {
+   "perk": null,
+   "recipes": [
+    "birdhouse"
+   ]
+  },
+  "3": {
+   "perk": null,
+   "recipes": [
+    "beehive"
+   ]
+  },
+  "4": {
+   "perk": [
+    "double_forage",
+    0.15
+   ],
+   "recipes": []
+  },
+  "5": {
+   "perk": null,
+   "recipes": [
+    "flower_pot"
+   ]
+  },
+  "6": {
+   "perk": [
+    "wood_bonus",
+    0.25
+   ],
+   "recipes": [
+    "mushroom_pan"
+   ]
+  },
+  "7": {
+   "perk": null,
+   "recipes": [
+    "bell_charm"
+   ]
+  },
+  "8": {
+   "perk": [
+    "double_forage",
+    0.15
+   ],
+   "recipes": []
+  },
+  "9": {
+   "perk": [
+    "forage_quality",
+    0.2
+   ],
+   "recipes": []
+  }
+ },
+ "husbandry": {
+  "1": {
+   "perk": null,
+   "recipes": []
+  },
+  "10": {
+   "perk": [
+    "animal_price",
+    0.1
+   ],
+   "recipes": []
+  },
+  "2": {
+   "perk": null,
+   "recipes": [
+    "cheese_press"
+   ]
+  },
+  "3": {
+   "perk": [
+    "affection_gain",
+    0.25
+   ],
+   "recipes": []
+  },
+  "4": {
+   "perk": null,
+   "recipes": [
+    "churn"
+   ]
+  },
+  "5": {
+   "perk": [
+    "animal_price",
+    0.1
+   ],
+   "recipes": []
+  },
+  "6": {
+   "perk": null,
+   "recipes": [
+    "loom"
+   ]
+  },
+  "7": {
+   "perk": [
+    "affection_gain",
+    0.25
+   ],
+   "recipes": []
+  },
+  "8": {
+   "perk": null,
+   "recipes": [
+    "pet_bed"
+   ]
+  },
+  "9": {
+   "perk": [
+    "product_quality",
+    0.15
+   ],
+   "recipes": []
+  }
+ },
+ "mining": {
+  "1": {
+   "perk": null,
+   "recipes": [
+    "sunchoke_soup"
+   ]
+  },
+  "10": {
+   "perk": [
+    "mineral_price",
+    0.15
+   ],
+   "recipes": []
+  },
+  "2": {
+   "perk": null,
+   "recipes": [
+    "quarry_charge"
+   ]
+  },
+  "3": {
+   "perk": null,
+   "recipes": [
+    "stone_bench"
+   ]
+  },
+  "4": {
+   "perk": null,
+   "recipes": [
+    "rope_ladder"
+   ]
+  },
+  "5": {
+   "perk": [
+    "ore_bonus",
+    0.15
+   ],
+   "recipes": []
+  },
+  "6": {
+   "perk": null,
+   "recipes": [
+    "lantern"
+   ]
+  },
+  "7": {
+   "perk": [
+    "gem_chance",
+    0.03
+   ],
+   "recipes": []
+  },
+  "8": {
+   "perk": [
+    "ore_bonus",
+    0.15
+   ],
+   "recipes": []
+  },
+  "9": {
+   "perk": [
+    "ladder_chance",
+    0.04
+   ],
+   "recipes": []
+  }
+ }
+}

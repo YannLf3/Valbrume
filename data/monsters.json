@@ -1,0 +1,139 @@
+{
+ "emberbat": {
+  "ai": "zigzag",
+  "damage": 11,
+  "drops": [
+   [
+    "coal",
+    1,
+    2,
+    0.6
+   ],
+   [
+    "topaz",
+    1,
+    1,
+    0.05
+   ]
+  ],
+  "fly": true,
+  "hp": 34,
+  "speed": 52,
+  "xp": 14
+ },
+ "frostspit": {
+  "ai": "shoot",
+  "damage": 12,
+  "drops": [
+   [
+    "quartz",
+    1,
+    1,
+    0.3
+   ],
+   [
+    "ore_silver",
+    1,
+    1,
+    0.12
+   ]
+  ],
+  "hp": 46,
+  "speed": 0,
+  "xp": 18
+ },
+ "glowmite": {
+  "ai": "swarm",
+  "damage": 9,
+  "drops": [
+   [
+    "ore_brumite",
+    1,
+    1,
+    0.1
+   ],
+   [
+    "amethyst",
+    1,
+    1,
+    0.04
+   ]
+  ],
+  "hp": 22,
+  "pack": [
+   3,
+   4
+  ],
+  "speed": 78,
+  "xp": 11
+ },
+ "mosshop": {
+  "ai": "hop",
+  "damage": 8,
+  "drops": [
+   [
+    "fiber",
+    1,
+    3,
+    0.8
+   ],
+   [
+    "sap",
+    1,
+    1,
+    0.4
+   ]
+  ],
+  "hp": 28,
+  "speed": 70,
+  "xp": 9
+ },
+ "pebbler": {
+  "ai": "chase",
+  "damage": 6,
+  "drops": [
+   [
+    "stone",
+    1,
+    2,
+    0.8
+   ],
+   [
+    "coal",
+    1,
+    1,
+    0.2
+   ]
+  ],
+  "hp": 20,
+  "speed": 24,
+  "xp": 6
+ },
+ "shellcharger": {
+  "ai": "charge",
+  "damage": 20,
+  "drops": [
+   [
+    "ore_brumite",
+    1,
+    2,
+    0.9
+   ],
+   [
+    "ruby",
+    1,
+    1,
+    0.06
+   ],
+   [
+    "moonstone",
+    1,
+    1,
+    0.02
+   ]
+  ],
+  "hp": 110,
+  "speed": 150,
+  "xp": 40
+ }
+}

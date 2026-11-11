@@ -1,0 +1,626 @@
+{
+ "cook": {
+  "apple_tart": {
+   "in": {
+    "apple": 2,
+    "butter": 1,
+    "flour": 1
+   },
+   "n": 1,
+   "unlock": "friend:theodule:4"
+  },
+  "bread": {
+   "in": {
+    "flour": 2
+   },
+   "n": 1,
+   "unlock": "start"
+  },
+  "cheese_galette": {
+   "in": {
+    "cheese": 1,
+    "egg": 1,
+    "flour": 1
+   },
+   "n": 1,
+   "unlock": "friend:theodule:2"
+  },
+  "cherry_clafoutis": {
+   "in": {
+    "cherry": 3,
+    "egg": 1,
+    "milk": 1
+   },
+   "n": 1,
+   "unlock": "friend:roseline:6"
+  },
+  "crepes": {
+   "in": {
+    "egg": 1,
+    "flour": 1,
+    "milk": 1
+   },
+   "n": 1,
+   "unlock": "shop:inn"
+  },
+  "fisher_stew": {
+   "in": {
+    "sea_bream": 1,
+    "shrimp": 1,
+    "tomato": 1
+   },
+   "n": 1,
+   "unlock": "skill:fishing:8"
+  },
+  "fried_gudgeon": {
+   "in": {
+    "gudgeon": 3,
+    "nut_oil": 1
+   },
+   "n": 1,
+   "unlock": "skill:fishing:1"
+  },
+  "frostberry_tart": {
+   "in": {
+    "butter": 1,
+    "egg": 1,
+    "frostberry": 3
+   },
+   "n": 1,
+   "unlock": "friend:isaure:4"
+  },
+  "garden_stew": {
+   "in": {
+    "carrot": 1,
+    "leek": 1,
+    "turnip": 1
+   },
+   "n": 1,
+   "unlock": "shop:inn"
+  },
+  "grilled_fish": {
+   "in": {
+    "@fish": 1
+   },
+   "n": 1,
+   "unlock": "start"
+  },
+  "grilled_sardines": {
+   "in": {
+    "sardine": 2
+   },
+   "n": 1,
+   "unlock": "friend:maiwenn:2"
+  },
+  "hazelnut_trout": {
+   "in": {
+    "butter": 1,
+    "hazelnut": 2,
+    "trout": 1
+   },
+   "n": 1,
+   "unlock": "friend:maiwenn:5"
+  },
+  "lavender_tea": {
+   "in": {
+    "honey": 1,
+    "lavender": 1
+   },
+   "n": 1,
+   "unlock": "friend:hyacinthe:4"
+  },
+  "leek_gratin": {
+   "in": {
+    "cheese": 1,
+    "leek": 1,
+    "milk": 1
+   },
+   "n": 1,
+   "unlock": "friend:gaspard:2"
+  },
+  "melon_frappe": {
+   "in": {
+    "honey": 1,
+    "honeymelon": 1
+   },
+   "n": 1,
+   "unlock": "friend:pim:2"
+  },
+  "miner_stew": {
+   "in": {
+    "carrot": 1,
+    "cavefish": 1
+   },
+   "n": 1,
+   "unlock": "skill:combat:1"
+  },
+  "mushroom_pan": {
+   "in": {
+    "cep": 1,
+    "chanterelle": 1,
+    "wild_garlic": 1
+   },
+   "n": 1,
+   "unlock": "skill:foraging:6"
+  },
+  "omelette": {
+   "in": {
+    "egg": 2
+   },
+   "n": 1,
+   "unlock": "start"
+  },
+  "parsnip_gratin": {
+   "in": {
+    "cheese": 1,
+    "parsnip": 1
+   },
+   "n": 1,
+   "unlock": "friend:corentin:5"
+  },
+  "pike_butter": {
+   "in": {
+    "butter": 1,
+    "pike": 1
+   },
+   "n": 1,
+   "unlock": "shop:inn"
+  },
+  "pumpkin_veloute": {
+   "in": {
+    "milk": 1,
+    "pumpkin": 1
+   },
+   "n": 1,
+   "unlock": "friend:roseline:3"
+  },
+  "ratatouille": {
+   "in": {
+    "eggplant": 1,
+    "tomato": 1,
+    "zucchini": 1
+   },
+   "n": 1,
+   "unlock": "shop:inn"
+  },
+  "roast_chestnuts": {
+   "in": {
+    "chestnut": 3
+   },
+   "n": 1,
+   "unlock": "start"
+  },
+  "spring_salad": {
+   "in": {
+    "spinach": 1,
+    "spring_onion": 1,
+    "turnip": 1
+   },
+   "n": 1,
+   "unlock": "friend:capucine:2"
+  },
+  "sunchoke_soup": {
+   "in": {
+    "butter": 1,
+    "sunchoke": 2
+   },
+   "n": 1,
+   "unlock": "skill:mining:1"
+  },
+  "tian": {
+   "in": {
+    "cheese": 1,
+    "tomato": 1,
+    "zucchini": 1
+   },
+   "n": 1,
+   "unlock": "friend:capucine:5"
+  },
+  "turnip_soup": {
+   "in": {
+    "milk": 1,
+    "turnip": 2
+   },
+   "n": 1,
+   "unlock": "shop:inn"
+  },
+  "wild_garlic_soup": {
+   "in": {
+    "turnip": 1,
+    "wild_garlic": 2
+   },
+   "n": 1,
+   "unlock": "skill:foraging:1"
+  },
+  "winter_salad": {
+   "in": {
+    "hazelnut": 1,
+    "kale": 1,
+    "lambs_lettuce": 1
+   },
+   "n": 1,
+   "unlock": "shop:inn"
+  }
+ },
+ "craft": {
+  "armchair": {
+   "in": {
+    "cloth": 2,
+    "wood": 50
+   },
+   "n": 1,
+   "unlock": "friend:gaspard:4"
+  },
+  "bait": {
+   "in": {
+    "dandelion": 1,
+    "fiber": 2
+   },
+   "n": 5,
+   "unlock": "skill:fishing:2"
+  },
+  "beehive": {
+   "in": {
+    "fiber": 20,
+    "sap": 10,
+    "wood": 40
+   },
+   "n": 1,
+   "unlock": "skill:foraging:3"
+  },
+  "bell_charm": {
+   "in": {
+    "fiber": 5,
+    "holly": 1,
+    "ingot_copper": 1
+   },
+   "n": 1,
+   "unlock": "skill:foraging:7"
+  },
+  "birdhouse": {
+   "in": {
+    "fiber": 5,
+    "wood": 25
+   },
+   "n": 1,
+   "unlock": "skill:foraging:2"
+  },
+  "bookshelf": {
+   "in": {
+    "sap": 5,
+    "wood": 100
+   },
+   "n": 1,
+   "unlock": "friend:corentin:3"
+  },
+  "cabinet": {
+   "in": {
+    "wood": 120
+   },
+   "n": 1,
+   "unlock": "friend:isaure:5"
+  },
+  "chair": {
+   "in": {
+    "fiber": 10,
+    "wood": 30
+   },
+   "n": 1,
+   "unlock": "friend:isaure:2"
+  },
+  "cheese_press": {
+   "in": {
+    "ingot_copper": 2,
+    "stone": 20,
+    "wood": 40
+   },
+   "n": 1,
+   "unlock": "skill:husbandry:2"
+  },
+  "chest": {
+   "in": {
+    "wood": 40
+   },
+   "n": 1,
+   "unlock": "start"
+  },
+  "churn": {
+   "in": {
+    "fiber": 10,
+    "ingot_copper": 1,
+    "wood": 40
+   },
+   "n": 1,
+   "unlock": "skill:husbandry:4"
+  },
+  "clock": {
+   "in": {
+    "ingot_silver": 2,
+    "quartz": 2,
+    "wood": 60
+   },
+   "n": 1,
+   "unlock": "friend:bastien:6"
+  },
+  "compost": {
+   "in": {
+    "fiber": 4,
+    "sap": 1
+   },
+   "n": 2,
+   "unlock": "start"
+  },
+  "crab_pot": {
+   "in": {
+    "fiber": 10,
+    "ingot_copper": 2,
+    "wood": 30
+   },
+   "n": 1,
+   "unlock": "skill:fishing:3"
+  },
+  "fence": {
+   "in": {
+    "wood": 5
+   },
+   "n": 5,
+   "unlock": "start"
+  },
+  "field_snack": {
+   "in": {
+    "dandelion": 1,
+    "wild_garlic": 1
+   },
+   "n": 1,
+   "unlock": "start"
+  },
+  "flower_pot": {
+   "in": {
+    "clay": 8,
+    "dandelion": 2
+   },
+   "n": 1,
+   "unlock": "skill:foraging:5"
+  },
+  "furnace": {
+   "in": {
+    "ore_copper": 10,
+    "stone": 25
+   },
+   "n": 1,
+   "unlock": "start"
+  },
+  "healing_salve": {
+   "in": {
+    "elderflower": 2,
+    "honey": 1
+   },
+   "n": 1,
+   "unlock": "skill:combat:2"
+  },
+  "lamp": {
+   "in": {
+    "ingot_copper": 1,
+    "nut_oil": 1
+   },
+   "n": 1,
+   "unlock": "friend:bastien:3"
+  },
+  "lantern": {
+   "in": {
+    "coal": 1,
+    "ingot_iron": 1,
+    "sap": 2
+   },
+   "n": 1,
+   "unlock": "skill:mining:6"
+  },
+  "loom": {
+   "in": {
+    "fiber": 30,
+    "ingot_iron": 1,
+    "wood": 60
+   },
+   "n": 1,
+   "unlock": "skill:husbandry:6"
+  },
+  "painting": {
+   "in": {
+    "blackberry": 3,
+    "cloth": 1,
+    "wood": 20
+   },
+   "n": 1,
+   "unlock": "friend:pim:4"
+  },
+  "pet_bed": {
+   "in": {
+    "fiber": 30,
+    "wool": 1
+   },
+   "n": 1,
+   "unlock": "skill:husbandry:8"
+  },
+  "plant": {
+   "in": {
+    "clay": 6,
+    "fiber": 6
+   },
+   "n": 1,
+   "unlock": "friend:hyacinthe:2"
+  },
+  "preserve_jar": {
+   "in": {
+    "clay": 10,
+    "coal": 4,
+    "wood": 30
+   },
+   "n": 1,
+   "unlock": "skill:farming:4"
+  },
+  "press": {
+   "in": {
+    "ingot_iron": 2,
+    "stone": 20,
+    "wood": 50
+   },
+   "n": 1,
+   "unlock": "skill:farming:8"
+  },
+  "quarry_charge": {
+   "in": {
+    "clay": 2,
+    "coal": 2,
+    "fiber": 2
+   },
+   "n": 2,
+   "unlock": "skill:mining:2"
+  },
+  "quick_soil": {
+   "in": {
+    "compost": 1,
+    "seaweed": 2
+   },
+   "n": 2,
+   "unlock": "skill:farming:5"
+  },
+  "return_whistle": {
+   "in": {
+    "clay": 3,
+    "feather": 1,
+    "wood": 10
+   },
+   "n": 1,
+   "unlock": "skill:combat:5"
+  },
+  "rich_fertilizer": {
+   "in": {
+    "compost": 2,
+    "shell": 1
+   },
+   "n": 2,
+   "unlock": "skill:farming:3"
+  },
+  "rope_ladder": {
+   "in": {
+    "fiber": 20,
+    "wood": 10
+   },
+   "n": 1,
+   "unlock": "skill:mining:4"
+  },
+  "rug": {
+   "in": {
+    "cloth": 1,
+    "fiber": 20
+   },
+   "n": 1,
+   "unlock": "friend:capucine:3"
+  },
+  "scarecrow": {
+   "in": {
+    "fiber": 20,
+    "ore_copper": 2,
+    "wood": 30
+   },
+   "n": 1,
+   "unlock": "skill:farming:1"
+  },
+  "seed_sorter": {
+   "in": {
+    "coal": 5,
+    "ingot_iron": 2,
+    "wood": 30
+   },
+   "n": 1,
+   "unlock": "skill:farming:7"
+  },
+  "sign": {
+   "in": {
+    "wood": 15
+   },
+   "n": 1,
+   "unlock": "start"
+  },
+  "smoker": {
+   "in": {
+    "coal": 8,
+    "stone": 30,
+    "wood": 40
+   },
+   "n": 1,
+   "unlock": "skill:fishing:5"
+  },
+  "sprinkler_1": {
+   "in": {
+    "ingot_copper": 1,
+    "stone": 10
+   },
+   "n": 1,
+   "unlock": "skill:farming:2"
+  },
+  "sprinkler_2": {
+   "in": {
+    "ingot_copper": 1,
+    "ingot_iron": 1,
+    "quartz": 1
+   },
+   "n": 1,
+   "unlock": "skill:farming:6"
+  },
+  "sprinkler_3": {
+   "in": {
+    "amethyst": 1,
+    "ingot_brumite": 1,
+    "ingot_silver": 1
+   },
+   "n": 1,
+   "unlock": "skill:farming:9"
+  },
+  "stone_bench": {
+   "in": {
+    "stone": 40
+   },
+   "n": 1,
+   "unlock": "skill:mining:3"
+  },
+  "stone_path": {
+   "in": {
+    "stone": 2
+   },
+   "n": 4,
+   "unlock": "start"
+  },
+  "stove": {
+   "in": {
+    "ingot_iron": 6,
+    "stone": 30
+   },
+   "n": 1,
+   "unlock": "friend:gaspard:6"
+  },
+  "table": {
+   "in": {
+    "wood": 60
+   },
+   "n": 1,
+   "unlock": "friend:isaure:2"
+  },
+  "wind_chime": {
+   "in": {
+    "fiber": 5,
+    "ingot_silver": 1,
+    "shell": 3
+   },
+   "n": 1,
+   "unlock": "friend:roseline:4"
+  },
+  "wood_path": {
+   "in": {
+    "wood": 2
+   },
+   "n": 4,
+   "unlock": "start"
+  }
+ }
+}

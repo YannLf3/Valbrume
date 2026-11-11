@@ -5,7 +5,7 @@ const DATA_DIR: String = "res://data/"
 const TABLES: Array[String] = [
 	"items", "crops", "fruit_trees", "fish", "recipes", "npcs", "dialogues", "events", "shops",
 	"objects", "animals", "buildings", "machines", "monsters", "skills", "story", "festivals",
-	"quests", "collections", "weather", "balance", "atlas", "mine", "house",
+	"quests", "collections", "weather", "balance", "atlas", "mine", "house", "terrains", "tools", "calendar",
 ]
 const ICON_SIZE: int = 16
 const ICON_COLS: int = 16

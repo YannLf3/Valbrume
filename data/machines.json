@@ -1,0 +1,142 @@
+{
+ "beehive": {
+  "passive": {
+   "days": 3,
+   "out": "honey",
+   "seasons": [
+    "spring",
+    "summer",
+    "autumn"
+   ]
+  }
+ },
+ "cheese_press": {
+  "keep_quality": true,
+  "recipes": [
+   {
+    "in": "milk",
+    "minutes": 180,
+    "n": 1,
+    "out": "cheese"
+   },
+   {
+    "in": "goat_milk",
+    "minutes": 180,
+    "n": 1,
+    "out": "goat_cheese"
+   }
+  ]
+ },
+ "churn": {
+  "keep_quality": true,
+  "recipes": [
+   {
+    "in": "milk",
+    "minutes": 120,
+    "n": 1,
+    "out": "butter"
+   }
+  ]
+ },
+ "furnace": {
+  "fuel": {
+   "coal": 1
+  },
+  "recipes": [
+   {
+    "in": "ore_copper",
+    "minutes": 60,
+    "n": 5,
+    "out": "ingot_copper"
+   },
+   {
+    "in": "ore_iron",
+    "minutes": 120,
+    "n": 5,
+    "out": "ingot_iron"
+   },
+   {
+    "in": "ore_silver",
+    "minutes": 180,
+    "n": 5,
+    "out": "ingot_silver"
+   },
+   {
+    "in": "ore_brumite",
+    "minutes": 300,
+    "n": 5,
+    "out": "ingot_brumite"
+   }
+  ]
+ },
+ "loom": {
+  "keep_quality": true,
+  "recipes": [
+   {
+    "in": "wool",
+    "minutes": 240,
+    "n": 1,
+    "out": "cloth"
+   }
+  ]
+ },
+ "preserve_jar": {
+  "recipes": [
+   {
+    "in": "@fruit",
+    "minutes": 480,
+    "n": 1,
+    "out": "jam"
+   },
+   {
+    "in": "@crop",
+    "minutes": 480,
+    "n": 1,
+    "out": "pickles"
+   }
+  ]
+ },
+ "press": {
+  "recipes": [
+   {
+    "in": "@fruit",
+    "minutes": 360,
+    "n": 1,
+    "out": "juice"
+   },
+   {
+    "in": "hazelnut",
+    "minutes": 240,
+    "n": 3,
+    "out": "nut_oil"
+   }
+  ]
+ },
+ "seed_sorter": {
+  "recipes": [
+   {
+    "in": "@crop",
+    "minutes": 60,
+    "n": 1,
+    "out": "@seed",
+    "out_n": [
+     1,
+     3
+    ]
+   }
+  ]
+ },
+ "smoker": {
+  "fuel": {
+   "wood": 2
+  },
+  "recipes": [
+   {
+    "in": "@fish",
+    "minutes": 240,
+    "n": 1,
+    "out": "smoked_fish"
+   }
+  ]
+ }
+}

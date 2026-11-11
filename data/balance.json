@@ -1,0 +1,201 @@
+{
+ "affection_fed": 8,
+ "affection_gold": 750,
+ "affection_graze": 4,
+ "affection_max": 1000,
+ "affection_pet": 15,
+ "affection_silver": 400,
+ "affection_unfed": -20,
+ "affection_unpet": -5,
+ "backpack_price": 5000,
+ "birthday_mult": 4,
+ "can_capacity": [
+  20,
+  35,
+  55,
+  80
+ ],
+ "charge_time": 0.45,
+ "combat_damage_per_level": 1.0,
+ "daily_quest_base_reward": 120,
+ "dating_cap_hearts": 8,
+ "death_item_losses": 3,
+ "death_money_max": 2500,
+ "death_money_pct": 12,
+ "dig_spots_per_map": 2,
+ "energy_axe": 3.0,
+ "energy_can": 1.5,
+ "energy_charge_factor": 0.6,
+ "energy_hoe": 2.0,
+ "energy_pick": 3.0,
+ "energy_rod": 4.0,
+ "energy_scythe": 1.0,
+ "energy_skill_discount": 0.03,
+ "energy_sword": 0.5,
+ "exhausted_speed_mult": 0.6,
+ "faint_energy_ratio": 0.5,
+ "faint_money_max": 1000,
+ "faint_money_pct": 10,
+ "fertilizer_quality": {
+  "compost": 0.12,
+  "rich_fertilizer": 0.3
+ },
+ "festival_points": 15,
+ "fish_bait_wait_mult": 0.55,
+ "fish_beats_base": 4,
+ "fish_misses_allowed": 3,
+ "fish_perfect_ratio": 0.38,
+ "fish_treasure_chance": 0.08,
+ "fish_wait_max": 5.0,
+ "fish_wait_min": 1.2,
+ "fish_window_base": 0.21,
+ "fish_window_per_diff": 0.022,
+ "fish_window_per_rod": 0.02,
+ "forage_per_map": 5,
+ "friend_decay": 1,
+ "fruit_tree_days": 28,
+ "fruit_tree_max": 3,
+ "gift_points": {
+  "dislike": -12,
+  "hate": -25,
+  "like": 22,
+  "love": 45,
+  "neutral": 9
+ },
+ "gifts_per_week": 2,
+ "hay_per_grass": 1,
+ "health_per_combat_level": 5,
+ "heart_points": 100,
+ "inventory_base_size": 36,
+ "inventory_big_size": 48,
+ "invincible_time": 0.9,
+ "knockback": 90.0,
+ "ladder_kill_chance": 0.15,
+ "ladder_reveal_chance": 0.04,
+ "low_energy_threshold": 12.0,
+ "marriage_hearts": 10,
+ "max_hearts": 10,
+ "mine_biome_size": 20,
+ "mine_elevator_step": 5,
+ "mine_floors": 60,
+ "mine_h": 24,
+ "mine_w": 34,
+ "pest_chance": 0.05,
+ "player_speed": 62.0,
+ "player_speed_buff": 8.0,
+ "quality_gold_base": 0.0,
+ "quality_gold_ratio": 0.4,
+ "quality_per_level": 0.012,
+ "quality_price_mult": [
+  1.0,
+  1.25,
+  1.5
+ ],
+ "quality_silver_base": 0.02,
+ "quest_friend_points": 35,
+ "quick_soil_speed": 0.25,
+ "rain_waters_crops": true,
+ "scarecrow_radius": 6,
+ "shop_sell_ratio": 1.0,
+ "silo_capacity": 240,
+ "soil_decay_chance": 0.12,
+ "sprinkler_patterns": {
+  "sprinkler_1": [
+   [
+    0,
+    -1
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    -1,
+    0
+   ]
+  ],
+  "sprinkler_2": [
+   [
+    -1,
+    -1
+   ],
+   [
+    0,
+    -1
+   ],
+   [
+    1,
+    -1
+   ],
+   [
+    -1,
+    0
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    -1,
+    1
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    1,
+    1
+   ]
+  ],
+  "sprinkler_3": "5x5"
+ },
+ "stack_size": 999,
+ "start_energy": 100,
+ "start_health": 100,
+ "start_money": 500,
+ "storm_debris_chance": 0.01,
+ "sword_arc": 110.0,
+ "sword_damage": [
+  8,
+  14,
+  22,
+  32
+ ],
+ "sword_reach": 22.0,
+ "talk_points": 12,
+ "tool_cooldown": 0.32,
+ "tool_upgrade_days": 2,
+ "tree_grow_days": [
+  5,
+  9
+ ],
+ "weed_spread_chance": 0.02,
+ "xp_fish_base": 10,
+ "xp_fish_per_diff": 8,
+ "xp_forage": 8,
+ "xp_harvest_base": 5,
+ "xp_harvest_div": 20,
+ "xp_levels": [
+  0,
+  150,
+  450,
+  950,
+  1700,
+  2750,
+  4150,
+  5950,
+  8200,
+  11000
+ ],
+ "xp_ore": 9,
+ "xp_pet": 5,
+ "xp_pot": 6,
+ "xp_product": 7,
+ "xp_rock": 3,
+ "xp_tree": 12
+}
