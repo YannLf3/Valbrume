@@ -207,10 +207,12 @@ func _on_item_gained(id: String, n: int, q: int) -> void:
 
 
 func _on_map_changed(map_id: String) -> void:
-	var key: String = str(Database.map(map_id).get("name", ""))
+	var data: Dictionary = Database.map(map_id)
+	var key: String = str(data.get("name", ""))
 	if key == "":
 		return
-	_banner.text = Loc.t(key)
+	refresh()
+	_banner.text = Loc.f("MAP_MINE_FLOOR", [int(data["floor"])]) if data.has("floor") else Loc.t(key)
 	_banner.modulate.a = 1.0
 	var tw: Tween = create_tween()
 	tw.tween_interval(1.6)

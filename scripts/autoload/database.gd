@@ -158,4 +158,19 @@ func sprite_info(sprite_name: String) -> Dictionary:
 
 
 func map(id: String) -> Dictionary:
+	if not maps.has(id) and id.begins_with("mine_"):
+		var f: int = MineGen.floor_of(id)
+		if f >= 1 and f <= MineGen.floor_count():
+			maps[id] = MineGen.generate(f)
 	return maps.get(id, {})
+
+
+func has_map(id: String) -> bool:
+	return not map(id).is_empty()
+
+
+## Les étages de la mine sont régénérés chaque jour.
+func forget_mine_floors() -> void:
+	for id: String in maps.keys():
+		if id.begins_with("mine_"):
+			maps.erase(id)

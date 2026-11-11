@@ -466,6 +466,15 @@ EV_THEODULE_2_O1,Avec reconnaissance.,Gratefully.
 EV_THEODULE_2_O2,"Garde-le, il te rappellera l'amie.","Keep it, it'll remind you of the friend."
 EV_THEODULE_2_R1,"Bon. Alors prends ce chèvre frais aussi, pour fêter ça avec un morceau de pain.","Good. Then take this goat cheese too, to celebrate with a piece of bread."
 EV_THEODULE_2_R2,…Tu es plus fine que tu n'en as l'air. Prends tout de même ce fromage.,...You're sharper than you look. Take this cheese anyway.
+FISH_BITE,Ça mord ! Ferre !,A bite! Hook it!
+FISH_ESCAPED,Il s'est échappé…,It got away...
+FISH_LOST,La ligne a cassé !,The line snapped!
+FISH_NEED_WATER,Il faut viser l'eau.,Aim at the water.
+FISH_NOTHING,Rien ne mord pour l'instant.,Nothing's biting right now.
+FISH_PRESS,Frappe quand la bille est dans l'arc !,Strike when the marble is in the arc!
+FISH_TREASURE,Un petit trésor est accroché à la ligne !,A little treasure is hooked on the line!
+FISH_WAIT,Attends une touche…,Wait for a bite...
+FISH_WON,Belle prise !,Nice catch!
 FORECAST,La rainette annonce pour demain : %s.,The frog forecasts for tomorrow: %s.
 FORECAST_HARP,"La harpe des vents murmure : demain, %s.","The wind harp whispers: tomorrow, %s."
 GAME_TITLE,Valbrume,Valbrume
@@ -784,10 +793,16 @@ MAP_FOREST,La forêt de Bois-Brume,Mistwood Forest
 MAP_FORGE,La forge,The Forge
 MAP_INN,La Cloche d'Étain,The Pewter Bell
 MAP_LAKE,Le lac Miroir,Mirror Lake
+MAP_MINE,La mine,The Mine
+MAP_MINE_FLOOR,La mine — étage %d,The Mine — floor %d
 MAP_MUSEUM,Le musée,The Museum
 MAP_RANCH_SHOP,L'élevage,The Ranch
 MAP_STORE,L'épicerie,The Grocery
 MAP_VILLAGE,Ormelune,Ormelune
+MINE_ELEVATOR_TITLE,Ascenseur,Elevator
+MINE_LADDER_FOUND,Une échelle apparaît !,A ladder appears!
+MINE_SURFACE,Surface,Surface
+MINE_TREASURE,Un coffre ! Tu trouves : %s.,A chest! You find: %s.
 NEW_FARM,Nom de la ferme,Farm name
 NEW_NAME,Ton prénom,Your name
 NEW_OUTFIT,Tenue,Outfit
@@ -853,6 +868,7 @@ PERK_WOOD_BONUS,Plus de bois par arbre,More wood per tree
 PET_ALREADY,%s a déjà reçu sa caresse du jour.,%s already got today's pat.
 PET_NAME,Biscotte,Biscuit
 PET_OK,%s adore ça !,%s loves it!
+POT_EMPTY,Le casier est vide.,The pot is empty.
 QUALITY_1,Argent,Silver
 QUALITY_2,Or,Gold
 SEASON_AUTUMN,Automne,Autumn
@@ -861,6 +877,7 @@ SEASON_SUMMER,Été,Summer
 SEASON_WINTER,Hiver,Winter
 SERVICE_ANIMALS,Animaux,Animals
 SERVICE_BUILD,Chantiers,Build
+SERVICE_UPGRADE,Outils,Tools
 SHOP_ALL,Tout,All
 SHOP_BACKPACK,Grand sac (+12 places),Big bag (+12 slots)
 SHOP_BUY,Acheter,Buy
@@ -896,6 +913,7 @@ SLOT_INFO,%s · %s · jour %d,%s · %s · day %d
 SLOT_N,Sauvegarde %d,Save %d
 SLOT_NEW,Nouvelle partie,New game
 SUMMARY_BUILT,Chantier terminé : %s !,Construction finished: %s!
+SUMMARY_DIED,Tu t'es effondré(e) dans la mine. Hyacinthe t'a soigné(e) : %d é et %d objet(s) perdus.,"You collapsed in the mine. Hyacinthe tended to you: %d lost, %d item(s) gone."
 SUMMARY_FAINTED,La fatigue a eu raison de toi : %d é perdus.,Exhaustion got the better of you: %d lost.
 SUMMARY_NOTHING,Rien n'a été expédié.,Nothing was shipped.
 SUMMARY_PESTS,Les grignotins ont mangé %d plant(s).,Nibblers ate %d plant(s).
@@ -937,6 +955,12 @@ TOAST_SAVED,Partie sauvegardée.,Game saved.
 TOAST_SHOP_CLOSED,Fermé. Ouvert de %d h à %d h.,Closed. Open %d:00 to %d:00.
 TOAST_TOO_WEAK,Ton outil est trop faible.,Your tool is too weak.
 TOAST_WRONG_SEASON,Ce n'est pas la bonne saison.,Wrong season for this crop.
+UPGRADE_BUSY,Bastien a déjà un outil sur l'enclume.,Bastien already has a tool on the anvil.
+UPGRADE_MAX,Niveau maximal.,Maximum level.
+UPGRADE_NOW,En cours : %s (%d j),Underway: %s (%d d)
+UPGRADE_READY,Ton outil amélioré est prêt : %s !,Your upgraded tool is ready: %s!
+UPGRADE_START,Améliorer,Upgrade
+UPGRADE_TITLE,Améliorer un outil,Upgrade a tool
 WEATHER_RAIN,Pluie,Rain
 WEATHER_SNOW,Neige,Snow
 WEATHER_STORM,Orage,Storm

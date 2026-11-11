@@ -133,7 +133,7 @@ def village() -> M:
 # --------------------------------------------------------------------------- forêt
 def forest() -> M:
     W, H = 56, 48
-    m = M("forest", W, H, ".", outdoor=True, forage="seasonal", name="MAP_FOREST", music="season", gem_biome="1")
+    m = M("forest", W, H, ".", outdoor=True, forage="seasonal", name="MAP_FOREST", music="season", gem_biome="1", fish_place="river")
     r = rng_for("forest")
     m.ellipse(41, 33, 7.0, 5.5, ":")
     m.ellipse(41, 33, 5.2, 3.8, "~")
@@ -163,7 +163,7 @@ def forest() -> M:
 # --------------------------------------------------------------------------- lac
 def lake() -> M:
     W, H = 56, 44
-    m = M("lake", W, H, ".", outdoor=True, forage="seasonal", name="MAP_LAKE", music="season", gem_biome="1")
+    m = M("lake", W, H, ".", outdoor=True, forage="seasonal", name="MAP_LAKE", music="season", gem_biome="1", fish_place="lake")
     r = rng_for("lake")
     for x in range(W):
         d = 5 + int(round(1.4 * math.sin(x * 0.4) + 1.0 * math.sin(x * 0.13 + 2.0)))
@@ -182,7 +182,7 @@ def lake() -> M:
         for x in (26, 27, 28):
             m.set(x, y, "=")
     m.static("mine_entrance", 26, 6, 3, 2, door=(27, 7))
-    m.warp_ex(27, 7, 1, 1, "mine", "entrance", 1, need_flag="mine_open", msg="TOAST_PATH_CLOSED")
+    m.warp(27, 7, 1, 1, "mine_1", "entrance", 1)
     m.static("boat", 38, 36, 3, 1)
     m.warp(27, 43, 2, 1, "village", "lake_in", 1)
     m.warp_ex(55, 20, 1, 3, "alpage", "village_in", 3, need_flag="bell_flocks", msg="TOAST_ALPAGE_LOCKED")
@@ -201,7 +201,7 @@ def lake() -> M:
 # --------------------------------------------------------------------------- plage
 def beach() -> M:
     W, H = 56, 34
-    m = M("beach", W, H, ".", outdoor=True, forage="beach", name="MAP_BEACH", music="season")
+    m = M("beach", W, H, ".", outdoor=True, forage="beach", name="MAP_BEACH", music="season", fish_place="sea")
     r = rng_for("beach")
     for x in range(W):
         top = 6 + int(round(1.2 * math.sin(x * 0.3)))

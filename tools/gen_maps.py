@@ -31,7 +31,7 @@ from mapkit import M, T  # noqa: E402
 # --------------------------------------------------------------------------- ferme
 def farm() -> M:
     W, H = 64, 52
-    m = M("farm", W, H, ".", outdoor=True, farmable=True, biome="farm", name="MAP_FARM", music="season")
+    m = M("farm", W, H, ".", outdoor=True, farmable=True, biome="farm", name="MAP_FARM", music="season", fish_place="river")
     r = rng_for("farm")
     # falaise nord, irrégulière
     for x in range(W):

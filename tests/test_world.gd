@@ -34,7 +34,7 @@ func test_full_day_loop() -> void:
 	w.do_action(c)
 	w.player._swing_left = 0.0
 	ok(not w.rt.soil_at(c).is_empty(), "la houe laboure la case visée")
-	GameState.hotbar_index = 5  # graines de navet
+	GameState.hotbar_index = 7  # graines de navet
 	w.do_action(c)
 	w.player._swing_left = 0.0
 	ok(w.rt.soil_at(c).has("crop"), "semis")

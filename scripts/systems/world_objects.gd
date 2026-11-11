@@ -30,6 +30,8 @@ static func sprite_name(o: Dictionary, season: String, biome: String) -> String:
 	var t: String = str(o.get("t", ""))
 	if t == "ftree" and int(o.get("g", 2)) >= 2 and bool(o.get("fruit", false)):
 		return "ftree_%s_fruit" % str(o.get("k", ""))
+	if t == "treasure" and bool(o.get("opened", false)):
+		return "treasure_open"
 	var tpl: String = str(d.get("sprite", ""))
 	if tpl == "":
 		return ""
@@ -103,6 +105,13 @@ static func _break(rt: MapRuntime, origin: Vector2i, o: Dictionary, d: Dictionar
 	elif t.begins_with("node_") or t.begins_with("rock") or t == "mine_rock":
 		GameState.add_stat("rocks_broken")
 	rt.remove_object(origin)
+	if rt.data.has("floor") and (str(o.get("hidden", "")) == "ladder" or rng.randf() < Database.bal_f("ladder_reveal_chance", 0.04) + Skills.perk("ladder_chance")):
+		if str(o.get("hidden", "")) == "ladder":
+			rt.add_object(origin, {"t": "ladder_down", "hp": 1})
+			AudioManager.sfx("ladder")
+			EventBus.toast.emit(Loc.t("MINE_LADDER_FOUND"), "")
+		else:
+			MineGen.reveal_ladder(rt)
 	if t == "tree":
 		rt.add_object(origin, {"t": "stump", "k": str(o.get("k", "oak")), "hp": int(defs()["stump"]["hp"])})
 

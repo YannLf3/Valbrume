@@ -64,9 +64,9 @@ Légende : `[ ]` à faire · `[x]` fait et validé.
 **Validation** : tests production animale, machines, recettes.
 
 ### P5 — Mine, combat, pêche
-- [ ] mine 60 étages procéduraux, 3 biomes, ascenseur, coffres
-- [ ] combat temps réel, 6 monstres, butin, défaite
-- [ ] fourneau, amélioration d'outils, mini-jeu de pêche original, ≥ 20 poissons, casiers
+- [x] mine 60 étages procéduraux, 3 biomes, ascenseur, coffres
+- [x] combat temps réel, 6 monstres, butin, défaite
+- [x] fourneau, amélioration d'outils, mini-jeu de pêche original, ≥ 20 poissons, casiers
 
 **Validation** : génération de mine reproductible par graine ; tables de pêche testées.
 
@@ -152,3 +152,13 @@ Village d'Ormelune habité : 17 cartes (ferme, 3 maisons, village, forêt, lac, 
 - Reste : buffs de plats testés (déjà en P2) ; serre → P6.
 
 **Prochaine étape : P5** — mine (60 étages procéduraux, 3 biomes, ascenseur), combat temps réel (6 monstres), fourneau déjà en place, amélioration d'outils chez Bastien, pêche (mini-jeu « ondes », 20+ poissons, casiers).
+
+### Journal — P5 terminée (2026-11-11)
+
+Mine de 60 étages générés par automate cellulaire (`mine_gen.gd`, graine = partie + étage + jour, régénérés chaque nuit), 3 biomes de 20 étages (sol et murs distincts), ascenseur tous les 5 étages, coffres tous les 10, échelles cachées sous un rocher (ou révélées par casse de roche / mort de monstre), bassins pour pêcher en mine. Combat temps réel : épée avec portée/arc, critiques, recul, invincibilité temporaire, 6 monstres aux IA distinctes (poursuite, saut, zigzag, tir avec projectiles en pool, essaim, charge), butin, mort = perte d'argent et de 3 piles d'objets + réveil à la clinique. Amélioration d'outils chez Bastien (4 niveaux, délai de 2 jours). Pêche : mini-jeu original « Ondes » (anneau, bille, arc, coups parfaits, 3 ratés), 29 poissons selon lieu/saison/heure/météo, appâts, casiers à crabes, trésors.
+
+- Nouveau code : `mine_gen.gd`, `combat.gd`, `monster.gd`, `monster_manager.gd`, `fishing.gd`, `fishing_game.gd`, `tool_upgrades.gd`, `fishing_screen.gd`, `elevator_screen.gd`, `tool_upgrade_screen.gd`.
+- Tests : 64 tests, 2 505 vérifications (connexité de 14 étages échantillonnés, reproductibilité, biomes/monstres, combat, mort, mini-jeu, tirages de poissons, casiers, amélioration).
+- Départ : l'épée et la canne sont fournies (barre rapide : houe, arrosoir, hache, pioche, faux, épée, canne, graines, en-cas).
+
+**Prochaine étape : P6** — fil rouge des 6 cloches (fonte chez Bastien, serre, route de la plage, étage 40+, marché, alpage, Grand Bourdon), festivals (4), quêtes quotidiennes + tableau, journal (quêtes, relations, compétences, stats, calendrier), collections du musée, météo visible (pluie/neige/orage/feuilles), lumières nocturnes, mariage.

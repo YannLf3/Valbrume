@@ -1,6 +1,6 @@
 extends TestCase
 
-const FUTURE_MAPS: Array[String] = ["mine", "alpage", "greenhouse_in", "belfry"]
+const FUTURE_MAPS: Array[String] = ["alpage", "greenhouse_in", "belfry"]
 const ARRIVAL_SPOT: Dictionary = {"village": "farm_east", "lake": "village_in", "forest": "farm_south", "beach": "village_in", "farm": "village_in"}
 
 
@@ -84,8 +84,8 @@ func test_warps_are_consistent() -> void:
 				to = "farmhouse_1"
 			if FUTURE_MAPS.has(to):
 				continue
-			ok(Database.maps.has(to), "%s → %s : carte inexistante" % [id, to])
-			if Database.maps.has(to):
+			ok(Database.has_map(to), "%s → %s : carte inexistante" % [id, to])
+			if Database.has_map(to):
 				ok(Database.map(to)["spots"].has(str(wp["spot"])), "%s → %s : point d'arrivée %s manquant" % [id, to, wp["spot"]])
 				var s: Array = Database.map(to)["spots"][str(wp["spot"])]
 				ok(not MapRuntime.new(to).is_solid(Vector2i(int(s[0]), int(s[1]))), "%s → %s : arrivée bloquée" % [id, to])

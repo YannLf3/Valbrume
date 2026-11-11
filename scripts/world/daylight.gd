@@ -10,6 +10,7 @@ const KEYS: Array = [
 const WEATHER_DIM: Dictionary = {"rain": 0.86, "storm": 0.72, "snow": 0.94, "wind": 0.97, "sun": 1.0}
 
 var indoors: bool = false
+var dark: bool = false
 
 
 func _ready() -> void:
@@ -19,6 +20,9 @@ func _ready() -> void:
 
 
 func update_color() -> void:
+	if dark:
+		color = Color(0.62, 0.64, 0.82)
+		return
 	if indoors:
 		color = Color.WHITE
 		return

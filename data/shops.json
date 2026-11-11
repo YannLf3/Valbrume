@@ -62,7 +62,11 @@
   "services": [],
   "stock": [
    "bait",
-   "crab_pot"
+   "crab_pot",
+   [
+    "rod_2",
+    1500
+   ]
   ]
  },
  "forge": {
@@ -71,8 +75,7 @@
   "npc": "bastien",
   "open": 9,
   "services": [
-   "tool_upgrade",
-   "bell_cast"
+   "tool_upgrade"
   ],
   "stock": [
    "coal",

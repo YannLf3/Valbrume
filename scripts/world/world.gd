@@ -29,6 +29,7 @@ var _mouse_target: bool = false
 var _debug_label: Label
 var npcs: NpcManager
 var animals: AnimalManager
+var monsters: MonsterManager
 
 
 func _ready() -> void:
@@ -48,6 +49,9 @@ func _ready() -> void:
 	add_child(npcs)
 	animals = AnimalManager.new()
 	add_child(animals)
+	monsters = MonsterManager.new()
+	add_child(monsters)
+	monsters.player_died.connect(_on_player_died)
 	player.cell_changed.connect(_on_cell)
 	player.tool_released.connect(_on_tool_released)
 	player.action_pressed.connect(func() -> void: do_action(player.target_cell()))
@@ -117,14 +121,22 @@ func load_map(id: String, foot: Vector2, face: int) -> void:
 	player.rt = rt
 	npcs.setup(rt, view.sorted)
 	animals.setup(rt, view.sorted)
+	monsters.setup(rt, view.sorted, player)
 	view.refresh_machines()
+	var mine_floor: int = int(rt.data.get("floor", 0))
+	GameState.flags["in_mine"] = mine_floor > 0
+	if mine_floor > 0:
+		GameState.mine["deepest"] = maxi(int(GameState.mine.get("deepest", 0)), mine_floor)
+		if MineGen.is_elevator_floor(mine_floor):
+			GameState.mine["elevator"] = maxi(int(GameState.mine.get("elevator", 0)), mine_floor)
+	daylight.dark = bool(rt.data.get("dark", false))
 	player.position = foot
 	player.facing = face
 	player._cell = player.feet_cell()
 	GameState.map_id = id
 	GameState.px = foot.x
 	GameState.py = foot.y
-	daylight.indoors = not bool(rt.data.get("outdoor", false))
+	daylight.indoors = not bool(rt.data.get("outdoor", false)) and not bool(rt.data.get("dark", false))
 	daylight.update_color()
 	_apply_camera_limits()
 	camera.position = player.position.round()
@@ -187,6 +199,10 @@ func _on_minute(m: int) -> void:
 func _on_cell(c: Vector2i) -> void:
 	if busy or _warp_cooldown > 0.0 or rt == null:
 		return
+	var lo: Dictionary = rt.object_at(c)
+	if not lo.is_empty() and str(lo.get("t", "")) in ["ladder_down", "ladder_up"] and int(rt.data.get("floor", 0)) > 0:
+		_change_floor(1 if str(lo["t"]) == "ladder_down" else -1)
+		return
 	var wp: Dictionary = rt.warp_at(c)
 	if wp.is_empty():
 		return
@@ -199,7 +215,7 @@ func _on_cell(c: Vector2i) -> void:
 	elif wp.has("shop") and not Shops.is_open(str(wp["shop"])):
 		var sh: Dictionary = Shops.shop(str(wp["shop"]))
 		refusal = Loc.f("TOAST_SHOP_CLOSED", [int(sh.get("open", 0)), int(sh.get("close", 24))])
-	elif not Database.maps.has(target):
+	elif not Database.has_map(target):
 		refusal = Loc.t("TOAST_PATH_CLOSED")
 	if refusal != "":
 		AudioManager.sfx("error")
@@ -208,8 +224,95 @@ func _on_cell(c: Vector2i) -> void:
 		player.position -= Vector2(Player.FACING_VEC[player.facing]) * 10.0
 		return
 	var spot: Array = Database.map(target).get("spots", {}).get(str(wp["spot"]), [1, 1])
+	if target.begins_with("mine_"):
+		AudioManager.sfx("ladder")
 	AudioManager.sfx("door")
 	transition_to(target, MapRuntime.foot_pixel(Vector2i(int(spot[0]), int(spot[1]))), int(wp["face"]))
+
+
+# --- mine ----------------------------------------------------------------------
+
+func _change_floor(delta: int) -> void:
+	var f: int = int(rt.data.get("floor", 0)) + delta
+	AudioManager.sfx("ladder")
+	_warp_cooldown = 0.6
+	if f < 1:
+		var lake: Array = Database.map("lake")["spots"]["mine_door"]
+		transition_to("lake", MapRuntime.foot_pixel(Vector2i(int(lake[0]), int(lake[1]))), 0)
+		return
+	var spot_name: String = "entrance" if delta > 0 else "exit"
+	var sp: Array = Database.map(MineGen.map_id(f))["spots"][spot_name]
+	transition_to(MineGen.map_id(f), MapRuntime.foot_pixel(Vector2i(int(sp[0]), int(sp[1]))), 0)
+
+
+func teleport_floor(f: int) -> void:
+	if f <= 0:
+		var lake: Array = Database.map("lake")["spots"]["mine_door"]
+		transition_to("lake", MapRuntime.foot_pixel(Vector2i(int(lake[0]), int(lake[1]))), 0)
+		return
+	var sp: Array = Database.map(MineGen.map_id(f))["spots"]["entrance"]
+	transition_to(MineGen.map_id(f), MapRuntime.foot_pixel(Vector2i(int(sp[0]), int(sp[1]))), 0)
+
+
+func _open_elevator() -> void:
+	var scr: ElevatorScreen = ElevatorScreen.new()
+	open_screen(scr)
+	var res: Variant = await scr.closed
+	if res != null:
+		await get_tree().process_frame
+		teleport_floor(int(res))
+
+
+func _on_player_died() -> void:
+	if _ending:
+		return
+	_close_all_screens()
+	GameState.flags["died"] = true
+	TimeManager.end_day(false)
+
+
+func _open_treasure(origin: Vector2i, o: Dictionary) -> void:
+	if bool(o.get("opened", false)):
+		return
+	o["opened"] = true
+	var f: int = int(o.get("floor", 0))
+	GameState.mine["chests"] = GameState.mine.get("chests", {})
+	GameState.mine["chests"][str(f)] = true
+	AudioManager.sfx("chest")
+	var names: PackedStringArray = []
+	for e: Array in Database.table("mine")["treasures"].get(str(f), []):
+		Loot.give(str(e[0]), int(e[1]))
+		names.append("%s x%d" % [Database.item_name(str(e[0])), int(e[1])])
+	var money: int = int(Database.table("mine")["treasure_money"].get(str(f), 0))
+	if money > 0:
+		GameState.add_money(money)
+	EventBus.toast.emit(Loc.f("MINE_TREASURE", [", ".join(names)]), "")
+	rt.touch_object(origin)
+
+
+# --- pêche ---------------------------------------------------------------------
+
+func _fish(c: Vector2i, level: int) -> void:
+	if rt.terrain_id(c) != "water":
+		EventBus.toast.emit(Loc.t("FISH_NEED_WATER"), "")
+		return
+	var cost: float = Database.bal_f("energy_rod", 4.0)
+	if GameState.energy < cost:
+		AudioManager.sfx("error")
+		EventBus.toast.emit(Loc.t("TOAST_NO_ENERGY"), "")
+		return
+	GameState.change_energy(-cost)
+	var place: String = Fishing.place_for(rt)
+	var fish: String = Fishing.pick(place if place != "" else "river", level)
+	var bait: bool = Fishing.use_bait()
+	AudioManager.sfx("cast")
+	var scr: FishingScreen = FishingScreen.new().setup(fish, level, bait)
+	open_screen(scr)
+	var res: Dictionary = await scr.closed
+	if bool(res.get("caught", false)):
+		Fishing.land(str(res["fish"]), int(res["q"]))
+		if bool(res.get("treasure", false)):
+			Fishing.treasure()
 
 
 # --- boucle --------------------------------------------------------------------
@@ -353,6 +456,9 @@ func _interact_zone(z: Dictionary) -> bool:
 		"mailbox":
 			EventBus.toast.emit(Loc.t("MAILBOX_EMPTY"), "")
 			return true
+		"elevator":
+			_open_elevator()
+			return true
 		"kitchen":
 			if Buildings.level("house") >= 2:
 				open_screen(CraftingScreen.new().setup("cook"))
@@ -396,6 +502,8 @@ func _on_service(service: String) -> void:
 			open_screen(BuildScreen.new())
 		"animals":
 			open_screen(AnimalShopScreen.new())
+		"tool_upgrade":
+			open_screen(ToolUpgradeScreen.new())
 
 
 func _pet(a: AnimalEntity) -> void:
@@ -450,12 +558,20 @@ func _interact_object(origin: Vector2i, o: Dictionary) -> bool:
 			return true
 		"ftree":
 			return Farming.harvest_tree(rt, origin)
+		"treasure":
+			_open_treasure(origin, o)
+			return true
 		"placed":
 			if o.has("slots"):
 				AudioManager.sfx("chest")
 				open_container(GameState.inventory, o["slots"], Loc.t("CHEST_TITLE"), false)
 				return true
 			var pdef: Dictionary = WorldObjects.def_of(o)
+			if str(pdef.get("kind", "")) == "crab_pot":
+				if not Fishing.collect_pot(o):
+					EventBus.toast.emit(Loc.t("POT_EMPTY"), "")
+				rt.touch_object(origin)
+				return true
 			if str(pdef.get("kind", "")) == "machine":
 				var res: String = Machines.interact(o, GameState.held_id(), GameState.hotbar_index)
 				if res == "MACHINE_BUSY":
@@ -481,7 +597,13 @@ func _use_held(c: Vector2i, hold: float) -> bool:
 	if it.has("tool"):
 		var kind: String = str(it["tool"])
 		player.swing(SWING_TIME)
-		if kind != "rod" and kind != "sword":
+		if kind == "sword":
+			if GameState.energy > 0.0:
+				GameState.change_energy(-Database.bal_f("energy_sword", 0.5))
+			monsters.attack(int(it.get("level", 1)))
+		elif kind == "rod":
+			_fish(c, int(it.get("level", 1)))
+		else:
 			var charged: bool = hold >= Database.bal_f("charge_time", 0.45) and ToolUse.can_charge(id)
 			ToolUse.use(rt, id, c, player.facing, charged)
 		return true

@@ -232,13 +232,13 @@ SHOPS: Dict[str, Any] = {
               "stock": ["@seeds", "@saplings", "flour", "compost", "rich_fertilizer", "quick_soil", "bouquet", "braided_ring"],
               "services": ["backpack"]},
     "forge": {"npc": "bastien", "open": 9, "close": 17, "closed_day": 0,
-              "stock": ["coal", ["ore_copper", 60], ["ore_iron", 120], ["ore_silver", 220]], "services": ["tool_upgrade", "bell_cast"]},
+              "stock": ["coal", ["ore_copper", 60], ["ore_iron", 120], ["ore_silver", 220]], "services": ["tool_upgrade"]},
     "carpentry": {"npc": "isaure", "open": 9, "close": 17, "closed_day": 2,
                   "stock": [["wood", 12], ["stone", 18], "table", "chair", "armchair", "bookshelf", "cabinet", "rug", "lamp", "painting",
                             "plant", "stove", "clock", "wallpaper_1", "wallpaper_2", "wallpaper_3", "wallpaper_4",
                             "floor_1", "floor_2", "floor_3", "floor_4"], "services": ["build"]},
     "ranch": {"npc": "theodule", "open": 8, "close": 16, "closed_day": 3, "stock": ["hay", "pet_bed"], "services": ["animals"]},
-    "fishshop": {"npc": "maiwenn", "open": 6, "close": 14, "closed_day": 1, "stock": ["bait", "crab_pot"], "services": []},
+    "fishshop": {"npc": "maiwenn", "open": 6, "close": 14, "closed_day": 1, "stock": ["bait", "crab_pot", ["rod_2", 1500]], "services": []},
     "inn": {"npc": "gaspard", "open": 12, "close": 23, "closed_day": -1,
             "stock": [["bread", 180], ["garden_stew", 480], ["crepes", 300]], "services": ["recipes"],
             "recipes": {"crepes": 600, "turnip_soup": 500, "ratatouille": 900, "pike_butter": 1200, "garden_stew": 800, "winter_salad": 500}},
@@ -292,5 +292,5 @@ HOUSE: Dict[str, Any] = {
 }
 
 START_ITEMS: List[List[Any]] = [
-    ["hoe_1", 1], ["can_1", 1], ["axe_1", 1], ["pick_1", 1], ["scythe_1", 1], ["seed_turnip", 12], ["field_snack", 2],
+    ["hoe_1", 1], ["can_1", 1], ["axe_1", 1], ["pick_1", 1], ["scythe_1", 1], ["sword_1", 1], ["rod_1", 1], ["seed_turnip", 12], ["field_snack", 2],
 ]
