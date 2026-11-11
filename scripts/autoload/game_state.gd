@@ -7,7 +7,7 @@ const SAVE_FIELDS: Array[String] = [
 	"inventory", "inventory_size", "hotbar_index", "day", "minutes", "weather", "weather_tomorrow",
 	"map_id", "px", "py", "facing", "skills", "maps", "relations", "quests", "story", "stats",
 	"collections", "shipping", "buildings", "animals", "house", "tool_upgrade", "recipes",
-	"buffs", "mine", "flags", "pet", "seed", "playtime", "spouse", "pending_mail",
+	"buffs", "mine", "flags", "pet", "seed", "playtime", "spouse", "pending_mail", "can_water",
 ]
 const SKILLS: Array[String] = ["farming", "husbandry", "fishing", "mining", "combat", "foraging"]
 
@@ -53,6 +53,7 @@ var seed: int = 0
 var playtime: float = 0.0
 var spouse: String = ""
 var pending_mail: Array = []
+var can_water: int = 0
 
 
 func reset() -> void:
@@ -87,6 +88,7 @@ func reset() -> void:
 	stats = {}
 	collections = {"donated": {}, "rewards": {}}
 	shipping = []
+	shipping.resize(Database.bal_i("shipping_size", 36))
 	buildings = {}
 	animals = []
 	house = {"level": 1, "upgrade_days": 0, "wallpaper": 0, "floor": 0}
@@ -100,6 +102,34 @@ func reset() -> void:
 	playtime = 0.0
 	spouse = ""
 	pending_mail = []
+	can_water = 0
+
+
+## Démarre une nouvelle partie : état neuf, objets de départ, réveil dans la maison.
+func new_game(p_name: String, p_farm: String, p_outfit: int) -> void:
+	reset()
+	active = true
+	player_name = p_name
+	farm_name = p_farm
+	outfit = clampi(p_outfit, 0, 2)
+	seed = randi()
+	weather = "sun"
+	weather_tomorrow = "sun"
+	for entry: Array in Database.table("tools").get("start_items", []):
+		add_item(str(entry[0]), int(entry[1]))
+	Recipes.refresh(false)
+	Skills.recompute_stats()
+	energy = float(max_energy)
+	health = float(max_health)
+	map_id = "farmhouse_1"
+	var spot: Array = Database.map("farmhouse_1").get("spots", {}).get("bed", [2, 4])
+	px = float(int(spot[0]) * 16 + 8)
+	py = float(int(spot[1]) * 16 + 14)
+	facing = 0
+
+
+func house_map() -> String:
+	return "farmhouse_%d" % clampi(int(house.get("level", 1)), 1, 3)
 
 
 func to_dict() -> Dictionary:

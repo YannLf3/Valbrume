@@ -5,7 +5,7 @@ from typing import Any, Dict, List
 # Toutes les constantes de gameplay vivent ici (aucune valeur magique dans le code).
 BALANCE: Dict[str, Any] = {
     "start_money": 500, "start_energy": 100, "start_health": 100,
-    "stack_size": 999, "inventory_base_size": 36, "inventory_big_size": 48, "backpack_price": 5000,
+    "stack_size": 999, "inventory_base_size": 36, "inventory_big_size": 48, "shipping_size": 36, "backpack_price": 5000,
     "quality_price_mult": [1.0, 1.25, 1.5],
     "player_speed": 62.0, "player_speed_buff": 8.0,
     # énergie par action
@@ -19,7 +19,7 @@ BALANCE: Dict[str, Any] = {
     # agriculture
     "quality_silver_base": 0.02, "quality_gold_base": 0.0, "quality_per_level": 0.012, "quality_gold_ratio": 0.4,
     "fertilizer_quality": {"compost": 0.12, "rich_fertilizer": 0.30},
-    "quick_soil_speed": 0.25, "pest_chance": 0.05, "scarecrow_radius": 6, "weed_spread_chance": 0.02,
+    "quick_soil_speed": 0.25, "pest_chance": 0.015, "pest_start_day": 10, "scarecrow_radius": 6, "weed_spread_chance": 0.02,
     "soil_decay_chance": 0.12, "sprinkler_patterns": {
         "sprinkler_1": [[0, -1], [1, 0], [0, 1], [-1, 0]],
         "sprinkler_2": [[-1, -1], [0, -1], [1, -1], [-1, 0], [1, 0], [-1, 1], [0, 1], [1, 1]],

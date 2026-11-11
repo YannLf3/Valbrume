@@ -282,6 +282,7 @@ def house(wt: int, wall_h: int = 34, roof_h: int = 30, wall: str = "cream", beam
     w = wt * T
     h = wall_h + roof_h + 8
     c = Canvas(w, h)
+    door = int(door) if door is not None else None   # la porte occupe exactement une case
     wy = h - wall_h          # haut du mur
     ry = wy - roof_h + 6     # haut du toit
     r = rng_for("house" + seed + str(wt))
@@ -363,9 +364,9 @@ def coop(level: int) -> Canvas:
     _shingles(c, 0, wy - 22, w, 22, "wood", slope=8)
     c.hline(8, wy - 22, w - 16, "wood_l")
     c.hline(0, wy - 1, w, "bark_d")
-    c.rect(w // 2 - 6, h - 18, 12, 18, "bark_d")
-    c.rect(w // 2 - 5, h - 17, 10, 17, "wood_l")
-    c.line(w // 2 - 5, h - 17, w // 2 + 4, h - 1, "wood")
+    c.rect(34, h - 18, 12, 18, "bark_d")      # porte centrée sur la case n° 2
+    c.rect(35, h - 17, 10, 17, "wood_l")
+    c.line(35, h - 17, 44, h - 1, "wood")
     c.rect(8, h - 9, 8, 9, "ink")
     c.frame(7, h - 10, 10, 10, "cream")
     c.poly([(8, h - 1), (16, h - 1), (20, h + 2), (4, h + 2)], "wood")
@@ -377,7 +378,7 @@ def coop(level: int) -> Canvas:
 
 
 def barn(level: int) -> Canvas:
-    w, h = (80, 72) if level == 1 else (96, 78)
+    w, h = (80, 72) if level == 1 else (112, 78)
     c = Canvas(w, h)
     wy = h - 36
     c.rect(2, wy, w - 4, 36, "red")
@@ -456,7 +457,7 @@ def greenhouse(ruined: bool = False) -> Canvas:
             c.rect(x, h - 14, 8, 4, "rust")
             c.ellipse(x + 4, h - 17, 4, 3, "leaf")
             c.px(x + 3, h - 18, "rose")
-    _door(c, w // 2 - 6, h - 20, "wood_l")
+    _door(c, 50, h - 20, "wood_l")
     c.outline()
     return c
 

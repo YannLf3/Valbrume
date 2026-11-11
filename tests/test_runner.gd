@@ -38,4 +38,6 @@ func _ready() -> void:
 	for msg: String in failed:
 		print("  ✗ " + msg)
 	print("Tests : %d · vérifications : %d · échecs : %d" % [total_tests, total_checks, failed.size()])
+	AudioManager.shutdown()
+	await get_tree().create_timer(0.25).timeout  # laisse le serveur audio relâcher les flux
 	get_tree().quit(1 if not failed.is_empty() else 0)

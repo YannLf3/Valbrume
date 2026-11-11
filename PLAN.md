@@ -44,8 +44,8 @@ Légende : `[ ]` à faire · `[x]` fait et validé.
 **Validation** : deux exécutions donnent des fichiers identiques (hash) ; planches relues ; contrôle de palette automatique vert.
 
 ### P2 — Première boucle jouable
-- [ ] joueur (8 directions, collisions, action contextuelle), carte de la ferme
-- [ ] temps, énergie, outils de base, agriculture, coffre d'expédition, sommeil + bilan, sauvegarde
+- [x] joueur (8 directions, collisions, action contextuelle), carte de la ferme
+- [x] temps, énergie, outils de base, agriculture, coffre d'expédition, sommeil + bilan, sauvegarde
 
 **Validation** : labourer → semer → arroser → dormir → récolter → vendre fonctionne ; aller-retour de sauvegarde testé.
 
@@ -97,7 +97,7 @@ _(mis à jour à chaque fin de phase : où on en est, quoi faire ensuite)_
 
 - 2026-11-11 — P0 et P1 terminées. Pipeline : `python tools/build_assets.py` (assets) puis `python tools/build_data.py` (données + i18n). 1 829 sprites, 61 SFX, 9 musiques, déterminisme vérifié (`--verify`). Suite : P2 (cartes via `tools/gen_maps.py`, joueur, agriculture).
 
-### Point d'arrêt — 2026-11-11 (pause demandée, reprise par « continue »)
+### Point d'arrêt — 2026-11-11 (P0 et P1, historique)
 
 **Fait et commité** : P0 (socle) et P1 (assets + données). Tests : 9 tests / 46 vérifications verts. Rien d'autre en cours sur disque.
 
@@ -119,3 +119,16 @@ _(mis à jour à chaque fin de phase : où on en est, quoi faire ensuite)_
 - Godot : `/Applications/Godot.app/Contents/MacOS/Godot`
 - Assets : `.venv/bin/python tools/build_assets.py [--no-audio] [--verify]` · données : `.venv/bin/python tools/build_data.py`
 - Tests : `Godot --headless res://tests/test_runner.tscn` · import : `Godot --headless --import`
+
+### Journal — P2 terminée (2026-11-11)
+
+Première boucle jouable : titre → nouvelle partie (3 emplacements) → introduction → ferme. Labour (zones aux niveaux élevés, charge maintenue), semis, arrosage, croissance nocturne, récolte (qualité), cultures à repousse, mort hors saison, pluie, arroseurs, épouvantail, arbres fruitiers, coffre d'expédition (conteneur glisser-déposer), sommeil → bilan → réveil dans le lit, sauvegarde automatique, évanouissement à 2 h.
+
+- Code : `scripts/world/` (MapRuntime, MapView, World, Fx, DayLight), `scripts/entities/player.gd`, `scripts/systems/` (farming, tool_use, world_objects, placement, consumables, skills, recipes, economy, weather, day_cycle, loot, loc), `scripts/ui/` (ui_kit, hud, slot_grid, container/dialog/summary/options/pause/confirm/title).
+- Cartes : `tools/gen_maps.py` produit `farm`, `farmhouse_1..3` (+ aperçus `assets/contact/map_*.png`). Les cartes village/forêt/lac/côte/intérieurs arrivent en P3 : les passages vers elles affichent « chemin pas encore praticable ».
+- Contrôle visuel : `godot --path . res://tests/shot.tscn -- --out=<dossier>` (et `shot_title.tscn`) lancent une vraie fenêtre et enregistrent des captures.
+- Tests : 28 tests, 247 vérifications, journal sans erreur ni avertissement (`godot --headless res://tests/test_runner.tscn`).
+- Débogage (F3 puis F4-F10) : actif seulement dans les builds de debug.
+- Écarts connus à traiter : butin perdu si sac plein (toast d'avertissement) ; manette/tactile des écrans à valider en P7 ; remappage des touches en P7.
+
+**Prochaine étape : P3** — étendre `tools/gen_maps.py` (village 80×60, forêt 56×48, lac 56×44, côte 56×34, intérieurs des commerces/maisons), `tools/content/npcs.py` (10 PNJ, dialogues FR/EN, événements, cadeaux, emplois du temps), système d'amitié, pathfinding A* sur grille, magasins.

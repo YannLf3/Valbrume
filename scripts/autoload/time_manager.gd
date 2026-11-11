@@ -48,6 +48,7 @@ func advance(minutes: int) -> void:
 		if _ending:
 			return
 		GameState.minutes += 1
+		Consumables.tick()
 		EventBus.minute_passed.emit(GameState.minutes)
 		if GameState.minutes % 60 == 0:
 			EventBus.hour_passed.emit(GameState.minutes / 60)

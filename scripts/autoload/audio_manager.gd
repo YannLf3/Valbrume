@@ -113,3 +113,18 @@ func current_music() -> String:
 func _on_music_finished(p: AudioStreamPlayer) -> void:
 	if p == _music_a and _current_music != "":
 		p.play()
+
+
+## Arrête tout et libère les flux (appelé à la fermeture pour éviter les fuites signalées par Godot).
+func shutdown() -> void:
+	for p: AudioStreamPlayer in _pool:
+		p.stop()
+		p.stream = null
+	for p2: AudioStreamPlayer in [_music_a, _music_b]:
+		p2.stop()
+		p2.stream = null
+	_cache.clear()
+
+
+func _exit_tree() -> void:
+	shutdown()
