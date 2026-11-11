@@ -141,6 +141,8 @@ def strings() -> Dict[str, Tuple[str, str]]:
         "UPGRADE_MAX": ("Niveau maximal.", "Maximum level."), "UPGRADE_START": ("Améliorer", "Upgrade"),
         "UPGRADE_NOW": ("En cours : %s (%d j)", "Underway: %s (%d d)"), "UPGRADE_READY": ("Ton outil amélioré est prêt : %s !", "Your upgraded tool is ready: %s!"),
         "SERVICE_UPGRADE": ("Outils", "Tools"),
+        "MAP_BELFRY": ("Le Carillon", "The Carillon"), "MAP_GREENHOUSE": ("La serre", "The Greenhouse"),
+        "MAP_ALPAGE": ("L'alpage", "The Alpine Pasture"),
         # introduction
         "INTRO_SPEAKER": ("Tante Odile", "Aunt Odile"),
         "INTRO_1": ("Chère petite pousse, si tu lis ceci, c'est que j'ai enfin pris la route du grand large. La ferme est à toi : le toit fuit un peu, la terre est têtue, mais elle est bonne.",

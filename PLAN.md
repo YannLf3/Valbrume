@@ -71,8 +71,8 @@ Légende : `[ ]` à faire · `[x]` fait et validé.
 **Validation** : génération de mine reproductible par graine ; tables de pêche testées.
 
 ### P6 — Monde vivant
-- [ ] météo + prévision, saisons complètes, cycle jour/nuit
-- [ ] 4 festivals avec mini-jeu, quêtes quotidiennes, collections, fil rouge (6 cloches)
+- [x] météo + prévision, saisons complètes, cycle jour/nuit
+- [x] 4 festivals avec mini-jeu, quêtes quotidiennes, collections, fil rouge (6 cloches)
 
 **Validation** : simulation d'une année complète en headless sans erreur.
 
@@ -162,3 +162,12 @@ Mine de 60 étages générés par automate cellulaire (`mine_gen.gd`, graine = p
 - Départ : l'épée et la canne sont fournies (barre rapide : houe, arrosoir, hache, pioche, faux, épée, canne, graines, en-cas).
 
 **Prochaine étape : P6** — fil rouge des 6 cloches (fonte chez Bastien, serre, route de la plage, étage 40+, marché, alpage, Grand Bourdon), festivals (4), quêtes quotidiennes + tableau, journal (quêtes, relations, compétences, stats, calendrier), collections du musée, météo visible (pluie/neige/orage/feuilles), lumières nocturnes, mariage.
+
+### Journal — P6 terminée (2026-11-11)
+
+Monde vivant : fil rouge des 6 cloches (fonte chez Bastien : serre reconstruite, route de la plage, étages 41-60, marché du dimanche, alpage, Grand Bourdon → fin), beffroi visitable (cloches allumées), serre intérieure (cultures toute l'année), alpage, registre d'Odile (6 pages de lore), 4 festivals avec 4 mini-jeux propres (mémoire de graines, cadence de régate, jury du potiron, boules de neige) et dispersion des habitants sur la place, quêtes quotidiennes procédurales (livraison, récolte, chasse, pêche) et tableau, journal (quêtes, relations, talents, stats, calendrier), musée (3 collections, paliers de récompenses), mariage (anneau → noces → conjoint dans la maison), météo visible (pluie, orage avec éclairs et tonnerre, neige, vent, pétales et feuilles), lumières nocturnes (lampadaires, machines).
+
+- Nouveau code : `story.gd`, `festivals.gd`, `festival_games.gd`, `quests.gd`, `collections.gd`, `weather_fx.gd`, écrans `bell/quest_board/museum/journal/festival`, `tools/content/story.py`, `strings_story.py`.
+- Tests : 76 tests, 2 924 vérifications.
+
+**Prochaine étape : P7** — commandes tactiles (joystick flottant, boutons, zones sûres, échelle d'interface), remappage des touches, `check_i18n.py`, finitions (secousses, popups d'objets).

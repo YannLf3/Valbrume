@@ -93,7 +93,9 @@ def village() -> M:
             m.warp(dx, dy, 1, 1, inner, "door", 1)
         m.spots["door_" + inner] = [dx, dy + 1]
     # le Carillon (beffroi) : sa porte ouvrira avec le fil rouge
-    m.static("belfry", 38, 24, 4, 3)
+    m.static("belfry", 38, 24, 4, 3, door=(40, 26))
+    m.warp(40, 26, 1, 1, "belfry", "door", 1)
+    m.spots["door_belfry"] = [40, 27]
     m.static("fountain", 39, 30, 3, 2)
     m.static("weather_harp", 46, 25, 1, 1)
     m.zone(46, 25, 1, 1, "forecast", text="FORECAST_HARP")
@@ -111,6 +113,13 @@ def village() -> M:
     m.static("stall_blue", 47, 34, 3, 1, flag="bell_hearth")
     m.zone(31, 34, 3, 1, "shop", arg="market")
     m.zone(47, 34, 3, 1, "shop", arg="market")
+    # décors de fête (affichés le jour d'un festival) et estrade du concours
+    for bx, by in ((29, 22), (36, 22), (45, 22), (52, 22)):
+        m.static("bunting", bx, by, 3, 1, solid=False, flag="festival_today", flat=False)
+    m.static("stall_red", 40, 34, 3, 1, flag="festival_today")
+    m.zone(40, 34, 3, 1, "festival")
+    for rx, ry in ((29, 35), (50, 35)):
+        m.static("ribbon_red", rx, ry, 1, 1, solid=False, flag="festival_today")
     # passages
     m.warp(0, 20, 1, 2, "farm", "village_in", 2)
     m.warp(30, 0, 2, 1, "lake", "village_in", 1)
@@ -186,7 +195,7 @@ def lake() -> M:
     m.static("boat", 38, 36, 3, 1)
     m.warp(27, 43, 2, 1, "village", "lake_in", 1)
     m.warp_ex(55, 20, 1, 3, "alpage", "village_in", 3, need_flag="bell_flocks", msg="TOAST_ALPAGE_LOCKED")
-    m.spots.update({"village_in": [28, 41], "shore_w": [10, 26], "shore_e": [46, 26], "dock": [28, 33], "mine_door": [27, 9],
+    m.spots.update({"village_in": [28, 41], "alpage_in": [53, 21], "shore_w": [10, 26], "shore_e": [46, 26], "dock": [28, 33], "mine_door": [27, 9],
                     "shore_n": [28, 11]})
     keep = _rect_cells(24, 4, 8, 12) | _rect_cells(26, 36, 4, 8) | _rect_cells(52, 18, 4, 7)
     pop = Pop(m, r, keep)
@@ -378,5 +387,67 @@ def animal_houses() -> List[M]:
             animal_house("barn_in_1", 12, 8, "barn", "barn_door", 3), animal_house("barn_in_2", 14, 9, "barn", "barn_door", 4)]
 
 
+def belfry_room() -> M:
+    m = room("belfry", 12, 10, 0, 3)
+    m.warps[0]["spot"] = "door_belfry"
+    positions = [("furrows", 1), ("waves", 3), ("stone", 5), ("hearth", 7), ("flocks", 9), ("great", 5)]
+    for i, (bid, x) in enumerate(positions):
+        y = 2 if bid != "great" else 5
+        w = 1
+        m.static("bell_off", x, y, 1, 1, not_flag="bell_" + bid)
+        m.static("bell_on", x, y, 1, 1, flag="bell_" + bid)
+        m.zone(x, y, 1, 1, "bell", arg=bid)
+    m.spots["door"] = [6, 8]
+    return m
+
+
+def greenhouse_room() -> M:
+    W, H = 16, 12
+    m = M("greenhouse_in", W, H, " ", outdoor=False, interior="room", style={"wall": 1, "floor": 0}, name="MAP_GREENHOUSE", music="",
+          farmable=True, greenhouse=True)
+    for x in range(W):
+        m.set(x, 0, "W")
+        m.set(x, 1, "w")
+        for y in range(2, H - 1):
+            m.set(x, y, "f")
+    for y in range(3, 8):
+        for x in range(2, W - 2):
+            m.set(x, y, ",")
+    d = W // 2
+    m.set(d, H - 1, "f")
+    m.static("door_mat", d, H - 2, 1, 1, solid=False)
+    m.warp(d, H - 1, 1, 1, "farm", "greenhouse_door", 0)
+    m.spots["door"] = [d, H - 2]
+    for x in (3, 7, 12):
+        m.static("window_in", x, 1, 1, 1, solid=False)
+    return m
+
+
+def alpage() -> M:
+    W, H = 48, 30
+    m = M("alpage", W, H, ".", outdoor=True, forage="seasonal", name="MAP_ALPAGE", music="season", gem_biome="2")
+    r = rng_for("alpage")
+    for x in range(W):
+        d = 3 + int(round(1.4 * math.sin(x * 0.33)))
+        for y in range(max(2, d)):
+            m.set(x, y, "^")
+    for y in range(12, 18):
+        for x in range(0, 6):
+            m.set(x, y, "=")
+    m.ellipse(34, 18, 5.0, 3.5, ":")
+    m.ellipse(34, 18, 3.5, 2.2, "~")
+    m.warp(0, 13, 1, 4, "lake", "alpage_in", 2)
+    m.spots.update({"village_in": [2, 14], "peak": [24, 10], "spring": [34, 22], "lake_in": [2, 14]})
+    keep = _rect_cells(0, 10, 8, 10)
+    pop = Pop(m, r, keep)
+    pop.border_trees(["pine", "pine", "birch"], 2, 0.8, [(0, 12, 3, 17)])
+    pop.scatter(18, lambda x, y: pop.put("rock", x, y, hp=2), 2, 6, W - 3, H - 3)
+    pop.scatter(3, lambda x, y: pop.put("rock_big", x, y, 2, 2, hp=8), 4, 6, W - 4, H - 4)
+    pop.scatter(16, lambda x, y: pop.put("bush", x, y), 2, 6, W - 3, H - 3)
+    for _ in range(60):
+        pop.put("tall_grass", r.randint(6, 40), r.randint(8, 26), hp=1)
+    return m
+
+
 def all_world_maps() -> List[M]:
-    return [village(), forest(), lake(), beach()] + interiors() + animal_houses()
+    return [village(), forest(), lake(), beach()] + interiors() + animal_houses() + [belfry_room(), greenhouse_room(), alpage()]

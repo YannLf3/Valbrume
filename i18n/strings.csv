@@ -10,6 +10,30 @@ ANIMAL_NAME_PROMPT,Comment l'appeler ?,What will you call it?
 ANIMAL_NO_HOME,Il te faut d'abord le bâtiment adapté.,You need the right building first.
 ANIMAL_SHEEP,Mouton,Sheep
 ANIMAL_SHOP_TITLE,Nos animaux,Our animals
+BELLD_FLOCKS,"La cloche des estives, aiguë et claire. Elle appelait les bêtes. Elle ouvrira le sentier de l'alpage.","The summer pasture bell, high and clear. It called the animals home. It will open the alpine trail."
+BELLD_FURROWS,La cloche des récoltes. Elle sonnait à chaque première gerbe. Sa fonte rendra la serre à la ferme.,The harvest bell. It rang at the first sheaf of every year. Casting it will give the farm its greenhouse back.
+BELLD_GREAT,"La mère de toutes les cloches, la dernière qu'Odile n'ait pas pu fondre. Quand elle sonnera, le Carillon sera complet.","The mother of all bells, the one Odile never managed to cast. When it rings, the Carillon will be whole."
+BELLD_HEARTH,La cloche des veillées. Elle rassemblait le village le dimanche. Elle fera revenir le marché.,The evening bell. It gathered the village on Sundays. It will bring the market back.
+BELLD_STONE,La cloche des galeries. Elle prévenait les mineurs. Elle brisera le sceau de l'étage 40.,The galleries' bell. It warned the miners. It will break the seal on floor 40.
+BELLD_WAVES,"La cloche des marées, grave et lente. Elle guidait les barques. Elle ouvrira la route de la plage.","The tide bell, deep and slow. It guided the boats home. It will open the road to the beach."
+BELLR_FLOCKS,Le sentier de l'alpage est dégagé : herbes rares et vue sur toute la vallée.,The alpine trail is cleared: rare herbs and a view over the whole valley.
+BELLR_FURROWS,"La serre est reconstruite : cultive toute l'année, à l'abri !","The greenhouse is rebuilt: grow all year round, under glass!"
+BELLR_GREAT,Le Grand Bourdon sonne. Ormelune chante de nouveau !,The Great Bourdon rings. Ormelune sings again!
+BELLR_HEARTH,Le marché du dimanche rouvre sur la place d'Ormelune.,The Sunday market reopens on Ormelune's square.
+BELLR_STONE,Les profondeurs de la mine (étages 41 à 60) sont ouvertes.,The depths of the mine (floors 41 to 60) are open.
+BELLR_WAVES,L'éboulis de la route de la plage s'effondre : la mer t'attend !,The rockslide on the beach road gives way: the sea awaits!
+BELL_ALREADY,Cette cloche est déjà fondue.,This bell is already cast.
+BELL_CAST,Fondre,Cast
+BELL_DARK,Cette cloche est encore muette.,This bell is still silent.
+BELL_DONE,Fondue,Cast
+BELL_FLOCKS,Troupeaux,Flocks
+BELL_FURROWS,Sillons,Furrows
+BELL_GREAT,Grand Bourdon,Great Bourdon
+BELL_HEARTH,Foyer,Hearth
+BELL_RING,La cloche vibre longuement.,The bell hums for a long while.
+BELL_STONE,Roche,Stone
+BELL_TITLE,Fonderie du Carillon,Carillon Foundry
+BELL_WAVES,Ondes,Waves
 BIN_TITLE,Coffre d'expédition,Shipping chest
 BIO_BASTIEN,Un forgeron taiseux dont les mains parlent mieux que la bouche. Il a longtemps été l'apprenti d'Odile.,A taciturn blacksmith whose hands speak better than his mouth. He was Odile's apprentice for years.
 BIO_CAPUCINE,Elle tient l'épicerie d'Ormelune avec le sourire et un carnet de comptes impeccable. Elle rêve en secret d'un jardin sauvage.,She runs Ormelune's grocery with a smile and an immaculate ledger. She secretly dreams of a wild garden.
@@ -54,6 +78,9 @@ CAT_SEED,Graine,Seed
 CAT_TOOL,Outil,Tool
 CHEST_TITLE,Coffre,Chest
 COLLECT_NOTHING,Rien à ramasser pour l'instant.,Nothing to collect yet.
+COLL_ARTIFACTS,Artefacts,Artifacts
+COLL_FISH,Poissons,Fish
+COLL_MINERALS,Minéraux,Minerals
 COMMON_BACK,Retour,Back
 COMMON_CANCEL,Annuler,Cancel
 COMMON_CLOSE,Fermer,Close
@@ -326,6 +353,10 @@ D_THEODULE_SNOW_1,De la neige. Les poules détestent. Elles me le font savoir to
 D_THEODULE_SPRING_1,"Les agneaux, les poussins, les veaux… le printemps, c'est la grande maternité !","Lambs, chicks, calves... spring is the great maternity ward!"
 D_THEODULE_SUMMER_1,Faut faire boire les bêtes plus souvent. Et le vieux aussi.,Gotta water the animals more often. And the old man too.
 D_THEODULE_WINTER_1,"L'hiver, on garde les bêtes au chaud. Et on se garde soi-même, au coin du poêle.","In winter we keep the animals warm. And ourselves, by the stove."
+ENDING_1,"Chère petite pousse… Je les ai entendues, toutes les six, de très loin. Je souris à m'en faire mal aux joues.","Dear little sprout... I heard all six of them, from very far away. I'm smiling till my cheeks ache."
+ENDING_2,Je ne suis pas partie pour fuir. Je suis partie pour que tu aies la place de devenir ce que tu es.,I didn't leave to run away. I left so you'd have room to become who you are.
+ENDING_3,"Ormelune chante de nouveau. La ferme prospère, les amis sont là, la vallée respire. Voilà ce qu'on appelle un foyer.","Ormelune sings again. The farm thrives, friends are near, the valley breathes. That's what we call a home."
+ENDING_4,"Continue, si tu veux. Il reste des saisons, des cloches à accorder, des gens à aimer. Je t'embrasse. — Odile","Carry on, if you like. There are seasons left, bells to tune, people to love. Hugs. — Odile"
 EV_BASTIEN_1_L1,"Viens voir. Là, sur l'établi. Elle l'avait commencée avant de partir.","Come look. There, on the bench. She started it before she left."
 EV_BASTIEN_1_L2,Une cloche. Petite. Inachevée. Je n'ai jamais osé la finir.,A bell. Small. Unfinished. I never dared finish it.
 EV_BASTIEN_1_L3,Tu crois qu'on a le droit d'achever l'ouvrage de quelqu'un d'autre ?,Do you think we have the right to finish someone else's work?
@@ -466,6 +497,34 @@ EV_THEODULE_2_O1,Avec reconnaissance.,Gratefully.
 EV_THEODULE_2_O2,"Garde-le, il te rappellera l'amie.","Keep it, it'll remind you of the friend."
 EV_THEODULE_2_R1,"Bon. Alors prends ce chèvre frais aussi, pour fêter ça avec un morceau de pain.","Good. Then take this goat cheese too, to celebrate with a piece of bread."
 EV_THEODULE_2_R2,…Tu es plus fine que tu n'en as l'air. Prends tout de même ce fromage.,...You're sharper than you look. Take this cheese anyway.
+FESTI_LANTERNS,"C'est la Fête des Lanternes ! Lance cinq boules de neige sur la cible mouvante : plus tu es près du centre, mieux c'est.","It's the Lantern Festival! Throw five snowballs at the moving target: the closer to the center, the better."
+FESTI_PUMPKIN,"C'est le Concours du Potiron ! Présente ta plus belle récolte au jury : prix, qualité, fraîcheur comptent.","It's the Pumpkin Contest! Present your finest harvest to the jury: value, quality and freshness count."
+FESTI_REGATTA,C'est la Régate des Ondes ! Épreuve de cadence : frappe au bon moment quand le fanion passe devant la bouée.,It's the Wave Regatta! Rhythm contest: strike at the right moment as the pennant passes the buoy.
+FESTI_SEEDS,C'est la Fête des Semis ! Concours de mémoire : retiens la séquence de graines et rejoue-la sans te tromper.,It's the Seed Fair! Memory contest: remember the sequence of seeds and replay it without a slip.
+FEST_DONE,Tu as déjà participé à cette fête.,You already took part in this festival.
+FEST_GAME_JUDGING,Jury du potiron,Pumpkin jury
+FEST_GAME_MEMORY,Mémoire des graines,Seed memory
+FEST_GAME_TARGET,Boules de neige,Snowballs
+FEST_GAME_TIMING,Cadence de régate,Regatta rhythm
+FEST_JUDGE_NONE,Tu n'as aucune récolte à présenter.,You have no harvest to present.
+FEST_JUDGE_PICK,Choisis la récolte à présenter au jury.,Pick the harvest to present to the jury.
+FEST_JUDGE_SKIP,Participer quand même,Take part anyway
+FEST_LANTERNS,Fête des Lanternes,Lantern Festival
+FEST_MEMORY_GO,À toi ! (clique ou touches 1 à 4),Your turn! (click or keys 1 to 4)
+FEST_MEMORY_ROUND,Manche %d / %d,Round %d / %d
+FEST_MEMORY_WATCH,Regarde bien la séquence…,Watch the sequence closely...
+FEST_MONEY,Tu reçois %d é.,You receive %d.
+FEST_NOT_NOW,Pas de festival en ce moment.,No festival right now.
+FEST_PRESS,Appuie au bon moment !,Press at the right moment!
+FEST_PRIZE,Tu reçois %d é et un lot : %s ×%d.,You receive %d and a prize: %s ×%d.
+FEST_PUMPKIN,Concours du Potiron,Pumpkin Contest
+FEST_REGATTA,Régate des Ondes,Wave Regatta
+FEST_RESULT_0,Merci d'avoir participé !,Thanks for taking part!
+FEST_RESULT_1,Médaille de bronze !,Bronze medal!
+FEST_RESULT_2,Médaille d'argent ! Beau travail.,Silver medal! Fine work.
+FEST_RESULT_3,"Médaille d'or ! Bravo, tout le village applaudit !","Gold medal! Bravo, the whole village applauds!"
+FEST_SCORE,Score : %d,Score: %d
+FEST_SEEDS,Fête des Semis,Seed Fair
 FISH_BITE,Ça mord ! Ferre !,A bite! Hook it!
 FISH_ESCAPED,Il s'est échappé…,It got away...
 FISH_LOST,La ligne a cassé !,The line snapped!
@@ -484,6 +543,7 @@ GIFT_DATING,"Oh… {player}. Oui. Moi aussi, ça fait un moment que j'y pense. A
 GIFT_ENGAGED,{player}… tu es sérieux(se) ? Oui ! Mille fois oui ! Le mariage aura lieu dans trois jours.,{player}... are you serious? Yes! A thousand times yes! The wedding will be in three days.
 GIFT_LIMIT,Tu as déjà fait deux cadeaux à %s cette semaine.,You've already given %s two gifts this week.
 GIFT_REFUSED,"Oh… c'est très gentil, mais ce n'est pas ce genre de relation pour moi.","Oh... that's very kind, but that's not the kind of relationship for me."
+HEAL_OK,Hyacinthe te soigne : te voilà d'aplomb.,Hyacinthe tends to you: good as new.
 INTRO_1,"Chère petite pousse, si tu lis ceci, c'est que j'ai enfin pris la route du grand large. La ferme est à toi : le toit fuit un peu, la terre est têtue, mais elle est bonne.","Dear little sprout, if you're reading this, I've finally set off for the open road. The farm is yours: the roof leaks a little and the soil is stubborn, but it's good soil."
 INTRO_2,"Au village d'Ormelune, le Carillon s'est tu le jour de mon départ. Six cloches, six voix : c'est moi qui les fondais. Aucune ne sonne plus.","In the village of Ormelune, the Carillon fell silent the day I left. Six bells, six voices: I cast them myself. Not one of them rings anymore."
 INTRO_3,"Fais-toi des amis, cultive la terre, descends à la mine si tu l'oses. Quand tu auras de quoi refondre mes cloches, tu comprendras pourquoi c'est toi.","Make friends, work the land, go down the mine if you dare. When you have enough to recast my bells, you'll understand why it had to be you."
@@ -770,9 +830,37 @@ JOB_MAIWENN,Pêcheuse,Fisher
 JOB_PIM,Écolier curieux,Curious schoolchild
 JOB_ROSELINE,Tisserande,Weaver
 JOB_THEODULE,Éleveur,Rancher
+JOURNAL_ACTIVE_QUESTS,Quêtes en cours,Active quests
+JOURNAL_BELLS,Cloches du Carillon : %d / %d,Carillon bells: %d / %d
+JOURNAL_CALENDAR,Calendrier,Calendar
+JOURNAL_DATING,(en couple),(dating)
+JOURNAL_DAYS,Jours passés,Days played
+JOURNAL_DONATED,Dons au musée,Museum donations
+JOURNAL_EARNED,Argent gagné,Money earned
+JOURNAL_FISH,Poissons pêchés,Fish caught
+JOURNAL_FLOOR,Étage le plus profond,Deepest floor
+JOURNAL_HARVESTED,Cultures récoltées,Crops harvested
+JOURNAL_MONSTERS,Monstres vaincus,Monsters defeated
+JOURNAL_PAGES,Pages du registre d'Odile : %d / %d,Pages of Odile's ledger: %d / %d
+JOURNAL_PLAYTIME,Temps de jeu,Playtime
+JOURNAL_QUESTS,Quêtes,Quests
+JOURNAL_QUESTS_DONE,Quêtes accomplies : %d,Quests completed: %d
+JOURNAL_RELATIONS,Relations,Relations
+JOURNAL_SHIPPED,Objets expédiés,Items shipped
+JOURNAL_SKILLS,Talents,Skills
+JOURNAL_SPOUSE,(conjoint),(spouse)
+JOURNAL_STATS,Stats,Stats
+JOURNAL_TODAY,Aujourd'hui : %s — %s,Today: %s — %s
 KITCHEN_LOCKED,Il faut agrandir la maison pour avoir une cuisine.,You need a bigger house to have a kitchen.
 LANG_EN,English,English
 LANG_FR,Français,Français
+LORE_1,"Registre d'Odile, p. 1 — « Premier alliage : neuf parts de cuivre pour une d'étain. Elle chante, mais elle chante timide. Je recommence. »","Odile's ledger, p. 1 — 'First alloy: nine parts copper to one of tin. She sings, but shyly. I'll start over.'"
+LORE_2,"Registre d'Odile, p. 2 — « Une cloche ne se fond pas pour qu'on l'entende, mais pour qu'on se retrouve. C'est Hyacinthe qui disait ça. »","Odile's ledger, p. 2 — 'A bell isn't cast to be heard but so people find each other. That's what Hyacinthe used to say.'"
+LORE_3,"Registre d'Odile, p. 3 — « Le minerai de brumite ne se trouve qu'au fond. Il vibre quand on l'approche des autres métaux. Étrange et beau. »","Odile's ledger, p. 3 — 'Brumite ore is only found deep down. It hums when you bring it near other metals. Strange and lovely.'"
+LORE_4,"Registre d'Odile, p. 4 — « Mes mains tremblent. Corentin écrit sous ma dictée. Il croit que je ne vois pas qu'il pleure en silence. »","Odile's ledger, p. 4 — 'My hands tremble. Corentin writes as I dictate. He thinks I don't notice him crying silently.'"
+LORE_5,"Registre d'Odile, p. 5 — « J'ai quitté Ormelune sans dire où j'allais. Ce n'était pas un abandon : il me fallait quelqu'un pour reprendre le feu. »","Odile's ledger, p. 5 — 'I left Ormelune without saying where I was going. It wasn't abandonment: I needed someone to take up the fire.'"
+LORE_6,"Registre d'Odile, p. 6 — « Au petit nouveau, à la petite nouvelle, à celui ou celle que j'ai choisi(e) : le Grand Bourdon n'attend que ta main. »","Odile's ledger, p. 6 — 'To the newcomer, to whoever I chose: the Great Bourdon only waits for your hand.'"
+LORE_NONE,Tu as lu toutes les pages.,You've read every page.
 MACHINE_BAD_INPUT,Cette machine n'accepte pas ça.,This machine doesn't accept that.
 MACHINE_BUSY,Elle travaille encore : %d min.,Still working: %d min.
 MACHINE_EMPTY,Rien à récolter pour l'instant.,Nothing to collect yet.
@@ -780,8 +868,10 @@ MACHINE_NEEDS,Tiens un ingrédient en main pour la lancer.,Hold an ingredient to
 MACHINE_NEEDS_FUEL,Il manque du combustible.,It needs fuel.
 MACHINE_NEED_MORE,Il en faut davantage.,You need more of it.
 MAILBOX_EMPTY,La boîte aux lettres est vide.,The mailbox is empty.
+MAP_ALPAGE,L'alpage,The Alpine Pasture
 MAP_BARN,L'étable,The Barn
 MAP_BEACH,La plage des Ondes,Wavecrest Beach
+MAP_BELFRY,Le Carillon,The Carillon
 MAP_CARPENTRY,La charpenterie,The Carpentry
 MAP_CLINIC,La clinique,The Clinic
 MAP_COOP,Le poulailler,The Coop
@@ -791,6 +881,7 @@ MAP_FARMHOUSE,La maison,The House
 MAP_FISHSHOP,La pêcherie,The Fish Shop
 MAP_FOREST,La forêt de Bois-Brume,Mistwood Forest
 MAP_FORGE,La forge,The Forge
+MAP_GREENHOUSE,La serre,The Greenhouse
 MAP_INN,La Cloche d'Étain,The Pewter Bell
 MAP_LAKE,Le lac Miroir,Mirror Lake
 MAP_MINE,La mine,The Mine
@@ -803,6 +894,16 @@ MINE_ELEVATOR_TITLE,Ascenseur,Elevator
 MINE_LADDER_FOUND,Une échelle apparaît !,A ladder appears!
 MINE_SURFACE,Surface,Surface
 MINE_TREASURE,Un coffre ! Tu trouves : %s.,A chest! You find: %s.
+MON_EMBERBAT,Chauve-braise,Emberbat
+MON_FROSTSPIT,Crachegivre,Frostspit
+MON_GLOWMITE,Lucimite,Glowmite
+MON_MOSSHOP,Sautemousse,Mosshop
+MON_PEBBLER,Gravillon,Pebbler
+MON_SHELLCHARGER,Carapierre,Shellcharger
+MUSEUM_DONATE,Donner,Donate
+MUSEUM_DONATED,Donné,Donated
+MUSEUM_PROGRESS,Collection,Collection
+MUSEUM_REWARD,Récompense du musée,Museum reward
 NEW_FARM,Nom de la ferme,Farm name
 NEW_NAME,Ton prénom,Your name
 NEW_OUTFIT,Tenue,Outfit
@@ -871,11 +972,36 @@ PET_OK,%s adore ça !,%s loves it!
 POT_EMPTY,Le casier est vide.,The pot is empty.
 QUALITY_1,Argent,Silver
 QUALITY_2,Or,Gold
+QUEST_ACCEPT,Accepter,Accept
+QUEST_ACTIVE,En cours (%d/%d),Active (%d/%d)
+QUEST_AVAILABLE,Annonces du jour,Today's notices
+QUEST_BOARD_TITLE,Tableau des annonces,Notice board
+QUEST_DELIVER,Apporter %d × %s,Bring %d × %s
+QUEST_DONE,Quête accomplie ! +%d é,Quest complete! +%d
+QUEST_FISH,Pêcher %d poisson(s),Catch %d fish
+QUEST_FROM,de %s,from %s
+QUEST_FULL,Trop de quêtes en cours.,Too many active quests.
+QUEST_GONE,Cette annonce a disparu.,That notice is gone.
+QUEST_HARVEST,Récolter %d cultures,Harvest %d crops
+QUEST_HUNT,Vaincre %d × %s dans la mine,Defeat %d × %s in the mine
+QUEST_NONE,Rien pour le moment.,Nothing for now.
+QUEST_TURN_IN,Remettre,Turn in
+REQ_ANIMALS,Posséder %d animaux,Own %d animals
+REQ_BELLS,Avoir fondu %d cloches,Have cast %d bells
+REQ_BUILDING,%s niveau %d,%s level %d
+REQ_DONATED,Donner %d objets au musée,Donate %d items to the museum
+REQ_FISH_KINDS,Pêcher %d espèces de poisson,Catch %d fish species
+REQ_FLOOR,Atteindre l'étage %d de la mine,Reach floor %d of the mine
+REQ_HARVEST,Récolter %d cultures,Harvest %d crops
+REQ_HEARTS,Cumuler %d cœurs d'amitié,Gather %d friendship hearts
+REQ_ITEM,Fournir %d × %s,Provide %d × %s
+REQ_MONEY,Verser %d é,Pay %d
 SEASON_AUTUMN,Automne,Autumn
 SEASON_SPRING,Printemps,Spring
 SEASON_SUMMER,Été,Summer
 SEASON_WINTER,Hiver,Winter
 SERVICE_ANIMALS,Animaux,Animals
+SERVICE_BELLS,Cloches,Bells
 SERVICE_BUILD,Chantiers,Build
 SERVICE_UPGRADE,Outils,Tools
 SHOP_ALL,Tout,All
@@ -966,6 +1092,10 @@ WEATHER_SNOW,Neige,Snow
 WEATHER_STORM,Orage,Storm
 WEATHER_SUN,Soleil,Sunny
 WEATHER_WIND,Vent,Windy
+WEDDING_1,"Le Carillon est muet, mais le village est là, au grand complet. Moi aussi.","The Carillon is silent, but the whole village is here. So am I."
+WEDDING_2,Je n'ai pas de discours. Juste ceci : merci d'être arrivé(e) dans ma vie comme une première cloche au matin.,I have no speech. Just this: thank you for arriving in my life like a first bell at morning.
+WEDDING_3,Alors… oui. Pour tous les matins qui viennent.,So... yes. For every morning to come.
+WEDDING_DONE,Tu es désormais marié(e) avec %s !,You're now married to %s!
 WEEKDAY_0,Lun,Mon
 WEEKDAY_1,Mar,Tue
 WEEKDAY_2,Mer,Wed

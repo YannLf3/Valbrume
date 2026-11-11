@@ -1,0 +1,49 @@
+{
+ "board_size": 4,
+ "items": {
+  "autumn": [
+   "beet",
+   "leek",
+   "grape",
+   "chestnut",
+   "hazelnut",
+   "cheese",
+   "egg"
+  ],
+  "spring": [
+   "turnip",
+   "carrot",
+   "spinach",
+   "pea",
+   "dandelion",
+   "wild_garlic",
+   "egg"
+  ],
+  "summer": [
+   "tomato",
+   "zucchini",
+   "bean",
+   "lavender",
+   "blackberry",
+   "milk",
+   "egg"
+  ],
+  "winter": [
+   "kale",
+   "parsnip",
+   "lambs_lettuce",
+   "pinecone",
+   "holly",
+   "wool",
+   "goat_milk"
+  ]
+ },
+ "max_active": 3,
+ "monsters": [
+  "pebbler",
+  "mosshop",
+  "emberbat",
+  "frostspit",
+  "glowmite"
+ ]
+}

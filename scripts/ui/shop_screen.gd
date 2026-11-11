@@ -5,7 +5,7 @@ extends ScreenBase
 signal talk_requested(npc_id: String)
 signal service_requested(service: String)
 
-const SERVICES: Dictionary = {"build": "SERVICE_BUILD", "animals": "SERVICE_ANIMALS", "tool_upgrade": "SERVICE_UPGRADE"}
+const SERVICES: Dictionary = {"build": "SERVICE_BUILD", "animals": "SERVICE_ANIMALS", "tool_upgrade": "SERVICE_UPGRADE", "bell_cast": "SERVICE_BELLS"}
 
 var shop_id: String = ""
 

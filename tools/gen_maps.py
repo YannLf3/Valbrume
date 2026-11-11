@@ -73,7 +73,7 @@ def farm() -> M:
     # sorties
     m.warp(63, 12, 1, 4, "village", "farm_east", 3)
     m.warp(27, 51, 4, 1, "forest", "farm_south", 1)
-    m.spots = {"house_door": [28, 11], "village_in": [62, 13], "forest_in": [28, 50], "coop_door": [38, 9], "barn_door": [53, 18],
+    m.spots = {"house_door": [28, 11], "village_in": [62, 13], "forest_in": [28, 50], "coop_door": [38, 9], "barn_door": [53, 18], "greenhouse_door": [49, 9],
                "pet": [30, 12]}
     # zones à dégager / décor
     exits = [(x, y) for x in range(60, 64) for y in range(10, 18)] + [(x, y) for x in range(25, 33) for y in range(48, 52)]
@@ -145,6 +145,7 @@ def house(level: int) -> M:
     m.static("door_mat", door, H - 2, 1, 1, solid=False)
     m.warp(door, H - 1, 1, 1, "farm", "house_door", 0)
     m.spots["door"] = [door, H - 2]
+    m.spots["spouse"] = [door, H - 4]
     # fenêtres, lit, baromètre, cheminée
     for wx in ([3, 7] if level == 1 else [3, 6, 10] if level == 2 else [3, 7, 12]):
         m.static("window_in", wx, 1, 1, 1, solid=False)

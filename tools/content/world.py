@@ -232,7 +232,7 @@ SHOPS: Dict[str, Any] = {
               "stock": ["@seeds", "@saplings", "flour", "compost", "rich_fertilizer", "quick_soil", "bouquet", "braided_ring"],
               "services": ["backpack"]},
     "forge": {"npc": "bastien", "open": 9, "close": 17, "closed_day": 0,
-              "stock": ["coal", ["ore_copper", 60], ["ore_iron", 120], ["ore_silver", 220]], "services": ["tool_upgrade"]},
+              "stock": ["coal", ["ore_copper", 60], ["ore_iron", 120], ["ore_silver", 220]], "services": ["tool_upgrade", "bell_cast"]},
     "carpentry": {"npc": "isaure", "open": 9, "close": 17, "closed_day": 2,
                   "stock": [["wood", 12], ["stone", 18], "table", "chair", "armchair", "bookshelf", "cabinet", "rug", "lamp", "painting",
                             "plant", "stove", "clock", "wallpaper_1", "wallpaper_2", "wallpaper_3", "wallpaper_4",

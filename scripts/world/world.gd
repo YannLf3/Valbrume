@@ -30,6 +30,7 @@ var _debug_label: Label
 var npcs: NpcManager
 var animals: AnimalManager
 var monsters: MonsterManager
+var weather_fx: WeatherFx
 
 
 func _ready() -> void:
@@ -51,6 +52,8 @@ func _ready() -> void:
 	add_child(animals)
 	monsters = MonsterManager.new()
 	add_child(monsters)
+	weather_fx = WeatherFx.new()
+	add_child(weather_fx)
 	monsters.player_died.connect(_on_player_died)
 	player.cell_changed.connect(_on_cell)
 	player.tool_released.connect(_on_tool_released)
@@ -101,8 +104,13 @@ func start(intro: bool) -> void:
 		await say([Loc.t("INTRO_1"), Loc.t("INTRO_2"), Loc.t("INTRO_3"), Loc.t("INTRO_4")], Loc.t("INTRO_SPEAKER"))
 		busy = false
 	TimeManager.running = true
+	GameState.flags["festival_today"] = Festivals.today() != ""
+	if (GameState.quests["board"] as Array).is_empty():
+		Quests.refresh_board()
+	view.rebuild_objects()
 	EventBus.day_started.emit(GameState.day)
 	EventBus.hotbar_changed.emit(GameState.hotbar_index)
+	_check_wedding()
 
 
 # --- cartes --------------------------------------------------------------------
@@ -130,6 +138,8 @@ func load_map(id: String, foot: Vector2, face: int) -> void:
 		if MineGen.is_elevator_floor(mine_floor):
 			GameState.mine["elevator"] = maxi(int(GameState.mine.get("elevator", 0)), mine_floor)
 	daylight.dark = bool(rt.data.get("dark", false))
+	weather_fx.configure(GameState.weather, TimeManager.season_id(), bool(rt.data.get("outdoor", false)))
+	view.set_night(_is_night())
 	player.position = foot
 	player.facing = face
 	player._cell = player.feet_cell()
@@ -190,10 +200,16 @@ func transition_to(target: String, foot: Vector2, face: int) -> void:
 	_warp_cooldown = 0.3
 
 
+func _is_night() -> bool:
+	return GameState.minutes >= 18 * 60 + 30 or GameState.minutes < 6 * 60 + 30 or bool(rt.data.get("dark", false))
+
+
 func _on_minute(m: int) -> void:
 	npcs.on_minute()
-	if m % 10 == 0 and view != null:
-		view.refresh_machines()
+	if view != null:
+		view.set_night(_is_night())
+		if m % 10 == 0:
+			view.refresh_machines()
 
 
 func _on_cell(c: Vector2i) -> void:
@@ -367,6 +383,8 @@ func _unhandled_input(event: InputEvent) -> void:
 		return
 	if event.is_action_pressed("inventory"):
 		open_container(GameState.inventory, [], "", false)
+	elif event.is_action_pressed("journal"):
+		open_screen(JournalScreen.new())
 	elif event.is_action_pressed("menu"):
 		_open_pause()
 	elif event is InputEventMouseButton and event.pressed:
@@ -459,6 +477,25 @@ func _interact_zone(z: Dictionary) -> bool:
 		"elevator":
 			_open_elevator()
 			return true
+		"bell":
+			var bid: String = str(z["arg"])
+			AudioManager.sfx("bell" if Story.is_cast(bid) else "error", 0.1)
+			EventBus.toast.emit(Loc.t("BELL_RING") if Story.is_cast(bid) else Loc.t("BELL_DARK"), "")
+			return true
+		"festival":
+			_enter_festival()
+			return true
+		"quest_board":
+			open_screen(QuestBoardScreen.new())
+			return true
+		"museum":
+			open_screen(MuseumScreen.new().setup(str(z["arg"])))
+			return true
+		"heal_bed":
+			GameState.change_health(float(GameState.max_health))
+			AudioManager.sfx("heart")
+			EventBus.toast.emit(Loc.t("HEAL_OK"), "")
+			return true
 		"kitchen":
 			if Buildings.level("house") >= 2:
 				open_screen(CraftingScreen.new().setup("cook"))
@@ -504,6 +541,10 @@ func _on_service(service: String) -> void:
 			open_screen(AnimalShopScreen.new())
 		"tool_upgrade":
 			open_screen(ToolUpgradeScreen.new())
+		"bell_cast":
+			var bs: BellScreen = BellScreen.new()
+			bs.bell_cast.connect(_on_bell_cast)
+			open_screen(bs)
 
 
 func _pet(a: AnimalEntity) -> void:
@@ -608,6 +649,9 @@ func _use_held(c: Vector2i, hold: float) -> bool:
 			ToolUse.use(rt, id, c, player.facing, charged)
 		return true
 	var err: String = ""
+	if id == "ledger_page":
+		_read_page()
+		return true
 	if it.has("wallpaper") or it.has("floor"):
 		if rt.data.get("interior", "") != "house":
 			err = "TOAST_INDOORS_ONLY"
@@ -722,9 +766,14 @@ func _on_day_ended(summary: Dictionary) -> void:
 	load_map(GameState.map_id, Vector2(GameState.px, GameState.py), GameState.facing)
 	TimeManager.begin_day()
 	EventBus.weather_changed.emit(GameState.weather)
+	view.rebuild_objects()
+	npcs.setup(rt, view.sorted)
 	await _fade_to(0.0, 0.6)
 	busy = false
 	_ending = false
+	_check_wedding()
+	if Festivals.today() != "":
+		EventBus.toast.emit(Loc.t("FEST_" + Festivals.today().to_upper()), "")
 
 
 # --- débogage (désactivé dans les exports release) ------------------------------
@@ -844,3 +893,70 @@ func _play_event(n: Npc, event_id: String) -> void:
 		AudioManager.sfx("gift")
 	if pts > 0:
 		EventBus.fx_requested.emit("heart", n.position + Vector2(0, -26))
+
+
+# --- fil rouge, festivals, mariage -------------------------------------------------
+
+func _read_page() -> void:
+	var key: String = Story.read_next_page()
+	if key == "":
+		EventBus.toast.emit(Loc.t("LORE_NONE"), "")
+		return
+	await say([Loc.t(key)], Loc.t("INTRO_SPEAKER"))
+
+
+func _on_bell_cast(id: String) -> void:
+	if id == "furrows" and view != null:
+		view.rebuild_objects()
+	if id == "great":
+		await get_tree().create_timer(0.4).timeout
+		_close_all_screens()
+		await get_tree().process_frame
+		_play_ending()
+
+
+func _play_ending() -> void:
+	busy = true
+	for i: int in 4:
+		AudioManager.sfx("bell_big", 0.0)
+		await get_tree().create_timer(0.9).timeout
+	await say([Loc.t("ENDING_1"), Loc.t("ENDING_2"), Loc.t("ENDING_3"), Loc.t("ENDING_4")], Loc.t("INTRO_SPEAKER"))
+	await say([Loc.t("CREDITS_TEXT")])
+	busy = false
+
+
+func _enter_festival() -> void:
+	var id: String = Festivals.today()
+	if id == "" or not Festivals.window_open():
+		EventBus.toast.emit(Loc.t("FEST_NOT_NOW"), "")
+		return
+	if Festivals.is_done(id):
+		EventBus.toast.emit(Loc.t("FEST_DONE"), "")
+		return
+	await say([Loc.t("FESTI_" + id.to_upper())], Loc.t("FEST_" + id.to_upper()))
+	var scr: FestivalScreen = FestivalScreen.new().setup(str(Festivals.table()[id]["game"]))
+	open_screen(scr)
+	var score: Variant = await scr.closed
+	var r: Dictionary = Festivals.conclude(id, int(score))
+	var lines: Array = [Loc.t("FEST_RESULT_%d" % int(r["tier"]))]
+	if str(r["item"]) != "":
+		lines.append(Loc.f("FEST_PRIZE", [int(r["money"]), Database.item_name(str(r["item"])), int(r["n"])]))
+	else:
+		lines.append(Loc.f("FEST_MONEY", [int(r["money"])]))
+	await say(lines, Loc.t("FEST_" + id.to_upper()))
+
+
+func _check_wedding() -> void:
+	if int(GameState.flags.get("wedding_day", -1)) != GameState.day or str(GameState.flags.get("engaged_to", "")) == "":
+		return
+	var npc: String = str(GameState.flags["engaged_to"])
+	busy = true
+	AudioManager.sfx("fanfare")
+	await say([Loc.t("WEDDING_1"), Loc.t("WEDDING_2"), Loc.t("WEDDING_3")], Loc.t("NPC_" + npc.to_upper()), npc, 1)
+	GameState.spouse = npc
+	Friendship.rel(npc)["married"] = true
+	GameState.flags.erase("wedding_day")
+	GameState.flags.erase("engaged_to")
+	AudioManager.sfx("bell_big")
+	EventBus.toast.emit(Loc.f("WEDDING_DONE", [Loc.t("NPC_" + npc.to_upper())]), "")
+	busy = false

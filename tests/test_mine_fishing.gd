@@ -57,7 +57,7 @@ func test_every_sampled_floor_is_connected_and_populated() -> void:
 			has_chest = has_chest or str(o["t"]) == "treasure"
 			has_ladder = has_ladder or o.get("hidden", "") == "ladder" or str(o["t"]) == "ladder_down"
 		eq(has_chest, f % 10 == 0, "coffre tous les 10 étages (étage %d)" % f)
-		eq(has_ladder, f < 60, "échelle vers le bas sauf au dernier étage")
+		eq(has_ladder, f < 60 and f != 40, "échelle vers le bas sauf au dernier étage et à l'étage 40 scellé")
 
 
 func test_biomes_use_their_monsters() -> void:

@@ -27,6 +27,8 @@ var _obj_nodes: Dictionary = {}
 var _crop_nodes: Dictionary = {}
 var _static_nodes: Array[Sprite2D] = []
 var _crop_tex: Dictionary = {}
+var _lights: Array[Sprite2D] = []
+var _night: bool = false
 var _wall_style: int = 0
 var _floor_style: int = 0
 
@@ -215,7 +217,31 @@ func _refresh_crop(c: Vector2i, s: Dictionary) -> void:
 
 # --- objets et décors ----------------------------------------------------------
 
+func _add_light(pos: Vector2) -> void:
+	var g: Sprite2D = Sprite2D.new()
+	g.texture = Database.sheet("ui/light")
+	var mat: CanvasItemMaterial = CanvasItemMaterial.new()
+	mat.blend_mode = CanvasItemMaterial.BLEND_MODE_ADD
+	g.material = mat
+	g.modulate = Color(2.0, 1.55, 0.85, 0.9)
+	g.scale = Vector2(1.15, 1.15)
+	g.position = pos
+	g.z_index = 20
+	g.visible = _night
+	add_child(g)
+	_lights.append(g)
+
+
+func set_night(on: bool) -> void:
+	_night = on
+	for g: Sprite2D in _lights:
+		g.visible = on
+
+
 func rebuild_objects() -> void:
+	for g: Sprite2D in _lights:
+		g.queue_free()
+	_lights.clear()
 	for n: Sprite2D in _obj_nodes.values():
 		n.queue_free()
 	_obj_nodes.clear()
@@ -232,8 +258,14 @@ func rebuild_objects() -> void:
 		if bool(st.get("flat", false)) or str(st["s"]) in ["door_mat", "window_in"]:
 			sp.z_index = -5
 		_static_nodes.append(sp)
+		if bool(st.get("light", false)):
+			_add_light(Vector2(int(st["x"]) * T + T / 2.0, int(st["y"]) * T - 8.0))
 	for k: String in rt.objects():
 		refresh_object(GameState.cell_of(k), false)
+		var ob: Dictionary = rt.objects()[k]
+		if bool(WorldObjects.def_of(ob).get("light", false)):
+			var oc: Vector2i = GameState.cell_of(k)
+			_add_light(Vector2(oc.x * T + T / 2.0, oc.y * T + 2.0))
 
 
 func _place(tex: Texture2D, origin: Vector2i, size: Vector2i) -> Sprite2D:

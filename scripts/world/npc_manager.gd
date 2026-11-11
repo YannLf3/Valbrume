@@ -9,6 +9,7 @@ var nav: GridNav
 var parent_node: Node2D
 var npcs: Dictionary = {}
 var _targets: Dictionary = {}
+var _where: Dictionary = {}
 
 
 func setup(p_rt: MapRuntime, container: Node2D) -> void:
@@ -19,8 +20,10 @@ func setup(p_rt: MapRuntime, container: Node2D) -> void:
 	npcs.clear()
 	_targets.clear()
 	nav = GridNav.new(rt)
+	_where.clear()
 	for id: String in Friendship.ids():
 		var e: Dictionary = Schedule.entry_at(id, GameState.minutes)
+		_where[id] = str(e["map"])
 		if str(e["map"]) != rt.id:
 			continue
 		var spot: Vector2i = Schedule.spot_cell(rt.id, str(e["spot"]))
@@ -66,19 +69,25 @@ func on_minute() -> void:
 	for id: String in Friendship.ids():
 		var e: Dictionary = Schedule.entry_at(id, GameState.minutes)
 		var present: bool = npcs.has(id)
-		var here: bool = str(e["map"]) == rt.id
+		var dest: String = str(e["map"])
+		var here: bool = dest == rt.id
 		var spot_name: String = str(e["spot"])
-		if here and not present and GameState.minutes == int(e["t"]):
-			var prev: String = Schedule.previous_map(id, int(e["index"]))
-			_spawn_arriving(id, prev, Schedule.spot_cell(rt.id, spot_name)) if prev != rt.id else _spawn(id, Schedule.spot_cell(rt.id, spot_name))
+		var spot: Vector2i = Schedule.spot_cell(rt.id, spot_name) if here else Vector2i(-1, -1)
+		if here and not present:
+			var from_map: String = str(_where.get(id, dest))
+			if from_map != rt.id:
+				_spawn_arriving(id, from_map, spot)
+			else:
+				_spawn(id, spot)
 			_targets[id] = spot_name
 		elif here and present and str(_targets.get(id, "")) != spot_name:
 			_targets[id] = spot_name
 			var n: Npc = npcs[id]
 			n.leaving = false
-			n.walk(nav.path(n.cell(), Schedule.spot_cell(rt.id, spot_name)))
+			n.walk(nav.path(n.cell(), spot))
 		elif not here and present and not (npcs[id] as Npc).leaving:
-			_send_away(id, str(e["map"]))
+			_send_away(id, dest)
+		_where[id] = dest
 
 
 func _send_away(id: String, dest_map: String) -> void:

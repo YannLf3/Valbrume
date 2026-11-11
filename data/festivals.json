@@ -1,0 +1,26 @@
+{
+ "lanterns": {
+  "day": 22,
+  "game": "target",
+  "prize": "frostberry_tart",
+  "season": 3
+ },
+ "pumpkin": {
+  "day": 20,
+  "game": "judging",
+  "prize": "saffron",
+  "season": 2
+ },
+ "regatta": {
+  "day": 16,
+  "game": "timing",
+  "prize": "honey",
+  "season": 1
+ },
+ "seeds": {
+  "day": 14,
+  "game": "memory",
+  "prize": "seed_honeymelon",
+  "season": 0
+ }
+}

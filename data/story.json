@@ -1,0 +1,135 @@
+{
+ "bells": [
+  {
+   "id": "furrows",
+   "req": [
+    [
+     "stat",
+     "crops_harvested",
+     60
+    ],
+    [
+     "item",
+     "ingot_copper",
+     5
+    ],
+    [
+     "money",
+     "",
+     2000
+    ]
+   ]
+  },
+  {
+   "id": "waves",
+   "req": [
+    [
+     "kinds",
+     "fish_caught",
+     12
+    ],
+    [
+     "item",
+     "ingot_iron",
+     5
+    ],
+    [
+     "money",
+     "",
+     4000
+    ]
+   ]
+  },
+  {
+   "id": "stone",
+   "req": [
+    [
+     "mine_floor",
+     "",
+     40
+    ],
+    [
+     "item",
+     "ingot_silver",
+     5
+    ],
+    [
+     "money",
+     "",
+     8000
+    ]
+   ]
+  },
+  {
+   "id": "hearth",
+   "req": [
+    [
+     "hearts_total",
+     "",
+     30
+    ],
+    [
+     "item",
+     "cheese",
+     3
+    ],
+    [
+     "money",
+     "",
+     6000
+    ]
+   ]
+  },
+  {
+   "id": "flocks",
+   "req": [
+    [
+     "animals",
+     "",
+     6
+    ],
+    [
+     "building",
+     "coop",
+     2
+    ],
+    [
+     "item",
+     "ingot_iron",
+     8
+    ],
+    [
+     "money",
+     "",
+     12000
+    ]
+   ]
+  },
+  {
+   "id": "great",
+   "req": [
+    [
+     "bells",
+     "",
+     5
+    ],
+    [
+     "donated",
+     "",
+     30
+    ],
+    [
+     "item",
+     "ingot_brumite",
+     10
+    ],
+    [
+     "money",
+     "",
+     30000
+    ]
+   ]
+  }
+ ],
+ "lore": 6
+}

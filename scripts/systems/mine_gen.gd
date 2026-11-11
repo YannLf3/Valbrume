@@ -135,7 +135,8 @@ static func _build(floor_n: int, biome: int, cfg: Dictionary, rng: RandomNumberG
 			taken[Vector2i(ex + i, ey + 1)] = true
 	objects.append({"t": "ladder_up", "x": entrance.x, "y": entrance.y, "hp": 1})
 	var revealed: bool = int(GameState.mine.get("deepest", 0)) > floor_n
-	if floor_n < floor_count():
+	var sealed: bool = floor_n == 40 and not GameState.flag("bell_stone")
+	if floor_n < floor_count() and not sealed:
 		if revealed:
 			objects.append({"t": "ladder_down", "x": exit_cell.x, "y": exit_cell.y, "hp": 1})
 		else:

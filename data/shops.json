@@ -75,7 +75,8 @@
   "npc": "bastien",
   "open": 9,
   "services": [
-   "tool_upgrade"
+   "tool_upgrade",
+   "bell_cast"
   ],
   "stock": [
    "coal",

@@ -23,6 +23,10 @@ static func key_for_today(npc_id: String) -> String:
 
 ## Étape en cours à `minutes` : {"index", "t", "map", "spot"}.
 static func entry_at(npc_id: String, minutes: int) -> Dictionary:
+	if Festivals.today() != "" and minutes >= Festivals.OPEN_MIN and minutes < Festivals.CLOSE_MIN:
+		return {"index": -1, "t": Festivals.OPEN_MIN, "map": "village", "spot": Festivals.spot_for(npc_id)}
+	if GameState.spouse == npc_id and (minutes < 540 or minutes >= 1200):
+		return {"index": -1, "t": 0, "map": GameState.house_map(), "spot": "spouse"}
 	var steps: Array = Friendship.npc(npc_id).get("schedule", {}).get(key_for_today(npc_id), [])
 	var idx: int = 0
 	for i: int in steps.size():
@@ -34,7 +38,7 @@ static func entry_at(npc_id: String, minutes: int) -> Dictionary:
 
 static func previous_map(npc_id: String, index: int) -> String:
 	var steps: Array = Friendship.npc(npc_id).get("schedule", {}).get(key_for_today(npc_id), [])
-	if index > 0:
+	if index > 0 and index <= steps.size():
 		return str(steps[index - 1][1])
 	return str(Friendship.npc(npc_id).get("home", ""))
 

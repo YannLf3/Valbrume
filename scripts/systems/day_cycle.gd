@@ -67,6 +67,8 @@ static func run_night(passed_out: bool) -> Dictionary:
 		GameState.pet["petted"] = false
 	# 4. Nouveau jour
 	GameState.minutes = TimeManager.DAY_START
+	Quests.nightly()
+	GameState.flags["festival_today"] = Festivals.today() != ""
 	GameState.weather = GameState.weather_tomorrow
 	GameState.weather_tomorrow = Weather.roll(GameState.day + 1)
 	GameState.buffs.clear()

@@ -1,0 +1,125 @@
+{
+ "artifacts": {
+  "items": [
+   "bell_clapper",
+   "clay_whistle",
+   "rusty_key",
+   "engraved_stone",
+   "fossil_fern",
+   "old_coin",
+   "glass_bead",
+   "tin_soldier",
+   "ammonite",
+   "ledger_page"
+  ],
+  "rewards": [
+   [
+    3,
+    {
+     "item": "quarry_charge",
+     "n": 5
+    }
+   ],
+   [
+    6,
+    {
+     "item": "ingot_silver",
+     "n": 2
+    }
+   ],
+   [
+    10,
+    {
+     "money": 4000
+    }
+   ]
+  ]
+ },
+ "fish": {
+  "items": [
+   "gudgeon",
+   "trout",
+   "perch",
+   "barbel",
+   "pike",
+   "eel",
+   "salmon",
+   "roach",
+   "bream",
+   "carp",
+   "tench",
+   "char",
+   "catfish",
+   "mistmoon",
+   "sardine",
+   "herring",
+   "mackerel",
+   "sea_bream",
+   "sole",
+   "sea_bass",
+   "conger",
+   "tuna",
+   "cavefish",
+   "frost_minnow",
+   "glowfin"
+  ],
+  "rewards": [
+   [
+    5,
+    {
+     "item": "bait",
+     "n": 20
+    }
+   ],
+   [
+    12,
+    {
+     "item": "rod_2",
+     "n": 1
+    }
+   ],
+   [
+    24,
+    {
+     "money": 6000
+    }
+   ]
+  ]
+ },
+ "minerals": {
+  "items": [
+   "quartz",
+   "amethyst",
+   "topaz",
+   "emerald",
+   "ruby",
+   "moonstone",
+   "ore_copper",
+   "ore_iron",
+   "ore_silver",
+   "ore_brumite"
+  ],
+  "rewards": [
+   [
+    3,
+    {
+     "item": "ingot_copper",
+     "n": 3
+    }
+   ],
+   [
+    6,
+    {
+     "item": "ingot_iron",
+     "n": 3
+    }
+   ],
+   [
+    10,
+    {
+     "money": 2500
+    }
+   ]
+  ]
+ }
+}

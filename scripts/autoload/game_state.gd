@@ -118,6 +118,7 @@ func new_game(p_name: String, p_farm: String, p_outfit: int) -> void:
 	for entry: Array in Database.table("tools").get("start_items", []):
 		add_item(str(entry[0]), int(entry[1]))
 	pet = {"type": "dog", "name": Loc.t("PET_NAME"), "affection": 0, "petted": false}
+	Quests.refresh_board()
 	Recipes.refresh(false)
 	Skills.recompute_stats()
 	energy = float(max_energy)
