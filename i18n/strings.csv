@@ -1,4 +1,16 @@
 keys,fr,en
+ACT_ACTION,Action,Action
+ACT_HOTBAR_NEXT,Barre : suivant,Hotbar: next
+ACT_HOTBAR_PREV,Barre : précédent,Hotbar: previous
+ACT_INVENTORY,Sac,Bag
+ACT_JOURNAL,Journal,Journal
+ACT_MAP,Carte,Map
+ACT_MENU,Menu,Menu
+ACT_MOVE_DOWN,Bas,Down
+ACT_MOVE_LEFT,Gauche,Left
+ACT_MOVE_RIGHT,Droite,Right
+ACT_MOVE_UP,Haut,Up
+ACT_TOOL,Outil (maintenir : charge),Tool (hold: charge)
 ANIMAL_BOUGHT,%s a rejoint la ferme !,%s joined the farm!
 ANIMAL_CHICKEN,Poule,Chicken
 ANIMAL_COW,Vache,Cow
@@ -924,6 +936,7 @@ OPT_FULLSCREEN,Plein écran,Fullscreen
 OPT_KEYS,Touches de déplacement,Movement keys
 OPT_KEYS_ARROWS,Flèches,Arrows
 OPT_KEYS_AUTO,Auto (WASD + flèches),Auto (WASD + arrows)
+OPT_KEYS_REMAP,Remappage,Remapping
 OPT_KEYS_WASD,WASD,WASD
 OPT_KEYS_ZQSD,ZQSD,ZQSD
 OPT_LANGUAGE,Langue,Language
@@ -986,6 +999,9 @@ QUEST_HARVEST,Récolter %d cultures,Harvest %d crops
 QUEST_HUNT,Vaincre %d × %s dans la mine,Defeat %d × %s in the mine
 QUEST_NONE,Rien pour le moment.,Nothing for now.
 QUEST_TURN_IN,Remettre,Turn in
+REMAP_PRESS,Appuie sur une touche… (Échap : annuler),Press a key... (Esc: cancel)
+REMAP_RESET,Par défaut,Defaults
+REMAP_TITLE,Touches du clavier,Keyboard keys
 REQ_ANIMALS,Posséder %d animaux,Own %d animals
 REQ_BELLS,Avoir fondu %d cloches,Have cast %d bells
 REQ_BUILDING,%s niveau %d,%s level %d

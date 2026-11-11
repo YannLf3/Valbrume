@@ -21,6 +21,12 @@ func _ready() -> void:
 	var mobile: bool = OS.has_feature("mobile")
 	if not mobile:
 		v.add_child(_check("OPT_FULLSCREEN", "fullscreen"))
+	var remap: Button = UIKit.button(Loc.t("OPT_REMAP"), 110)
+	remap.pressed.connect(func() -> void: add_child(RemapScreen.new()))
+	var rr: HBoxContainer = _row("OPT_KEYS_REMAP")
+	rr.add_child(remap)
+	v.add_child(rr)
+	v.add_child(_scale_row())
 	v.add_child(_cycle("OPT_TOUCH", Settings.TOUCH_MODES, "touch_mode", func(x: String) -> String: return Loc.t("OPT_TOUCH_" + x.to_upper())))
 	v.add_child(_speed_row())
 	v.add_child(_check("OPT_SHAKE", "screen_shake"))
@@ -81,6 +87,21 @@ func _cycle(key: String, values: Array, field: String, shown: Callable) -> HBoxC
 			EventBus.ui_requested.emit("options", {})
 		else:
 			refresh.call())
+	r.add_child(b)
+	return r
+
+
+func _scale_row() -> HBoxContainer:
+	var r: HBoxContainer = _row("OPT_UI_SCALE")
+	var b: Button = UIKit.button("x%.2f" % Settings.ui_scale, 110)
+	b.pressed.connect(func() -> void:
+		var steps: Array[float] = [1.0, 1.25, 1.5, 2.0]
+		var i: int = 0
+		for k: int in steps.size():
+			if absf(steps[k] - Settings.ui_scale) < 0.01:
+				i = k
+		Settings.set_value("ui_scale", steps[(i + 1) % steps.size()])
+		b.text = "x%.2f" % Settings.ui_scale)
 	r.add_child(b)
 	return r
 

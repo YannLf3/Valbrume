@@ -167,7 +167,7 @@ def main() -> int:
     dump("mine", W.MINE)
     dump("house", W.HOUSE)
     # modules ajoutés au fil des phases
-    for mod_name in ("strings_ui", "npcs", "story", "strings_story"):
+    for mod_name in ("strings_ui", "strings_ui2", "npcs", "story", "strings_story"):
         mod = opt(mod_name)
         if mod is not None:
             for table, obj in mod.tables().items():

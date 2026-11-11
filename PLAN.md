@@ -77,17 +77,17 @@ Légende : `[ ]` à faire · `[x]` fait et validé.
 **Validation** : simulation d'une année complète en headless sans erreur.
 
 ### P7 — Finitions
-- [ ] audio branché, particules, transitions, « juice »
-- [ ] UI tactile (joystick, boutons, zones sûres), manette, remappage
-- [ ] i18n FR / EN complet + `tools/check_i18n.py`
+- [x] audio branché, particules, transitions, « juice »
+- [x] UI tactile (joystick, boutons, zones sûres), manette, remappage
+- [x] i18n FR / EN complet + `tools/check_i18n.py`
 
 **Validation** : `check_i18n.py` vert ; aucun texte en dur.
 
 ### P8 — Livraison
-- [ ] `tools/balance_sim.py` + équilibrage chiffré dans le GDD
-- [ ] tests complets, mode debug F3, performances
-- [ ] `export_presets.cfg`, `build.sh`, `build.ps1`
-- [ ] README, LEGAL, CREDITS, CHANGELOG, docs/GDD, ARCHITECTURE, PLAY_STORE
+- [x] `tools/balance_sim.py` + équilibrage chiffré dans le GDD
+- [x] tests complets, mode debug F3, performances
+- [x] `export_presets.cfg`, `build.sh`, `build.ps1`
+- [x] README, LEGAL, CREDITS, CHANGELOG, docs/GDD, ARCHITECTURE, PLAY_STORE
 
 **Validation** : suite de tests verte ; exports générés ou prérequis manquants listés précisément.
 
@@ -171,3 +171,6 @@ Monde vivant : fil rouge des 6 cloches (fonte chez Bastien : serre reconstruite,
 - Tests : 76 tests, 2 924 vérifications.
 
 **Prochaine étape : P7** — commandes tactiles (joystick flottant, boutons, zones sûres, échelle d'interface), remappage des touches, `check_i18n.py`, finitions (secousses, popups d'objets).
+
+### Journal — P7 et P8 terminées (2026-11-11)
+P7 : commandes tactiles (joystick flottant, 4 boutons, zones sûres, échelle 1-2), remappage des touches, vérificateur `check_i18n.py` + tests de couverture FR/EN, finitions (secousses d'écran, popups d'objets, fx de niveau). P8 : `balance_sim.py`, simulation d'une année en test, mesure de performance, `export_presets.cfg` (Windows, macOS universel ad hoc, Android AAB + APK, targetSdk 36), `build.sh` / `build.ps1`, README, GDD, ARCHITECTURE, PLAY_STORE, LEGAL, CREDITS, CHANGELOG.

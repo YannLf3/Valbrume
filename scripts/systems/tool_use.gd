@@ -125,6 +125,7 @@ static func _can(rt: MapRuntime, c: Vector2i, level: int, ctx: Dictionary) -> bo
 		return false
 	if Farming.water(rt, c):
 		GameState.can_water -= 1
+		EventBus.inventory_changed.emit()
 		AudioManager.sfx("water")
 		EventBus.fx_requested.emit("drop", Vector2(c) * TILE + Vector2(8, 8))
 		return true
@@ -138,6 +139,7 @@ static func can_capacity(level: int) -> int:
 
 static func refill_can(level: int) -> void:
 	GameState.can_water = can_capacity(level)
+	EventBus.inventory_changed.emit()
 	AudioManager.sfx("splash")
 	EventBus.toast.emit(Loc.t("TOAST_CAN_FILLED"), "")
 

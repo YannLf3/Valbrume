@@ -31,6 +31,8 @@ var npcs: NpcManager
 var animals: AnimalManager
 var monsters: MonsterManager
 var weather_fx: WeatherFx
+var touch: TouchControls
+var _hud_layer: CanvasLayer
 
 
 func _ready() -> void:
@@ -66,8 +68,11 @@ func _ready() -> void:
 	var hud_layer: CanvasLayer = CanvasLayer.new()
 	hud_layer.layer = 10
 	add_child(hud_layer)
+	_hud_layer = hud_layer
 	hud = Hud.new()
 	hud_layer.add_child(hud)
+	touch = TouchControls.new()
+	add_child(touch)
 	hud.hotbar_pressed.connect(select_hotbar)
 	_screen_layer = CanvasLayer.new()
 	_screen_layer.layer = 20
@@ -91,6 +96,14 @@ func _ready() -> void:
 	EventBus.minute_passed.connect(_on_minute)
 	EventBus.ui_requested.connect(_on_ui_requested)
 	get_viewport().size_changed.connect(_apply_camera_limits)
+	get_viewport().size_changed.connect(_layout_ui)
+	EventBus.settings_changed.connect(_layout_ui)
+	EventBus.screen_shake.connect(_on_shake)
+	EventBus.item_gained.connect(_popup_item)
+	EventBus.skill_level_up.connect(func(_s: String, _l: int) -> void:
+		for i: int in 3:
+			EventBus.fx_requested.emit("sparkle", player.position + Vector2(randf_range(-8, 8), -14)))
+	_layout_ui()
 
 
 func start(intro: bool) -> void:
@@ -161,6 +174,43 @@ func _update_music() -> void:
 		m = "night" if GameState.minutes >= MUSIC_NIGHT_HOUR * 60 else TimeManager.season_id()
 	if m != "":
 		AudioManager.music(m)
+
+
+## Échelle de l'interface et zones sûres : le HUD occupe la zone utile, agrandie selon l'option.
+func _layout_ui() -> void:
+	if _hud_layer == null or hud == null:
+		return
+	var vs: Vector2 = get_viewport().get_visible_rect().size
+	var k: float = clampf(Settings.ui_scale, 1.0, 2.0)
+	var inset: Rect2 = TouchControls.safe_inset(vs)
+	_hud_layer.scale = Vector2(k, k)
+	hud.set_anchors_preset(Control.PRESET_TOP_LEFT)
+	hud.position = inset.position
+	hud.size = (vs - inset.position - inset.size) / k
+
+
+func _on_shake(strength: float) -> void:
+	if not Settings.screen_shake or camera == null:
+		return
+	var tw: Tween = create_tween()
+	for i: int in 5:
+		tw.tween_property(camera, "offset", Vector2(randf_range(-1, 1), randf_range(-1, 1)) * strength * (1.0 - i / 5.0), 0.04)
+	tw.tween_property(camera, "offset", Vector2.ZERO, 0.04)
+
+
+func _popup_item(id: String, _n: int, _q: int) -> void:
+	var icon: Texture2D = Database.icon(id)
+	if icon == null or player == null:
+		return
+	var sp: Sprite2D = Sprite2D.new()
+	sp.texture = icon
+	sp.position = player.position + Vector2(randf_range(-6, 6), -26)
+	sp.z_index = 60
+	add_child(sp)
+	var tw: Tween = create_tween().set_parallel(true)
+	tw.tween_property(sp, "position:y", sp.position.y - 14.0, 0.7)
+	tw.tween_property(sp, "modulate:a", 0.0, 0.7).set_delay(0.3)
+	tw.chain().tween_callback(sp.queue_free)
 
 
 func _apply_camera_limits() -> void:
@@ -345,7 +395,7 @@ func _process(delta: float) -> void:
 	camera.position = player.position.round() - Vector2(0, 8)
 	_update_cursor()
 	if _debug_label.visible:
-		_debug_label.text = "[F4] +1h  [F5] +1 jour  [F6] +1 saison  [F7] +1000\n[F8] kit  [F9] énergie  [F10] météo\n%s  %s  jour %d" % [rt.id, str(player.feet_cell()), GameState.day]
+		_debug_label.text = "[F4] +1h  [F5] +1 jour  [F6] +1 saison  [F7] +1000\n[F8] kit  [F9] énergie  [F10] météo\n%s  %s  jour %d" % [rt.id, str(player.feet_cell()), GameState.day]  # i18n:ignore
 
 
 func _update_cursor() -> void:
@@ -411,6 +461,8 @@ func _on_mouse(event: InputEventMouseButton) -> void:
 		MOUSE_BUTTON_WHEEL_DOWN:
 			select_hotbar(posmod(GameState.hotbar_index + 1, InputManager.HOTBAR_SIZE))
 		MOUSE_BUTTON_LEFT:
+			if touch != null and touch.covers(event.position):
+				return
 			var c: Vector2i = MapRuntime.cell_of_pixel(get_global_mouse_position())
 			var d: Vector2i = c - player.feet_cell()
 			if absi(d.x) <= REACH and absi(d.y) <= REACH:

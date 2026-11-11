@@ -20,7 +20,7 @@ var _water: Label
 var _toasts: VBoxContainer
 var _banner: Label
 var _fps: Label
-var _bars_need_redraw: bool = true
+var _fps_t: float = 0.0
 
 
 func _init() -> void:
@@ -175,11 +175,13 @@ func _update_water() -> void:
 		_water.text = txt
 
 
-func _process(_delta: float) -> void:
+func _process(delta: float) -> void:
 	_fps.visible = Settings.show_fps or bool(GameState.flags.get("debug", false))
 	if _fps.visible:
-		_fps.text = "%d FPS" % Engine.get_frames_per_second()
-	_update_water()
+		_fps_t += delta
+		if _fps_t >= 0.5:
+			_fps_t = 0.0
+			_fps.text = "%d FPS" % Engine.get_frames_per_second()
 
 
 func show_toast(text: String, icon_id: String = "") -> void:
