@@ -96,3 +96,26 @@ Légende : `[ ]` à faire · `[x]` fait et validé.
 _(mis à jour à chaque fin de phase : où on en est, quoi faire ensuite)_
 
 - 2026-11-11 — P0 et P1 terminées. Pipeline : `python tools/build_assets.py` (assets) puis `python tools/build_data.py` (données + i18n). 1 829 sprites, 61 SFX, 9 musiques, déterminisme vérifié (`--verify`). Suite : P2 (cartes via `tools/gen_maps.py`, joueur, agriculture).
+
+### Point d'arrêt — 2026-11-11 (pause demandée, reprise par « continue »)
+
+**Fait et commité** : P0 (socle) et P1 (assets + données). Tests : 9 tests / 46 vérifications verts. Rien d'autre en cours sur disque.
+
+**Prochaine étape : P2, à commencer par `tools/gen_maps.py`** (pas encore écrit). Conception arrêtée :
+
+- Sortie `data/maps/<id>.json` + `data/maps/index.json` ; aperçu PNG dans `assets/contact/map_<id>.png`.
+- Format : `{id, w, h, rows[] (symboles de data/terrains.json), outdoor, music, farmable, protected, statics[{s,x,y,w,h,solid,glow,until_flag}], warps[{x,y,to,tx,ty,face,locked}], spots{nom:[x,y]}, interact[{x,y,kind,arg}], spawn[{t,x,y,…}], pads{…}, zones{fish}, style{floor,wall}}`.
+- Orientation : 0 bas, 1 haut, 2 droite, 3 gauche (= lignes des feuilles de personnages).
+- Sprite d'un static : centré horizontalement sur l'emprise, bas aligné sur le bas de l'emprise ; emprise des bâtiments = largeur × 3 cases, la case de porte (rangée du bas) est un passage.
+- Graphe : ferme ⟷ village (est/ouest) · ferme ⟷ forêt (sud/nord) · village ⟷ lac (nord/sud, entrée de mine + alpage verrouillé) · village ⟷ côte (sud/nord, verrouillé jusqu'à la cloche des Ondes).
+- Cartes : farm 64×52, village 80×60, forest 56×48, lake 56×44, beach 56×34, intérieurs (farmhouse_1/2/3, store, forge, carpentry, ranch_shop, fishshop, clinic, inn, museum, cottage, coop_in, barn_in, greenhouse_in, mine_hub). Les étages de mine sont générés à l'exécution (GDScript, graine par étage).
+- À corriger au passage dans `tools/gen_objects.py` : portes de `coop()` et `greenhouse()` à aligner sur une case (x = 34 et 50), `barn(2)` en 112 px de large.
+
+**Ensuite (P2)** : `scripts/world/map_view.gd` (2 couches de tuiles : terrain inférieur + tuile de masque ; TileSet construit en code avec bits de terrain), joueur à collisions sur grille, `scripts/systems/farming.gd`, outils avec charge, coffre d'expédition, `DayCycle.run_night` complet, HUD, bilan de nuit. Puis P3 → P8 selon le plan ci-dessus.
+
+**Univers décidé** (à écrire dans `docs/GDD.md`) : jeu *Valbrume*, village d'Ormelune, tante Odile fondeuse de cloches ; fil rouge = refondre les 6 cloches du Carillon (Sillons → serre, Ondes → côte, Roche → mine 41-60, Foyer → marché du dimanche, Troupeaux → alpage, Grand Bourdon → final). PNJ : Capucine, Bastien, Isaure, Théodule, Maïwenn, Hyacinthe, Gaspard, Corentin, Roseline, Pim (romances : Capucine, Isaure, Bastien, Corentin). Pêche = mini-jeu de rythme « ondes ». Nuisible = grignotins (épouvantail à grelots). Festivals : jours 14 / 16 / 20 / 22 de chaque saison.
+
+**Commandes utiles**
+- Godot : `/Applications/Godot.app/Contents/MacOS/Godot`
+- Assets : `.venv/bin/python tools/build_assets.py [--no-audio] [--verify]` · données : `.venv/bin/python tools/build_data.py`
+- Tests : `Godot --headless res://tests/test_runner.tscn` · import : `Godot --headless --import`
