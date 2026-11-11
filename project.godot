@@ -1,0 +1,66 @@
+; Engine configuration file — Valbrume
+config_version=5
+
+[application]
+
+config/name="Valbrume"
+config/description="Un jeu de ferme et de village original."
+config/version="1.0.0"
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+boot_splash/bg_color=Color(0.169, 0.133, 0.2, 1)
+boot_splash/show_image=false
+config/icon="res://assets/icons/icon_256.png"
+
+[autoload]
+
+EventBus="*res://scripts/autoload/event_bus.gd"
+Settings="*res://scripts/autoload/settings.gd"
+Database="*res://scripts/autoload/database.gd"
+GameState="*res://scripts/autoload/game_state.gd"
+TimeManager="*res://scripts/autoload/time_manager.gd"
+SaveManager="*res://scripts/autoload/save_manager.gd"
+AudioManager="*res://scripts/autoload/audio_manager.gd"
+InputManager="*res://scripts/autoload/input_manager.gd"
+
+[display]
+
+window/size/viewport_width=480
+window/size/viewport_height=270
+window/size/window_width_override=1440
+window/size/window_height_override=810
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/stretch/scale_mode="integer"
+window/handheld/orientation=4
+
+[gui]
+
+theme/default_font_antialiasing=0
+theme/default_font_hinting=0
+theme/default_font_subpixel_positioning=0
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=false
+pointing/emulate_mouse_from_touch=true
+
+[internationalization]
+
+locale/translations=PackedStringArray("res://i18n/strings.fr.translation", "res://i18n/strings.en.translation")
+locale/fallback="en"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/canvas_textures/default_texture_filter=0
+2d/snap/snap_2d_transforms_to_pixel=true
+2d/snap/snap_2d_vertices_to_pixel=true
+textures/vram_compression/import_etc2_astc=true
+environment/defaults/default_clear_color=Color(0.169, 0.133, 0.2, 1)
+
+[debug]
+
+gdscript/warnings/unused_signal=0
+gdscript/warnings/integer_division=0

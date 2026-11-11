@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://cdfokww6lvp0u"
+path="res://.godot/imported/valbrume_big.fnt-a508f1dd8c235e6744aa08b8f82ee26b.fontdata"
+
+[deps]
+
+source_file="res://assets/fonts/valbrume_big.fnt"
+dest_files=["res://.godot/imported/valbrume_big.fnt-a508f1dd8c235e6744aa08b8f82ee26b.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2
