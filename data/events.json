@@ -1,0 +1,502 @@
+{
+ "bastien_1": {
+  "hearts": 3,
+  "lines": [
+   "EV_BASTIEN_1_L1",
+   "EV_BASTIEN_1_L2",
+   "EV_BASTIEN_1_L3"
+  ],
+  "npc": "bastien",
+  "options": [
+   {
+    "label": "EV_BASTIEN_1_O1",
+    "points": 40,
+    "reply": "EV_BASTIEN_1_R1"
+   },
+   {
+    "label": "EV_BASTIEN_1_O2",
+    "points": 12,
+    "reply": "EV_BASTIEN_1_R2"
+   }
+  ],
+  "reward": {
+   "item": "ingot_copper",
+   "n": 3
+  }
+ },
+ "bastien_2": {
+  "hearts": 7,
+  "lines": [
+   "EV_BASTIEN_2_L1",
+   "EV_BASTIEN_2_L2",
+   "EV_BASTIEN_2_L3"
+  ],
+  "npc": "bastien",
+  "options": [
+   {
+    "label": "EV_BASTIEN_2_O1",
+    "points": 50,
+    "reply": "EV_BASTIEN_2_R1"
+   },
+   {
+    "label": "EV_BASTIEN_2_O2",
+    "points": 5,
+    "reply": "EV_BASTIEN_2_R2"
+   }
+  ],
+  "reward": {
+   "item": "ingot_silver",
+   "n": 2
+  }
+ },
+ "capucine_1": {
+  "hearts": 3,
+  "lines": [
+   "EV_CAPUCINE_1_L1",
+   "EV_CAPUCINE_1_L2",
+   "EV_CAPUCINE_1_L3"
+  ],
+  "npc": "capucine",
+  "options": [
+   {
+    "label": "EV_CAPUCINE_1_O1",
+    "points": 40,
+    "reply": "EV_CAPUCINE_1_R1"
+   },
+   {
+    "label": "EV_CAPUCINE_1_O2",
+    "points": 12,
+    "reply": "EV_CAPUCINE_1_R2"
+   }
+  ],
+  "reward": {
+   "item": "seed_belltulip",
+   "n": 5
+  }
+ },
+ "capucine_2": {
+  "hearts": 7,
+  "lines": [
+   "EV_CAPUCINE_2_L1",
+   "EV_CAPUCINE_2_L2",
+   "EV_CAPUCINE_2_L3"
+  ],
+  "npc": "capucine",
+  "options": [
+   {
+    "label": "EV_CAPUCINE_2_O1",
+    "points": 50,
+    "reply": "EV_CAPUCINE_2_R1"
+   },
+   {
+    "label": "EV_CAPUCINE_2_O2",
+    "points": -10,
+    "reply": "EV_CAPUCINE_2_R2"
+   }
+  ],
+  "reward": {
+   "item": "seed_honeymelon",
+   "n": 3
+  }
+ },
+ "corentin_1": {
+  "hearts": 3,
+  "lines": [
+   "EV_CORENTIN_1_L1",
+   "EV_CORENTIN_1_L2",
+   "EV_CORENTIN_1_L3"
+  ],
+  "npc": "corentin",
+  "options": [
+   {
+    "label": "EV_CORENTIN_1_O1",
+    "points": 40,
+    "reply": "EV_CORENTIN_1_R1"
+   },
+   {
+    "label": "EV_CORENTIN_1_O2",
+    "points": 40,
+    "reply": "EV_CORENTIN_1_R2"
+   }
+  ],
+  "reward": {
+   "item": "old_coin",
+   "n": 1
+  }
+ },
+ "corentin_2": {
+  "hearts": 7,
+  "lines": [
+   "EV_CORENTIN_2_L1",
+   "EV_CORENTIN_2_L2",
+   "EV_CORENTIN_2_L3"
+  ],
+  "npc": "corentin",
+  "options": [
+   {
+    "label": "EV_CORENTIN_2_O1",
+    "points": 50,
+    "reply": "EV_CORENTIN_2_R1"
+   },
+   {
+    "label": "EV_CORENTIN_2_O2",
+    "points": -6,
+    "reply": "EV_CORENTIN_2_R2"
+   }
+  ],
+  "reward": {
+   "item": "ledger_page",
+   "n": 1
+  }
+ },
+ "gaspard_1": {
+  "hearts": 3,
+  "lines": [
+   "EV_GASPARD_1_L1",
+   "EV_GASPARD_1_L2",
+   "EV_GASPARD_1_L3"
+  ],
+  "npc": "gaspard",
+  "options": [
+   {
+    "label": "EV_GASPARD_1_O1",
+    "points": 40,
+    "reply": "EV_GASPARD_1_R1"
+   },
+   {
+    "label": "EV_GASPARD_1_O2",
+    "points": 14,
+    "reply": "EV_GASPARD_1_R2"
+   }
+  ],
+  "reward": {
+   "item": "flour",
+   "n": 10
+  }
+ },
+ "gaspard_2": {
+  "hearts": 7,
+  "lines": [
+   "EV_GASPARD_2_L1",
+   "EV_GASPARD_2_L2",
+   "EV_GASPARD_2_L3"
+  ],
+  "npc": "gaspard",
+  "options": [
+   {
+    "label": "EV_GASPARD_2_O1",
+    "points": 50,
+    "reply": "EV_GASPARD_2_R1"
+   },
+   {
+    "label": "EV_GASPARD_2_O2",
+    "points": 6,
+    "reply": "EV_GASPARD_2_R2"
+   }
+  ],
+  "reward": {
+   "item": "ratatouille",
+   "n": 2
+  }
+ },
+ "hyacinthe_1": {
+  "hearts": 3,
+  "lines": [
+   "EV_HYACINTHE_1_L1",
+   "EV_HYACINTHE_1_L2",
+   "EV_HYACINTHE_1_L3"
+  ],
+  "npc": "hyacinthe",
+  "options": [
+   {
+    "label": "EV_HYACINTHE_1_O1",
+    "points": 40,
+    "reply": "EV_HYACINTHE_1_R1"
+   },
+   {
+    "label": "EV_HYACINTHE_1_O2",
+    "points": 14,
+    "reply": "EV_HYACINTHE_1_R2"
+   }
+  ],
+  "reward": {
+   "item": "healing_salve",
+   "n": 3
+  }
+ },
+ "hyacinthe_2": {
+  "hearts": 7,
+  "lines": [
+   "EV_HYACINTHE_2_L1",
+   "EV_HYACINTHE_2_L2",
+   "EV_HYACINTHE_2_L3"
+  ],
+  "npc": "hyacinthe",
+  "options": [
+   {
+    "label": "EV_HYACINTHE_2_O1",
+    "points": 50,
+    "reply": "EV_HYACINTHE_2_R1"
+   },
+   {
+    "label": "EV_HYACINTHE_2_O2",
+    "points": 8,
+    "reply": "EV_HYACINTHE_2_R2"
+   }
+  ],
+  "reward": {
+   "item": "lavender_tea",
+   "n": 2
+  }
+ },
+ "isaure_1": {
+  "hearts": 3,
+  "lines": [
+   "EV_ISAURE_1_L1",
+   "EV_ISAURE_1_L2",
+   "EV_ISAURE_1_L3"
+  ],
+  "npc": "isaure",
+  "options": [
+   {
+    "label": "EV_ISAURE_1_O1",
+    "points": 40,
+    "reply": "EV_ISAURE_1_R1"
+   },
+   {
+    "label": "EV_ISAURE_1_O2",
+    "points": 12,
+    "reply": "EV_ISAURE_1_R2"
+   }
+  ],
+  "reward": {
+   "item": "wood",
+   "n": 50
+  }
+ },
+ "isaure_2": {
+  "hearts": 7,
+  "lines": [
+   "EV_ISAURE_2_L1",
+   "EV_ISAURE_2_L2",
+   "EV_ISAURE_2_L3"
+  ],
+  "npc": "isaure",
+  "options": [
+   {
+    "label": "EV_ISAURE_2_O1",
+    "points": 50,
+    "reply": "EV_ISAURE_2_R1"
+   },
+   {
+    "label": "EV_ISAURE_2_O2",
+    "points": -8,
+    "reply": "EV_ISAURE_2_R2"
+   }
+  ],
+  "reward": {
+   "item": "apple_tart",
+   "n": 1
+  }
+ },
+ "maiwenn_1": {
+  "hearts": 3,
+  "lines": [
+   "EV_MAIWENN_1_L1",
+   "EV_MAIWENN_1_L2",
+   "EV_MAIWENN_1_L3"
+  ],
+  "npc": "maiwenn",
+  "options": [
+   {
+    "label": "EV_MAIWENN_1_O1",
+    "points": 40,
+    "reply": "EV_MAIWENN_1_R1"
+   },
+   {
+    "label": "EV_MAIWENN_1_O2",
+    "points": 12,
+    "reply": "EV_MAIWENN_1_R2"
+   }
+  ],
+  "reward": {
+   "item": "bait",
+   "n": 15
+  }
+ },
+ "maiwenn_2": {
+  "hearts": 7,
+  "lines": [
+   "EV_MAIWENN_2_L1",
+   "EV_MAIWENN_2_L2",
+   "EV_MAIWENN_2_L3"
+  ],
+  "npc": "maiwenn",
+  "options": [
+   {
+    "label": "EV_MAIWENN_2_O1",
+    "points": 50,
+    "reply": "EV_MAIWENN_2_R1"
+   },
+   {
+    "label": "EV_MAIWENN_2_O2",
+    "points": 6,
+    "reply": "EV_MAIWENN_2_R2"
+   }
+  ],
+  "reward": {
+   "item": "mistmoon",
+   "n": 1
+  }
+ },
+ "pim_1": {
+  "hearts": 3,
+  "lines": [
+   "EV_PIM_1_L1",
+   "EV_PIM_1_L2",
+   "EV_PIM_1_L3"
+  ],
+  "npc": "pim",
+  "options": [
+   {
+    "label": "EV_PIM_1_O1",
+    "points": 40,
+    "reply": "EV_PIM_1_R1"
+   },
+   {
+    "label": "EV_PIM_1_O2",
+    "points": 14,
+    "reply": "EV_PIM_1_R2"
+   }
+  ],
+  "reward": {
+   "item": "honeymelon",
+   "n": 1
+  }
+ },
+ "pim_2": {
+  "hearts": 7,
+  "lines": [
+   "EV_PIM_2_L1",
+   "EV_PIM_2_L2",
+   "EV_PIM_2_L3"
+  ],
+  "npc": "pim",
+  "options": [
+   {
+    "label": "EV_PIM_2_O1",
+    "points": 50,
+    "reply": "EV_PIM_2_R1"
+   },
+   {
+    "label": "EV_PIM_2_O2",
+    "points": 20,
+    "reply": "EV_PIM_2_R2"
+   }
+  ],
+  "reward": {
+   "item": "cherry_clafoutis",
+   "n": 1
+  }
+ },
+ "roseline_1": {
+  "hearts": 3,
+  "lines": [
+   "EV_ROSELINE_1_L1",
+   "EV_ROSELINE_1_L2",
+   "EV_ROSELINE_1_L3"
+  ],
+  "npc": "roseline",
+  "options": [
+   {
+    "label": "EV_ROSELINE_1_O1",
+    "points": 40,
+    "reply": "EV_ROSELINE_1_R1"
+   },
+   {
+    "label": "EV_ROSELINE_1_O2",
+    "points": 40,
+    "reply": "EV_ROSELINE_1_R2"
+   }
+  ],
+  "reward": {
+   "item": "cloth",
+   "n": 1
+  }
+ },
+ "roseline_2": {
+  "hearts": 7,
+  "lines": [
+   "EV_ROSELINE_2_L1",
+   "EV_ROSELINE_2_L2",
+   "EV_ROSELINE_2_L3"
+  ],
+  "npc": "roseline",
+  "options": [
+   {
+    "label": "EV_ROSELINE_2_O1",
+    "points": 50,
+    "reply": "EV_ROSELINE_2_R1"
+   },
+   {
+    "label": "EV_ROSELINE_2_O2",
+    "points": 6,
+    "reply": "EV_ROSELINE_2_R2"
+   }
+  ],
+  "reward": {
+   "item": "cherry_clafoutis",
+   "n": 2
+  }
+ },
+ "theodule_1": {
+  "hearts": 3,
+  "lines": [
+   "EV_THEODULE_1_L1",
+   "EV_THEODULE_1_L2",
+   "EV_THEODULE_1_L3"
+  ],
+  "npc": "theodule",
+  "options": [
+   {
+    "label": "EV_THEODULE_1_O1",
+    "points": 40,
+    "reply": "EV_THEODULE_1_R1"
+   },
+   {
+    "label": "EV_THEODULE_1_O2",
+    "points": 12,
+    "reply": "EV_THEODULE_1_R2"
+   }
+  ],
+  "reward": {
+   "item": "hay",
+   "n": 20
+  }
+ },
+ "theodule_2": {
+  "hearts": 7,
+  "lines": [
+   "EV_THEODULE_2_L1",
+   "EV_THEODULE_2_L2",
+   "EV_THEODULE_2_L3"
+  ],
+  "npc": "theodule",
+  "options": [
+   {
+    "label": "EV_THEODULE_2_O1",
+    "points": 50,
+    "reply": "EV_THEODULE_2_R1"
+   },
+   {
+    "label": "EV_THEODULE_2_O2",
+    "points": 8,
+    "reply": "EV_THEODULE_2_R2"
+   }
+  ],
+  "reward": {
+   "item": "goat_cheese",
+   "n": 3
+  }
+ }
+}

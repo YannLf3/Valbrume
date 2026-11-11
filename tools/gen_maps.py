@@ -25,72 +25,7 @@ sys.path.insert(0, HERE)
 from px import rng_for  # noqa: E402
 
 OUT = os.path.join(ROOT, "data", "maps")
-T = 16
-
-
-class M:
-    def __init__(self, id_: str, w: int, h: int, fill: str, **meta):
-        self.id, self.w, self.h = id_, w, h
-        self.g = [[fill] * w for _ in range(h)]
-        self.meta = meta
-        self.statics: List[Dict] = []
-        self.objects: List[Dict] = []
-        self.warps: List[Dict] = []
-        self.spots: Dict[str, List[int]] = {}
-        self.interact: List[Dict] = []
-        self.taken = set()
-
-    def inb(self, x: int, y: int) -> bool:
-        return 0 <= x < self.w and 0 <= y < self.h
-
-    def set(self, x: int, y: int, c: str) -> None:
-        if self.inb(x, y):
-            self.g[y][x] = c
-
-    def get(self, x: int, y: int) -> str:
-        return self.g[y][x] if self.inb(x, y) else " "
-
-    def rect(self, x: int, y: int, w: int, h: int, c: str) -> None:
-        for j in range(y, y + h):
-            for i in range(x, x + w):
-                self.set(i, j, c)
-
-    def ellipse(self, cx: float, cy: float, rx: float, ry: float, c: str) -> None:
-        for y in range(int(cy - ry) - 1, int(cy + ry) + 2):
-            for x in range(int(cx - rx) - 1, int(cx + rx) + 2):
-                if ((x - cx) / rx) ** 2 + ((y - cy) / ry) ** 2 <= 1.0:
-                    self.set(x, y, c)
-
-    def block(self, x: int, y: int, w: int, h: int) -> None:
-        for j in range(y, y + h):
-            for i in range(x, x + w):
-                self.taken.add((i, j))
-
-    def static(self, s: str, x: int, y: int, w: int, h: int, solid: bool = True, door: Optional[Tuple[int, int]] = None, **kw) -> None:
-        d = {"s": s, "x": x, "y": y, "w": w, "h": h, "solid": solid}
-        if door:
-            d["door"] = list(door)
-        d.update(kw)
-        self.statics.append(d)
-        self.block(x, y, w, h)
-
-    def warp(self, x: int, y: int, w: int, h: int, to: str, spot: str, face: int) -> None:
-        self.warps.append({"x": x, "y": y, "w": w, "h": h, "to": to, "spot": spot, "face": face})
-
-    def zone(self, x: int, y: int, w: int, h: int, kind: str, **kw) -> None:
-        d = {"x": x, "y": y, "w": w, "h": h, "kind": kind}
-        d.update(kw)
-        self.interact.append(d)
-
-    def free_grass(self, x: int, y: int) -> bool:
-        return self.get(x, y) == "." and (x, y) not in self.taken
-
-    def to_json(self) -> Dict:
-        d = {"id": self.id, "w": self.w, "h": self.h, "rows": ["".join(r) for r in self.g],
-             "statics": self.statics, "objects": self.objects, "warps": self.warps,
-             "spots": self.spots, "interact": self.interact}
-        d.update(self.meta)
-        return d
+from mapkit import M, T  # noqa: E402
 
 
 # --------------------------------------------------------------------------- ferme
@@ -276,7 +211,9 @@ def preview(m: M, path: str) -> None:
         if i == "grass":
             return "grass_spring"
         if i in ("floor", "wall", "wall_low"):
-            return {"floor": "floor_0", "wall": "wall_0", "wall_low": "wall_low_0"}[i]
+            st = m.meta.get("style", {})
+            n = int(st.get("floor" if i == "floor" else "wall", 0))
+            return {"floor": "floor_%d" % n, "wall": "wall_%d" % n, "wall_low": "wall_low_%d" % n}[i]
         return i
 
     img = Image.new("RGBA", (m.w * T, m.h * T), (0, 0, 0, 255))
@@ -312,7 +249,8 @@ def preview(m: M, path: str) -> None:
     for s in m.statics:
         if s.get("flag"):
             continue
-        items.append((s["s"], s["x"], s["y"], s["w"], s["h"], s.get("flat", False)))
+        if s["s"] in atlas:
+            items.append((s["s"], s["x"], s["y"], s["w"], s["h"], s.get("flat", False) or s["s"] in ("door_mat", "window_in")))
     for o in m.objects:
         nm = {"weed": "weed_%d" % o.get("v", 0), "rock": "rock_small", "rock_big": "rock_big", "big_log": "big_log",
               "stump": "stump_" + o.get("k", "oak"), "bush": "bush", "tall_grass": "tall_grass",
@@ -329,7 +267,8 @@ def preview(m: M, path: str) -> None:
 
 def main() -> int:
     os.makedirs(OUT, exist_ok=True)
-    maps = [farm(), house(1), house(2), house(3)]
+    from gen_maps_world import all_world_maps
+    maps = [farm(), house(1), house(2), house(3)] + all_world_maps()
     index = []
     for m in maps:
         with open(os.path.join(OUT, m.id + ".json"), "w", encoding="utf-8", newline="\n") as f:

@@ -1,5 +1,15 @@
 keys,fr,en
 BIN_TITLE,Coffre d'expédition,Shipping chest
+BIO_BASTIEN,Un forgeron taiseux dont les mains parlent mieux que la bouche. Il a longtemps été l'apprenti d'Odile.,A taciturn blacksmith whose hands speak better than his mouth. He was Odile's apprentice for years.
+BIO_CAPUCINE,Elle tient l'épicerie d'Ormelune avec le sourire et un carnet de comptes impeccable. Elle rêve en secret d'un jardin sauvage.,She runs Ormelune's grocery with a smile and an immaculate ledger. She secretly dreams of a wild garden.
+BIO_CORENTIN,"Le conservateur du petit musée d'Ormelune. Timide, pince-sans-rire, il préfère les objets anciens aux conversations nouvelles.","Curator of Ormelune's little museum. Shy and deadpan, he prefers old objects to new conversations."
+BIO_GASPARD,L'aubergiste bruyant et généreux de la Cloche d'Étain. Il juge les gens à la façon dont ils mangent.,"The loud, generous innkeeper of the Pewter Bell. He judges people by the way they eat."
+BIO_HYACINTHE,"La doyenne d'Ormelune, guérisseuse et faiseuse de tisanes. Elle voit les gens à travers leurs lunettes rondes.","Ormelune's elder, healer and brewer of teas. She sees people through her round spectacles."
+BIO_ISAURE,Une charpentière pleine d'énergie qui parle toujours trop fort et rit encore plus fort. Elle connaît chaque poutre du village.,An energetic carpenter who always talks too loud and laughs even louder. She knows every beam in the village.
+BIO_MAIWENN,Une pêcheuse laconique qui lit le ciel mieux que n'importe quel almanach. Elle préfère le silence de l'eau.,A laconic fisher who reads the sky better than any almanac. She prefers the silence of the water.
+BIO_PIM,"Dix ans, des questions plein les poches. Il est le petit frère de Capucine et la mascotte du village.",Ten years old with pockets full of questions. Capucine's little brother and the village's mascot.
+BIO_ROSELINE,Une grand-mère tisserande dont le métier à tisser chante tout le jour. Elle a connu Odile enfant.,A weaver grandmother whose loom sings all day. She knew Odile as a child.
+BIO_THEODULE,"Un vieil éleveur au chapeau de paille usé, qui parle par proverbes et connaît chaque bête par son prénom.",An old rancher in a worn straw hat who speaks in proverbs and knows every animal by name.
 CAT_ANIMAL,Produit animal,Animal Product
 CAT_ARTIFACT,Artefact,Artifact
 CAT_ARTISAN,Produit fermier,Artisan Good
@@ -45,8 +55,395 @@ Engine: Godot (MIT license)."
 DEFAULT_FARM,Les Trois Sillons,Three Furrows
 DEFAULT_NAME,Camille,Sam
 DELETE_CONFIRM,Supprimer définitivement cette sauvegarde ?,Permanently delete this save?
+D_BASTIEN_AUTUMN_1,"L'automne, les lames se vendent mieux. Les gens aiment se sentir prêts.","In autumn, blades sell better. People like feeling ready."
+D_BASTIEN_BIRTHDAY_1,…C'est mon anniversaire. Ne fais pas de bruit à ce sujet.,...It's my birthday. Don't make a fuss about it.
+D_BASTIEN_GIFT_DISLIKE_1,Ce n'est pas vraiment pour moi. Mais l'intention compte.,It's not really for me. But the thought counts.
+D_BASTIEN_GIFT_HATE_1,Non. Reprends ça.,No. Take that back.
+D_BASTIEN_GIFT_LIKE_1,Hm. C'est bien. Merci.,Hm. It's good. Thanks.
+D_BASTIEN_GIFT_LOVE_1,…C'est pour moi ? Je… merci. Vraiment. Je ne sais pas quoi dire.,...This is for me? I... thank you. Really. I don't know what to say.
+D_BASTIEN_GIFT_NEUTRAL_1,Merci. Je trouverai un usage.,Thanks. I'll find a use for it.
+D_BASTIEN_H0_1,"…Oui ? Si c'est pour une réparation, reviens quand j'ouvre.","...Yes? If it's for a repair, come back when I'm open."
+D_BASTIEN_H0_2,"Le fer ne pardonne pas la précipitation. Les gens non plus, d'ailleurs.","Iron doesn't forgive haste. Neither do people, for that matter."
+D_BASTIEN_H0_3,Tu es la petite d'Odile. Elle avait les mêmes yeux têtus.,You're Odile's kin. She had the same stubborn eyes.
+D_BASTIEN_H1_1,Ta pioche est en bon état. Tu en prends soin. Ça se voit.,Your pickaxe is in good shape. You take care of it. It shows.
+D_BASTIEN_H1_2,Je ne parle pas beaucoup. Ce n'est pas contre toi.,I don't talk much. It's nothing against you.
+D_BASTIEN_H1_3,La mine est dangereuse. Reviens entier. C'est tout ce que je demande.,The mine is dangerous. Come back in one piece. That's all I ask.
+D_BASTIEN_H2_1,"Odile m'a appris à écouter le métal. Il chante, quand il est prêt.",Odile taught me to listen to metal. It sings when it's ready.
+D_BASTIEN_H2_2,"Tiens, goûte ça. Non, ne dis rien, mange.","Here, try this. No, don't say anything, just eat."
+D_BASTIEN_H2_3,"J'ai refait ton arrosoir. Ne me remercie pas. Enfin… si, un peu.",I fixed your watering can. Don't thank me. Well... maybe a little.
+D_BASTIEN_H3_1,"Quand tu es dans la forge, j'oublie de me taire. C'est inquiétant.","When you're in the forge, I forget to stay quiet. It's worrying."
+D_BASTIEN_H3_2,"Les cloches, je les ai entendues se taire une à une. Avec toi, je crois qu'elles chanteront.","I heard the bells fall silent one by one. With you, I think they'll sing."
+D_BASTIEN_H3_3,"Reste un peu. Le feu est bon, et le silence aussi.","Stay a while. The fire's good, and so is the silence."
+D_BASTIEN_RAIN_1,La pluie sur le toit de tôle. J'aime ce bruit. Ça couvre les pensées.,Rain on the tin roof. I like that sound. It drowns out thoughts.
+D_BASTIEN_SNOW_1,Neige. Les clous gèlent aux doigts. Mais le fer chauffé… oui.,Snow. Nails freeze to fingers. But heated iron... yes.
+D_BASTIEN_SPRING_1,"Le printemps, c'est la saison des sarcloirs. Mes bras s'en souviennent.",Spring is hoe season. My arms remember.
+D_BASTIEN_SUMMER_1,"La forge en été… autant vivre dans un four. Heureusement, il y a l'ombre du fond.","The forge in summer... might as well live in an oven. Luckily, there's shade at the back."
+D_BASTIEN_WINTER_1,"L'hiver, la forge est l'endroit le plus agréable d'Ormelune. Ne le répète pas.","In winter, the forge is the nicest place in Ormelune. Don't repeat that."
+D_CAPUCINE_AUTUMN_1,Les potirons arrivent par charrettes ! Vive l'automne et ses vitrines orange.,Pumpkins are arriving by the cartload! Long live autumn and its orange displays.
+D_CAPUCINE_BIRTHDAY_1,C'est mon anniversaire aujourd'hui ! Pim a promis de ne rien casser jusqu'à ce soir.,It's my birthday today! Pim promised not to break anything until tonight.
+D_CAPUCINE_GIFT_DISLIKE_1,Euh… merci ? Je trouverai peut-être quelqu'un à qui l'offrir.,Um... thanks? Maybe I'll find someone to give it to.
+D_CAPUCINE_GIFT_HATE_1,"Sérieusement ? Garde ça loin de ma boutique, s'il te plaît.",Seriously? Please keep that away from my shop.
+D_CAPUCINE_GIFT_LIKE_1,"Merci, c'est adorable ! Je vais lui trouver une place de choix.","Thank you, that's lovely! I'll find it a place of honor."
+D_CAPUCINE_GIFT_LOVE_1,"Oh ! C'est exactement ce que j'aurais choisi. Tu me gâtes, {player} !","Oh! That's exactly what I would have picked. You spoil me, {player}!"
+D_CAPUCINE_GIFT_NEUTRAL_1,"Oh, merci. C'est gentil de penser à moi.","Oh, thanks. It's kind of you to think of me."
+D_CAPUCINE_H0_1,"Bienvenue à Ormelune ! Tu es la nièce ou le neveu d'Odile, n'est-ce pas ? Passe à l'épicerie quand tu veux.","Welcome to Ormelune! You must be Odile's niece or nephew, aren't you? Drop by the store whenever you like."
+D_CAPUCINE_H0_2,"Les graines de saison sont toujours en rayon. Un conseil : commence petit, la terre ne pardonne pas l'orgueil.","Seasonal seeds are always on the shelf. A tip: start small, the soil doesn't forgive pride."
+D_CAPUCINE_H0_3,"Excuse le désordre, je range encore les arrivages de la semaine !","Pardon the mess, I'm still sorting this week's deliveries!"
+D_CAPUCINE_H1_1,"Ah, {player} ! Tes navets sont déjà dans mes caisses, les clients en redemandent.","Ah, {player}! Your turnips are already in my crates, customers keep asking for more."
+D_CAPUCINE_H1_2,Je rêve d'un jardin sauvage derrière la boutique… mais je n'ai jamais le temps de le semer.,I dream of a wild garden behind the shop... but I never have time to sow it.
+D_CAPUCINE_H1_3,"Tu as vu la fontaine, le soir ? Elle brille comme une cloche d'argent.",Have you seen the fountain in the evening? It shines like a silver bell.
+D_CAPUCINE_H2_1,"Entre, entre ! J'ai gardé une part de tarte pour toi. Ne dis rien à Pim.","Come in, come in! I saved you a slice of tart. Don't tell Pim."
+D_CAPUCINE_H2_2,"Quand tu passes, la boutique me paraît moins silencieuse. C'est drôle, non ?","When you drop by, the shop feels less quiet. Funny, isn't it?"
+D_CAPUCINE_H2_3,Odile m'a appris à compter en fondant des clous. Longue histoire.,Odile taught me to count by melting nails. Long story.
+D_CAPUCINE_H3_1,Je pensais à toi en classant les semis. Je crois que je pense à toi tout le temps.,I was thinking of you while sorting seedlings. I think I think of you all the time.
+D_CAPUCINE_H3_2,"Le Carillon sonnera de nouveau, j'en suis sûre. Et ce jour-là, je veux être à tes côtés.","The Carillon will ring again, I'm sure of it. And on that day, I want to be by your side."
+D_CAPUCINE_H3_3,"Plus besoin de prétexte pour venir, tu sais. Tu peux juste… venir.","You don't need an excuse to visit, you know. You can just... come."
+D_CAPUCINE_RAIN_1,"Il pleut ? Parfait, tes cultures n'auront pas soif. Moi, j'ai du thé.","Raining? Perfect, your crops won't be thirsty. I have tea."
+D_CAPUCINE_SNOW_1,La neige… Pim a déjà construit un bonhomme devant la boutique. Il porte ma casquette.,Snow... Pim already built a snowman in front of the shop. He's wearing my cap.
+D_CAPUCINE_SPRING_1,Le printemps ! Mes étagères débordent de graines. Tu sens ça ? C'est l'odeur du recommencement.,Spring! My shelves overflow with seeds. Can you smell it? It's the scent of new beginnings.
+D_CAPUCINE_SUMMER_1,Quelle chaleur… j'ai mis les tomates à l'ombre pour qu'elles ne cuisent pas dans leur caisse.,What heat... I put the tomatoes in the shade so they don't cook in their crate.
+D_CAPUCINE_WINTER_1,"En hiver, la boutique sent la cannelle et la laine mouillée. J'adore.","In winter, the shop smells of cinnamon and wet wool. I love it."
+D_CORENTIN_AUTUMN_1,"L'automne : la lumière idéale pour les vieux livres. Et pour la mélancolie, malheureusement.","Autumn: ideal light for old books. And for melancholy, unfortunately."
+D_CORENTIN_BIRTHDAY_1,Mon anniversaire. Je n'en fais pas grand cas. Mais merci de me l'avoir demandé.,My birthday. I make little of it. But thank you for asking.
+D_CORENTIN_GIFT_DISLIKE_1,Hm. Voilà qui n'entre dans aucune de mes catégories préférées.,Hm. That fits none of my favorite categories.
+D_CORENTIN_GIFT_HATE_1,"Pardon… Vous ne vouliez pas dire ça, n'est-ce pas ?","Pardon... You didn't mean that, did you?"
+D_CORENTIN_GIFT_LIKE_1,Un beau choix. Je l'étudierai avec soin.,A fine choice. I'll study it carefully.
+D_CORENTIN_GIFT_LOVE_1,"C'est… extraordinaire. Je l'accrocherai dans mes pensées, faute de vitrine assez digne.","This is... extraordinary. I'll hang it in my thoughts, for want of a worthy case."
+D_CORENTIN_GIFT_NEUTRAL_1,Merci. Je le classerai quelque part.,Thank you. I'll file it somewhere.
+D_CORENTIN_H0_1,"Oh. Un visiteur. Je… vous pouvez regarder, mais pas toucher les vitrines. S'il vous plaît.","Oh. A visitor. I... you may look, but please do not touch the cases."
+D_CORENTIN_H0_2,"Le musée de la vallée. Cinq minutes de visite, quatre-vingts ans d'histoire. Les proportions sont… modestes.","The valley museum. Five minutes' visit, eighty years' history. The proportions are... modest."
+D_CORENTIN_H0_3,"Si vous trouvez des objets étranges en creusant, apportez-les. Je serai… poli.","If you find strange objects while digging, bring them. I'll be... polite."
+D_CORENTIN_H1_1,"Ah, vous revenez. Je note le fait avec satisfaction. Et un léger étonnement.","Ah, you return. I note the fact with satisfaction. And mild astonishment."
+D_CORENTIN_H1_2,Cette perle de verre est vieille de six siècles. Elle ne dit rien. Elle écoute très bien.,This glass bead is six centuries old. It says nothing. It listens very well.
+D_CORENTIN_H1_3,Les cloches du Carillon ont toutes des noms gravés à l'intérieur. Odile les a nommées en secret.,The Carillon bells all have names engraved inside. Odile named them in secret.
+D_CORENTIN_H2_1,Vous êtes la seule personne qui me parle sans s'excuser d'interrompre ma lecture. C'est… agréable.,You are the only person who speaks to me without apologizing for interrupting my reading. It's... pleasant.
+D_CORENTIN_H2_2,J'ai retrouvé une page du registre d'Odile. Elle parle d'alliages. D'une cloche plus grande que les autres.,I found a page from Odile's ledger. It speaks of alloys. Of a bell larger than the others.
+D_CORENTIN_H2_3,"Je ne suis pas très bon avec les gens. Avec vous, étrangement, je le suis un peu moins.","I'm not very good with people. With you, oddly, I'm slightly less bad."
+D_CORENTIN_H3_1,J'ai trié mes pensées. Elles se classent presque toutes sous « {player} ». C'est très peu scientifique.,I sorted my thoughts. Almost all file under '{player}'. It's very unscientific.
+D_CORENTIN_H3_2,"Si le Carillon rechante, je voudrais être le premier à l'entendre. À vos côtés, de préférence.","If the Carillon sings again, I'd like to be the first to hear it. At your side, preferably."
+D_CORENTIN_H3_3,"Je n'ai jamais rien voulu garder autant que votre compagnie. Étrange, pour un conservateur.","I've never wanted to keep anything as much as your company. Odd, for a curator."
+D_CORENTIN_RAIN_1,La pluie. Parfait pour la lecture. J'ai déjà fini trois chapitres.,Rain. Perfect for reading. I've already finished three chapters.
+D_CORENTIN_SNOW_1,"Neige. Tout devient un peu plus lent, et un peu plus juste. Je trouve cela reposant.",Snow. Everything becomes a bit slower and a bit more right. I find that restful.
+D_CORENTIN_SPRING_1,"Au printemps, la terre rend ses secrets. Munissez-vous d'une bêche et d'un carnet.",In spring the earth gives up its secrets. Bring a spade and a notebook.
+D_CORENTIN_SUMMER_1,"Il fait trop chaud pour lire. Je lis quand même, par principe.","It's too hot to read. I read anyway, on principle."
+D_CORENTIN_WINTER_1,"L'hiver, le musée est silencieux comme une bibliothèque en mer. J'aime cela.","In winter, the museum is silent as a library at sea. I like that."
+D_GASPARD_AUTUMN_1,"L'automne, saison du potiron ! Je pourrais en faire un menu entier. Et je le fais.","Autumn, pumpkin season! I could make a whole menu of it. And I do."
+D_GASPARD_BIRTHDAY_1,C'est mon anniversaire et je fais la cuisine quand même ! Tout le monde mange gratis ce soir.,It's my birthday and I'm cooking anyway! Everyone eats free tonight.
+D_GASPARD_GIFT_DISLIKE_1,"Hum… je vais dire que je ne l'ai pas vu. Mais merci, hein.","Hm... I'll pretend I didn't see that. But thanks, eh."
+D_GASPARD_GIFT_HATE_1,NON ! Pas dans ma cuisine ! Dehors !,NO! Not in my kitchen! Out!
+D_GASPARD_GIFT_LIKE_1,"Excellent ! Ça va finir dans une de mes casseroles, tu verras !","Excellent! This will end up in one of my pots, you'll see!"
+D_GASPARD_GIFT_LOVE_1,"Par tous les chaudrons ! Tu sais comment toucher un cuisinier ! Merci, merci !","By all the cauldrons! You know how to touch a cook! Thank you, thank you!"
+D_GASPARD_GIFT_NEUTRAL_1,Merci ! On trouve toujours à cuisiner quelque chose avec ça.,Thanks! One can always cook something with that.
+D_GASPARD_H0_1,"Ha ! Du sang neuf ! Entre, entre, assieds-toi ! Tu as faim ? Tu as forcément faim.","Ha! New blood! Come in, sit down! Hungry? You must be hungry."
+D_GASPARD_H0_2,"Ici, c'est la Cloche d'Étain. Soupe du jour, pain du jour, histoires du jour. Servez-vous.","Here is the Pewter Bell. Soup of the day, bread of the day, stories of the day. Help yourself."
+D_GASPARD_H0_3,"Un homme qui mange mal, c'est un homme qui ment mal. Moi, je dis ça, je dis rien.",A man who eats badly lies badly. I'm just saying.
+D_GASPARD_H1_1,"Tes légumes, tu les vends à moi en priorité, hein ! Je paie bien, je paie en soupe.","You sell your vegetables to me first, eh! I pay well, I pay in soup."
+D_GASPARD_H1_2,Le secret d'une bonne ratatouille ? Ne jamais la presser. Comme un bon mariage.,The secret of a good ratatouille? Never rush it. Like a good marriage.
+D_GASPARD_H1_3,Odile me payait en cloches. J'ai trois salières qui chantent en ré. Ne demande pas.,Odile paid me in bells. I have three saltshakers that sing in D. Don't ask.
+D_GASPARD_H2_1,Tu me rappelles ma grand-mère : toujours un peu trop sérieuse et jamais assez assise !,You remind me of my grandmother: always a bit too serious and never seated enough!
+D_GASPARD_H2_2,"Allez, goûte ce ragoût, dis-moi ce qui manque. Non, rien, c'est parfait, je le savais.","Come on, taste this stew, tell me what's missing. No, nothing, it's perfect, I knew it."
+D_GASPARD_H2_3,"Quand tu partiras en mine, laisse-moi te préparer un panier. C'est non négociable.","When you head into the mine, let me prepare a basket for you. Non-negotiable."
+D_GASPARD_H3_1,"Tu es de la famille, {player}. À Ormelune, ça veut dire : ta chaise est toujours mise.","You're family, {player}. In Ormelune that means: your chair is always set."
+D_GASPARD_H3_2,"Quand les cloches rechanteront, je ferai un banquet comme on n'en a jamais vu. Tu seras à ma droite.","When the bells sing again, I'll throw a banquet like never seen. You'll be at my right."
+D_GASPARD_H3_3,Je t'ai gardé la meilleure part. Ne dis rien aux autres. Mange.,I saved you the best portion. Don't tell the others. Eat.
+D_GASPARD_RAIN_1,"Quand il pleut, tout le monde vient manger. Qu'il pleuve toute la semaine, je dis !","When it rains, everybody comes to eat. Let it rain all week, I say!"
+D_GASPARD_SNOW_1,"De la neige ? Parfait, la salle sera pleine. Tu as vu le feu dans la cheminée ?","Snow? Perfect, the room will be full. Have you seen the fire in the hearth?"
+D_GASPARD_SPRING_1,"Le printemps, les premières asperges, les premières blagues : tout fraîchit !","Spring, first asparagus, first jokes: everything freshens!"
+D_GASPARD_SUMMER_1,"Une salade, une pastèque, un verre frais : voilà le menu de l'été. Et du fromage, toujours du fromage.","A salad, a melon, a cool drink: summer's menu. And cheese, always cheese."
+D_GASPARD_WINTER_1,"Soupe, gratin, pain chaud : l'hiver ne me fait pas peur, il me fait cuisiner.","Soup, gratin, warm bread: winter doesn't scare me, it makes me cook."
+D_HYACINTHE_AUTUMN_1,Les premières brumes apportent les premiers rhumes. Garde ton écharpe.,The first mists bring the first colds. Keep your scarf.
+D_HYACINTHE_BIRTHDAY_1,"Mon anniversaire ? Mon petit, à mon âge, on les range avec les jolis souvenirs.","My birthday? Dear, at my age they go with the pleasant memories."
+D_HYACINTHE_GIFT_DISLIKE_1,"Oh. Ce n'est pas tout à fait pour moi, mais merci d'y avoir pensé.","Oh. Not quite for me, but thank you for thinking of it."
+D_HYACINTHE_GIFT_HATE_1,"Mon Dieu, non. Mon estomac en frémit rien qu'à le regarder.","Heavens, no. My stomach shudders just looking at it."
+D_HYACINTHE_GIFT_LIKE_1,Comme c'est gentil. Je vais le mettre de côté pour une tisane.,How kind. I'll set it aside for a tea.
+D_HYACINTHE_GIFT_LOVE_1,"Oh, mon enfant, comme tu me connais ! Cela me va droit au cœur.","Oh, child, how well you know me! That goes right to my heart."
+D_HYACINTHE_GIFT_NEUTRAL_1,"Merci, mon petit. Je trouverai bien à l'employer.","Thank you, dear. I'll find a use for it."
+D_HYACINTHE_H0_1,"Bonjour, mon petit. Tu as la mine fatiguée. Dors plus, mange mieux, et reviens me voir.","Good day, dear. You look tired. Sleep more, eat better, and come see me."
+D_HYACINTHE_H0_2,La clinique est ouverte à qui en a besoin. Pas de politesse entre malades.,The clinic's open to anyone in need. No ceremony between the ailing.
+D_HYACINTHE_H0_3,"Je soigne par les plantes, la patience et les bons repas. Dans cet ordre.","I heal by plants, patience and good meals. In that order."
+D_HYACINTHE_H1_1,Tu manies bien la pioche. Mais n'oublie pas que le corps a ses limites.,You wield the pick well. But don't forget the body has its limits.
+D_HYACINTHE_H1_2,"Une tisane de lavande avant de dormir, voilà mon seul remède universel.","A lavender tea before bed, my one universal remedy."
+D_HYACINTHE_H1_3,"Ton oncle était têtu. Ta tante, aussi. Je commence à comprendre la famille.","Your uncle was stubborn. Your aunt, too. I'm starting to understand the family."
+D_HYACINTHE_H2_1,"Viens, assieds-toi. Je vais te dire un secret : tout le monde ici a un peu peur du silence du Carillon.","Come, sit. I'll tell you a secret: everyone here is a little afraid of the Carillon's silence."
+D_HYACINTHE_H2_2,"Ta tante m'a soignée une fois, d'une chute de cheval. Elle ne m'a jamais présenté la facture.","Your aunt looked after me once, after a fall from a horse. She never sent the bill."
+D_HYACINTHE_H2_3,Tu as beaucoup de bon dans les mains. Ne le gâche pas en travaillant trop.,You have much good in your hands. Don't waste it working too much.
+D_HYACINTHE_H3_1,"Tu sais, quand on vieillit, on cherche quelqu'un à qui laisser ses recettes. Je crois que je t'ai trouvé(e).","You know, when you grow old you look for someone to leave your recipes to. I think I've found you."
+D_HYACINTHE_H3_2,"Ormelune te sourit, mon enfant. Même les pierres du pavé te saluent.","Ormelune smiles at you, child. Even the cobblestones greet you."
+D_HYACINTHE_H3_3,"Prends soin de toi, d'abord. Le reste peut attendre une tisane.",Take care of yourself first. The rest can wait for a cup of tea.
+D_HYACINTHE_RAIN_1,"La pluie, ça ranime les mousses et les genoux douloureux. Je mets de l'onguent.",Rain revives mosses and aching knees. I'm putting on ointment.
+D_HYACINTHE_SNOW_1,De la neige ! Couvre-toi bien. J'ai de la soupe chaude si tu veux.,Snow! Bundle up. I have hot soup if you like.
+D_HYACINTHE_SPRING_1,"Le printemps ! Pissenlits, ail des ours, sureau… ma pharmacie pousse toute seule.","Spring! Dandelions, wild garlic, elder... my pharmacy grows by itself."
+D_HYACINTHE_SUMMER_1,"Boire de l'eau, mon petit. Beaucoup d'eau. Et à l'ombre.","Drink water, dear. Lots of water. And in the shade."
+D_HYACINTHE_WINTER_1,"En hiver, la clinique sent le miel et le thym. Tu seras toujours le bienvenu.","In winter, the clinic smells of honey and thyme. You'll always be welcome."
+D_ISAURE_AUTUMN_1,"Les châtaignes tombent, les copeaux volent, je suis heureuse comme un écureuil.","Chestnuts fall, shavings fly, I'm happy as a squirrel."
+D_ISAURE_BIRTHDAY_1,C'est mon anniversaire ! Qui a dit « vieille » ? Je n'ai rien entendu.,It's my birthday! Who said 'old'? I didn't hear anything.
+D_ISAURE_GIFT_DISLIKE_1,"Hm, pas trop mon truc… mais merci quand même !","Hm, not really my thing... but thanks anyway!"
+D_ISAURE_GIFT_HATE_1,"Beurk ! Non, non, reprends-le tout de suite.","Yuck! No, no, take it back right now."
+D_ISAURE_GIFT_LIKE_1,"Super ! Merci, ça tombe à pic.","Great! Thanks, that couldn't be better timed."
+D_ISAURE_GIFT_LOVE_1,Waouh ! Tu as deviné ou tu m'espionnes ? Je t'adore !,Wow! Did you guess or are you spying on me? I adore you!
+D_ISAURE_GIFT_NEUTRAL_1,"Oh, sympa, merci !","Oh, nice, thanks!"
+D_ISAURE_H0_1,"Salut ! Isaure, charpentière. Si ça tient debout, c'est probablement moi.","Hi! Isaure, carpenter. If it's standing, it's probably me."
+D_ISAURE_H0_2,"Ta maison a besoin d'un coup de neuf ? Passe à l'atelier, je ne mords pas !","Your house needs a touch-up? Swing by the workshop, I don't bite!"
+D_ISAURE_H0_3,"Hé, tu portes bien la hache ! On en reparlera.","Hey, you carry that axe well! We'll talk later."
+D_ISAURE_H1_1,"Je te préviens, la forêt cache de beaux troncs. Et de très gros moustiques.","Fair warning, the forest hides fine logs. And very large mosquitoes."
+D_ISAURE_H1_2,"Un poulailler, ça se monte en deux jours. Je dis ça, je dis rien.",A chicken coop goes up in two days. Just saying.
+D_ISAURE_H1_3,Tu as déjà essayé de dormir dans un tas de copeaux ? Je recommande.,Ever tried sleeping in a pile of wood shavings? I recommend it.
+D_ISAURE_H2_1,Tu travailles bien. Tu m'as presque donné envie d'être sérieuse !,You work well. You almost made me want to be serious!
+D_ISAURE_H2_2,"Allez, un défi : qui coupe le plus vite ? Perdant paie les crêpes !","Come on, a challenge: who chops fastest? Loser buys the crêpes!"
+D_ISAURE_H2_3,"Mon père était charpentier, et son père aussi. Moi, je voulais voyager. Je construis des ponts, ça compte ?","My father was a carpenter, and his father too. I wanted to travel. I build bridges, does that count?"
+D_ISAURE_H3_1,"Avec toi, même ramasser des planches devient une fête. C'est grave, docteur ?","With you, even picking up planks becomes a party. Is it serious, doc?"
+D_ISAURE_H3_2,Je construirais bien une maison entière pour te voir rire comme ça tous les jours.,I'd build a whole house just to see you laugh like that every day.
+D_ISAURE_H3_3,"Si un jour tu veux un toit à toi… enfin, à nous… tu sais où me trouver.","If you ever want a roof of your own... well, ours... you know where to find me."
+D_ISAURE_RAIN_1,"Il pleut ! Les gouttières, c'est mon deuxième métier.",It's raining! Gutters are my second job.
+D_ISAURE_SNOW_1,"De la neige ! Tu veux faire une bataille ? Non ? Dommage, j'ai déjà préparé les munitions.","Snow! Want a snowball fight? No? Shame, I already prepared the ammo."
+D_ISAURE_SPRING_1,Le bois travaille au printemps. Toutes les portes grincent. C'est ma saison préférée !,Wood moves in spring. Every door creaks. It's my favorite season!
+D_ISAURE_SUMMER_1,"L'été, je travaille torse nu dans la cour, comme tout le monde raisonnable.","In summer I work in the yard in a tank top, like any sensible person."
+D_ISAURE_WINTER_1,"En hiver, on fabrique des traîneaux. Et on en casse. Surtout moi.",In winter we build sleds. And break them. Mostly me.
+D_MAIWENN_AUTUMN_1,L'automne : les saumons. Et la brume sur l'eau. Ma meilleure saison.,Autumn: the salmon. And mist on the water. My best season.
+D_MAIWENN_BIRTHDAY_1,"Aujourd'hui j'ai un an de plus. Le poisson, lui, n'a pas changé.",Today I'm a year older. The fish haven't changed.
+D_MAIWENN_GIFT_DISLIKE_1,Hm. Ce n'est pas pour moi. Mais merci d'y avoir pensé.,Hm. Not for me. But thanks for thinking of me.
+D_MAIWENN_GIFT_HATE_1,Non. Pas ça.,No. Not that.
+D_MAIWENN_GIFT_LIKE_1,Merci. C'est bien trouvé.,Thanks. Well picked.
+D_MAIWENN_GIFT_LOVE_1,…Oh. C'est pour moi ? Merci. Vraiment. Ça me touche.,...Oh. It's for me? Thank you. Truly. It touches me.
+D_MAIWENN_GIFT_NEUTRAL_1,Merci. Je trouverai une place.,Thanks. I'll find a place.
+D_MAIWENN_H0_1,Hm. Tu pêches ? Alors tu sauras attendre.,Hm. You fish? Then you know how to wait.
+D_MAIWENN_H0_2,"Le lac mord mieux à l'aube. La mer, à la tombée du jour.","The lake bites better at dawn. The sea, at dusk."
+D_MAIWENN_H0_3,Je ne parle pas trop. Les poissons aiment ça.,I don't talk much. Fish like that.
+D_MAIWENN_H1_1,Ta ligne est bien montée. Qui t'a appris ?,Your line is well tied. Who taught you?
+D_MAIWENN_H1_2,Le vent tourne à l'ouest. Prends un manteau.,The wind's turning west. Take a coat.
+D_MAIWENN_H1_3,"Pêcher, c'est écouter quelque chose qui ne dit rien. Le plus dur et le plus beau.",Fishing is listening to something that says nothing. The hardest and the finest.
+D_MAIWENN_H2_1,"Assieds-toi sur le ponton. Les pieds dans le vide, on pense mieux.","Sit on the dock. With your feet dangling, you think better."
+D_MAIWENN_H2_2,"Mon père disait qu'il y a une lune au fond du lac, qui pêche les pêcheurs.","My father said there's a moon at the bottom of the lake, fishing for fishers."
+D_MAIWENN_H2_3,Merci d'être là sans poser de questions. C'est rare.,Thanks for being here without asking questions. It's rare.
+D_MAIWENN_H3_1,Tu es l'un des rares à qui je parle sans compter mes mots.,You're one of the few I talk to without counting my words.
+D_MAIWENN_H3_2,"Quand la cloche des Ondes sonnera, je veux être sur la jetée. Avec toi, si tu veux.","When the Waves bell rings, I want to be on the jetty. With you, if you'd like."
+D_MAIWENN_H3_3,"Je pêche seule depuis longtemps. Avec toi, ça ressemble moins à de la solitude.","I've fished alone for a long time. With you, it looks less like loneliness."
+D_MAIWENN_RAIN_1,La pluie réveille les anguilles et les silures. Sors ta lampe.,Rain wakes the eels and the catfish. Bring your lantern.
+D_MAIWENN_SNOW_1,Neige. Silence total sur le lac. Je ne manquerais ça pour rien.,Snow. Total silence on the lake. I wouldn't miss it for anything.
+D_MAIWENN_SPRING_1,Les truites remontent. Prends de bons appâts et de la patience.,The trout are running. Bring good bait and patience.
+D_MAIWENN_SUMMER_1,"L'été, les poissons restent au fond. Comme moi, à l'ombre.","In summer, fish stay deep. Like me, in the shade."
+D_MAIWENN_WINTER_1,Il gèle sur les bords. Mais les ombles mordent. Je pêche en gants.,Frost at the edges. But the char bite. I fish in gloves.
+D_PIM_AUTUMN_1,"Les châtaignes, les feuilles rouges, et mon anniversaire bientôt. L'automne est le roi !","Chestnuts, red leaves, and my birthday soon. Autumn is king!"
+D_PIM_BIRTHDAY_1,"C'est mon anniversaire ! J'ai dix ans ! Non, onze ! Non… ça dépend de la fraise sur le gâteau.","It's my birthday! I'm ten! No, eleven! No... depends on the strawberry on the cake."
+D_PIM_GIFT_DISLIKE_1,Hmm… c'est bizarre. Mais merci quand même !,Hmm... that's weird. But thanks anyway!
+D_PIM_GIFT_HATE_1,BEURK ! Ça sent pas bon ! Reprends-le !,YUCK! It smells bad! Take it back!
+D_PIM_GIFT_LIKE_1,Super ! Merci ! Je vais le montrer à tout le monde !,Cool! Thanks! I'm gonna show everybody!
+D_PIM_GIFT_LOVE_1,"WAOUH ! Pour moi ? C'est le plus beau cadeau du monde ! Merci, merci, merci !","WOW! For me? It's the best gift in the world! Thank you, thank you, thank you!"
+D_PIM_GIFT_NEUTRAL_1,"Oh, merci ! Je vais le ranger avec mes trésors.","Oh, thanks! I'll put it with my treasures."
+D_PIM_H0_1,Salut ! Tu sais combien de cailloux il y a dans la fontaine ? Moi oui : quarante-sept !,Hi! Do you know how many pebbles are in the fountain? I do: forty-seven!
+D_PIM_H0_2,"T'as vu mon bâton ? C'est une épée, un sceptre, et parfois une canne à pêche.","See my stick? It's a sword, a scepter, and sometimes a fishing rod."
+D_PIM_H0_3,Tu viens d'où ? Y avait des poules ? Y avait un dragon ?,Where're you from? Were there chickens? Was there a dragon?
+D_PIM_H1_1,Ma sœur dit que je parle trop. Moi je dis que je pose des questions. C'est pas pareil.,My sister says I talk too much. I say I ask questions. It's not the same.
+D_PIM_H1_2,"Si tu trouves une salamandre, tu me la montres ? Je lui ai déjà trouvé un prénom.","If you find a salamander, show me? I already picked a name for it."
+D_PIM_H1_3,Un jour je serai charpentier. Ou pirate. Ou les deux. Pirate-charpentier !,One day I'll be a carpenter. Or a pirate. Or both. Carpenter-pirate!
+D_PIM_H2_1,"T'es mon ami, hein ? Dis que oui. Bon, tu peux dire non, mais dis oui quand même.","You're my friend, right? Say yes. Okay, you can say no, but say yes anyway."
+D_PIM_H2_2,"J'ai caché un trésor derrière le puits ! Un bouton, une bille et un morceau de gâteau. Fossile.","I hid a treasure behind the well! A button, a marble and a piece of cake. Fossilized."
+D_PIM_H2_3,"Dis, la cloche, elle chantait comment, avant ? Je veux savoir. Je la cherche dans ma tête.","Say, how did the bell sing, before? I wanna know. I look for it in my head."
+D_PIM_H3_1,T'es la meilleure personne du monde après ma sœur. Et après les crêpes. Mais très haut !,You're the best person in the world after my sister. And after crêpes. But very high up!
+D_PIM_H3_2,"Quand je serai grand, je construirai une maison à côté de ta ferme. Avec un toboggan.","When I'm big, I'll build a house next to your farm. With a slide."
+D_PIM_H3_3,"Tu reviens demain ? Promis ? Promis juré ? Craché ? Ah non, pas craché, ça va pas.","You coming back tomorrow? Promise? Cross your heart? Spit? Ah no, not spit, that's gross."
+D_PIM_RAIN_1,Il pleut ! J'ai sauté dans toutes les flaques ! Capucine va râler !,It's raining! I jumped in all the puddles! Capucine's gonna grumble!
+D_PIM_SNOW_1,Neige neige neige neige ! Tu veux faire un bonhomme ? Dis oui !,Snow snow snow snow! Wanna build a snowman? Say yes!
+D_PIM_SPRING_1,Le printemps ! Les têtards ! J'en ai attrapé six. Enfin cinq. Un s'est échappé.,Spring! Tadpoles! I caught six. Well five. One escaped.
+D_PIM_SUMMER_1,Les vacances ! La mare ! Les grenouilles ! Ma vie est parfaite !,Vacation! The pond! The frogs! My life is perfect!
+D_PIM_WINTER_1,Neige ! Bonhomme ! Bataille ! Et le chocolat chaud de Gaspard ! Bien sûr il y a aussi l'école.,Snow! Snowman! Fight! And Gaspard's hot chocolate! Of course there's school too.
+D_ROSELINE_AUTUMN_1,"L'automne, les laines prennent des couleurs de feuilles. J'en fais des châles.","In autumn, wool takes leaf colors. I make shawls from it."
+D_ROSELINE_BIRTHDAY_1,"C'est mon anniversaire ! À mon âge, c'est un luxe d'en avoir encore.","It's my birthday! At my age, it's a luxury to still have them."
+D_ROSELINE_GIFT_DISLIKE_1,"Oh… ce n'est pas tout à fait mon goût, mais je te remercie.","Oh... it's not quite my taste, but thank you."
+D_ROSELINE_GIFT_HATE_1,"Oh mon Dieu, retire ça de ma vue, je t'en prie !","Oh heavens, take that out of my sight, please!"
+D_ROSELINE_GIFT_LIKE_1,"Comme c'est joli ! Merci, mon enfant.","How pretty! Thank you, child."
+D_ROSELINE_GIFT_LOVE_1,"Oh, mon petit trésor ! Tu as le don de me faire monter les larmes aux yeux !","Oh, my little treasure! You have a gift for making my eyes well up!"
+D_ROSELINE_GIFT_NEUTRAL_1,"Merci, mon enfant. C'est gentil d'avoir pensé à une vieille tisserande.","Thank you, child. It's kind to have thought of an old weaver."
+D_ROSELINE_H0_1,"Bonjour, ma belle plante. Tu as grandi, depuis la dernière fois… ah non, c'était ta tante. Pardon.","Hello, my dear. You've grown since last time... ah no, that was your aunt. Pardon me."
+D_ROSELINE_H0_2,"Je tisse depuis soixante ans. Le fil ne trahit jamais. Les gens, un peu plus.","I've woven for sixty years. Thread never betrays. People, a bit more."
+D_ROSELINE_H0_3,"Si tu as de la laine à filer, apporte-la. Le métier à tisser aime les visites.","If you have wool to spin, bring it. The loom loves visitors."
+D_ROSELINE_H1_1,Odile avait ton âge quand elle a fondu sa première cloche. Elle s'est brûlée trois fois ce jour-là.,Odile was your age when she cast her first bell. She burned herself three times that day.
+D_ROSELINE_H1_2,Je tricote un bonnet pour le prochain hiver. Pour qui ? Je ne sais pas encore.,I'm knitting a hat for next winter. For whom? I don't know yet.
+D_ROSELINE_H1_3,"Un bon point de croix, c'est comme une bonne amitié : on le repère à l'envers.",A good cross-stitch is like a good friendship: you spot it from the back.
+D_ROSELINE_H2_1,"Assieds-toi près du feu. Raconte-moi ta journée, j'aime les histoires de gens qui ont travaillé.","Sit by the fire. Tell me about your day, I love tales of people who've worked."
+D_ROSELINE_H2_2,"J'ai gardé le tablier d'Odile. Il sent encore le métal chaud. Tu le veux ? Pas tout de suite, plus tard.","I kept Odile's apron. It still smells of hot metal. Want it? Not right now, later."
+D_ROSELINE_H2_3,"À mon âge, on devient sentimentale avec les petites choses. Un fil rouge, un bouton, un sourire.","At my age you grow sentimental over small things. A red thread, a button, a smile."
+D_ROSELINE_H3_1,"Tu es devenu(e) un fil dans ma toile, mon cœur. Et c'est un joli fil.","You've become a thread in my weave, dear heart. And a lovely thread."
+D_ROSELINE_H3_2,"Quand le Carillon chantera, je veux avoir fini la grande écharpe pour toi. Elle sera couleur de cloche.","When the Carillon sings, I want to have finished the big scarf for you. It'll be bell-colored."
+D_ROSELINE_H3_3,"Je n'ai plus beaucoup d'hivers devant moi, mais je les passe avec plaisir à te voir réussir.","I haven't many winters left, but I spend them gladly watching you succeed."
+D_ROSELINE_RAIN_1,Il pleut. Le métier chante mieux sous la pluie. C'est un fait.,It's raining. The loom sings better in the rain. That's a fact.
+D_ROSELINE_SNOW_1,"De la neige ! Viens vite, j'ai tricoté des chaussettes pour tout le monde.","Snow! Come quick, I knitted socks for everyone."
+D_ROSELINE_SPRING_1,"Les premières fleurs ! Je les teins en bleu, en rose, en jaune. Le printemps en bobines.","First flowers! I dye them blue, pink, yellow. Spring on spools."
+D_ROSELINE_SUMMER_1,"L'été, on file à l'ombre du figuier. Tu devrais voir le soleil à travers les écheveaux.",In summer we spin in the fig tree's shade. You should see the sun through the skeins.
+D_ROSELINE_WINTER_1,"L'hiver, il faut tisser serré pour tenir chaud. Et parler lentement pour tenir bon.","In winter, weave tight to keep warm. And speak slowly to keep going."
+D_THEODULE_AUTUMN_1,"Les dernières récoltes, les premières brumes. Le bon temps pour réparer les étables.","Last harvests, first mists. Good time to mend the barns."
+D_THEODULE_BIRTHDAY_1,"Mon anniversaire ? À mon âge, on compte plus les hivers que les gâteaux.","My birthday? At my age, you count winters more than cakes."
+D_THEODULE_GIFT_DISLIKE_1,"Hum. Ce n'est pas pour moi, mais je sais que ça part d'un bon sentiment.","Hm. Not for me, but I know it comes from a good place."
+D_THEODULE_GIFT_HATE_1,"Ah non, ça, reprends-le. Mon estomac a des principes.","Oh no, take that back. My stomach has principles."
+D_THEODULE_GIFT_LIKE_1,C'est bien aimable à toi. Merci bien.,That's very kind of you. Thank you.
+D_THEODULE_GIFT_LOVE_1,"Ma foi ! Voilà qui réchauffe le vieux cœur. Merci, mon enfant.","Well now! That warms the old heart. Thank you, child."
+D_THEODULE_GIFT_NEUTRAL_1,"Merci, c'est gentil. On trouve toujours une utilité aux choses.","Thanks, that's kind. There's always a use for things."
+D_THEODULE_H0_1,"Bonjour, jeune pousse. Une bête bien soignée vaut cent bêtes mal gardées.","Morning, young sprout. One well-kept animal is worth a hundred neglected."
+D_THEODULE_H0_2,Tu veux des poules ? Commence par un coq de bon caractère. Le reste suit.,Want chickens? Start with a rooster of good temper. The rest follows.
+D_THEODULE_H0_3,On ne presse pas une vache. Elle donne quand elle donne.,You don't rush a cow. She gives when she gives.
+D_THEODULE_H1_1,"Tu as les mains qu'il faut. Les bêtes le sentent, tu sais.","You've got the right hands. Animals can tell, you know."
+D_THEODULE_H1_2,"Foin sec, eau claire, un mot gentil : voilà tout le secret.","Dry hay, clear water, a kind word: that's the whole secret."
+D_THEODULE_H1_3,Odile m'achetait un fromage chaque semaine. Elle disait qu'il avait « du caractère ».,Odile bought a cheese from me every week. She said it had 'character'.
+D_THEODULE_H2_1,"Assieds-toi un instant. L'ombre est bonne, et le temps ne court pas après nous.","Sit a moment. The shade is good, and time isn't chasing us."
+D_THEODULE_H2_2,"Quand ma femme vivait, elle chantait aux chèvres. Elles n'ont jamais aussi bien donné.","When my wife was alive, she sang to the goats. They never gave so well since."
+D_THEODULE_H2_3,"Un bon voisin, c'est une clôture qu'on n'a pas besoin de réparer.",A good neighbor is a fence you never need to mend.
+D_THEODULE_H3_1,"Tu es comme une petite-fille pour moi. Ou un petit-fils. Les deux, tiens, je ne tranche pas.","You're like a grandchild to me. Whichever, I won't choose."
+D_THEODULE_H3_2,J'ai vu passer bien des saisons. Les meilleures ont toujours eu quelqu'un à qui parler.,I've seen many seasons pass. The best ones always had someone to talk to.
+D_THEODULE_H3_3,"Le jour où les cloches rechanteront, je serai au premier rang. Même s'il faut me porter.","The day the bells sing again, I'll be in the front row. Even if I have to be carried."
+D_THEODULE_RAIN_1,"Pluie fine, terre grasse. Bon pour l'herbe, mauvais pour mes genoux.","Light rain, rich soil. Good for the grass, bad for my knees."
+D_THEODULE_SNOW_1,De la neige. Les poules détestent. Elles me le font savoir toute la journée.,Snow. Hens hate it. They let me know all day long.
+D_THEODULE_SPRING_1,"Les agneaux, les poussins, les veaux… le printemps, c'est la grande maternité !","Lambs, chicks, calves... spring is the great maternity ward!"
+D_THEODULE_SUMMER_1,Faut faire boire les bêtes plus souvent. Et le vieux aussi.,Gotta water the animals more often. And the old man too.
+D_THEODULE_WINTER_1,"L'hiver, on garde les bêtes au chaud. Et on se garde soi-même, au coin du poêle.","In winter we keep the animals warm. And ourselves, by the stove."
+EV_BASTIEN_1_L1,"Viens voir. Là, sur l'établi. Elle l'avait commencée avant de partir.","Come look. There, on the bench. She started it before she left."
+EV_BASTIEN_1_L2,Une cloche. Petite. Inachevée. Je n'ai jamais osé la finir.,A bell. Small. Unfinished. I never dared finish it.
+EV_BASTIEN_1_L3,Tu crois qu'on a le droit d'achever l'ouvrage de quelqu'un d'autre ?,Do you think we have the right to finish someone else's work?
+EV_BASTIEN_1_O1,Elle aurait voulu que tu le fasses.,She would have wanted you to.
+EV_BASTIEN_1_O2,"Laisse-la telle quelle, en souvenir.","Leave it as it is, as a memento."
+EV_BASTIEN_1_R1,"…Peut-être. Je vais y réfléchir. Prends ce cuivre, pour le moment.","...Maybe. I'll think about it. Take this copper, for now."
+EV_BASTIEN_1_R2,Hm. C'est sage. Ce cuivre est pour toi tout de même.,Hm. That's wise. This copper is yours anyway.
+EV_BASTIEN_2_L1,J'ai fini la petite cloche. Elle sonne faux. Légèrement.,I finished the little bell. It rings slightly off-key.
+EV_BASTIEN_2_L2,Odile disait que c'est la fausse note qui rend une cloche vivante.,Odile used to say it's the off-note that makes a bell alive.
+EV_BASTIEN_2_L3,Tu voudrais l'accrocher chez toi ? Je… je préférerais qu'elle soit chez toi.,Would you hang it at your place? I... I'd rather it were at yours.
+EV_BASTIEN_2_O1,Je l'accroche avec fierté.,I'll hang it with pride.
+EV_BASTIEN_2_O2,"Garde-la, elle est à toi.","Keep it, it's yours."
+EV_BASTIEN_2_R1,"Alors c'est bien. Voilà aussi de l'argent, pour tes outils. Allez, file.","Then it's good. Here's some silver too, for your tools. Go on, off you go."
+EV_BASTIEN_2_R2,…Comme tu veux. Mais prends l'argent. Pour tes outils.,...As you wish. But take the silver. For your tools.
+EV_CAPUCINE_1_L1,"Psst, {player} ! Viens voir derrière la boutique.","Psst, {player}! Come look behind the shop."
+EV_CAPUCINE_1_L2,"Un carré de terre vide, quelques tuteurs de travers… C'était le jardin de ma mère.","A square of bare earth, a few crooked stakes... It was my mother's garden."
+EV_CAPUCINE_1_L3,Je n'ose pas le replanter. Et si rien ne poussait ? Qu'en penses-tu ?,I don't dare replant it. What if nothing grew? What do you think?
+EV_CAPUCINE_1_O1,"Plante, même si ça rate.","Plant it, even if it fails."
+EV_CAPUCINE_1_O2,Peut-être au printemps prochain ?,Maybe next spring?
+EV_CAPUCINE_1_R1,"Tu as raison. Un jardin qui rate vaut mieux qu'un jardin vide. Tiens, des tulipes-cloches !","You're right. A failed garden beats an empty one. Here, some bell tulips!"
+EV_CAPUCINE_1_R2,"Hm. Oui, peut-être. Merci d'avoir été franc(he). Prends quand même ces graines.","Hm. Yes, maybe. Thanks for being honest. Take these seeds anyway."
+EV_CAPUCINE_2_L1,"J'ai fait une liste. « Choses à faire avant de vieillir. » La moitié est barrée, grâce à toi.","I made a list. 'Things to do before getting old.' Half of it is crossed out, thanks to you."
+EV_CAPUCINE_2_L2,"Il reste : voir le lever du soleil depuis le lac, et dire à quelqu'un ce qu'on pense vraiment.","What's left: watching the sunrise from the lake, and telling someone what you really think."
+EV_CAPUCINE_2_L3,"Tu m'accompagnerais, un matin ? Dis-moi oui avant que je me dégonfle.","Would you come with me, one morning? Say yes before I lose my nerve."
+EV_CAPUCINE_2_O1,Avec grand plaisir.,With great pleasure.
+EV_CAPUCINE_2_O2,Je suis très occupé(e) en ce moment.,I'm very busy right now.
+EV_CAPUCINE_2_R1,"Vraiment ? Alors c'est promis ! Voilà des graines de melon miel, pour fêter ça.","Really? Then it's a promise! Here are honeymelon seeds, to celebrate."
+EV_CAPUCINE_2_R2,"Oh. Bien sûr. Une autre fois, alors. Garde tout de même ces graines.","Oh. Of course. Another time, then. Keep these seeds anyway."
+EV_CORENTIN_1_L1,Je… je voulais vous montrer quelque chose. Si vous n'êtes pas pressé(e).,I... I wanted to show you something. If you're not in a hurry.
+EV_CORENTIN_1_L2,"Cette pièce porte une cloche sur une face, un épi sur l'autre. Les deux emblèmes d'Ormelune.","This coin bears a bell on one side, an ear of grain on the other. Ormelune's two emblems."
+EV_CORENTIN_1_L3,On dit qu'elles s'équilibrent. Lequel préférez-vous ?,They say the two balance each other. Which do you prefer?
+EV_CORENTIN_1_O1,L'épi : il nourrit la cloche.,The grain: it feeds the bell.
+EV_CORENTIN_1_O2,La cloche : elle réunit les gens.,The bell: it gathers people.
+EV_CORENTIN_1_R1,Hm. Une réponse inattendue. Gardez la pièce. Je l'ai en double.,Hm. An unexpected answer. Keep the coin. I have a duplicate.
+EV_CORENTIN_1_R2,Hm. C'est aussi ma réponse. Gardez la pièce. Je l'ai en double.,Hm. That's my answer too. Keep the coin. I have a duplicate.
+EV_CORENTIN_2_L1,Voici une chose que j'ai gardée secrète : l'une des pages du registre d'Odile est de ma main.,Here's something I kept secret: one of the pages of Odile's ledger is in my hand.
+EV_CORENTIN_2_L2,"Elle me dictait ses notes, la dernière année. Ses mains tremblaient. Elle ne voulait pas que cela se sache.","She dictated her notes to me, the last year. Her hands trembled. She didn't want it known."
+EV_CORENTIN_2_L3,Je crois qu'elle aurait voulu que vous le sachiez. Me pardonnez-vous de ne pas l'avoir dit plus tôt ?,I think she would have wanted you to know. Will you forgive me for not saying it sooner?
+EV_CORENTIN_2_O1,Il n'y a rien à pardonner.,There's nothing to forgive.
+EV_CORENTIN_2_O2,J'aurais aimé le savoir plus tôt.,I wish I'd known sooner.
+EV_CORENTIN_2_R1,"…Merci. Prenez cette page. Elle est à vous, depuis le début.",...Thank you. Take this page. It's been yours from the start.
+EV_CORENTIN_2_R2,"Je comprends. Prenez cette page, tout de même. Je suis désolé.","I understand. Take this page, all the same. I'm sorry."
+EV_GASPARD_1_L1,"Pssst ! Viens, j'ai besoin d'un goûteur honnête. Et les autres ne le sont pas.","Psst! Come, I need an honest taster. And the others aren't."
+EV_GASPARD_1_L2,"Un ragoût secret. Je n'ai jamais osé le servir. Alors, comment tu le trouves ?","A secret stew. I've never dared serve it. So, how do you find it?"
+EV_GASPARD_1_L3,"La vérité, hein. Ne me ménage pas.","The truth, eh. Don't spare me."
+EV_GASPARD_1_O1,Un peu fade. Il manque du sel.,A bit bland. It needs salt.
+EV_GASPARD_1_O2,"Délicieux, rien à changer.","Delicious, nothing to change."
+EV_GASPARD_1_R1,Ha ! Le sel ! Je le savais ! Quelqu'un d'honnête enfin ! Voilà de la farine pour la peine.,Ha! The salt! I knew it! Someone honest at last! Here's flour for your trouble.
+EV_GASPARD_1_R2,"Ah, tu es gentil. Mais je vois bien que tu mens. Allez, de la farine quand même.","Ah, you're kind. But I can tell you're lying. Here, flour anyway."
+EV_GASPARD_2_L1,Tu sais pourquoi je cuisine pour tout le monde ? Ma femme est partie quand la dernière cloche s'est tue.,You know why I cook for everybody? My wife left when the last bell fell silent.
+EV_GASPARD_2_L2,"Elle disait qu'Ormelune sans musique n'avait plus de raison de rester. Moi, j'ai gardé les fourneaux.",She said Ormelune without music had no reason to stay. I kept the stoves.
+EV_GASPARD_2_L3,Tu crois qu'on peut remplacer la musique par un bon repas ?,Do you think a good meal can replace music?
+EV_GASPARD_2_O1,"Pas remplacer, mais accompagner.","Not replace, but accompany."
+EV_GASPARD_2_O2,"Non, la musique ne se remplace pas.","No, music can't be replaced."
+EV_GASPARD_2_R1,"Accompagner… oui. C'est ça. Voilà de quoi accompagner ta soirée, mon ami.","Accompany... yes. That's it. Here's something to accompany your evening, my friend."
+EV_GASPARD_2_R2,"…Hm. Tu as raison. Mais mange, quand même. Prends ça.",...Hm. You're right. But eat anyway. Take this.
+EV_HYACINTHE_1_L1,Tu as le temps de m'aider à cueillir ? Le sureau est en fleur et mes vieux genoux refusent.,Do you have time to help me pick? The elder is in bloom and my old knees refuse.
+EV_HYACINTHE_1_L2,"Voilà. Tu vois, on ne cueille pas toute la fleur. On laisse de quoi faire des baies.","There. See, you don't pick the whole flower. You leave enough for berries."
+EV_HYACINTHE_1_L3,Pourquoi fais-tu tout cela pour une vieille dame ?,Why are you doing all this for an old lady?
+EV_HYACINTHE_1_O1,Parce que vous m'avez accueilli(e) comme chez moi.,Because you welcomed me like home.
+EV_HYACINTHE_1_O2,Parce que ça fait du bien.,Because it feels good.
+EV_HYACINTHE_1_R1,Oh… voilà des baumes de ma façon. Pour que tu reviennes entier(ère) de la mine.,Oh... here are salves of my making. So you come back whole from the mine.
+EV_HYACINTHE_1_R2,Ha ! La réponse la plus honnête. Prends ces baumes.,Ha! The most honest answer. Take these salves.
+EV_HYACINTHE_2_L1,"Je te dois une confidence. Je n'ai pas toujours été une guérisseuse. J'ai été fondeuse de cloches, moi aussi.",I owe you a confidence. I wasn't always a healer. I was a bell-founder too.
+EV_HYACINTHE_2_L2,"Avec Odile. On fondait côte à côte. Puis j'ai eu peur de la chaleur, et elle a continué sans moi.","With Odile. We cast side by side. Then I grew afraid of the heat, and she carried on without me."
+EV_HYACINTHE_2_L3,Tu crois qu'on peut se pardonner d'avoir abandonné ?,Do you think one can forgive oneself for having given up?
+EV_HYACINTHE_2_O1,"On peut, et on peut aider autrement.","One can, and help in other ways."
+EV_HYACINTHE_2_O2,Je ne sais pas.,I don't know.
+EV_HYACINTHE_2_R1,"…Tu parles comme elle. Tiens, une infusion de ma façon, à la lavande, pour les jours difficiles.","...You talk like her. Here, a tea of my making, lavender, for hard days."
+EV_HYACINTHE_2_R2,"Moi non plus, mon petit. Boire une tisane aide à y penser.","Neither do I, dear. A cup of tea helps one think."
+EV_ISAURE_1_L1,"Ha, te voilà ! Regarde-moi ça : le pont de la mare est affaissé. Pari de l'année : je le répare avant la nuit.","Ha, there you are! Look at that: the pond bridge has sagged. Bet of the year: I fix it before nightfall."
+EV_ISAURE_1_L2,Je suis à court de planches. Tu pourrais me prêter la main ?,I'm short on planks. Could you lend a hand?
+EV_ISAURE_1_L3,Dis-moi franchement : tu crois qu'une charpentière peut aussi être poète ?,Tell me honestly: do you think a carpenter can also be a poet?
+EV_ISAURE_1_O1,Chaque poutre est un vers.,Every beam is a verse.
+EV_ISAURE_1_O2,Je préfère quand tu clouais.,I prefer it when you nail things.
+EV_ISAURE_1_R1,Ha ! Je note ça. Voilà du bois pour tes futurs poèmes.,Ha! I'm writing that down. Here's wood for your future poems.
+EV_ISAURE_1_R2,"Haha, touché ! Tiens, du bois quand même.","Haha, fair! Here's wood anyway."
+EV_ISAURE_2_L1,Tu sais ce que je n'ai jamais dit à personne ? Je déteste les hauteurs.,You know what I've never told anyone? I hate heights.
+EV_ISAURE_2_L2,Je grimpe sur les toits en riant pour que personne ne remarque que mes mains tremblent.,I climb onto roofs laughing so nobody notices my hands trembling.
+EV_ISAURE_2_L3,Tu me trouves ridicule ?,Do you think I'm ridiculous?
+EV_ISAURE_2_O1,Je te trouve courageuse.,I think you're brave.
+EV_ISAURE_2_O2,"Un peu, oui.","A little, yes."
+EV_ISAURE_2_R1,"…Merci. Tu es la seule qui l'a vu. Tiens, une tarte pour te remercier.","...Thanks. You're the only one who noticed. Here, a tart to thank you."
+EV_ISAURE_2_R2,"Aïe. Bon, je l'ai mérité. Prends quand même cette tarte.","Ouch. Well, I deserved that. Take this tart anyway."
+EV_MAIWENN_1_L1,Chut. Approche doucement. Regarde le bouchon.,"Shh. Come closer, slowly. Watch the float."
+EV_MAIWENN_1_L2,"Voilà. Tu vois ? Il frémit, tout juste. C'est là que tout se joue.",There. See? It barely trembles. That's where everything happens.
+EV_MAIWENN_1_L3,"Dis-moi : on pêche pour manger, ou pour attendre ?","Tell me: do we fish to eat, or to wait?"
+EV_MAIWENN_1_O1,Pour attendre.,To wait.
+EV_MAIWENN_1_O2,"Pour manger, bien sûr.","To eat, of course."
+EV_MAIWENN_1_R1,"…Oui. C'est ça. Tiens, de quoi attendre longtemps.","...Yes. That's it. Here, enough to wait for a long time."
+EV_MAIWENN_1_R2,Hm. Pragmatique. Prends ces appâts quand même.,Hm. Practical. Take these baits anyway.
+EV_MAIWENN_2_L1,"Tu te souviens, la lune au fond du lac ? Mon père disait qu'elle existe. Je l'ai vue, une fois.",Remember the moon at the bottom of the lake? My father said it exists. I saw it once.
+EV_MAIWENN_2_L2,"Une nuit de pluie. Un poisson pâle comme du givre, qui m'a regardée avant de repartir.","A rainy night. A fish pale as frost, which looked at me before leaving."
+EV_MAIWENN_2_L3,"Si tu en pêches un, tu me promets de me le montrer avant de le relâcher ?","If you catch one, do you promise to show me before you let it go?"
+EV_MAIWENN_2_O1,Je te le promets.,I promise.
+EV_MAIWENN_2_O2,On verra bien.,We'll see.
+EV_MAIWENN_2_R1,"…Merci. Tiens, celui-ci, je l'ai gardé pour toi. Une lune-de-brume. Ne le vends pas à la légère.","...Thanks. Here, this one, I kept for you. A mistmoon. Don't sell it lightly."
+EV_MAIWENN_2_R2,"Hm. D'accord. Tiens quand même, je l'ai gardé pour toi.","Hm. Alright. Here anyway, I kept it for you."
+EV_PIM_1_L1,"Chut ! Viens vite, viens, j'ai trouvé un nid dans le tilleul !","Shh! Quick, come, I found a nest in the linden!"
+EV_PIM_1_L2,Trois œufs bleus. Je n'y ai pas touché ! J'ai juste regardé. Longtemps.,Three blue eggs. I didn't touch! I just looked. For a long time.
+EV_PIM_1_L3,"Dis, si je reviens tous les jours, tu crois que la maman oiseau va m'aimer ?","Say, if I come back every day, do you think the mama bird will like me?"
+EV_PIM_1_O1,"Elle te laissera approcher, doucement.","She'll let you come closer, gently."
+EV_PIM_1_O2,Mieux vaut les laisser tranquilles.,Better leave them alone.
+EV_PIM_1_R1,"Vrai ? Tu crois ? Alors c'est décidé ! Tiens, un melon que j'avais gardé, pour te remercier.","Really? You think? Then it's decided! Here, a melon I'd saved, to thank you."
+EV_PIM_1_R2,"Ah… oui, t'as raison. Je regarderai de loin. Tiens, un melon quand même.","Ah... yeah, you're right. I'll watch from afar. Here, a melon anyway."
+EV_PIM_2_L1,Dis… j'ai un secret. Un vrai de vrai. Tu promets de pas le dire ?,Say... I have a secret. A real one. Promise not to tell?
+EV_PIM_2_L2,"Parfois j'ai peur le soir, quand le Carillon se tait. Y a plus de cloche pour dire que tout va bien.","Sometimes I'm scared at night, when the Carillon is silent. There's no bell to say everything's fine."
+EV_PIM_2_L3,"Toi, tu vas la réparer, hein ? Pour de vrai ?","You're gonna fix it, right? For real?"
+EV_PIM_2_O1,Je te le promets.,I promise you.
+EV_PIM_2_O2,J'essaierai de mon mieux.,I'll try my best.
+EV_PIM_2_R1,"Je le savais ! Capucine a fait un clafoutis, je te le donne, pour la promesse !","I knew it! Capucine made a clafoutis, I'm giving it to you, for the promise!"
+EV_PIM_2_R2,"D'accord… c'est déjà bien. Tiens, un clafoutis, pour le courage.","Okay... that's already good. Here, a clafoutis, for courage."
+EV_ROSELINE_1_L1,"Viens voir, ma belle. J'ai terminé quelque chose pour la ferme.","Come see, dear. I finished something for the farm."
+EV_ROSELINE_1_L2,"Une couverture à carreaux, couleur de blé. Pour ton lit. Elle gardera les rêves au chaud.","A checkered blanket, wheat-colored. For your bed. It'll keep dreams warm."
+EV_ROSELINE_1_L3,Dis-moi : tu préfères le bleu du lac ou le jaune du blé pour la bordure ?,Tell me: do you prefer the lake's blue or the wheat's yellow for the border?
+EV_ROSELINE_1_O1,Le jaune du blé.,Wheat yellow.
+EV_ROSELINE_1_O2,Le bleu du lac.,Lake blue.
+EV_ROSELINE_1_R1,Oh ! Comme moi. Voilà une étoffe d'essai en jaune. Garde-la.,Oh! Like me. Here's a trial cloth in yellow. Keep it.
+EV_ROSELINE_1_R2,Joli choix. Voilà une étoffe d'essai en bleu. Garde-la.,Pretty choice. Here's a trial cloth in blue. Keep it.
+EV_ROSELINE_2_L1,"Tu sais, quand Odile est partie, je lui ai tricoté une écharpe. Elle ne l'a jamais mise.","You know, when Odile left I knitted her a scarf. She never wore it."
+EV_ROSELINE_2_L2,Elle disait qu'elle ne voulait pas l'abîmer. Je crois qu'elle voulait la garder pour son retour.,She said she didn't want to damage it. I think she wanted to save it for her return.
+EV_ROSELINE_2_L3,Tu crois qu'elle reviendra ?,Do you think she'll come back?
+EV_ROSELINE_2_O1,"Oui, elle reviendra.","Yes, she'll come back."
+EV_ROSELINE_2_O2,Je ne sais pas.,I don't know.
+EV_ROSELINE_2_R1,"Merci, mon cœur. Prends ce clafoutis, il est fait pour les bons espoirs.","Thank you, dear heart. Take this clafoutis, it's made for good hopes."
+EV_ROSELINE_2_R2,"C'est honnête. Prends ce clafoutis tout de même, mon petit.","That's honest. Take this clafoutis anyway, little one."
+EV_THEODULE_1_L1,"Viens m'aider, la vieille Marguerite refuse de rentrer. Têtue comme sa maîtresse.","Come help me, old Marguerite refuses to come in. Stubborn as her owner."
+EV_THEODULE_1_L2,"… Voilà, elle a suivi ta voix. Les bêtes savent qui est sincère.","... There, she followed your voice. Animals know who's sincere."
+EV_THEODULE_1_L3,"Dis-moi, que ferais-tu à ma place : vendre le pré du fond ou le garder, même s'il ne rapporte rien ?","Tell me, what would you do in my place: sell the back pasture or keep it, even if it earns nothing?"
+EV_THEODULE_1_O1,"Garde-le, il compte pour toi.","Keep it, it matters to you."
+EV_THEODULE_1_O2,"Vends-le, ça te facilitera la vie.","Sell it, it'll make life easier."
+EV_THEODULE_1_R1,"Oui. Voilà ce que mon cœur disait. Prends ce foin, c'est du bon.","Yes. That's what my heart said. Take this hay, it's good."
+EV_THEODULE_1_R2,C'est raisonnable. Pas faux. Prends ce foin tout de même.,That's reasonable. Not wrong. Take this hay all the same.
+EV_THEODULE_2_L1,"Regarde ce que j'ai retrouvé dans le grenier : le vieux grelot d'Odile, celui du troupeau.","Look what I found in the attic: Odile's old jingle, the herd's one."
+EV_THEODULE_2_L2,"Elle l'accrochait au cou de la plus mutine de mes chèvres, pour qu'on l'entende arriver de loin.",She hung it on my naughtiest goat so you'd hear her coming from afar.
+EV_THEODULE_2_L3,Je crois qu'il est à toi. Tu le veux ?,I believe it's yours. Do you want it?
+EV_THEODULE_2_O1,Avec reconnaissance.,Gratefully.
+EV_THEODULE_2_O2,"Garde-le, il te rappellera l'amie.","Keep it, it'll remind you of the friend."
+EV_THEODULE_2_R1,"Bon. Alors prends ce chèvre frais aussi, pour fêter ça avec un morceau de pain.","Good. Then take this goat cheese too, to celebrate with a piece of bread."
+EV_THEODULE_2_R2,…Tu es plus fine que tu n'en as l'air. Prends tout de même ce fromage.,...You're sharper than you look. Take this cheese anyway.
 FORECAST,La rainette annonce pour demain : %s.,The frog forecasts for tomorrow: %s.
+FORECAST_HARP,"La harpe des vents murmure : demain, %s.","The wind harp whispers: tomorrow, %s."
 GAME_TITLE,Valbrume,Valbrume
+GIFT_ALREADY,%s a déjà reçu un cadeau aujourd'hui.,%s already got a gift today.
+GIFT_ASK,Offrir « %s » à %s ?,"Give ""%s"" to %s?"
+GIFT_DATING,"Oh… {player}. Oui. Moi aussi, ça fait un moment que j'y pense. Alors… nous sortons ensemble ?",Oh... {player}. Yes. I've been thinking about it for a while too. So... are we together?
+GIFT_ENGAGED,{player}… tu es sérieux(se) ? Oui ! Mille fois oui ! Le mariage aura lieu dans trois jours.,{player}... are you serious? Yes! A thousand times yes! The wedding will be in three days.
+GIFT_LIMIT,Tu as déjà fait deux cadeaux à %s cette semaine.,You've already given %s two gifts this week.
+GIFT_REFUSED,"Oh… c'est très gentil, mais ce n'est pas ce genre de relation pour moi.","Oh... that's very kind, but that's not the kind of relationship for me."
 INTRO_1,"Chère petite pousse, si tu lis ceci, c'est que j'ai enfin pris la route du grand large. La ferme est à toi : le toit fuit un peu, la terre est têtue, mais elle est bonne.","Dear little sprout, if you're reading this, I've finally set off for the open road. The farm is yours: the roof leaks a little and the soil is stubborn, but it's good soil."
 INTRO_2,"Au village d'Ormelune, le Carillon s'est tu le jour de mon départ. Six cloches, six voix : c'est moi qui les fondais. Aucune ne sonne plus.","In the village of Ormelune, the Carillon fell silent the day I left. Six bells, six voices: I cast them myself. Not one of them rings anymore."
 INTRO_3,"Fais-toi des amis, cultive la terre, descends à la mine si tu l'oses. Quand tu auras de quoi refondre mes cloches, tu comprendras pourquoi c'est toi.","Make friends, work the land, go down the mine if you dare. When you have enough to recast my bells, you'll understand why it had to be you."
@@ -323,16 +720,49 @@ ITEM_WOOD,Bois,Wood
 ITEM_WOOD_PATH,Dalle de bois,Wood Path
 ITEM_WOOL,Laine,Wool
 ITEM_ZUCCHINI,Courgette,Zucchini
+JOB_BASTIEN,Forgeron,Blacksmith
+JOB_CAPUCINE,Épicière,Grocer
+JOB_CORENTIN,Conservateur du musée,Museum curator
+JOB_GASPARD,Aubergiste,Innkeeper
+JOB_HYACINTHE,Guérisseuse,Healer
+JOB_ISAURE,Charpentière,Carpenter
+JOB_MAIWENN,Pêcheuse,Fisher
+JOB_PIM,Écolier curieux,Curious schoolchild
+JOB_ROSELINE,Tisserande,Weaver
+JOB_THEODULE,Éleveur,Rancher
 LANG_EN,English,English
 LANG_FR,Français,Français
 MAILBOX_EMPTY,La boîte aux lettres est vide.,The mailbox is empty.
+MAP_BEACH,La plage des Ondes,Wavecrest Beach
+MAP_CARPENTRY,La charpenterie,The Carpentry
+MAP_CLINIC,La clinique,The Clinic
+MAP_COTTAGE,Chez Roseline,Roseline's Cottage
 MAP_FARM,La ferme,The Farm
 MAP_FARMHOUSE,La maison,The House
+MAP_FISHSHOP,La pêcherie,The Fish Shop
+MAP_FOREST,La forêt de Bois-Brume,Mistwood Forest
+MAP_FORGE,La forge,The Forge
+MAP_INN,La Cloche d'Étain,The Pewter Bell
+MAP_LAKE,Le lac Miroir,Mirror Lake
+MAP_MUSEUM,Le musée,The Museum
+MAP_RANCH_SHOP,L'élevage,The Ranch
+MAP_STORE,L'épicerie,The Grocery
+MAP_VILLAGE,Ormelune,Ormelune
 NEW_FARM,Nom de la ferme,Farm name
 NEW_NAME,Ton prénom,Your name
 NEW_OUTFIT,Tenue,Outfit
 NEW_START,Commencer,Start
 NEW_TITLE,Nouvelle partie,New game
+NPC_BASTIEN,Bastien,Bastien
+NPC_CAPUCINE,Capucine,Capucine
+NPC_CORENTIN,Corentin,Corentin
+NPC_GASPARD,Gaspard,Gaspard
+NPC_HYACINTHE,Hyacinthe,Hyacinthe
+NPC_ISAURE,Isaure,Isaure
+NPC_MAIWENN,Maïwenn,Maiwenn
+NPC_PIM,Pim,Pim
+NPC_ROSELINE,Roseline,Roseline
+NPC_THEODULE,Théodule,Theodule
 OPT_FPS,Afficher les images/s,Show FPS
 OPT_FULLSCREEN,Plein écran,Fullscreen
 OPT_KEYS,Touches de déplacement,Movement keys
@@ -386,6 +816,23 @@ SEASON_AUTUMN,Automne,Autumn
 SEASON_SPRING,Printemps,Spring
 SEASON_SUMMER,Été,Summer
 SEASON_WINTER,Hiver,Winter
+SHOP_ALL,Tout,All
+SHOP_BACKPACK,Grand sac (+12 places),Big bag (+12 slots)
+SHOP_BUY,Acheter,Buy
+SHOP_CARPENTRY,L'atelier d'Isaure,Isaure's Workshop
+SHOP_CLINIC,La clinique d'Hyacinthe,Hyacinthe's Clinic
+SHOP_EMPTY,Rien en rayon.,Nothing in stock.
+SHOP_FISHSHOP,La pêcherie de Maïwenn,Maiwenn's Fish Shop
+SHOP_FORGE,La forge de Bastien,Bastien's Forge
+SHOP_INN,La Cloche d'Étain,The Pewter Bell
+SHOP_MARKET,Le marché du dimanche,The Sunday Market
+SHOP_NOTHING_TO_SELL,Rien à vendre.,Nothing to sell.
+SHOP_NO_MONEY,Pas assez d'argent.,Not enough money.
+SHOP_RANCH,L'élevage de Théodule,Theodule's Ranch
+SHOP_RECIPE,Recette : %s,Recipe: %s
+SHOP_SELL,Vendre,Sell
+SHOP_STORE,L'épicerie de Capucine,Capucine's Grocery
+SHOP_TALK,Discuter,Chat
 SKILL_COMBAT,Combat,Combat
 SKILL_FARMING,Agriculture,Farming
 SKILL_FISHING,Pêche,Fishing
@@ -419,10 +866,12 @@ TITLE_CREDITS,Crédits,Credits
 TITLE_OPTIONS,Options,Options
 TITLE_PLAY,Jouer,Play
 TITLE_QUIT,Quitter,Quit
+TOAST_ALPAGE_LOCKED,Le sentier de l'alpage est impraticable pour l'instant.,The alpine pasture trail is impassable for now.
 TOAST_CANT_PLACE,Impossible de poser ça ici.,You can't place that here.
 TOAST_CAN_EMPTY,L'arrosoir est vide.,The can is empty.
 TOAST_CAN_FILLED,Arrosoir rempli.,Watering can filled.
 TOAST_CHEST_NOT_EMPTY,Vide d'abord le coffre.,Empty the chest first.
+TOAST_COAST_CLOSED,Un éboulis barre la route de la plage.,A rockslide blocks the road to the beach.
 TOAST_DOOR_LOCKED,C'est fermé.,It's locked.
 TOAST_INDOORS_ONLY,Ça se pose à l'intérieur.,That goes indoors.
 TOAST_INV_FULL,Ton sac est plein !,Your bag is full!
@@ -438,6 +887,7 @@ TOAST_OUTDOORS_ONLY,Ça se pose dehors.,That goes outdoors.
 TOAST_PATH_CLOSED,Le chemin n'est pas encore praticable.,The path isn't passable yet.
 TOAST_RECIPE,Recette apprise : %s,Recipe learned: %s
 TOAST_SAVED,Partie sauvegardée.,Game saved.
+TOAST_SHOP_CLOSED,Fermé. Ouvert de %d h à %d h.,Closed. Open %d:00 to %d:00.
 TOAST_TOO_WEAK,Ton outil est trop faible.,Your tool is too weak.
 TOAST_WRONG_SEASON,Ce n'est pas la bonne saison.,Wrong season for this crop.
 WEATHER_RAIN,Pluie,Rain

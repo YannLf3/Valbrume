@@ -98,7 +98,7 @@
  "rain_waters_crops": true,
  "scarecrow_radius": 6,
  "shipping_size": 36,
- "shop_sell_ratio": 1.0,
+ "shop_sell_ratio": 0.75,
  "silo_capacity": 240,
  "soil_decay_chance": 0.12,
  "sprinkler_patterns": {

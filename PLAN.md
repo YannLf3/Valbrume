@@ -50,9 +50,9 @@ Légende : `[ ]` à faire · `[x]` fait et validé.
 **Validation** : labourer → semer → arroser → dormir → récolter → vendre fonctionne ; aller-retour de sauvegarde testé.
 
 ### P3 — Village
-- [ ] cartes village / forêt / lac / côte + intérieurs
-- [ ] 10 PNJ, emplois du temps, pathfinding, dialogues, amitié, cadeaux, événements
-- [ ] 5 commerces avec horaires et stocks saisonniers
+- [x] cartes village / forêt / lac / côte + intérieurs
+- [x] 10 PNJ, emplois du temps, pathfinding, dialogues, amitié, cadeaux, événements
+- [x] 5 commerces avec horaires et stocks saisonniers
 
 **Validation** : tests amitié + emplois du temps ; chaque boutique achète et vend.
 
@@ -132,3 +132,13 @@ Première boucle jouable : titre → nouvelle partie (3 emplacements) → introd
 - Écarts connus à traiter : butin perdu si sac plein (toast d'avertissement) ; manette/tactile des écrans à valider en P7 ; remappage des touches en P7.
 
 **Prochaine étape : P3** — étendre `tools/gen_maps.py` (village 80×60, forêt 56×48, lac 56×44, côte 56×34, intérieurs des commerces/maisons), `tools/content/npcs.py` (10 PNJ, dialogues FR/EN, événements, cadeaux, emplois du temps), système d'amitié, pathfinding A* sur grille, magasins.
+
+### Journal — P3 terminée (2026-11-11)
+
+Village d'Ormelune habité : 17 cartes (ferme, 3 maisons, village, forêt, lac, plage, 9 intérieurs), 10 PNJ originaux (18+ répliques chacun, 2 événements de cœur, goûts, anniversaires), amitié 0-10 cœurs (plafond 8 sans relation, bouquet → couple, anneau → fiançailles), cadeaux (1/jour, 2/semaine, ×4 à l'anniversaire), emplois du temps (jour de semaine, saison/météo, cloche des Ondes), déplacements A* (AStarGrid2D) et trajets entre cartes par graphe de passages, 7 commerces + marché avec horaires, jours de fermeture, stocks de saison, achat/vente, recettes à l'auberge, grand sac.
+
+- Nouveau code : `friendship.gd`, `dialogue.gd`, `schedule.gd`, `grid_nav.gd`, `shops.gd`, `npc.gd`, `npc_manager.gd`, `shop_screen.gd`, `tools/content/npcs.py`, `tools/mapkit.py`, `tools/gen_maps_world.py`, `tools/check_glyphs.py`.
+- Tests : 41 tests, 2 089 vérifications (cohérence des données PNJ, points d'horaire marchables, chemin A* vers chaque point, passages, amitié, magasins, PNJ en situation réelle).
+- Reste pour plus tard : mariage effectif (scène de noces le `wedding_day`) et écran des relations/anniversaires → P6 (journal) ; entrée de la mine et de l'alpage → P5/P6.
+
+**Prochaine étape : P4** — élevage (poulailler, étable, silo, achat d'animaux, affection, production), machines (fourneau déjà défini, fromagerie, baratte, métier à tisser, presse, bocaux, fumoir, ruche, trieuse), menu d'artisanat (75 recettes), cuisine (28 plats avec buffs), construction chez Isaure, amélioration de la maison, meubles rotatifs, papiers peints et sols.

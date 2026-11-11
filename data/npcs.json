@@ -1,0 +1,1886 @@
+{
+ "bastien": {
+  "birthday": [
+   2,
+   3
+  ],
+  "dislikes": [
+   "dandelion",
+   "belltulip",
+   "jam"
+  ],
+  "events": [
+   "bastien_1",
+   "bastien_2"
+  ],
+  "hates": [
+   "cat:forage",
+   "seaweed"
+  ],
+  "home": "forge",
+  "likes": [
+   "ingot_iron",
+   "ingot_copper",
+   "coal",
+   "bread",
+   "omelette",
+   "quartz"
+  ],
+  "loves": [
+   "ore_silver",
+   "ruby",
+   "smoked_fish",
+   "ingot_brumite"
+  ],
+  "romance": true,
+  "schedule": {
+   "d0": [
+    [
+     360,
+     "forge",
+     "home"
+    ],
+    [
+     600,
+     "village",
+     "street_w"
+    ],
+    [
+     900,
+     "museum",
+     "reading"
+    ],
+    [
+     1140,
+     "inn",
+     "table_w"
+    ],
+    [
+     1320,
+     "forge",
+     "home"
+    ]
+   ],
+   "default": [
+    [
+     360,
+     "forge",
+     "home"
+    ],
+    [
+     540,
+     "forge",
+     "clerk"
+    ],
+    [
+     720,
+     "forge",
+     "work"
+    ],
+    [
+     780,
+     "forge",
+     "clerk"
+    ],
+    [
+     1020,
+     "village",
+     "forge_front"
+    ],
+    [
+     1140,
+     "inn",
+     "table_w"
+    ],
+    [
+     1320,
+     "forge",
+     "home"
+    ]
+   ],
+   "rain": [
+    [
+     360,
+     "forge",
+     "home"
+    ],
+    [
+     540,
+     "forge",
+     "clerk"
+    ],
+    [
+     720,
+     "forge",
+     "work"
+    ],
+    [
+     1140,
+     "inn",
+     "table_w"
+    ],
+    [
+     1320,
+     "forge",
+     "home"
+    ]
+   ],
+   "snow": [
+    [
+     360,
+     "forge",
+     "home"
+    ],
+    [
+     540,
+     "forge",
+     "clerk"
+    ],
+    [
+     720,
+     "forge",
+     "work"
+    ],
+    [
+     1320,
+     "forge",
+     "home"
+    ]
+   ]
+  },
+  "sprite": "bastien",
+  "talk": {
+   "autumn": [
+    "D_BASTIEN_AUTUMN_1"
+   ],
+   "birthday": [
+    "D_BASTIEN_BIRTHDAY_1"
+   ],
+   "gift_dislike": [
+    "D_BASTIEN_GIFT_DISLIKE_1"
+   ],
+   "gift_hate": [
+    "D_BASTIEN_GIFT_HATE_1"
+   ],
+   "gift_like": [
+    "D_BASTIEN_GIFT_LIKE_1"
+   ],
+   "gift_love": [
+    "D_BASTIEN_GIFT_LOVE_1"
+   ],
+   "gift_neutral": [
+    "D_BASTIEN_GIFT_NEUTRAL_1"
+   ],
+   "h0": [
+    "D_BASTIEN_H0_1",
+    "D_BASTIEN_H0_2",
+    "D_BASTIEN_H0_3"
+   ],
+   "h1": [
+    "D_BASTIEN_H1_1",
+    "D_BASTIEN_H1_2",
+    "D_BASTIEN_H1_3"
+   ],
+   "h2": [
+    "D_BASTIEN_H2_1",
+    "D_BASTIEN_H2_2",
+    "D_BASTIEN_H2_3"
+   ],
+   "h3": [
+    "D_BASTIEN_H3_1",
+    "D_BASTIEN_H3_2",
+    "D_BASTIEN_H3_3"
+   ],
+   "rain": [
+    "D_BASTIEN_RAIN_1"
+   ],
+   "snow": [
+    "D_BASTIEN_SNOW_1"
+   ],
+   "spring": [
+    "D_BASTIEN_SPRING_1"
+   ],
+   "summer": [
+    "D_BASTIEN_SUMMER_1"
+   ],
+   "winter": [
+    "D_BASTIEN_WINTER_1"
+   ]
+  }
+ },
+ "capucine": {
+  "birthday": [
+   0,
+   8
+  ],
+  "dislikes": [
+   "cat:mineral",
+   "coal",
+   "clay"
+  ],
+  "events": [
+   "capucine_1",
+   "capucine_2"
+  ],
+  "hates": [
+   "smoked_fish",
+   "pickles"
+  ],
+  "home": "store",
+  "likes": [
+   "cheese",
+   "jam",
+   "carrot",
+   "lavender",
+   "egg",
+   "bread"
+  ],
+  "loves": [
+   "honeymelon",
+   "belltulip",
+   "cherry_clafoutis",
+   "spring_salad"
+  ],
+  "romance": true,
+  "schedule": {
+   "d6": [
+    [
+     360,
+     "store",
+     "home"
+    ],
+    [
+     600,
+     "village",
+     "plaza_w"
+    ],
+    [
+     960,
+     "village",
+     "bench_w"
+    ],
+    [
+     1200,
+     "store",
+     "home"
+    ]
+   ],
+   "default": [
+    [
+     360,
+     "store",
+     "home"
+    ],
+    [
+     540,
+     "store",
+     "clerk"
+    ],
+    [
+     1080,
+     "village",
+     "plaza_w"
+    ],
+    [
+     1200,
+     "store",
+     "home"
+    ]
+   ],
+   "rain": [
+    [
+     360,
+     "store",
+     "home"
+    ],
+    [
+     540,
+     "store",
+     "clerk"
+    ],
+    [
+     1200,
+     "store",
+     "home"
+    ]
+   ]
+  },
+  "sprite": "capucine",
+  "talk": {
+   "autumn": [
+    "D_CAPUCINE_AUTUMN_1"
+   ],
+   "birthday": [
+    "D_CAPUCINE_BIRTHDAY_1"
+   ],
+   "gift_dislike": [
+    "D_CAPUCINE_GIFT_DISLIKE_1"
+   ],
+   "gift_hate": [
+    "D_CAPUCINE_GIFT_HATE_1"
+   ],
+   "gift_like": [
+    "D_CAPUCINE_GIFT_LIKE_1"
+   ],
+   "gift_love": [
+    "D_CAPUCINE_GIFT_LOVE_1"
+   ],
+   "gift_neutral": [
+    "D_CAPUCINE_GIFT_NEUTRAL_1"
+   ],
+   "h0": [
+    "D_CAPUCINE_H0_1",
+    "D_CAPUCINE_H0_2",
+    "D_CAPUCINE_H0_3"
+   ],
+   "h1": [
+    "D_CAPUCINE_H1_1",
+    "D_CAPUCINE_H1_2",
+    "D_CAPUCINE_H1_3"
+   ],
+   "h2": [
+    "D_CAPUCINE_H2_1",
+    "D_CAPUCINE_H2_2",
+    "D_CAPUCINE_H2_3"
+   ],
+   "h3": [
+    "D_CAPUCINE_H3_1",
+    "D_CAPUCINE_H3_2",
+    "D_CAPUCINE_H3_3"
+   ],
+   "rain": [
+    "D_CAPUCINE_RAIN_1"
+   ],
+   "snow": [
+    "D_CAPUCINE_SNOW_1"
+   ],
+   "spring": [
+    "D_CAPUCINE_SPRING_1"
+   ],
+   "summer": [
+    "D_CAPUCINE_SUMMER_1"
+   ],
+   "winter": [
+    "D_CAPUCINE_WINTER_1"
+   ]
+  }
+ },
+ "corentin": {
+  "birthday": [
+   3,
+   18
+  ],
+  "dislikes": [
+   "cat:animal",
+   "cat:dish"
+  ],
+  "events": [
+   "corentin_1",
+   "corentin_2"
+  ],
+  "hates": [
+   "clay",
+   "fiber"
+  ],
+  "home": "museum",
+  "likes": [
+   "fossil_fern",
+   "old_coin",
+   "glass_bead",
+   "quartz",
+   "emerald",
+   "lavender_tea"
+  ],
+  "loves": [
+   "amethyst",
+   "ammonite",
+   "ledger_page",
+   "engraved_stone",
+   "moonstone"
+  ],
+  "romance": true,
+  "schedule": {
+   "d4": [
+    [
+     360,
+     "museum",
+     "home"
+    ],
+    [
+     600,
+     "forest",
+     "glade_w"
+    ],
+    [
+     1020,
+     "lake",
+     "shore_n"
+    ],
+    [
+     1200,
+     "museum",
+     "home"
+    ]
+   ],
+   "default": [
+    [
+     360,
+     "museum",
+     "home"
+    ],
+    [
+     540,
+     "museum",
+     "desk"
+    ],
+    [
+     720,
+     "museum",
+     "reading"
+    ],
+    [
+     900,
+     "museum",
+     "desk"
+    ],
+    [
+     1080,
+     "village",
+     "bench_e"
+    ],
+    [
+     1200,
+     "museum",
+     "reading"
+    ],
+    [
+     1320,
+     "museum",
+     "home"
+    ]
+   ],
+   "rain": [
+    [
+     360,
+     "museum",
+     "home"
+    ],
+    [
+     540,
+     "museum",
+     "desk"
+    ],
+    [
+     720,
+     "museum",
+     "reading"
+    ],
+    [
+     1320,
+     "museum",
+     "home"
+    ]
+   ],
+   "snow": [
+    [
+     360,
+     "museum",
+     "home"
+    ],
+    [
+     540,
+     "museum",
+     "desk"
+    ],
+    [
+     720,
+     "museum",
+     "reading"
+    ],
+    [
+     1320,
+     "museum",
+     "home"
+    ]
+   ]
+  },
+  "sprite": "corentin",
+  "talk": {
+   "autumn": [
+    "D_CORENTIN_AUTUMN_1"
+   ],
+   "birthday": [
+    "D_CORENTIN_BIRTHDAY_1"
+   ],
+   "gift_dislike": [
+    "D_CORENTIN_GIFT_DISLIKE_1"
+   ],
+   "gift_hate": [
+    "D_CORENTIN_GIFT_HATE_1"
+   ],
+   "gift_like": [
+    "D_CORENTIN_GIFT_LIKE_1"
+   ],
+   "gift_love": [
+    "D_CORENTIN_GIFT_LOVE_1"
+   ],
+   "gift_neutral": [
+    "D_CORENTIN_GIFT_NEUTRAL_1"
+   ],
+   "h0": [
+    "D_CORENTIN_H0_1",
+    "D_CORENTIN_H0_2",
+    "D_CORENTIN_H0_3"
+   ],
+   "h1": [
+    "D_CORENTIN_H1_1",
+    "D_CORENTIN_H1_2",
+    "D_CORENTIN_H1_3"
+   ],
+   "h2": [
+    "D_CORENTIN_H2_1",
+    "D_CORENTIN_H2_2",
+    "D_CORENTIN_H2_3"
+   ],
+   "h3": [
+    "D_CORENTIN_H3_1",
+    "D_CORENTIN_H3_2",
+    "D_CORENTIN_H3_3"
+   ],
+   "rain": [
+    "D_CORENTIN_RAIN_1"
+   ],
+   "snow": [
+    "D_CORENTIN_SNOW_1"
+   ],
+   "spring": [
+    "D_CORENTIN_SPRING_1"
+   ],
+   "summer": [
+    "D_CORENTIN_SUMMER_1"
+   ],
+   "winter": [
+    "D_CORENTIN_WINTER_1"
+   ]
+  }
+ },
+ "gaspard": {
+  "birthday": [
+   1,
+   26
+  ],
+  "dislikes": [
+   "coal",
+   "clay",
+   "fiber"
+  ],
+  "events": [
+   "gaspard_1",
+   "gaspard_2"
+  ],
+  "hates": [
+   "cat:mineral"
+  ],
+  "home": "inn",
+  "likes": [
+   "cheese",
+   "butter",
+   "tomato",
+   "leek",
+   "mushroom_pan",
+   "cep",
+   "honey"
+  ],
+  "loves": [
+   "ratatouille",
+   "pumpkin_veloute",
+   "pike_butter",
+   "tian"
+  ],
+  "romance": false,
+  "schedule": {
+   "d6": [
+    [
+     360,
+     "inn",
+     "home"
+    ],
+    [
+     480,
+     "village",
+     "plaza_e"
+    ],
+    [
+     720,
+     "inn",
+     "clerk"
+    ],
+    [
+     1380,
+     "inn",
+     "home"
+    ]
+   ],
+   "default": [
+    [
+     360,
+     "inn",
+     "home"
+    ],
+    [
+     420,
+     "inn",
+     "kitchen"
+    ],
+    [
+     720,
+     "inn",
+     "clerk"
+    ],
+    [
+     1380,
+     "inn",
+     "home"
+    ]
+   ],
+   "rain": [
+    [
+     360,
+     "inn",
+     "home"
+    ],
+    [
+     420,
+     "inn",
+     "kitchen"
+    ],
+    [
+     720,
+     "inn",
+     "clerk"
+    ],
+    [
+     1380,
+     "inn",
+     "home"
+    ]
+   ]
+  },
+  "sprite": "gaspard",
+  "talk": {
+   "autumn": [
+    "D_GASPARD_AUTUMN_1"
+   ],
+   "birthday": [
+    "D_GASPARD_BIRTHDAY_1"
+   ],
+   "gift_dislike": [
+    "D_GASPARD_GIFT_DISLIKE_1"
+   ],
+   "gift_hate": [
+    "D_GASPARD_GIFT_HATE_1"
+   ],
+   "gift_like": [
+    "D_GASPARD_GIFT_LIKE_1"
+   ],
+   "gift_love": [
+    "D_GASPARD_GIFT_LOVE_1"
+   ],
+   "gift_neutral": [
+    "D_GASPARD_GIFT_NEUTRAL_1"
+   ],
+   "h0": [
+    "D_GASPARD_H0_1",
+    "D_GASPARD_H0_2",
+    "D_GASPARD_H0_3"
+   ],
+   "h1": [
+    "D_GASPARD_H1_1",
+    "D_GASPARD_H1_2",
+    "D_GASPARD_H1_3"
+   ],
+   "h2": [
+    "D_GASPARD_H2_1",
+    "D_GASPARD_H2_2",
+    "D_GASPARD_H2_3"
+   ],
+   "h3": [
+    "D_GASPARD_H3_1",
+    "D_GASPARD_H3_2",
+    "D_GASPARD_H3_3"
+   ],
+   "rain": [
+    "D_GASPARD_RAIN_1"
+   ],
+   "snow": [
+    "D_GASPARD_SNOW_1"
+   ],
+   "spring": [
+    "D_GASPARD_SPRING_1"
+   ],
+   "summer": [
+    "D_GASPARD_SUMMER_1"
+   ],
+   "winter": [
+    "D_GASPARD_WINTER_1"
+   ]
+  }
+ },
+ "hyacinthe": {
+  "birthday": [
+   0,
+   25
+  ],
+  "dislikes": [
+   "coal",
+   "cat:mineral"
+  ],
+  "events": [
+   "hyacinthe_1",
+   "hyacinthe_2"
+  ],
+  "hates": [
+   "smoked_fish",
+   "pickles"
+  ],
+  "home": "clinic",
+  "likes": [
+   "elderflower",
+   "snowdrop",
+   "saffron",
+   "bread",
+   "omelette",
+   "garden_stew"
+  ],
+  "loves": [
+   "lavender_tea",
+   "lavender",
+   "honey",
+   "healing_salve"
+  ],
+  "romance": false,
+  "schedule": {
+   "d5": [
+    [
+     360,
+     "clinic",
+     "home"
+    ],
+    [
+     600,
+     "village",
+     "bench_e"
+    ],
+    [
+     900,
+     "forest",
+     "glade"
+    ],
+    [
+     1140,
+     "inn",
+     "table_w"
+    ],
+    [
+     1260,
+     "clinic",
+     "home"
+    ]
+   ],
+   "default": [
+    [
+     360,
+     "clinic",
+     "home"
+    ],
+    [
+     540,
+     "clinic",
+     "clerk"
+    ],
+    [
+     900,
+     "village",
+     "bench_w"
+    ],
+    [
+     1020,
+     "village",
+     "plaza_w"
+    ],
+    [
+     1200,
+     "clinic",
+     "home"
+    ]
+   ],
+   "rain": [
+    [
+     360,
+     "clinic",
+     "home"
+    ],
+    [
+     540,
+     "clinic",
+     "clerk"
+    ],
+    [
+     1200,
+     "clinic",
+     "home"
+    ]
+   ],
+   "snow": [
+    [
+     360,
+     "clinic",
+     "home"
+    ],
+    [
+     540,
+     "clinic",
+     "clerk"
+    ],
+    [
+     1200,
+     "clinic",
+     "home"
+    ]
+   ]
+  },
+  "sprite": "hyacinthe",
+  "talk": {
+   "autumn": [
+    "D_HYACINTHE_AUTUMN_1"
+   ],
+   "birthday": [
+    "D_HYACINTHE_BIRTHDAY_1"
+   ],
+   "gift_dislike": [
+    "D_HYACINTHE_GIFT_DISLIKE_1"
+   ],
+   "gift_hate": [
+    "D_HYACINTHE_GIFT_HATE_1"
+   ],
+   "gift_like": [
+    "D_HYACINTHE_GIFT_LIKE_1"
+   ],
+   "gift_love": [
+    "D_HYACINTHE_GIFT_LOVE_1"
+   ],
+   "gift_neutral": [
+    "D_HYACINTHE_GIFT_NEUTRAL_1"
+   ],
+   "h0": [
+    "D_HYACINTHE_H0_1",
+    "D_HYACINTHE_H0_2",
+    "D_HYACINTHE_H0_3"
+   ],
+   "h1": [
+    "D_HYACINTHE_H1_1",
+    "D_HYACINTHE_H1_2",
+    "D_HYACINTHE_H1_3"
+   ],
+   "h2": [
+    "D_HYACINTHE_H2_1",
+    "D_HYACINTHE_H2_2",
+    "D_HYACINTHE_H2_3"
+   ],
+   "h3": [
+    "D_HYACINTHE_H3_1",
+    "D_HYACINTHE_H3_2",
+    "D_HYACINTHE_H3_3"
+   ],
+   "rain": [
+    "D_HYACINTHE_RAIN_1"
+   ],
+   "snow": [
+    "D_HYACINTHE_SNOW_1"
+   ],
+   "spring": [
+    "D_HYACINTHE_SPRING_1"
+   ],
+   "summer": [
+    "D_HYACINTHE_SUMMER_1"
+   ],
+   "winter": [
+    "D_HYACINTHE_WINTER_1"
+   ]
+  }
+ },
+ "isaure": {
+  "birthday": [
+   1,
+   12
+  ],
+  "dislikes": [
+   "cat:fish",
+   "seaweed"
+  ],
+  "events": [
+   "isaure_1",
+   "isaure_2"
+  ],
+  "hates": [
+   "jam",
+   "honey"
+  ],
+  "home": "carpentry",
+  "likes": [
+   "omelette",
+   "wood",
+   "leek_gratin",
+   "plum",
+   "apple",
+   "hazelnut"
+  ],
+  "loves": [
+   "frostberry_tart",
+   "apple_tart",
+   "chestnut",
+   "bread"
+  ],
+  "romance": true,
+  "schedule": {
+   "d2": [
+    [
+     360,
+     "carpentry",
+     "home"
+    ],
+    [
+     600,
+     "forest",
+     "glade"
+    ],
+    [
+     900,
+     "lake",
+     "shore_w"
+    ],
+    [
+     1140,
+     "inn",
+     "table_e"
+    ],
+    [
+     1320,
+     "carpentry",
+     "home"
+    ]
+   ],
+   "default": [
+    [
+     360,
+     "carpentry",
+     "home"
+    ],
+    [
+     540,
+     "carpentry",
+     "clerk"
+    ],
+    [
+     720,
+     "carpentry",
+     "work"
+    ],
+    [
+     900,
+     "carpentry",
+     "clerk"
+    ],
+    [
+     1080,
+     "village",
+     "plaza_e"
+    ],
+    [
+     1230,
+     "carpentry",
+     "home"
+    ]
+   ],
+   "rain": [
+    [
+     360,
+     "carpentry",
+     "home"
+    ],
+    [
+     540,
+     "carpentry",
+     "clerk"
+    ],
+    [
+     720,
+     "carpentry",
+     "work"
+    ],
+    [
+     1140,
+     "inn",
+     "table_e"
+    ],
+    [
+     1320,
+     "carpentry",
+     "home"
+    ]
+   ],
+   "snow": [
+    [
+     360,
+     "carpentry",
+     "home"
+    ],
+    [
+     540,
+     "carpentry",
+     "clerk"
+    ],
+    [
+     720,
+     "carpentry",
+     "work"
+    ],
+    [
+     1230,
+     "carpentry",
+     "home"
+    ]
+   ]
+  },
+  "sprite": "isaure",
+  "talk": {
+   "autumn": [
+    "D_ISAURE_AUTUMN_1"
+   ],
+   "birthday": [
+    "D_ISAURE_BIRTHDAY_1"
+   ],
+   "gift_dislike": [
+    "D_ISAURE_GIFT_DISLIKE_1"
+   ],
+   "gift_hate": [
+    "D_ISAURE_GIFT_HATE_1"
+   ],
+   "gift_like": [
+    "D_ISAURE_GIFT_LIKE_1"
+   ],
+   "gift_love": [
+    "D_ISAURE_GIFT_LOVE_1"
+   ],
+   "gift_neutral": [
+    "D_ISAURE_GIFT_NEUTRAL_1"
+   ],
+   "h0": [
+    "D_ISAURE_H0_1",
+    "D_ISAURE_H0_2",
+    "D_ISAURE_H0_3"
+   ],
+   "h1": [
+    "D_ISAURE_H1_1",
+    "D_ISAURE_H1_2",
+    "D_ISAURE_H1_3"
+   ],
+   "h2": [
+    "D_ISAURE_H2_1",
+    "D_ISAURE_H2_2",
+    "D_ISAURE_H2_3"
+   ],
+   "h3": [
+    "D_ISAURE_H3_1",
+    "D_ISAURE_H3_2",
+    "D_ISAURE_H3_3"
+   ],
+   "rain": [
+    "D_ISAURE_RAIN_1"
+   ],
+   "snow": [
+    "D_ISAURE_SNOW_1"
+   ],
+   "spring": [
+    "D_ISAURE_SPRING_1"
+   ],
+   "summer": [
+    "D_ISAURE_SUMMER_1"
+   ],
+   "winter": [
+    "D_ISAURE_WINTER_1"
+   ]
+  }
+ },
+ "maiwenn": {
+  "birthday": [
+   2,
+   17
+  ],
+  "dislikes": [
+   "cat:animal",
+   "cat:ingot"
+  ],
+  "events": [
+   "maiwenn_1",
+   "maiwenn_2"
+  ],
+  "hates": [
+   "honey",
+   "jam"
+  ],
+  "home": "fishshop",
+  "likes": [
+   "trout",
+   "sea_bream",
+   "fried_gudgeon",
+   "grilled_fish",
+   "herring",
+   "shrimp"
+  ],
+  "loves": [
+   "salmon",
+   "tuna",
+   "mistmoon",
+   "fisher_stew"
+  ],
+  "romance": false,
+  "schedule": {
+   "bell_waves": [
+    [
+     360,
+     "fishshop",
+     "home"
+    ],
+    [
+     480,
+     "fishshop",
+     "clerk"
+    ],
+    [
+     840,
+     "beach",
+     "dock"
+    ],
+    [
+     1080,
+     "village",
+     "fountain_s"
+    ],
+    [
+     1260,
+     "fishshop",
+     "home"
+    ]
+   ],
+   "d1": [
+    [
+     360,
+     "fishshop",
+     "home"
+    ],
+    [
+     420,
+     "lake",
+     "dock"
+    ],
+    [
+     1020,
+     "lake",
+     "shore_e"
+    ],
+    [
+     1200,
+     "fishshop",
+     "home"
+    ]
+   ],
+   "default": [
+    [
+     360,
+     "fishshop",
+     "home"
+    ],
+    [
+     480,
+     "fishshop",
+     "clerk"
+    ],
+    [
+     840,
+     "lake",
+     "dock"
+    ],
+    [
+     1080,
+     "village",
+     "fountain_s"
+    ],
+    [
+     1260,
+     "fishshop",
+     "home"
+    ]
+   ],
+   "rain": [
+    [
+     360,
+     "fishshop",
+     "home"
+    ],
+    [
+     480,
+     "fishshop",
+     "clerk"
+    ],
+    [
+     1260,
+     "fishshop",
+     "home"
+    ]
+   ],
+   "snow": [
+    [
+     360,
+     "fishshop",
+     "home"
+    ],
+    [
+     480,
+     "fishshop",
+     "clerk"
+    ],
+    [
+     1260,
+     "fishshop",
+     "home"
+    ]
+   ]
+  },
+  "sprite": "maiwenn",
+  "talk": {
+   "autumn": [
+    "D_MAIWENN_AUTUMN_1"
+   ],
+   "birthday": [
+    "D_MAIWENN_BIRTHDAY_1"
+   ],
+   "gift_dislike": [
+    "D_MAIWENN_GIFT_DISLIKE_1"
+   ],
+   "gift_hate": [
+    "D_MAIWENN_GIFT_HATE_1"
+   ],
+   "gift_like": [
+    "D_MAIWENN_GIFT_LIKE_1"
+   ],
+   "gift_love": [
+    "D_MAIWENN_GIFT_LOVE_1"
+   ],
+   "gift_neutral": [
+    "D_MAIWENN_GIFT_NEUTRAL_1"
+   ],
+   "h0": [
+    "D_MAIWENN_H0_1",
+    "D_MAIWENN_H0_2",
+    "D_MAIWENN_H0_3"
+   ],
+   "h1": [
+    "D_MAIWENN_H1_1",
+    "D_MAIWENN_H1_2",
+    "D_MAIWENN_H1_3"
+   ],
+   "h2": [
+    "D_MAIWENN_H2_1",
+    "D_MAIWENN_H2_2",
+    "D_MAIWENN_H2_3"
+   ],
+   "h3": [
+    "D_MAIWENN_H3_1",
+    "D_MAIWENN_H3_2",
+    "D_MAIWENN_H3_3"
+   ],
+   "rain": [
+    "D_MAIWENN_RAIN_1"
+   ],
+   "snow": [
+    "D_MAIWENN_SNOW_1"
+   ],
+   "spring": [
+    "D_MAIWENN_SPRING_1"
+   ],
+   "summer": [
+    "D_MAIWENN_SUMMER_1"
+   ],
+   "winter": [
+    "D_MAIWENN_WINTER_1"
+   ]
+  }
+ },
+ "pim": {
+  "birthday": [
+   2,
+   25
+  ],
+  "dislikes": [
+   "leek",
+   "kale",
+   "cat:forage"
+  ],
+  "events": [
+   "pim_1",
+   "pim_2"
+  ],
+  "hates": [
+   "spinach",
+   "beet"
+  ],
+  "home": "store",
+  "likes": [
+   "carrot",
+   "apple",
+   "egg",
+   "bread",
+   "snowdrop",
+   "pea"
+  ],
+  "loves": [
+   "honeymelon",
+   "pumpkin",
+   "crepes",
+   "cherry_clafoutis"
+  ],
+  "romance": false,
+  "schedule": {
+   "d6": [
+    [
+     360,
+     "store",
+     "home"
+    ],
+    [
+     540,
+     "village",
+     "plaza_e"
+    ],
+    [
+     900,
+     "village",
+     "fountain_s"
+    ],
+    [
+     1200,
+     "store",
+     "home"
+    ]
+   ],
+   "default": [
+    [
+     360,
+     "store",
+     "home"
+    ],
+    [
+     540,
+     "village",
+     "plaza_w"
+    ],
+    [
+     720,
+     "village",
+     "fountain_s"
+    ],
+    [
+     900,
+     "store",
+     "play"
+    ],
+    [
+     1080,
+     "village",
+     "bench_w"
+    ],
+    [
+     1200,
+     "store",
+     "home"
+    ]
+   ],
+   "rain": [
+    [
+     360,
+     "store",
+     "home"
+    ],
+    [
+     540,
+     "store",
+     "play"
+    ],
+    [
+     1200,
+     "store",
+     "home"
+    ]
+   ],
+   "snow": [
+    [
+     360,
+     "store",
+     "home"
+    ],
+    [
+     540,
+     "village",
+     "plaza_w"
+    ],
+    [
+     900,
+     "store",
+     "play"
+    ],
+    [
+     1200,
+     "store",
+     "home"
+    ]
+   ]
+  },
+  "sprite": "pim",
+  "talk": {
+   "autumn": [
+    "D_PIM_AUTUMN_1"
+   ],
+   "birthday": [
+    "D_PIM_BIRTHDAY_1"
+   ],
+   "gift_dislike": [
+    "D_PIM_GIFT_DISLIKE_1"
+   ],
+   "gift_hate": [
+    "D_PIM_GIFT_HATE_1"
+   ],
+   "gift_like": [
+    "D_PIM_GIFT_LIKE_1"
+   ],
+   "gift_love": [
+    "D_PIM_GIFT_LOVE_1"
+   ],
+   "gift_neutral": [
+    "D_PIM_GIFT_NEUTRAL_1"
+   ],
+   "h0": [
+    "D_PIM_H0_1",
+    "D_PIM_H0_2",
+    "D_PIM_H0_3"
+   ],
+   "h1": [
+    "D_PIM_H1_1",
+    "D_PIM_H1_2",
+    "D_PIM_H1_3"
+   ],
+   "h2": [
+    "D_PIM_H2_1",
+    "D_PIM_H2_2",
+    "D_PIM_H2_3"
+   ],
+   "h3": [
+    "D_PIM_H3_1",
+    "D_PIM_H3_2",
+    "D_PIM_H3_3"
+   ],
+   "rain": [
+    "D_PIM_RAIN_1"
+   ],
+   "snow": [
+    "D_PIM_SNOW_1"
+   ],
+   "spring": [
+    "D_PIM_SPRING_1"
+   ],
+   "summer": [
+    "D_PIM_SUMMER_1"
+   ],
+   "winter": [
+    "D_PIM_WINTER_1"
+   ]
+  }
+ },
+ "roseline": {
+  "birthday": [
+   1,
+   4
+  ],
+  "dislikes": [
+   "coal",
+   "clay",
+   "cat:fish"
+  ],
+  "events": [
+   "roseline_1",
+   "roseline_2"
+  ],
+  "hates": [
+   "cat:mineral"
+  ],
+  "home": "cottage",
+  "likes": [
+   "wool",
+   "belltulip",
+   "lavender",
+   "spring_salad",
+   "plum",
+   "jam"
+  ],
+  "loves": [
+   "cherry_clafoutis",
+   "cherry",
+   "cloth",
+   "snowdrop"
+  ],
+  "romance": false,
+  "schedule": {
+   "d6": [
+    [
+     360,
+     "cottage",
+     "home"
+    ],
+    [
+     600,
+     "village",
+     "plaza_n"
+    ],
+    [
+     1080,
+     "inn",
+     "table_w"
+    ],
+    [
+     1260,
+     "cottage",
+     "home"
+    ]
+   ],
+   "default": [
+    [
+     360,
+     "cottage",
+     "home"
+    ],
+    [
+     600,
+     "village",
+     "bench_w"
+    ],
+    [
+     780,
+     "cottage",
+     "hearth"
+    ],
+    [
+     960,
+     "village",
+     "cottage_front"
+    ],
+    [
+     1140,
+     "cottage",
+     "hearth"
+    ],
+    [
+     1260,
+     "cottage",
+     "home"
+    ]
+   ],
+   "rain": [
+    [
+     360,
+     "cottage",
+     "home"
+    ],
+    [
+     600,
+     "cottage",
+     "hearth"
+    ],
+    [
+     1260,
+     "cottage",
+     "home"
+    ]
+   ],
+   "snow": [
+    [
+     360,
+     "cottage",
+     "home"
+    ],
+    [
+     600,
+     "cottage",
+     "hearth"
+    ],
+    [
+     1260,
+     "cottage",
+     "home"
+    ]
+   ]
+  },
+  "sprite": "roseline",
+  "talk": {
+   "autumn": [
+    "D_ROSELINE_AUTUMN_1"
+   ],
+   "birthday": [
+    "D_ROSELINE_BIRTHDAY_1"
+   ],
+   "gift_dislike": [
+    "D_ROSELINE_GIFT_DISLIKE_1"
+   ],
+   "gift_hate": [
+    "D_ROSELINE_GIFT_HATE_1"
+   ],
+   "gift_like": [
+    "D_ROSELINE_GIFT_LIKE_1"
+   ],
+   "gift_love": [
+    "D_ROSELINE_GIFT_LOVE_1"
+   ],
+   "gift_neutral": [
+    "D_ROSELINE_GIFT_NEUTRAL_1"
+   ],
+   "h0": [
+    "D_ROSELINE_H0_1",
+    "D_ROSELINE_H0_2",
+    "D_ROSELINE_H0_3"
+   ],
+   "h1": [
+    "D_ROSELINE_H1_1",
+    "D_ROSELINE_H1_2",
+    "D_ROSELINE_H1_3"
+   ],
+   "h2": [
+    "D_ROSELINE_H2_1",
+    "D_ROSELINE_H2_2",
+    "D_ROSELINE_H2_3"
+   ],
+   "h3": [
+    "D_ROSELINE_H3_1",
+    "D_ROSELINE_H3_2",
+    "D_ROSELINE_H3_3"
+   ],
+   "rain": [
+    "D_ROSELINE_RAIN_1"
+   ],
+   "snow": [
+    "D_ROSELINE_SNOW_1"
+   ],
+   "spring": [
+    "D_ROSELINE_SPRING_1"
+   ],
+   "summer": [
+    "D_ROSELINE_SUMMER_1"
+   ],
+   "winter": [
+    "D_ROSELINE_WINTER_1"
+   ]
+  }
+ },
+ "theodule": {
+  "birthday": [
+   3,
+   5
+  ],
+  "dislikes": [
+   "cat:mineral",
+   "cat:fish"
+  ],
+  "events": [
+   "theodule_1",
+   "theodule_2"
+  ],
+  "hates": [
+   "coal",
+   "ore_brumite"
+  ],
+  "home": "ranch_shop",
+  "likes": [
+   "egg",
+   "duck_egg",
+   "wool",
+   "apple",
+   "hay",
+   "butter",
+   "bread"
+  ],
+  "loves": [
+   "goat_cheese",
+   "cheese",
+   "apple_tart",
+   "milk"
+  ],
+  "romance": false,
+  "schedule": {
+   "d3": [
+    [
+     360,
+     "ranch_shop",
+     "home"
+    ],
+    [
+     540,
+     "village",
+     "bench_e"
+    ],
+    [
+     900,
+     "village",
+     "plaza_n"
+    ],
+    [
+     1200,
+     "ranch_shop",
+     "home"
+    ]
+   ],
+   "default": [
+    [
+     360,
+     "ranch_shop",
+     "home"
+    ],
+    [
+     480,
+     "ranch_shop",
+     "clerk"
+    ],
+    [
+     720,
+     "village",
+     "bench_w"
+    ],
+    [
+     840,
+     "ranch_shop",
+     "clerk"
+    ],
+    [
+     1080,
+     "village",
+     "plaza_n"
+    ],
+    [
+     1200,
+     "ranch_shop",
+     "home"
+    ]
+   ],
+   "rain": [
+    [
+     360,
+     "ranch_shop",
+     "home"
+    ],
+    [
+     480,
+     "ranch_shop",
+     "clerk"
+    ],
+    [
+     840,
+     "ranch_shop",
+     "stool"
+    ],
+    [
+     1200,
+     "ranch_shop",
+     "home"
+    ]
+   ],
+   "snow": [
+    [
+     360,
+     "ranch_shop",
+     "home"
+    ],
+    [
+     480,
+     "ranch_shop",
+     "clerk"
+    ],
+    [
+     840,
+     "ranch_shop",
+     "stool"
+    ],
+    [
+     1200,
+     "ranch_shop",
+     "home"
+    ]
+   ]
+  },
+  "sprite": "theodule",
+  "talk": {
+   "autumn": [
+    "D_THEODULE_AUTUMN_1"
+   ],
+   "birthday": [
+    "D_THEODULE_BIRTHDAY_1"
+   ],
+   "gift_dislike": [
+    "D_THEODULE_GIFT_DISLIKE_1"
+   ],
+   "gift_hate": [
+    "D_THEODULE_GIFT_HATE_1"
+   ],
+   "gift_like": [
+    "D_THEODULE_GIFT_LIKE_1"
+   ],
+   "gift_love": [
+    "D_THEODULE_GIFT_LOVE_1"
+   ],
+   "gift_neutral": [
+    "D_THEODULE_GIFT_NEUTRAL_1"
+   ],
+   "h0": [
+    "D_THEODULE_H0_1",
+    "D_THEODULE_H0_2",
+    "D_THEODULE_H0_3"
+   ],
+   "h1": [
+    "D_THEODULE_H1_1",
+    "D_THEODULE_H1_2",
+    "D_THEODULE_H1_3"
+   ],
+   "h2": [
+    "D_THEODULE_H2_1",
+    "D_THEODULE_H2_2",
+    "D_THEODULE_H2_3"
+   ],
+   "h3": [
+    "D_THEODULE_H3_1",
+    "D_THEODULE_H3_2",
+    "D_THEODULE_H3_3"
+   ],
+   "rain": [
+    "D_THEODULE_RAIN_1"
+   ],
+   "snow": [
+    "D_THEODULE_SNOW_1"
+   ],
+   "spring": [
+    "D_THEODULE_SPRING_1"
+   ],
+   "summer": [
+    "D_THEODULE_SUMMER_1"
+   ],
+   "winter": [
+    "D_THEODULE_WINTER_1"
+   ]
+  }
+ }
+}

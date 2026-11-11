@@ -27,6 +27,7 @@ var _warp_cooldown: float = 0.0
 var _ending: bool = false
 var _mouse_target: bool = false
 var _debug_label: Label
+var npcs: NpcManager
 
 
 func _ready() -> void:
@@ -42,6 +43,8 @@ func _ready() -> void:
 	add_child(daylight)
 	player = Player.new()
 	add_child(player)
+	npcs = NpcManager.new()
+	add_child(npcs)
 	player.cell_changed.connect(_on_cell)
 	player.tool_released.connect(_on_tool_released)
 	player.action_pressed.connect(func() -> void: do_action(player.target_cell()))
@@ -75,6 +78,7 @@ func _ready() -> void:
 	EventBus.day_ended.connect(_on_day_ended)
 	EventBus.player_fainted.connect(func(_r: String) -> void: _close_all_screens())
 	EventBus.night_started.connect(_update_music)
+	EventBus.minute_passed.connect(func(_m: int) -> void: npcs.on_minute())
 	EventBus.ui_requested.connect(_on_ui_requested)
 	get_viewport().size_changed.connect(_apply_camera_limits)
 
@@ -108,6 +112,7 @@ func load_map(id: String, foot: Vector2, face: int) -> void:
 	remove_child(player)
 	view.sorted.add_child(player)
 	player.rt = rt
+	npcs.setup(rt, view.sorted)
 	player.position = foot
 	player.facing = face
 	player._cell = player.feet_cell()
@@ -177,8 +182,17 @@ func _on_cell(c: Vector2i) -> void:
 	var target: String = str(wp["to"])
 	if target == "farmhouse":
 		target = GameState.house_map()
-	if not Database.maps.has(target):
-		EventBus.toast.emit(Loc.t("TOAST_PATH_CLOSED"), "")
+	var refusal: String = ""
+	if wp.has("need_flag") and not GameState.flag(str(wp["need_flag"])):
+		refusal = Loc.t(str(wp.get("msg", "TOAST_PATH_CLOSED")))
+	elif wp.has("shop") and not Shops.is_open(str(wp["shop"])):
+		var sh: Dictionary = Shops.shop(str(wp["shop"]))
+		refusal = Loc.f("TOAST_SHOP_CLOSED", [int(sh.get("open", 0)), int(sh.get("close", 24))])
+	elif not Database.maps.has(target):
+		refusal = Loc.t("TOAST_PATH_CLOSED")
+	if refusal != "":
+		AudioManager.sfx("error")
+		EventBus.toast.emit(refusal, "")
 		_warp_cooldown = WARP_COOLDOWN
 		player.position -= Vector2(Player.FACING_VEC[player.facing]) * 10.0
 		return
@@ -293,6 +307,10 @@ func do_action(c: Vector2i) -> void:
 	var z: Dictionary = rt.zone_at(c)
 	if not z.is_empty() and await _interact_zone(z):
 		return
+	var n: Npc = npcs.npc_near(c)
+	if n != null:
+		_talk_or_gift(n)
+		return
 	var o: Dictionary = rt.object_at(c)
 	if not o.is_empty() and _interact_object(rt.origin_at(c), o):
 		return
@@ -312,7 +330,10 @@ func _interact_zone(z: Dictionary) -> bool:
 				TimeManager.end_day(false)
 			return true
 		"forecast":
-			EventBus.toast.emit(Loc.f("FORECAST", [Loc.t("WEATHER_" + GameState.weather_tomorrow.to_upper())]), "")
+			EventBus.toast.emit(Loc.f(str(z.get("text", "FORECAST")), [Loc.t("WEATHER_" + GameState.weather_tomorrow.to_upper())]), "")
+			return true
+		"shop":
+			open_shop(str(z["arg"]))
 			return true
 		"mailbox":
 			EventBus.toast.emit(Loc.t("MAILBOX_EMPTY"), "")
@@ -323,6 +344,22 @@ func _interact_zone(z: Dictionary) -> bool:
 				ToolUse.refill_can(lvl)
 			return true
 	return false
+
+
+func open_shop(shop_id: String) -> void:
+	if not Shops.is_open(shop_id):
+		var sh: Dictionary = Shops.shop(shop_id)
+		EventBus.toast.emit(Loc.f("TOAST_SHOP_CLOSED", [int(sh.get("open", 0)), int(sh.get("close", 24))]), "")
+		return
+	var scr: ShopScreen = ShopScreen.new().setup(shop_id)
+	scr.talk_requested.connect(_talk_by_id)
+	open_screen(scr)
+
+
+func _talk_by_id(npc_id: String) -> void:
+	await get_tree().process_frame
+	if npcs.npcs.has(npc_id):
+		_talk_or_gift(npcs.npcs[npc_id])
 
 
 func _best_can_level() -> int:
@@ -508,3 +545,88 @@ func _debug_key(key: int) -> void:
 			var kinds: Array = Database.table("weather").get("kinds", ["sun"])
 			GameState.weather = str(kinds[(kinds.find(GameState.weather) + 1) % kinds.size()])
 			EventBus.weather_changed.emit(GameState.weather)
+
+
+# --- conversations, cadeaux, événements ------------------------------------------
+
+func _talk_or_gift(n: Npc) -> void:
+	var held: String = GameState.held_id()
+	if held != "" and Friendship.is_giftable(held):
+		await _gift(n, held)
+	else:
+		await _talk(n)
+
+
+func _speak(n: Npc, text: String, expression: int = 0, choices: Array = []) -> int:
+	return await say([text], Loc.t("NPC_" + n.npc_id.to_upper()), n.npc_id, expression, choices)
+
+
+func _talk(n: Npc) -> void:
+	n.talking = true
+	n.face_toward(player.position)
+	var ev: String = Dialogue.pending_event(n.npc_id)
+	if ev != "":
+		await _play_event(n, ev)
+	else:
+		var first: bool = Friendship.talk(n.npc_id)
+		var happy: bool = Friendship.is_birthday(n.npc_id) or Friendship.hearts(n.npc_id) >= 5
+		await _speak(n, Loc.t(Dialogue.pick_talk(n.npc_id)), 1 if happy else 0)
+		if first:
+			EventBus.fx_requested.emit("heart", n.position + Vector2(0, -26))
+			AudioManager.sfx("heart")
+	n.talking = false
+
+
+func _gift(n: Npc, item_id: String) -> void:
+	n.talking = true
+	n.face_toward(player.position)
+	var npc_name: String = Loc.t("NPC_" + n.npc_id.to_upper())
+	var block: String = Friendship.gift_block(n.npc_id)
+	if block != "":
+		EventBus.toast.emit(Loc.f(block, [npc_name]), "")
+		n.talking = false
+		return
+	var ask: int = await say([Loc.f("GIFT_ASK", [Database.item_name(item_id), npc_name])], "", "", 0, [Loc.t("COMMON_YES"), Loc.t("COMMON_NO")])
+	if ask != 0:
+		n.talking = false
+		return
+	var res: Dictionary = Friendship.give_gift(n.npc_id, item_id)
+	var taste: String = str(res["taste"])
+	match str(res["special"]):
+		"dating":
+			AudioManager.sfx("heart")
+			await _speak(n, Loc.t("GIFT_DATING"), 1)
+		"refused":
+			await _speak(n, Loc.t("GIFT_REFUSED"), 2)
+		"engaged":
+			AudioManager.sfx("heart")
+			await _speak(n, Loc.t("GIFT_ENGAGED"), 1)
+		_:
+			var good: bool = taste == "love" or taste == "like"
+			AudioManager.sfx("gift")
+			await _speak(n, Loc.t(Dialogue.gift_reaction(n.npc_id, taste)), 1 if good else (2 if taste != "neutral" else 0))
+			if taste == "love":
+				EventBus.fx_requested.emit("heart", n.position + Vector2(0, -26))
+	n.talking = false
+
+
+func _play_event(n: Npc, event_id: String) -> void:
+	var e: Dictionary = Database.table("events")[event_id]
+	var lines: Array = []
+	for k: String in e["lines"]:
+		lines.append(Loc.t(k))
+	var labels: Array = []
+	for o: Dictionary in e["options"]:
+		labels.append(Loc.t(str(o["label"])))
+	var choice: int = await say(lines, Loc.t("NPC_" + n.npc_id.to_upper()), n.npc_id, 0, labels)
+	var opt: Dictionary = e["options"][clampi(choice, 0, labels.size() - 1)]
+	Friendship.rel(n.npc_id)["events"][event_id] = true
+	Friendship.rel(n.npc_id)["talked"] = GameState.day
+	var pts: int = int(opt["points"])
+	Friendship.add_points(n.npc_id, pts)
+	await _speak(n, Loc.t(str(opt["reply"])), 1 if pts > 15 else 0)
+	var reward: Dictionary = e["reward"]
+	if Loot.give(str(reward["item"]), int(reward["n"])):
+		AudioManager.sfx("gift")
+	if pts > 0:
+		EventBus.fx_requested.emit("heart", n.position + Vector2(0, -26))

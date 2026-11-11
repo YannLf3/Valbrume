@@ -52,7 +52,7 @@ BALANCE: Dict[str, Any] = {
     # météo et temps
     "rain_waters_crops": True, "storm_debris_chance": 0.01,
     # économie
-    "shop_sell_ratio": 1.0, "daily_quest_base_reward": 120, "tool_upgrade_days": 2,
+    "shop_sell_ratio": 0.75, "daily_quest_base_reward": 120, "tool_upgrade_days": 2,
 }
 
 # Outils : énergie, compétence, motifs de zone par niveau (cases relatives à la case visée,
