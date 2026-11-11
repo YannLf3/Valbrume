@@ -1,4 +1,15 @@
 keys,fr,en
+ANIMAL_BOUGHT,%s a rejoint la ferme !,%s joined the farm!
+ANIMAL_CHICKEN,Poule,Chicken
+ANIMAL_COW,Vache,Cow
+ANIMAL_DOG,Chien,Dog
+ANIMAL_DUCK,Cane,Duck
+ANIMAL_FULL,Il n'y a plus de place dans le bâtiment.,The building is full.
+ANIMAL_GOAT,Chèvre,Goat
+ANIMAL_NAME_PROMPT,Comment l'appeler ?,What will you call it?
+ANIMAL_NO_HOME,Il te faut d'abord le bâtiment adapté.,You need the right building first.
+ANIMAL_SHEEP,Mouton,Sheep
+ANIMAL_SHOP_TITLE,Nos animaux,Our animals
 BIN_TITLE,Coffre d'expédition,Shipping chest
 BIO_BASTIEN,Un forgeron taiseux dont les mains parlent mieux que la bouche. Il a longtemps été l'apprenti d'Odile.,A taciturn blacksmith whose hands speak better than his mouth. He was Odile's apprentice for years.
 BIO_CAPUCINE,Elle tient l'épicerie d'Ormelune avec le sourire et un carnet de comptes impeccable. Elle rêve en secret d'un jardin sauvage.,She runs Ormelune's grocery with a smile and an immaculate ledger. She secretly dreams of a wild garden.
@@ -10,6 +21,18 @@ BIO_MAIWENN,Une pêcheuse laconique qui lit le ciel mieux que n'importe quel alm
 BIO_PIM,"Dix ans, des questions plein les poches. Il est le petit frère de Capucine et la mascotte du village.",Ten years old with pockets full of questions. Capucine's little brother and the village's mascot.
 BIO_ROSELINE,Une grand-mère tisserande dont le métier à tisser chante tout le jour. Elle a connu Odile enfant.,A weaver grandmother whose loom sings all day. She knew Odile as a child.
 BIO_THEODULE,"Un vieil éleveur au chapeau de paille usé, qui parle par proverbes et connaît chaque bête par son prénom.",An old rancher in a worn straw hat who speaks in proverbs and knows every animal by name.
+BUILDING_BARN,Étable,Barn
+BUILDING_COOP,Poulailler,Coop
+BUILDING_HOUSE,Maison,House
+BUILDING_SILO,Silo,Silo
+BUILD_BUSY,Le charpentier a déjà un chantier en cours.,The carpenter already has a job underway.
+BUILD_DAYS,%d j,%d d
+BUILD_LEVEL,niv.,lv.
+BUILD_MAXED,Rien de plus à construire.,Nothing more to build.
+BUILD_NOW,En cours : %s (%d j),Underway: %s (%d d)
+BUILD_START,Construire,Build
+BUILD_STARTED,Le chantier commence !,Construction begins!
+BUILD_TITLE,Chantiers,Construction
 CAT_ANIMAL,Produit animal,Animal Product
 CAT_ARTIFACT,Artefact,Artifact
 CAT_ARTISAN,Produit fermier,Artisan Good
@@ -30,6 +53,7 @@ CAT_SAPLING,Jeune arbre,Sapling
 CAT_SEED,Graine,Seed
 CAT_TOOL,Outil,Tool
 CHEST_TITLE,Coffre,Chest
+COLLECT_NOTHING,Rien à ramasser pour l'instant.,Nothing to collect yet.
 COMMON_BACK,Retour,Back
 COMMON_CANCEL,Annuler,Cancel
 COMMON_CLOSE,Fermer,Close
@@ -37,6 +61,13 @@ COMMON_CONTINUE,Continuer,Continue
 COMMON_NO,Non,No
 COMMON_OK,OK,OK
 COMMON_YES,Oui,Yes
+COOK_MAKE,Cuisiner,Cook
+COOK_TITLE,Cuisine,Cooking
+CRAFT_MAKE,Fabriquer,Craft
+CRAFT_MISSING,Il manque des ingrédients.,You're missing ingredients.
+CRAFT_NONE,Aucune recette connue.,No known recipes.
+CRAFT_TITLE,Artisanat,Crafting
+CRAFT_UNKNOWN,Recette inconnue.,Unknown recipe.
 CREDITS_TEXT,"Valbrume
 
 Conception, programmation, pixel art,
@@ -730,12 +761,21 @@ JOB_MAIWENN,Pêcheuse,Fisher
 JOB_PIM,Écolier curieux,Curious schoolchild
 JOB_ROSELINE,Tisserande,Weaver
 JOB_THEODULE,Éleveur,Rancher
+KITCHEN_LOCKED,Il faut agrandir la maison pour avoir une cuisine.,You need a bigger house to have a kitchen.
 LANG_EN,English,English
 LANG_FR,Français,Français
+MACHINE_BAD_INPUT,Cette machine n'accepte pas ça.,This machine doesn't accept that.
+MACHINE_BUSY,Elle travaille encore : %d min.,Still working: %d min.
+MACHINE_EMPTY,Rien à récolter pour l'instant.,Nothing to collect yet.
+MACHINE_NEEDS,Tiens un ingrédient en main pour la lancer.,Hold an ingredient to start it.
+MACHINE_NEEDS_FUEL,Il manque du combustible.,It needs fuel.
+MACHINE_NEED_MORE,Il en faut davantage.,You need more of it.
 MAILBOX_EMPTY,La boîte aux lettres est vide.,The mailbox is empty.
+MAP_BARN,L'étable,The Barn
 MAP_BEACH,La plage des Ondes,Wavecrest Beach
 MAP_CARPENTRY,La charpenterie,The Carpentry
 MAP_CLINIC,La clinique,The Clinic
+MAP_COOP,Le poulailler,The Coop
 MAP_COTTAGE,Chez Roseline,Roseline's Cottage
 MAP_FARM,La ferme,The Farm
 MAP_FARMHOUSE,La maison,The House
@@ -810,12 +850,17 @@ PERK_ORE_BONUS,Chance de minerai en double,Chance for double ore
 PERK_PRODUCT_QUALITY,Produits animaux de meilleure qualité,Better animal product quality
 PERK_TREASURE_CHANCE,Plus de trésors repêchés,More fished-up treasure
 PERK_WOOD_BONUS,Plus de bois par arbre,More wood per tree
+PET_ALREADY,%s a déjà reçu sa caresse du jour.,%s already got today's pat.
+PET_NAME,Biscotte,Biscuit
+PET_OK,%s adore ça !,%s loves it!
 QUALITY_1,Argent,Silver
 QUALITY_2,Or,Gold
 SEASON_AUTUMN,Automne,Autumn
 SEASON_SPRING,Printemps,Spring
 SEASON_SUMMER,Été,Summer
 SEASON_WINTER,Hiver,Winter
+SERVICE_ANIMALS,Animaux,Animals
+SERVICE_BUILD,Chantiers,Build
 SHOP_ALL,Tout,All
 SHOP_BACKPACK,Grand sac (+12 places),Big bag (+12 slots)
 SHOP_BUY,Acheter,Buy
@@ -833,6 +878,7 @@ SHOP_RECIPE,Recette : %s,Recipe: %s
 SHOP_SELL,Vendre,Sell
 SHOP_STORE,L'épicerie de Capucine,Capucine's Grocery
 SHOP_TALK,Discuter,Chat
+SILO_STATUS,Foin du silo : %d / %d (tiens du foin pour en ranger).,Silo hay: %d / %d (hold hay to store some).
 SKILL_COMBAT,Combat,Combat
 SKILL_FARMING,Agriculture,Farming
 SKILL_FISHING,Pêche,Fishing
@@ -849,6 +895,7 @@ SLOT_EMPTY,— vide —,— empty —
 SLOT_INFO,%s · %s · jour %d,%s · %s · day %d
 SLOT_N,Sauvegarde %d,Save %d
 SLOT_NEW,Nouvelle partie,New game
+SUMMARY_BUILT,Chantier terminé : %s !,Construction finished: %s!
 SUMMARY_FAINTED,La fatigue a eu raison de toi : %d é perdus.,Exhaustion got the better of you: %d lost.
 SUMMARY_NOTHING,Rien n'a été expédié.,Nothing was shipped.
 SUMMARY_PESTS,Les grignotins ont mangé %d plant(s).,Nibblers ate %d plant(s).

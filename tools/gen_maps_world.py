@@ -350,5 +350,33 @@ def interiors() -> List[M]:
     return out
 
 
+def animal_house(id_: str, w: int, h: int, home: str, outer_spot: str, troughs: int) -> M:
+    m = M(id_, w, h, " ", outdoor=False, interior="room", style={"wall": 0, "floor": 1}, name="MAP_" + home.upper(), music="")
+    for x in range(w):
+        m.set(x, 0, "W")
+        m.set(x, 1, "w")
+        for y in range(2, h - 1):
+            m.set(x, y, "f")
+    d = w // 2
+    m.set(d, h - 1, "f")
+    m.static("door_mat", d, h - 2, 1, 1, solid=False)
+    m.warp(d, h - 1, 1, 1, "farm", outer_spot, 0)
+    m.spots["door"] = [d, h - 2]
+    for x in range(3, w - 2, 4):
+        m.static("window_in", x, 1, 1, 1, solid=False)
+    for i in range(troughs):
+        m.static("trough_full", 1 + i * 3, 2, 2, 1)
+    m.static("crate", w - 2, 2, 1, 1)
+    m.zone(w - 2, 2, 1, 1, "collect", arg=home)
+    m.static("straw_pile", w - 3, 2, 1, 1, solid=False)
+    m.meta["pen"] = [1, 3, w - 2, h - 3]
+    return m
+
+
+def animal_houses() -> List[M]:
+    return [animal_house("coop_in_1", 10, 7, "coop", "coop_door", 2), animal_house("coop_in_2", 12, 8, "coop", "coop_door", 3),
+            animal_house("barn_in_1", 12, 8, "barn", "barn_door", 3), animal_house("barn_in_2", 14, 9, "barn", "barn_door", 4)]
+
+
 def all_world_maps() -> List[M]:
-    return [village(), forest(), lake(), beach()] + interiors()
+    return [village(), forest(), lake(), beach()] + interiors() + animal_houses()

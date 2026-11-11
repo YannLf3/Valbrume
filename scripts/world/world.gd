@@ -28,6 +28,7 @@ var _ending: bool = false
 var _mouse_target: bool = false
 var _debug_label: Label
 var npcs: NpcManager
+var animals: AnimalManager
 
 
 func _ready() -> void:
@@ -45,6 +46,8 @@ func _ready() -> void:
 	add_child(player)
 	npcs = NpcManager.new()
 	add_child(npcs)
+	animals = AnimalManager.new()
+	add_child(animals)
 	player.cell_changed.connect(_on_cell)
 	player.tool_released.connect(_on_tool_released)
 	player.action_pressed.connect(func() -> void: do_action(player.target_cell()))
@@ -78,7 +81,7 @@ func _ready() -> void:
 	EventBus.day_ended.connect(_on_day_ended)
 	EventBus.player_fainted.connect(func(_r: String) -> void: _close_all_screens())
 	EventBus.night_started.connect(_update_music)
-	EventBus.minute_passed.connect(func(_m: int) -> void: npcs.on_minute())
+	EventBus.minute_passed.connect(_on_minute)
 	EventBus.ui_requested.connect(_on_ui_requested)
 	get_viewport().size_changed.connect(_apply_camera_limits)
 
@@ -113,6 +116,8 @@ func load_map(id: String, foot: Vector2, face: int) -> void:
 	view.sorted.add_child(player)
 	player.rt = rt
 	npcs.setup(rt, view.sorted)
+	animals.setup(rt, view.sorted)
+	view.refresh_machines()
 	player.position = foot
 	player.facing = face
 	player._cell = player.feet_cell()
@@ -171,6 +176,12 @@ func transition_to(target: String, foot: Vector2, face: int) -> void:
 	await _fade_to(0.0, FADE_TIME)
 	busy = false
 	_warp_cooldown = 0.3
+
+
+func _on_minute(m: int) -> void:
+	npcs.on_minute()
+	if m % 10 == 0 and view != null:
+		view.refresh_machines()
 
 
 func _on_cell(c: Vector2i) -> void:
@@ -311,6 +322,10 @@ func do_action(c: Vector2i) -> void:
 	if n != null:
 		_talk_or_gift(n)
 		return
+	var an: AnimalEntity = animals.animal_near(c)
+	if an != null:
+		_pet(an)
+		return
 	var o: Dictionary = rt.object_at(c)
 	if not o.is_empty() and _interact_object(rt.origin_at(c), o):
 		return
@@ -338,6 +353,23 @@ func _interact_zone(z: Dictionary) -> bool:
 		"mailbox":
 			EventBus.toast.emit(Loc.t("MAILBOX_EMPTY"), "")
 			return true
+		"kitchen":
+			if Buildings.level("house") >= 2:
+				open_screen(CraftingScreen.new().setup("cook"))
+			else:
+				EventBus.toast.emit(Loc.t("KITCHEN_LOCKED"), "")
+			return true
+		"collect":
+			var got: int = Animals.collect(str(z["arg"]))
+			if got == 0:
+				EventBus.toast.emit(Loc.t("COLLECT_NOTHING"), "")
+			return true
+		"silo":
+			var put: int = Animals.store_hay(GameState.item_count("hay")) if GameState.held_id() == "hay" else 0
+			EventBus.toast.emit(Loc.f("SILO_STATUS", [Animals.hay_stored(), Database.bal_i("silo_capacity", 240)]), "hay")
+			if put > 0:
+				AudioManager.sfx("plant")
+			return true
 		"well":
 			var lvl: int = _best_can_level()
 			if lvl > 0:
@@ -353,7 +385,39 @@ func open_shop(shop_id: String) -> void:
 		return
 	var scr: ShopScreen = ShopScreen.new().setup(shop_id)
 	scr.talk_requested.connect(_talk_by_id)
+	scr.service_requested.connect(_on_service)
 	open_screen(scr)
+
+
+func _on_service(service: String) -> void:
+	await get_tree().process_frame
+	match service:
+		"build":
+			open_screen(BuildScreen.new())
+		"animals":
+			open_screen(AnimalShopScreen.new())
+
+
+func _pet(a: AnimalEntity) -> void:
+	var nm: String = ""
+	var ok_: bool = false
+	if a.kind == "dog":
+		nm = str(GameState.pet.get("name", ""))
+		if not bool(GameState.pet.get("petted", false)):
+			GameState.pet["petted"] = true
+			GameState.pet["affection"] = mini(int(GameState.pet.get("affection", 0)) + int(Database.bal_f("affection_pet", 15.0)), Database.bal_i("affection_max", 1000))
+			Skills.add_xp("husbandry", Database.bal_i("xp_pet", 5))
+			ok_ = true
+		AudioManager.sfx("bark")
+	else:
+		nm = str(a.animal["name"])
+		ok_ = Animals.pet(a.animal)
+		AudioManager.sfx(str(Animals.table()[str(a.animal["type"])].get("sfx", "pickup")))
+	if ok_:
+		EventBus.fx_requested.emit("heart", a.position + Vector2(0, -18))
+		EventBus.toast.emit(Loc.f("PET_OK", [nm]), "")
+	else:
+		EventBus.toast.emit(Loc.f("PET_ALREADY", [nm]), "")
 
 
 func _talk_by_id(npc_id: String) -> void:
@@ -391,6 +455,21 @@ func _interact_object(origin: Vector2i, o: Dictionary) -> bool:
 				AudioManager.sfx("chest")
 				open_container(GameState.inventory, o["slots"], Loc.t("CHEST_TITLE"), false)
 				return true
+			var pdef: Dictionary = WorldObjects.def_of(o)
+			if str(pdef.get("kind", "")) == "machine":
+				var res: String = Machines.interact(o, GameState.held_id(), GameState.hotbar_index)
+				if res == "MACHINE_BUSY":
+					EventBus.toast.emit(Loc.f("MACHINE_BUSY", [Machines.minutes_left(o["m"])]), "")
+				elif res != "":
+					AudioManager.sfx("error")
+					EventBus.toast.emit(Loc.t(res), "")
+				rt.touch_object(origin)
+				return true
+			if str(pdef.get("kind", "")) == "furniture" and not Placement.is_placeable(GameState.held_id()):
+				o["rot"] = (int(o.get("rot", 0)) + 1) % 4
+				AudioManager.sfx("ui_click")
+				rt.touch_object(origin)
+				return true
 	return false
 
 
@@ -407,7 +486,18 @@ func _use_held(c: Vector2i, hold: float) -> bool:
 			ToolUse.use(rt, id, c, player.facing, charged)
 		return true
 	var err: String = ""
-	if str(it.get("cat", "")) == "seed":
+	if it.has("wallpaper") or it.has("floor"):
+		if rt.data.get("interior", "") != "house":
+			err = "TOAST_INDOORS_ONLY"
+		else:
+			if it.has("wallpaper"):
+				GameState.house["wallpaper"] = int(it["wallpaper"])
+			else:
+				GameState.house["floor"] = int(it["floor"])
+			GameState.remove_item(id, 1)
+			AudioManager.sfx("plant")
+			view.rebuild_all()
+	elif str(it.get("cat", "")) == "seed":
 		err = Farming.plant(rt, c, id)
 		if err == "":
 			GameState.remove_item(id, 1)
@@ -489,6 +579,8 @@ func _on_pause_action(action: String) -> void:
 func _on_ui_requested(screen: String, _args: Dictionary) -> void:
 	if screen == "options":
 		open_screen(OptionsScreen.new())
+	elif screen == "craft":
+		open_screen(CraftingScreen.new().setup("craft"))
 
 
 # --- nuit ---------------------------------------------------------------------

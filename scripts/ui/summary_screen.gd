@@ -53,6 +53,8 @@ func _ready() -> void:
 		v.add_child(_note(Loc.f("SUMMARY_FAINTED", [int(summary["loss"])]), UIKit.RED))
 	if int(summary.get("eaten", 0)) > 0:
 		v.add_child(_note(Loc.f("SUMMARY_PESTS", [int(summary["eaten"])]), UIKit.RED))
+	if str(summary.get("built", "")) != "":
+		v.add_child(_note(Loc.f("SUMMARY_BUILT", [Loc.t("BUILDING_" + str(summary["built"]).to_upper())]), UIKit.LEAF))
 	if bool(summary.get("season_changed", false)):
 		v.add_child(_note(Loc.f("SUMMARY_SEASON", [TimeManager.season_text()]), UIKit.LEAF))
 	var w: HBoxContainer = HBoxContainer.new()

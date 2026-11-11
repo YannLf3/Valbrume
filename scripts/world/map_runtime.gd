@@ -74,9 +74,40 @@ func static_visible(st: Dictionary) -> bool:
 	return true
 
 
+## Décors fixes de la carte + éléments qui dépendent de la partie (maison, bâtiments de la ferme).
+func all_statics() -> Array:
+	var out: Array = (data.get("statics", []) as Array).duplicate()
+	if id == "farm":
+		out.append(Buildings.house_footprint().merged({"solid": true}))
+		for t: String in ["coop", "barn", "silo"]:
+			var f: Dictionary = Buildings.footprint(t)
+			if not f.is_empty():
+				out.append(f.merged({"solid": true}))
+	return out
+
+
+func all_warps() -> Array:
+	var out: Array = (data.get("warps", []) as Array).duplicate()
+	if id == "farm":
+		for t: String in ["coop", "barn"]:
+			var f: Dictionary = Buildings.footprint(t)
+			if not f.is_empty():
+				out.append({"x": f["door"][0], "y": f["door"][1], "w": 1, "h": 1, "to": f["interior"], "spot": "door", "face": 1})
+	return out
+
+
+func all_zones() -> Array:
+	var out: Array = (data.get("interact", []) as Array).duplicate()
+	if id == "farm":
+		var f: Dictionary = Buildings.footprint("silo")
+		if not f.is_empty():
+			out.append({"x": f["x"], "y": f["y"], "w": f["w"], "h": f["h"], "kind": "silo"})
+	return out
+
+
 func rebuild_statics() -> void:
 	_static_solid.clear()
-	for st: Dictionary in data.get("statics", []):
+	for st: Dictionary in all_statics():
 		if not bool(st.get("solid", false)) or not static_visible(st):
 			continue
 		var door: Variant = st.get("door")
@@ -179,7 +210,7 @@ func touch_soil(c: Vector2i) -> void:
 # --- zones, passages, points -----------------------------------------------------
 
 func warp_at(c: Vector2i) -> Dictionary:
-	for wp: Dictionary in data.get("warps", []):
+	for wp: Dictionary in all_warps():
 		if wp.has("flag") and not GameState.flag(str(wp["flag"])):
 			continue
 		if c.x >= int(wp["x"]) and c.x < int(wp["x"]) + int(wp["w"]) and c.y >= int(wp["y"]) and c.y < int(wp["y"]) + int(wp["h"]):
@@ -188,7 +219,7 @@ func warp_at(c: Vector2i) -> Dictionary:
 
 
 func zone_at(c: Vector2i) -> Dictionary:
-	for z: Dictionary in data.get("interact", []):
+	for z: Dictionary in all_zones():
 		if c.x >= int(z["x"]) and c.x < int(z["x"]) + int(z["w"]) and c.y >= int(z["y"]) and c.y < int(z["y"]) + int(z["h"]):
 			return z
 	return {}

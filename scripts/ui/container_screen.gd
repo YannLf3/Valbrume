@@ -50,6 +50,12 @@ func _ready() -> void:
 	sort.pressed.connect(_on_sort)
 	var close_b: Button = UIKit.button(Loc.t("COMMON_CLOSE"), 50)
 	close_b.pressed.connect(func() -> void: close(null))
+	if other.is_empty():
+		var craft: Button = UIKit.button(Loc.t("CRAFT_TITLE"), 70)
+		craft.pressed.connect(func() -> void:
+			close(null)
+			EventBus.ui_requested.emit("craft", {}))
+		row.add_child(craft)
 	row.add_child(sort)
 	row.add_child(close_b)
 	v.add_child(row)

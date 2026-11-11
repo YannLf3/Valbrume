@@ -222,7 +222,7 @@ func rebuild_objects() -> void:
 	for n2: Sprite2D in _static_nodes:
 		n2.queue_free()
 	_static_nodes.clear()
-	for st: Dictionary in rt.data.get("statics", []):
+	for st: Dictionary in rt.all_statics():
 		if not rt.static_visible(st):
 			continue
 		var tex: Texture2D = Database.sprite(str(st["s"]))
@@ -269,6 +269,10 @@ func _texture_for(o: Dictionary, origin: Vector2i) -> Texture2D:
 		var d: Dictionary = WorldObjects.def_of(o)
 		if pid == "fence":
 			return Database.sprite("fence_%d" % _fence_mask(origin))
+		var active: String = str(d.get("active_sprite", ""))
+		var mm: Dictionary = o.get("m", {})
+		if active != "" and mm.has("out") and not Machines.is_ready(mm):
+			return Database.sprite(active)
 		var sname: String = str(d.get("sprite", ""))
 		if sname != "" and Database.sprite(sname) != null:
 			return Database.sprite(sname)
@@ -298,12 +302,38 @@ func refresh_object(origin: Vector2i, shake: bool = true) -> void:
 	if bool(WorldObjects.def_of(o).get("flat", false)):
 		sp.z_index = -5
 	_obj_nodes[k] = sp
+	if str(o.get("t", "")) == "placed":
+		_decorate_placed(sp, o)
 	if shake and old != null:
 		var tw: Tween = create_tween()
 		var x0: float = sp.position.x
 		tw.tween_property(sp, "position:x", x0 + SHAKE_PX, 0.035)
 		tw.tween_property(sp, "position:x", x0 - SHAKE_PX, 0.05)
 		tw.tween_property(sp, "position:x", x0, 0.035)
+
+
+func _decorate_placed(sp: Sprite2D, o: Dictionary) -> void:
+	var d: Dictionary = WorldObjects.def_of(o)
+	if str(d.get("kind", "")) == "furniture":
+		sp.flip_h = int(o.get("rot", 0)) % 2 == 1
+	var m: Dictionary = o.get("m", {})
+	if m.has("out") and Machines.is_ready(m):
+		var badge: Sprite2D = Sprite2D.new()
+		badge.texture = Database.icon(str(m["out"]["id"]))
+		badge.position = Vector2(0, -sp.texture.get_size().y - 9)
+		badge.scale = Vector2(0.75, 0.75)
+		sp.add_child(badge)
+		var tw: Tween = badge.create_tween().set_loops()
+		tw.tween_property(badge, "position:y", badge.position.y - 2.0, 0.5)
+		tw.tween_property(badge, "position:y", badge.position.y, 0.5)
+
+
+## Met à jour l'apparence des machines (production prête, machine en marche).
+func refresh_machines() -> void:
+	for k: String in rt.objects():
+		var o: Dictionary = rt.objects()[k]
+		if str(o.get("t", "")) == "placed" and o.has("m"):
+			refresh_object(GameState.cell_of(k), false)
 
 
 func _on_object_changed(map_id: String, origin: Vector2i) -> void:

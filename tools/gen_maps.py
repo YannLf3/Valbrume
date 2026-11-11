@@ -50,8 +50,8 @@ def farm() -> M:
             m.set(x, y, "=")
     m.rect(26, 11, 6, 2, "#")
     # maison de départ
-    m.static("house_1", 26, 8, 5, 3, door=(28, 10))
-    m.zone(28, 10, 1, 1, "door_house")
+    # la maison est dessinée à l'exécution (taille selon le niveau) ; sa porte reste en (28, 10)
+    m.block(25, 8, 7, 3)
     m.warp(28, 10, 1, 1, "farmhouse", "door", 1)
     # coffre d'expédition, boîte aux lettres, puits
     m.static("shipping_bin", 32, 12, 2, 1)
@@ -73,7 +73,8 @@ def farm() -> M:
     # sorties
     m.warp(63, 12, 1, 4, "village", "farm_east", 3)
     m.warp(27, 51, 4, 1, "forest", "farm_south", 1)
-    m.spots = {"house_door": [28, 11], "village_in": [62, 13], "forest_in": [28, 50]}
+    m.spots = {"house_door": [28, 11], "village_in": [62, 13], "forest_in": [28, 50], "coop_door": [38, 9], "barn_door": [53, 18],
+               "pet": [30, 12]}
     # zones à dégager / décor
     exits = [(x, y) for x in range(60, 64) for y in range(10, 18)] + [(x, y) for x in range(25, 33) for y in range(48, 52)]
     starter = [(x, y) for x in range(30, 40) for y in range(15, 21)]

@@ -3,6 +3,10 @@ extends RefCounted
 ## Pose et ramassage d'objets (coffres, arroseurs, clôtures, meubles…).
 
 
+static func is_placeable(item_id: String) -> bool:
+	return item_id != "" and Database.item(item_id).has("place")
+
+
 static func def_for_item(item_id: String) -> Dictionary:
 	var pid: String = str(Database.item(item_id).get("place", ""))
 	return WorldObjects.places().get(pid, {})

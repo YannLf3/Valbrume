@@ -40,8 +40,16 @@ static func run_night(passed_out: bool) -> Dictionary:
 			if season_changed:
 				Farming.season_change(rt)
 		Farming.grow_trees(rt)
+		Machines.nightly(rt)
 		WorldObjects.daily_update(rt)
 	summary["eaten"] = eaten
+	summary["products"] = Animals.nightly()
+	var built: String = Buildings.nightly()
+	summary["built"] = built
+	if not GameState.pet.is_empty():
+		if not bool(GameState.pet.get("petted", false)):
+			GameState.pet["affection"] = maxi(0, int(GameState.pet.get("affection", 0)) - 3)
+		GameState.pet["petted"] = false
 	# 4. Nouveau jour
 	GameState.minutes = TimeManager.DAY_START
 	GameState.weather = GameState.weather_tomorrow

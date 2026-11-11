@@ -57,9 +57,9 @@ Légende : `[ ]` à faire · `[x]` fait et validé.
 **Validation** : tests amitié + emplois du temps ; chaque boutique achète et vend.
 
 ### P4 — Élevage et artisanat
-- [ ] bâtiments (poulailler, étable, silo, serre), animaux, affection, production
-- [ ] machines, artisanat (≥ 40 recettes), cuisine (≥ 25 plats, buffs)
-- [ ] maison (3 niveaux), meubles plaçables et rotatifs, papiers peints et sols
+- [x] bâtiments (poulailler, étable, silo, serre), animaux, affection, production
+- [x] machines, artisanat (≥ 40 recettes), cuisine (≥ 25 plats, buffs)
+- [x] maison (3 niveaux), meubles plaçables et rotatifs, papiers peints et sols
 
 **Validation** : tests production animale, machines, recettes.
 
@@ -142,3 +142,13 @@ Village d'Ormelune habité : 17 cartes (ferme, 3 maisons, village, forêt, lac, 
 - Reste pour plus tard : mariage effectif (scène de noces le `wedding_day`) et écran des relations/anniversaires → P6 (journal) ; entrée de la mine et de l'alpage → P5/P6.
 
 **Prochaine étape : P4** — élevage (poulailler, étable, silo, achat d'animaux, affection, production), machines (fourneau déjà défini, fromagerie, baratte, métier à tisser, presse, bocaux, fumoir, ruche, trieuse), menu d'artisanat (75 recettes), cuisine (28 plats avec buffs), construction chez Isaure, amélioration de la maison, meubles rotatifs, papiers peints et sols.
+
+### Journal — P4 terminée (2026-11-11)
+
+Élevage, machines, artisanat, cuisine, construction, maison : poulailler / étable / silo (2 niveaux d'extension, un chantier à la fois, délais en jours), maison à 3 niveaux (cuisine dès le niveau 2, cartes `farmhouse_1..3`, bâtiments et maison dessinés dynamiquement par `MapRuntime.all_statics/all_warps/all_zones`), 6 types d'animaux + chien, affection (caresse quotidienne, pâturage ou foin du silo), production selon la qualité (affection), 8 machines (heure absolue, qualité conservée, combustible, ruches saisonnières), menu d'artisanat (47 recettes) et de cuisine (28 plats), meubles posables (indoor), rotation par miroir (limite d'art : pas de sprites par orientation), papiers peints et sols.
+
+- Nouveau code : `machines.gd`, `crafting.gd`, `buildings.gd`, `animals.gd`, `animal_entity.gd`, `animal_manager.gd`, `crafting_screen.gd`, `build_screen.gd`, `animal_shop_screen.gd`, `name_prompt.gd`.
+- Tests : 51 tests, 2 205 vérifications.
+- Reste : buffs de plats testés (déjà en P2) ; serre → P6.
+
+**Prochaine étape : P5** — mine (60 étages procéduraux, 3 biomes, ascenseur), combat temps réel (6 monstres), fourneau déjà en place, amélioration d'outils chez Bastien, pêche (mini-jeu « ondes », 20+ poissons, casiers).

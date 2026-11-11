@@ -3,6 +3,9 @@ extends ScreenBase
 ## Magasin : acheter (stock de saison, recettes, grand sac) ou vendre depuis le sac.
 
 signal talk_requested(npc_id: String)
+signal service_requested(service: String)
+
+const SERVICES: Dictionary = {"build": "SERVICE_BUILD", "animals": "SERVICE_ANIMALS"}
 
 var shop_id: String = ""
 
@@ -55,6 +58,13 @@ func _ready() -> void:
 	_sell_btn.pressed.connect(_set_tab.bind("sell"))
 	tabs.add_child(_buy_btn)
 	tabs.add_child(_sell_btn)
+	for svc: String in s.get("services", []):
+		if SERVICES.has(svc):
+			var sb: Button = UIKit.button(Loc.t(str(SERVICES[svc])), 80)
+			sb.pressed.connect(func() -> void:
+				service_requested.emit(svc)
+				close(null))
+			tabs.add_child(sb)
 	_money = UIKit.label("")
 	_money.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	_money.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
